@@ -1,5 +1,5 @@
 <script setup>
-import index from "../components/index.vue";
+import index from "../components/Draggable.vue";
 </script>
 
 <template>
