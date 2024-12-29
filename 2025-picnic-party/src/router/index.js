@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Gift from "../views/Gift.vue";
 import Game from "../views/Game.vue";
@@ -12,7 +12,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(), // 使用 Hash 模式，避免靜態頁面無法處理路由
+  history: createWebHistory(),
   routes,
 });
 

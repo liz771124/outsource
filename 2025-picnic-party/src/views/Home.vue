@@ -1,100 +1,51 @@
 <script setup>
-  import { onMounted } from "vue";
-  import { Modal, initTWE } from "tw-elements";
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap'
+import SwiperComponent from '../components/Swiper.vue'
 
-  onMounted(() => {
-    initTWE({ Modal });
-  });
+const container = ref(null)
+const circle = ref(null)
+const items = ref([{ text: '我的第一個待辦事項' }])
+
+function onClickGood(event) {
+  gsap.to(event.target, { rotation: '+=360' })
+}
+
+onMounted(() => {
+  gsap.from('.box', { opacity: 0, stagger: 0.1 })
+  gsap.to('.box', { rotation: '+=360', duration: 3 })
+  gsap.to(circle.value, { rotation: '-=360', duration: 3 })
+})
+
+function addItem(formData) {
+  const newItem = formData.get('item')
+  items.value.push({ text: newItem })
+}
 </script>
 
 <template>
-<div>
-  <!-- Button trigger modal -->
-<button
-  type="button"
-  class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-  data-twe-toggle="modal"
-  data-twe-target="#exampleModalLong"
-  data-twe-ripple-init
-  data-twe-ripple-color="light">
-  Launch demo modal long
-</button>
-
-<!-- Modal -->
-<div
-  data-twe-modal-init
-  class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-  id="exampleModalLong"
-  tabindex="-1"
-  aria-labelledby="exampleModalLongLabel"
-  aria-hidden="true">
-  <div
-    data-twe-modal-dialog-ref
-    class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]">
-    <div
-      class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark">
-      <div
-        class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 p-4 dark:border-white/10">
-        <!-- Modal title -->
-        <h5
-          class="text-xl font-medium leading-normal text-surface dark:text-white"
-          id="exampleModalLongLabel">
-          Modal title
-        </h5>
-        <!-- Close button -->
-        <button
-          type="button"
-          class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-          data-twe-modal-dismiss
-          aria-label="Close">
-          <span class="[&>svg]:h-6 [&>svg]:w-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </span>
-        </button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="relative p-4" style="min-height: 1500px">
-        This is some placeholder content to show the scrolling behavior
-        for modals. Instead of repeating the text the modal, we use an
-        inline style set a minimum height, thereby extending the length of
-        the overall modal and demonstrating the overflow scrolling. When
-        content becomes longer than the height of the viewport, scrolling
-        will move the modal as needed.
-      </div>
-
-      <!-- Modal footer -->
-      <div
-        class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-4 dark:border-white/10">
-        <button
-          type="button"
-          class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
-          data-twe-modal-dismiss
-          data-twe-ripple-init
-          data-twe-ripple-color="light">
-          Close
-        </button>
-        <button
-          type="button"
-          class="ms-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-          data-twe-ripple-init
-          data-twe-ripple-color="light">
-          Save changes
-        </button>
-      </div>
+  <header class="flex h-screen items-center justify-center bg-cover bg-no-repeat p-5">
+    <div class="flex flex-col gap-5">
+      <router-link to="/">
+        <img src="../assets/img/date.png" alt="date" width="500" height="400" />
+      </router-link>
     </div>
+  </header>
+
+  <section>
+    <div class="flex flex-col gap-5 text-center">
+      <div>未來親子野餐日陪伴孩子10週年啦！</div>
+      <div>期待能陪伴孩子，朝著更美好的未來邁進！</div>
+    </div>
+  </section>
+
+  <div class="grid min-h-screen grid-rows-[20px_1fr_20px] items-center gap-16 p-8 pb-20">
+    <SwiperComponent />
   </div>
-</div>
-</div>
-  </template>
-  
+
+  <div ref="container">
+    <button @click="onClickGood" class="good h-20 w-20 bg-red-500">111</button>
+    <div class="box h-10 w-10 rounded-full bg-yellow-400">selector</div>
+    <div ref="circle" class="circle h-10 w-10 rounded-full bg-green-400">Ref</div>
+  </div>
+</template>
