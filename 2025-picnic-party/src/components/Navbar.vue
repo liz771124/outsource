@@ -7,16 +7,11 @@
         </router-link>
       </h1>
       <ul class="flex items-center gap-5">
-        <li><router-link to="/" class="text-xl font-bold text-white hover:text-gray-50">首頁</router-link></li>
-        <li><router-link to="/gift" class="text-xl font-bold text-white hover:text-gray-50">報名拿好禮</router-link></li>
-        <li><router-link to="/game" class="text-xl font-bold text-white hover:text-gray-50">主題體驗區</router-link></li>
+        <li><router-link to="/" class="text-xl font-bold">首頁</router-link></li>
+        <li><router-link to="/gift" class="text-xl font-bold">報名拿好禮</router-link></li>
+        <li><router-link to="/game" class="text-xl font-bold">主題體驗區</router-link></li>
+        <li><router-link to="/knowledge" class="text-xl font-bold">知識</router-link></li>
       </ul>
-      <nav>
-      <a href="/">首頁</a>
-      <a href="/gift">禮物</a>
-      <a href="/game">遊戲</a>
-      <a href="/knowledge">知識</a>
-    </nav>
     </div>
   </nav>
 </template>
