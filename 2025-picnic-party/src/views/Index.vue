@@ -26,7 +26,7 @@ function addItem(formData) {
 <template>
   <div>
     首頁首頁首頁首頁
-    <header class="flex h-screen items-center justify-center bg-cover bg-no-repeat p-5">
+<header class="flex h-screen items-center justify-center bg-cover bg-no-repeat p-5">
       <div class="flex flex-col gap-5">
         <router-link to="/">
           <img src="../assets/img/date.png" alt="" width="500" height="400" />
