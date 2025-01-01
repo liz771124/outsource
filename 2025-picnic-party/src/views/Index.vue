@@ -29,7 +29,7 @@ function addItem(formData) {
 <header class="flex h-screen items-center justify-center bg-cover bg-no-repeat p-5">
       <div class="flex flex-col gap-5">
         <router-link to="/">
-          <img src="../assets/img/date.png" alt="" width="500" height="400" />
+          <img src="/img/date.png" alt="" width="500" height="400" />
         </router-link>
       </div>
     </header>

@@ -2,7 +2,7 @@
   import { onMounted } from "vue";
   import { Tooltip, Modal, Collapse, initTWE } from "tw-elements";
 
-  import BG from '../assets/img/bg_all.gif'
+  import BG from '@/assets/img/bg_all.gif'
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse });
   });
@@ -239,7 +239,7 @@
         title="Hi! I'm tooltip"
         >tooltip</a
       >
-      <img src="../assets/img/date.png">
+      <img src="/img/date.png">
     </p>
   </div>
 </template>
