@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 @tailwind base;
 
 @layer base {
@@ -15,67 +15,84 @@
 @tailwind components;
 @tailwind utilities;
 
-p {
-  @apply leading-[1.6];
+:root {
+  --Primary-100: #fcb292;
+  --Primary-200: #ea8768;
+  --Primary-300: #e96b30;
+  --Primary-400: #ee5d40;
+  --Primary-500: #e95513;
+  --Primary-600: #bd3d01;
+  --Primary-700: #993608;
+  --Primary-800: #5d2308;
+  --Primary-900: #3c1300;
+
+  --Gray-50: #f7f7f7;
+  --Gray-100: #eeeeef;
+  --Gray-200: #dbdcdc;
+  --Gray-300: #c8c9ca;
+  --Gray-400: #b4b4b5;
+  --Gray-500: #939393;
+  --Gray-600: #888888;
+  --Gray-700: #595757;
+  --Gray-800: #3e3a39;
+  --Gray-900: #231815;
+
+  // --Secondary-100: #edc0ad;
+  // --Secondary-200: #de917a;
+  // --Secondary-400: #d25b42;
+  // --Secondary-500: #e95513;
+  // --Secondary-600: #bd3c00;
+  // --Secondary-700: #c30d23;
+
+  --swiper-navigation-size: 20px !important;
+  --swiper-navigation-color: #fff !important;
+  --swiper-pagination-color: var(--junior-primary-500) !important;
+  --swiper-theme-color: var(--Primary-500) !important;
+  --swiper-pagination-bottom: -30px;
 }
 
-:root {
-    --Primary-50: #e8f9ff;
-    --Primary-100: #ddf7ff;
-    --Primary-200: rgb(138, 212, 237);
-    --Primary-300: #69caea;
-    --Primary-400: rgb(79, 195, 234);
-    --Primary-500: #e95513;
-    --Primary-600: #1790b9;
-    --Primary-700: #006d91;
-    --Primary-800: #00546f;
-    --Primary-900: #233034;
-  
-    --Gray-50: #f7f7f7;
-    --Gray-100: #eeeeef;
-    --Gray-200: #dbdcdc;
-    --Gray-300: #c8c9ca;
-    --Gray-400: #b4b4b5;
-    --Gray-500: #939393;
-    --Gray-600: #888888;
-    --Gray-700: #595757;
-    --Gray-800: #3e3a39;
-    --Gray-900: #231815;
-  
-    --Secondary-100: #edc0ad;
-    --Secondary-200: #de917a;
-    --Secondary-400: #d25b42;
-    --Secondary-500: #e95513;
-    --Secondary-600: #bd3c00;
-    --Secondary-700: #c30d23;
-  
-    --swiper-navigation-size: 20px !important;
-    --swiper-navigation-color: #fff !important;
-    --swiper-pagination-color: var(--junior-primary-500) !important;
+body {
+  color: var(--gray-900);
+  font-size: 16px;
+  overflow-x: hidden;
+}
+main {
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--Primary-500);
+  border-radius: 10px;
+  border: 3px solid var(--Primary-100);
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #bd3c00;
+  width: 50px;
+  height: 50px;
+  &:hover {
+    background-color: #de917a;
   }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    color: var(--gray-900);
-    font-size: 16px;
-  }
-  
-  .swiper {
-    width: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+}

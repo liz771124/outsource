@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./node_modules/tw-elements/js/**/*.js"
+    './index.html',
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './node_modules/tw-elements/js/**/*.js'
   ],
   theme: {
     fontSize: {
@@ -19,11 +19,10 @@ module.exports = {
       center: true,
       padding: '1rem',
       screens: {
-        sm: '600px',
-        md: '768',
+        sm: '100%',
+        md: '100%',
         lg: '984px',
-        xl: '1240px',
-        '2xl': '1496px'
+        xl: '1200px'
       }
     },
     extend: {
@@ -54,7 +53,7 @@ module.exports = {
         //   700: 'var(--Gray-700)',
         //   900: 'var(--Gray-900)'
         // },
-  
+
         // gray2: {
         //   100: '#000',
         //   200: '#e1e1e1',
@@ -66,7 +65,7 @@ module.exports = {
         //   800: '#363636',
         //   900: '#1f1f1f'
         // },
-  
+
         'primary-50': 'rgba(var(--Primary-100), 0.05)',
         'primary-100': 'var(--Primary-100)',
         'primary-300': 'var(--Primary-300)',
@@ -75,14 +74,14 @@ module.exports = {
         'primary-600': 'var(--Primary-600)',
         'primary-700': 'var(--Primary-700)',
         'primary-900': 'var(--Primary-900)',
-  
-        'secondary-100': 'var(--Secondary-100)',
-        'secondary-300': 'var(--Secondary-300)',
-        'secondary-500': 'var(--Secondary-500)',
-        'secondary-600': 'var(--Secondary-600)',
-        'secondary-700': 'var(--Secondary-700)',
-        'secondary-900': 'var(--Secondary-900)',
-  
+
+        // 'secondary-100': 'var(--Secondary-100)',
+        // 'secondary-300': 'var(--Secondary-300)',
+        // 'secondary-500': 'var(--Secondary-500)',
+        // 'secondary-600': 'var(--Secondary-600)',
+        // 'secondary-700': 'var(--Secondary-700)',
+        // 'secondary-900': 'var(--Secondary-900)',
+
         // 'success-100': 'var(--Success-100)',
         // 'success-200': 'var(--Success-300)',
         // 'success-400': 'var(--Success-400)',
@@ -90,7 +89,7 @@ module.exports = {
         // 'success-600': 'var(--Success-600)',
         // 'success-700': 'var(--Success-700)',
         // 'success-900': 'var(--Success-900)',
-  
+
         // 'worry-100': 'var(--Worry-100)',
         // 'worry-300': 'var(--Worry-300)',
         // 'worry-400': 'var(--Worry-400)',
@@ -98,7 +97,7 @@ module.exports = {
         // 'worry-600': 'var(--Worry-600)',
         // 'worry-700': 'var(--Worry-700)',
         // 'worry-900': 'var(--Worry-900)',
-  
+
         // 'info-100': 'var(--Info-100)',
         // 'info-300': 'var(--Info-300)',
         // 'info-400': 'var(--Info-400)',
@@ -106,7 +105,7 @@ module.exports = {
         // 'info-600': 'var(--Info-600)',
         // 'info-700': 'var(--Info-700)',
         // 'info-900': 'var(--Info-900)',
-  
+
         // 'danger-100': 'var(--Danger-100)',
         // 'danger-300': 'var(--Danger-300)',
         // 'danger-400': 'var(--Danger-400)',
@@ -114,7 +113,7 @@ module.exports = {
         // 'danger-600': 'var(--Danger-600)',
         // 'danger-700': 'var(--Danger-700)',
         // 'danger-900': 'var(--Danger-900)',
-  
+
         'gray2-100': 'var(--Gray-100)',
         'gray2-300': 'var(--Gray-300)',
         'gray2-400': 'var(--Gray-400)',
@@ -122,7 +121,7 @@ module.exports = {
         'gray2-600': 'var(--Gray-600)',
         'gray2-700': 'var(--Gray-700)',
         'gray2-900': 'var(--Gray-900)'
-  
+
         // 'typography-100': 'var(--Typography-100)',
         // 'typography-200': 'var(--Typography-200)',
         // 'typography-300': 'var(--Typography-300)',
@@ -130,7 +129,7 @@ module.exports = {
         // 'typography-500': 'var(--Typography-500)',
         // 'typography-link': 'var(--Typography-link)',
         // 'typography-money': 'var(--Typography-money)',
-  
+
         // 'event-100': 'var(--Event-100)',
         // 'event-300': 'var(--Event-300)',
         // 'event-500': 'var(--Event-500)'
@@ -140,8 +139,10 @@ module.exports = {
       })
     }
   },
-  darkMode: "class",
-  plugins: [  require('@tailwindcss/container-queries'), 
+  darkMode: 'class',
+  plugins: [
+    require('@tailwindcss/container-queries'),
     require('@tailwindcss/aspect-ratio'),
-    require("tw-elements/plugin.cjs")]
+    require('tw-elements/plugin.cjs')
+  ]
 }
