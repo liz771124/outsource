@@ -4,22 +4,20 @@
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
-
   const { isLoading } = useLoading()
 
   onMounted(() => {
-    // Hero Image 漂浮動畫
     gsap.to('.hero-img', {
-      // x: () => gsap.utils.random(-100, 100),
+      x: () => gsap.utils.random(-100, 100),
       y: () => gsap.utils.random(-10, 10),
-      duration: 2, // 動畫持續時間
-      ease: 'sine.inOut', // 平滑的進出效果
-      repeat: -1, // 無限重複
-      yoyo: true // 動畫來回播放
+      duration: 2,
+      ease: 'sine.inOut',
+      repeat: -1,
+      yoyo: true
     })
     gsap.to('.hero-title', {
-      y: -5,
-      duration: 1, // 動畫持續時間
+      y: () => gsap.utils.random(-100, 100),
+      duration: 1,
       ease: 'sine.inOut',
       repeat: -1,
       yoyo: true
@@ -58,7 +56,7 @@
     <div class="hero-bg absolute inset-0 h-full w-full">
       <img
         class="h-full w-full object-cover"
-        src="https://www.pngall.com/wp-content/uploads/15/Anime-Speed-Lines-PNG-Cutout.png"
+        src="/img/speed-line.png"
         alt=""
       />
     </div>
@@ -66,7 +64,7 @@
       <div class="hero-img">
         <img width="200" src="/img/hero-img.png" alt="Hero Image" />
       </div>
-      <div class="hero-title text-center text-xl">Loading...</div>
+      <div class="hero-title text-center text-xl font-bold">Loading...</div>
     </div>
   </div>
 </template>

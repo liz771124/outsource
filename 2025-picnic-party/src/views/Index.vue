@@ -42,6 +42,32 @@
           <div>就從今年的10歲生日派對開始吧！</div>
         </div>
       </div>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <a href="#">
+          <img src="/img/ticket-01.png" alt="" />
+        </a>
+        <a href="#">
+          <img src="/img/ticket-02.png" alt="" />
+        </a>
+        <a href="#">
+          <img src="/img/ticket-02.png" alt="" />
+        </a>
+      </div>
+      <div>
+        <div
+          data-twe-toggle="modal"
+          data-twe-target="#exampleModal"
+          data-twe-ripple-init
+          data-twe-ripple-color="light"
+        >
+          <img class="hidden md:block" src="/img/ticket-gift-01.png" alt="" />
+          <img class="block md:hidden" src="/img/ticket-gift-01-s.png" alt="" />
+        </div>
+        <div>
+          <img class="hidden md:block" src="/img/ticket-gift-02.png" alt="" />
+          <img class="block md:hidden" src="/img/ticket-gift-02-s.png" alt="" />
+        </div>
+      </div>
       <div
         class="flex flex-wrap gap-5 rounded-lg bg-white p-8 shadow-xl md:flex-nowrap"
       >
@@ -69,17 +95,6 @@
         </a>
       </div>
       <div>
-        <button
-          type="button"
-          class="inline-block rounded bg-primary-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2"
-          data-twe-toggle="modal"
-          data-twe-target="#exampleModal"
-          data-twe-ripple-init
-          data-twe-ripple-color="light"
-        >
-          燈箱按鈕
-        </button>
-
         <div
           data-twe-modal-init
           class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
@@ -129,18 +144,16 @@
               </div>
 
               <div class="relative flex-auto p-4" data-twe-modal-body-ref>
-                <p>
-                  野餐日開心玩，服裝搭配讓全家照片加倍可愛！當天只要穿著搭配橘色配件，就可以到指定點兌換「來寶慶生頭套」，限量2,000組！
-                </p>
-                <h3>新北大都會公園</h3>
-                <p>地址:新北市三重區水漾路一段</p>
-                <h3>捷運</h3>
-                <p>1.捷運中和線三重站，1出口即可抵達。</p>
-                <p>2.機場捷運線A2三重站，從1A出口即可抵達 公車</p>
-                <p>1.捷運三重站:62、227區、232、264、640。</p>
-                <p>
-                  2.菜寮（重陽路）站:14、227、227區、232、292、292副、621、640、662、803、806、1212、忠孝幹線。
-                </p>
+                <div>
+                  <img src="/img/gi_10.png" class="img-fluid" />
+                  <div class="card-title2">
+                    【小兒利撒爾】<br />
+                    晶明葉黃素咀嚼錠(36粒)
+                  </div>
+                  <p>
+                    專為3歲以上學齡兒童設計，純量2mg美國專利游離型葉黃素，日本黑豆種皮+山桑子萃取，適合經常閱讀、打電腦、看電視孩童。藍莓果汁口味，不添加人工防腐劑，健康好吃安心無負擔。
+                  </p>
+                </div>
               </div>
 
               <div
