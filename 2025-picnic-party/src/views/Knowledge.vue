@@ -6,64 +6,20 @@
     Object.entries(
       import.meta.glob('@/assets/img/*.{jpg,png}', { eager: true })
     ).map(([path, module]) => [
-      path.split('/').pop().split('.')[0], // key: filename without extension
-      module.default // value: image path
+      path.split('/').pop().split('.')[0],
+      module.default
     ])
   )
+
   const images = [
     {
-      src: img1,
+      src: 'activity-01.png',
       title: '不只是我們共創的里程碑，也象徵著「幸福永續」',
       link: '#'
     },
     {
-      src: img2,
-      title:
-        '不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img1,
-      title: '不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img2,
-      title:
-        '不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img1,
-      title: '不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img2,
-      title:
-        '不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img1,
-      title: '不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img2,
-      title:
-        '不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img1,
-      title: '不只是我們共創的里程碑，也象徵著「幸福永續」',
-      link: '#'
-    },
-    {
-      src: img2,
-      title:
-        '不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」不只是我們共創的里程碑，也象徵著「幸福永續」',
+      src: 'fixed-btn-01.png',
+      title: '不只是我們共創的里程碑...',
       link: '#'
     }
   ]

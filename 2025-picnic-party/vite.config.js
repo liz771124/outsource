@@ -1,22 +1,25 @@
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
+import path from 'path'
 import vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
-  base: './',
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
   plugins: [vue(), Pages(), Components({ dirs: ['src/components'] })],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': path.resolve(__dirname, 'src'),
+      '@public': path.resolve(__dirname, 'public'),
+      '@assets': path.resolve(__dirname, 'src/assets')
     }
   },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     assetsDir: 'assets',
-    copyPublicDir: true, // 確保複製 public 目錄
+    copyPublicDir: true,
     rollupOptions: {
       output: {
         assetFileNames: (assetInfo) => {

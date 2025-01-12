@@ -4,7 +4,6 @@
   import 'swiper/css'
   import 'swiper/css/navigation'
   import 'swiper/css/pagination'
-
   import { Pagination, Navigation } from 'swiper/modules'
 
   const props = defineProps({
@@ -13,21 +12,22 @@
       default: 'w-full'
     },
     swiperConfig: {
-      type: Object,
-      required: true
+      type: Object
     },
     swiperItems: {
-      type: Object,
+      type: Array,
       required: true
     }
   })
+
   const { swiperConfig, swiperItems } = props
+  const imagePath = import.meta.env.VITE_IMAGE_PATH
 </script>
 
 <template>
   <swiper
     :slides-per-view="4"
-    :space-between="10"
+    :space-between="20"
     :autoplay="{
       delay: 5000,
       disableOnInteraction: false
@@ -46,7 +46,7 @@
     >
       <div class="h-[200px] w-full overflow-hidden">
         <img
-          :src="item.src"
+          :src="`${imagePath}${item.src}`"
           :alt="item.title"
           class="h-full w-full object-cover"
         />

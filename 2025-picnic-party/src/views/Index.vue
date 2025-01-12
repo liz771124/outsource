@@ -3,6 +3,13 @@
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+  import { Swiper, SwiperSlide } from 'swiper/vue'
+  import { Pagination, Navigation } from 'swiper/modules'
+  import 'swiper/css'
+  import 'swiper/css/navigation'
+  import 'swiper/css/pagination'
+
   gsap.registerPlugin(ScrollTrigger)
 
   const container = ref(null)
@@ -56,7 +63,7 @@
       <div>
         <div
           data-twe-toggle="modal"
-          data-twe-target="#exampleModal"
+          data-twe-target="#exampleModalCenter2"
           data-twe-ripple-init
           data-twe-ripple-color="light"
         >
@@ -94,34 +101,63 @@
           </button>
         </a>
       </div>
+      <div class="py-10">
+        <swiper
+          :slides-per-view="4"
+          :space-between="20"
+          :autoplay="{
+            delay: 5000,
+            disableOnInteraction: false
+          }"
+          :pagination="{
+            clickable: true
+          }"
+          :modules="[Pagination, Navigation]"
+          navigation
+          loop
+        >
+          <swiper-slide class="flex flex-col gap-3">
+            <div
+              class="h-[200px] w-full overflow-hidden"
+              data-twe-toggle="modal"
+              data-twe-target="#exampleModalCenter"
+              data-twe-ripple-init
+              data-twe-ripple-color="light"
+            >
+              <img src="/img/ticket-01.png" alt="" />
+            </div>
+          </swiper-slide>
+        </swiper>
+      </div>
       <div>
         <div
           data-twe-modal-init
           class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-          id="exampleModal"
+          id="exampleModalCenter"
           tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-modal="true"
+          role="dialog"
         >
           <div
             data-twe-modal-dialog-ref
-            class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]"
+            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
           >
             <div
-              class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none"
+              class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
             >
               <div
-                class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-primary-100 p-4"
+                class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 p-4 dark:border-white/10"
               >
                 <h5
-                  class="text5-xl font-medium leading-normal text-surface"
-                  id="exampleModalLabel"
+                  class="text-xl font-medium leading-normal text-surface dark:text-white"
+                  id="exampleModalCenterTitle"
                 >
-                  趴踢 Dress code 穿戴橘色配件
+                  Modal title
                 </h5>
                 <button
                   type="button"
-                  class="box-content rounded-none border-none text-primary-500 hover:text-primary-800 hover:no-underline focus:text-primary-800 focus:opacity-100 focus:shadow-none focus:outline-none"
+                  class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
                   data-twe-modal-dismiss
                   aria-label="Close"
                 >
@@ -143,25 +179,18 @@
                 </button>
               </div>
 
-              <div class="relative flex-auto p-4" data-twe-modal-body-ref>
-                <div>
-                  <img src="/img/gi_10.png" class="img-fluid" />
-                  <div class="card-title2">
-                    【小兒利撒爾】<br />
-                    晶明葉黃素咀嚼錠(36粒)
-                  </div>
-                  <p>
-                    專為3歲以上學齡兒童設計，純量2mg美國專利游離型葉黃素，日本黑豆種皮+山桑子萃取，適合經常閱讀、打電腦、看電視孩童。藍莓果汁口味，不添加人工防腐劑，健康好吃安心無負擔。
-                  </p>
-                </div>
+              <!-- Modal body -->
+              <div class="relative p-4">
+                <p>This is a vertically centered modal.</p>
               </div>
 
+              <!-- Modal footer -->
               <div
-                class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-primary-100 p-4"
+                class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-4 dark:border-white/10"
               >
                 <button
                   type="button"
-                  class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                  class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
                   data-twe-modal-dismiss
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
@@ -170,11 +199,90 @@
                 </button>
                 <button
                   type="button"
-                  class="ms-1 inline-block rounded bg-primary-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2"
+                  class="ms-1 inline-block rounded bg-primary-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
                 >
-                  立即購票
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-twe-modal-init
+          class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+          id="exampleModalCenter2"
+          tabindex="-1"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-modal="true"
+          role="dialog"
+        >
+          <div
+            data-twe-modal-dialog-ref
+            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+          >
+            <div
+              class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
+            >
+              <div
+                class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 p-4 dark:border-white/10"
+              >
+                <h5
+                  class="text-xl font-medium leading-normal text-surface dark:text-white"
+                  id="exampleModalCenterTitle"
+                >
+                  Modal title
+                </h5>
+                <button
+                  type="button"
+                  class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                  data-twe-modal-dismiss
+                  aria-label="Close"
+                >
+                  <span class="[&>svg]:h-6 [&>svg]:w-6">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="relative p-4">
+                <p>This is a vertically centered modal.</p>
+              </div>
+
+              <!-- Modal footer -->
+              <div
+                class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-4 dark:border-white/10"
+              >
+                <button
+                  type="button"
+                  class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-200 focus:bg-primary-accent-200 focus:outline-none focus:ring-0 active:bg-primary-accent-200 dark:bg-primary-300 dark:hover:bg-primary-400 dark:focus:bg-primary-400 dark:active:bg-primary-400"
+                  data-twe-modal-dismiss
+                  data-twe-ripple-init
+                  data-twe-ripple-color="light"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  class="ms-1 inline-block rounded bg-primary-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+                  data-twe-ripple-init
+                  data-twe-ripple-color="light"
+                >
+                  Save changes
                 </button>
               </div>
             </div>
