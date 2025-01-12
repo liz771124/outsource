@@ -1,5 +1,5 @@
 <script setup>
-  // import sponsors from '@/composables/useSponsors'
+  const imagePath = import.meta.env.VITE_IMAGE_PATH
 </script>
 
 <template>
@@ -34,21 +34,10 @@
         </div>
         <div class="flex gap-3">
           <a href="#" target="_blank">
-            <img src="/img/sponsor/logo04.png" alt="" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="/img/sponsor/logo05.png" alt="" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="/img/sponsor/logo06.png" alt="" />
+            <img :src="`${imagePath}sponsor/logo04.png`" alt="" />
           </a>
         </div>
       </div>
-      <!-- <div class="grid grid-cols-2 items-center md:grid-cols-4">
-        <div v-for="(src, name) in sponsors" :key="name" class="text-center">
-          <img :src="src" :alt="name" class="mx-auto" />
-        </div>
-      </div> -->
     </div>
   </div>
 </template>

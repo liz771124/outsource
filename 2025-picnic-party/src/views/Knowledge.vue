@@ -21,6 +21,26 @@
       src: 'fixed-btn-01.png',
       title: '不只是我們共創的里程碑...',
       link: '#'
+    },
+    {
+      src: 'ticket-01.png',
+      title: '不只是我們共創的里程碑...',
+      link: '#'
+    },
+    {
+      src: 'ticket-gift-01.png',
+      title: '不只是我們共創的里程碑...',
+      link: '#'
+    },
+    {
+      src: 'ticket-02.png',
+      title: '不只是我們共創的里程碑...',
+      link: '#'
+    },
+    {
+      src: 'ticket-gift-01.png',
+      title: '不只是我們共創的里程碑...',
+      link: '#'
     }
   ]
 </script>
