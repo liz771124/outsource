@@ -3,7 +3,6 @@
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import gsap from 'gsap'
   import { Swiper, SwiperSlide } from 'swiper/vue'
-
   import { Pagination, Navigation } from 'swiper/modules'
 
   const props = defineProps({
@@ -22,8 +21,7 @@
 
   const { swiperConfig, swiperItems } = props
   const imagePath = import.meta.env.VITE_IMAGE_PATH
-  const selectedImage = ref()
-
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
   const swiperInstance = ref()
 
   const onSwiper = (swiper) => {

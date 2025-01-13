@@ -9,21 +9,23 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
 
-  const circle = ref(null)
+  // const circle = ref(null)
 
-  const onClickGood = (event) => {
-    gsap.to(event.target, { rotation: '+=360' })
-  }
+  // const onClickGood = (event) => {
+  //   gsap.to(event.target, { rotation: '+=360' })
+  // }
 
-  const setAnimation = () => {
-    gsap.from('.box', { opacity: 0, stagger: 0.1 })
-    gsap.to('.box', { rotation: '+=360', duration: 3 })
-    gsap.to(circle.value, { rotation: '-=360', duration: 3 })
-  }
+  // const setAnimation = () => {
+  //   gsap.from('.box', { opacity: 0, stagger: 0.1 })
+  //   gsap.to('.box', { rotation: '+=360', duration: 3 })
+  //   gsap.to(circle.value, { rotation: '-=360', duration: 3 })
+  // }
+
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse })
-    setAnimation()
+    // setAnimation()
   })
 </script>
 
@@ -99,8 +101,8 @@
       </div>
       <div class="py-10">
         <swiper
-          :slides-per-view="4"
-          :space-between="20"
+          :slides-per-view="isMobile ? 2.5 : 4"
+          :space-between="isMobile ? 10 : 20"
           :autoplay="{
             delay: 5000,
             disableOnInteraction: false

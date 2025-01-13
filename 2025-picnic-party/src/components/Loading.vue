@@ -8,15 +8,18 @@
 
   onMounted(() => {
     gsap.to('.hero-img', {
-      x: () => gsap.utils.random(-100, 100),
-      y: () => gsap.utils.random(-10, 10),
+      // x: () => gsap.utils.random(-100, 100),
+      // y: () => gsap.utils.random(-10, 10),
+      x: 20,
+      y: 10,
       duration: 2,
       ease: 'sine.inOut',
       repeat: -1,
       yoyo: true
     })
     gsap.to('.hero-title', {
-      y: () => gsap.utils.random(-100, 100),
+      x: 5,
+      y: 5,
       duration: 1,
       ease: 'sine.inOut',
       repeat: -1,
