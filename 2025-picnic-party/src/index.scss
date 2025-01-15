@@ -37,12 +37,12 @@
   --Gray-800: #3e3a39;
   --Gray-900: #231815;
 
-  // --Secondary-100: #edc0ad;
-  // --Secondary-200: #de917a;
-  // --Secondary-400: #d25b42;
-  // --Secondary-500: #e95513;
-  // --Secondary-600: #bd3c00;
-  // --Secondary-700: #c30d23;
+  --kv-light-yellow: #fffcd3;
+  --kv-light-green: #e1f9e9;
+  --kv-light-orange: #fbd3ac;
+  --kv-orange: #f5a744;
+  --kv-green: #39bf63;
+  --kv-blue: #053793;
 
   --swiper-navigation-size: 20px !important;
   --swiper-navigation-color: #fff !important;
@@ -95,4 +95,13 @@ main {
   &:hover {
     background-color: #de917a;
   }
+}
+
+.bg-yellow {
+  background-image: url('../public/img/bg-yellow.jpg');
+  background-size: cover;
+}
+.bg-green {
+  background-image: url('../public/img/bg-green.jpg');
+  background-size: cover;
 }

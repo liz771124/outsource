@@ -75,12 +75,12 @@ module.exports = {
         'primary-700': 'var(--Primary-700)',
         'primary-900': 'var(--Primary-900)',
 
-        // 'secondary-100': 'var(--Secondary-100)',
-        // 'secondary-300': 'var(--Secondary-300)',
-        // 'secondary-500': 'var(--Secondary-500)',
-        // 'secondary-600': 'var(--Secondary-600)',
-        // 'secondary-700': 'var(--Secondary-700)',
-        // 'secondary-900': 'var(--Secondary-900)',
+        'kv-light-yellow': 'var(--kv-light-yellow)',
+        'kv-light-green': 'var(--kv-light-green)',
+        'kv-light-orange': 'var(--kv-light-orange)',
+        'kv-orange': 'var(--kv-orange)',
+        'kv-green': 'var(--kv-green)',
+        'kv-blue': 'var(--kv-blue)',
 
         // 'success-100': 'var(--Success-100)',
         // 'success-200': 'var(--Success-300)',

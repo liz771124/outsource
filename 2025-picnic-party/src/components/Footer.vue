@@ -10,7 +10,7 @@
   <footer class="bg-primary-500 text-white">
     <div class="container">
       <div class="py-4">
-        <div class="me-md-auto text-md-start text-center">
+        <div class="text-center">
           <div class="text-sm">
             Copyright© 1999~2025 遠見天下文化出版股份有限公司. All rights
             reserved.<br />
@@ -20,6 +20,9 @@
 
             服務專線：(02)2662-0012 服務時間：週一~週五 9:00~12:30,13:30~17:00
           </div>
+        </div>
+        <div class="fixed bottom-5 right-3 w-[80px]">
+          <img src="/img/fixed-buy.svg" alt="" />
         </div>
       </div>
     </div>

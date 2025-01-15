@@ -21,6 +21,13 @@
   //   gsap.to(circle.value, { rotation: '-=360', duration: 3 })
   // }
 
+  defineProps({
+    words: {
+      type: Array,
+      default: () => ['精', '彩', '表', '演']
+    }
+  })
+
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
 
   onMounted(() => {
@@ -37,26 +44,61 @@
       </router-link>
     </Header>
 
-    <div class="container py-10">
-      <div class="">
-        <div class="flex flex-col items-center justify-center gap-5 text-2xl">
-          <div>未來親子野餐日陪伴孩子10週年啦！</div>
-          <div>不只是我們共創的里程碑，也象徵著「幸福永續」</div>
-          <div>期待能陪伴孩子，朝著更美好的未來邁進！</div>
-          <div>更多歡樂、甜蜜的親子時光，</div>
-          <div>就從今年的10歲生日派對開始吧！</div>
+    <!-- <div class="flex items-center gap-1">
+      <div v-for="(word, index) in words" :key="index" class="relative">
+        <div
+          class="relative flex h-14 w-14 items-center justify-center rounded-full bg-orange-400"
+        >
+          <div
+            class="absolute -right-2 top-[5px] h-4 w-4 -translate-y-1/2 rotate-[270deg] bg-orange-400"
+            :style="{
+              clipPath: 'polygon(0 0, 100% 50%, 0 100%)'
+            }"
+          ></div>
+          <span class="text-2xl font-bold text-white">{{ word }}</span>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3">
-        <a href="#">
-          <img src="/img/ticket-01.png" alt="" />
-        </a>
-        <a href="#">
-          <img src="/img/ticket-02.png" alt="" />
-        </a>
-        <a href="#">
-          <img src="/img/ticket-02.png" alt="" />
-        </a>
+    </div> -->
+
+    <div>
+      <div class="bg-yellow py-16">
+        <div class="container">
+          <div class="flex gap-3">
+            <div>
+              <iframe
+                class="aspect-ratio-[16/9]"
+                src="https://www.youtube.com/embed/HfbW8DL1Ld4?si=qtjNJwouQu-pgyAa&amp;controls=0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div
+              class="flex grow flex-col items-center justify-center gap-3 text-2xl"
+            >
+              <div>未來親子野餐日陪伴孩子10週年啦！</div>
+              <div>不只是我們共創的里程碑，也象徵著「幸福永續」</div>
+              <div>期待能陪伴孩子，朝著更美好的未來邁進！</div>
+              <div>更多歡樂、甜蜜的親子時光，</div>
+              <div>就從今年的10歲生日派對開始吧！</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-green py-16">
+        <div class="container">
+          <div class="grid grid-cols-1 md:grid-cols-3">
+            <a href="#">
+              <img src="/img/ticket-01.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="/img/ticket-02.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="/img/ticket-02.png" alt="" />
+            </a>
+          </div>
+        </div>
       </div>
       <div>
         <div
@@ -74,17 +116,15 @@
         </div>
       </div>
       <div
+        class="mx-auto inline-block border-e-2 border-s-2 border-primary-500 px-5 text-3xl text-primary-500"
+      >
+        售票資訊
+      </div>
+      <div
         class="flex flex-wrap gap-5 rounded-lg bg-white p-8 shadow-xl md:flex-nowrap"
       >
         <div class="w-1/2">
           <!-- <img src="/img/kv-index.png" alt="" width="650" /> -->
-          <iframe
-            class="h-full w-full"
-            src="https://www.youtube.com/embed/HfbW8DL1Ld4?si=qtjNJwouQu-pgyAa&amp;controls=0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
         </div>
         <a href="#" class="flex flex-col gap-5">
           <div class="text-2xl font-bold text-primary-500">互動好禮</div>
