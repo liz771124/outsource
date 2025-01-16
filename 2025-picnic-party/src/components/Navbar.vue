@@ -6,45 +6,47 @@
   })
 </script>
 <template>
-  <nav class="bg-kv-green sticky top-0 z-10 px-3 py-3">
-    <div class="container flex items-center justify-between px-3">
+  <nav class="sticky top-0 z-10 bg-kv-green py-3">
+    <div class="container flex items-center justify-between">
       <h1>
         <router-link to="/">
-          <img
-            src="../assets/img/logo.svg"
-            alt="logo"
-            width="180"
-            height="90"
-          />
+          <img src="/img/logo.svg" alt="logo" width="150" />
         </router-link>
       </h1>
       <ul class="hidden items-center gap-5 md:flex">
         <li>
           <router-link
             to="/gift"
-            class="text-kv-green rounded-full bg-white px-4 py-2 text-xl font-bold"
+            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
             >互動好禮</router-link
           >
         </li>
         <li>
           <router-link
             to="/game"
-            class="text-kv-green rounded-full bg-white px-4 py-2 text-xl font-bold"
+            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
             >闖關好樂</router-link
           >
         </li>
         <li>
           <router-link
             to="/show"
-            class="text-kv-green rounded-full bg-white px-4 py-2 text-xl font-bold"
+            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
             >派對好秀</router-link
           >
         </li>
         <li>
           <router-link
             to="/knowledge"
-            class="text-kv-green rounded-full bg-white px-4 py-2 text-xl font-bold"
+            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
             >知識好訊</router-link
+          >
+        </li>
+        <li>
+          <router-link
+            to="/knowledge"
+            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
+            >更多資訊</router-link
           >
         </li>
       </ul>
@@ -89,23 +91,23 @@
         data-twe-offcanvas-init
       >
         <div class="offcanvas-body flex-grow overflow-y-auto p-4">
-          <ul>
-            <li>
+          <ul class="flex flex-col gap-5 text-2xl">
+            <li class="border-b">
               <router-link to="/gift" class="text-xl font-bold"
                 >互動好禮</router-link
               >
             </li>
-            <li>
+            <li class="border-b">
               <router-link to="/game" class="text-xl font-bold"
                 >闖關好樂</router-link
               >
             </li>
-            <li>
+            <li class="border-b">
               <router-link to="/show" class="text-xl font-bold"
                 >派對好秀</router-link
               >
             </li>
-            <li>
+            <li class="border-b">
               <router-link to="/knowledge" class="text-xl font-bold"
                 >知識好訊</router-link
               >

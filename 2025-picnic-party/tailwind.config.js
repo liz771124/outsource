@@ -78,7 +78,7 @@ module.exports = {
         'kv-light-yellow': 'var(--kv-light-yellow)',
         'kv-light-green': 'var(--kv-light-green)',
         'kv-light-orange': 'var(--kv-light-orange)',
-        'kv-orange': 'var(--kv-orange)',
+        'kv-yellow': 'var(--kv-yellow)',
         'kv-green': 'var(--kv-green)',
         'kv-blue': 'var(--kv-blue)',
 

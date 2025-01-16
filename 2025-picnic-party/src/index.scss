@@ -40,7 +40,7 @@
   --kv-light-yellow: #fffcd3;
   --kv-light-green: #e1f9e9;
   --kv-light-orange: #fbd3ac;
-  --kv-orange: #f5a744;
+  --kv-yellow: #f5a744;
   --kv-green: #39bf63;
   --kv-blue: #053793;
 
@@ -104,4 +104,24 @@ main {
 .bg-green {
   background-image: url('../public/img/bg-green.jpg');
   background-size: cover;
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    height: 100px;
+  }
+  &:before,
+  &:after {
+    height: 100px;
+    background-image: url('../public/img/bg-green-line-t.svg');
+    top: 0;
+    left: 0;
+  }
+  &:after {
+    height: 100px;
+    background-image: url('../public/img/bg-green-line-b.svg');
+    top: 0;
+    left: 0;
+  }
 }

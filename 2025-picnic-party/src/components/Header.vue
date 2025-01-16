@@ -1,5 +1,5 @@
 <script setup>
-  import BG from '@/assets/img/bg_all.gif'
+  import BG from '@/assets/img/kv-main.png'
 </script>
 <template>
   <header
