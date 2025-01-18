@@ -41,7 +41,7 @@
       price: '$11,880 / 2名'
     },
     {
-      name: '澎澄飯店',
+      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
       image:
         'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
       room: 'CookieRun 薑餅人主題房',
@@ -51,7 +51,7 @@
       price: '$11,880 / 2名'
     },
     {
-      name: '澎澄飯店',
+      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
       image:
         'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
       room: 'CookieRun 薑餅人主題房',
@@ -61,7 +61,7 @@
       price: '$11,880 / 2名'
     },
     {
-      name: '澎澄飯店',
+      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
       image:
         'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
       room: 'CookieRun 薑餅人主題房',
@@ -140,44 +140,31 @@
 <template>
   <div>
     <Header />
-    <div class="container">
-      <div class="grid grid-cols-2 gap-10 md:grid-cols-3">
-        <div v-for="(item, index) in giftList" :key="index" class="gift-item">
-          <div class="relative my-6 flex flex-col rounded-lg">
-            <div class="relative mb-3 overflow-hidden rounded-md text-white">
-              <img :src="item.image" alt="w-full" />
-            </div>
-            <div>
-              <h2 class="mb-2 text-xl font-semibold">
-                {{ item.name }}
-              </h2>
-              <div class="mb-3">
-                {{ item.note }}
-              </div>
-              <div class="font-light leading-normal text-slate-600">
-                {{ item.description }}
-              </div>
-              <div class="text-center text-xl font-bold text-primary-500">
-                {{ item.price }}
-              </div>
-            </div>
+    <div class="bg-yellow">
+      <div class="container py-10">
+        <div class="mb-8 text-center">
+          <img class="mx-auto" width="300" src="/img/title-game.png" alt="" />
+          <div>
+            <div>只要集滿10個闖關印章，就能兌換抽獎券</div>
+            <div>超過50個好禮獎項，幸運兒就是你！</div>
           </div>
         </div>
-      </div>
-      <div class="container py-10">
-        <div
-          class="relative grid divide-x divide-white rounded-xl bg-primary-500 p-8 md:grid-cols-2"
-        >
-          <span
-            class="bg-kv-yellow absolute -top-5 start-5 inline-block rounded-tr-3xl py-2 pe-5 ps-6 text-2xl font-bold tracking-wide"
+
+        <div class="container py-10">
+          <div
+            class="relative grid divide-x divide-white rounded-xl bg-primary-500 p-8 md:grid-cols-2"
           >
-            報名送福袋
-          </span>
-          <div class="text-center">
-            <img src="/img/gift-intro-07.svg" alt="" />
-          </div>
-          <div class="text-center">
-            <img src="/img/gift-intro-08.svg" alt="" />
+            <span
+              class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-kv-yellow py-2 pe-5 ps-6 text-2xl font-bold tracking-wide"
+            >
+              報名送福袋
+            </span>
+            <div class="text-center">
+              <img src="/img/gift-intro-07.svg" alt="" />
+            </div>
+            <div class="text-center">
+              <img src="/img/gift-intro-08.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>

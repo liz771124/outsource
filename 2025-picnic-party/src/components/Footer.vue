@@ -81,6 +81,9 @@
             </ul>
           </div>
         </div>
+        <div class="fixed bottom-5 end-3" id="goTop">
+          <img width="40" height="40" src="/img/go-top.svg" alt="" />
+        </div>
         <div class="fixed bottom-5 right-3 w-[80px]">
           <img src="/img/fixed-buy-02.svg" alt="" />
         </div>

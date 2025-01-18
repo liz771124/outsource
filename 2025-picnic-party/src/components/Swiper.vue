@@ -57,22 +57,28 @@
         :key="index"
         class="flex flex-col gap-3"
       >
-        <div class="h-[200px] w-full overflow-hidden">
-          <img
-            :src="`${imagePath}${item.src}`"
-            :alt="item.title"
-            class="h-full w-full object-cover"
-            @click="goToSlide(index)"
-            data-twe-toggle="modal"
-            data-twe-target="#exampleModalCenter2"
-            data-twe-ripple-init
-            data-twe-ripple-color="light"
-          />
-        </div>
-        <div class="line-clamp-2 text-start">
-          <a :href="item.link" target="_blank">
-            {{ item.title }}
-          </a>
+        <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
+          <div>
+            <a :href="item.link" class="flex flex-col">
+              <div>
+                <img
+                  class="rounded-tl-2xl"
+                  :src="`${imagePath}${item.src}`"
+                  :alt="item.title"
+                  @click="goToSlide(index)"
+                  data-twe-toggle="modal"
+                  data-twe-target="#exampleModalCenter2"
+                  data-twe-ripple-init
+                  data-twe-ripple-color="light"
+                />
+              </div>
+              <div
+                class="relative -end-8 bottom-0 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+              >
+                {{ item.title }}
+              </div>
+            </a>
+          </div>
         </div>
       </swiper-slide>
     </swiper>
@@ -87,7 +93,7 @@
     >
       <div
         data-twe-modal-dialog-ref
-        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
       >
         <div
           class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"

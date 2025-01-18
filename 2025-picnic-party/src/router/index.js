@@ -3,6 +3,7 @@ import Home from '@/views/Index.vue'
 import Gift from '@/views/Gift.vue'
 import Game from '@/views/Game.vue'
 import Knowledge from '@/views/Knowledge.vue'
+import Notice from '@/views/Notice.vue'
 import Show from '@/views/Show.vue'
 import { useLoading } from '../composables/useLoading'
 
@@ -11,7 +12,8 @@ const routes = [
   { path: '/gift', component: Gift },
   { path: '/game', component: Game },
   { path: '/show', component: Show },
-  { path: '/knowledge', component: Knowledge }
+  { path: '/knowledge', component: Knowledge },
+  { path: '/notice', component: Notice }
 ]
 
 const router = createRouter({

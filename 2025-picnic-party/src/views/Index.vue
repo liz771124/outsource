@@ -44,28 +44,12 @@
       </router-link> -->
     </Header>
 
-    <!-- <div class="flex items-center gap-1">
-      <div v-for="(word, index) in words" :key="index" class="relative">
-        <div
-          class="relative flex h-14 w-14 items-center justify-center rounded-full bg-orange-400"
-        >
-          <div
-            class="absolute -right-2 top-[5px] h-4 w-4 -translate-y-1/2 rotate-[270deg] bg-orange-400"
-            :style="{
-              clipPath: 'polygon(0 0, 100% 50%, 0 100%)'
-            }"
-          ></div>
-          <span class="text-2xl font-bold text-white">{{ word }}</span>
-        </div>
-      </div>
-    </div> -->
-
     <div>
       <div class="bg-yellow py-16">
         <div class="container">
           <div class="flex flex-wrap gap-3">
             <iframe
-              class="aspect-video w-full max-w-[700px] md:h-[450px]"
+              class="aspect-video mx-auto w-full max-w-[700px] md:h-[450px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -85,38 +69,98 @@
       </div>
       <div class="bg-green py-16">
         <div class="container flex flex-col gap-10">
-          <div>
-            <img class="hidden md:block" src="/img/theme-01-l.png" alt="" />
-            <img
-              class="block md:hidden"
-              src="/img/ticket-gift-01-s.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img class="hidden md:block" src="/img/theme-02-l.png" alt="" />
-            <img
-              class="block md:hidden"
-              src="/img/ticket-gift-02-s.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img class="hidden md:block" src="/img/theme-03-l.png" alt="" />
-            <img
-              class="block md:hidden"
-              src="/img/ticket-gift-02-s.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img class="hidden md:block" src="/img/theme-04-l.png" alt="" />
-            <img
-              class="block md:hidden"
-              src="/img/ticket-gift-02-s.png"
-              alt=""
-            />
-          </div>
+          <a
+            href="#"
+            class="rounded-rl-2xl relative rounded-bl-[50px] rounded-tr-[50px] bg-primary-500 p-6 text-white"
+          >
+            <div
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+            >
+              <div class="lg:shrink-0">
+                <img class="w-full" src="/img/index-intro-02.png" alt="" />
+              </div>
+              <div class="relative grow p-5">
+                <div class="relative mb-3 inline-block pe-5 ps-3">
+                  <span
+                    class="absolute bottom-0 left-0 w-full rounded-tr-xl bg-kv-yellow px-6 py-2"
+                  ></span>
+                  <span
+                    class="relative z-10 text-4xl font-black tracking-wide text-white"
+                    >精彩表演</span
+                  >
+                </div>
+                <div class="flex w-full flex-col text-2xl tracking-wider">
+                  <div class="border-b border-dashed border-white py-2">
+                    孩子的春日派對、大人的歡聚時光！
+                  </div>
+                  <div class="border-b border-dashed border-white py-2">
+                    最精彩好看的舞台節目都在這，
+                  </div>
+                  <div class="border-b border-dashed border-white py-2">
+                    準備好一起 High 翻天吧！
+                  </div>
+                </div>
+                <div class="absolute -bottom-10 start-10 hidden md:block">
+                  <img
+                    class="w-[130px]"
+                    src="/img/index-intro-icon-01.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl tracking-wide text-white"
+                >
+                  看看表演
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="rounded-rl-2xl relative rounded-br-[50px] rounded-tl-[50px] bg-kv-green p-6 text-white"
+          >
+            <div
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+            >
+              <div class="order-2 lg:shrink-0">
+                <img class="w-full" src="/img/index-intro-02.png" alt="" />
+              </div>
+              <div class="relative grow p-5">
+                <div class="relative mb-3 inline-block pe-5 ps-3">
+                  <span
+                    class="absolute bottom-0 left-0 w-full rounded-tr-xl bg-kv-yellow px-6 py-2"
+                  ></span>
+                  <span
+                    class="relative z-10 text-4xl font-black tracking-wide text-white"
+                    >趣味闖關</span
+                  >
+                </div>
+                <div class="flex w-full flex-col text-2xl tracking-wider">
+                  <div class="border-b border-dashed border-white py-2">
+                    十大主題，兼具知識與趣味的闖關挑戰，
+                  </div>
+                  <div class="border-b border-dashed border-white py-2">
+                    親子共同完成任務，還有小農市集，
+                  </div>
+                  <div class="border-b border-dashed border-white py-2">
+                    美好回憶獎不完！
+                  </div>
+                </div>
+                <div class="end-15 absolute -bottom-10 hidden md:block">
+                  <img
+                    class="w-[130px]"
+                    src="/img/index-intro-icon-02.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl tracking-wide text-white"
+                >
+                  看看闖關
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
       <div class="bg-yellow py-16">
@@ -209,15 +253,7 @@
               ※【單組票】、【揪團票】、【慶生套票】下訂後，恕不接受換票。
             </div>
             <div class="mt-20 text-center font-bold">
-              <a
-                href="#"
-                class="relative mx-auto inline-block rounded-tl-3xl bg-kv-blue py-3 pe-16 ps-5 text-2xl font-bold tracking-wide text-white"
-              >
-                報名注意事項
-                <span class="absolute -end-[30px] -top-[50px]">
-                  <img src="/img/btn-d-01.png" alt="" />
-                </span>
-              </a>
+              <ButtonJoin :title="'報名注意事項'" />
             </div>
           </div>
         </div>
@@ -239,7 +275,6 @@
           </button>
         </a>
       </div> -->
-
     </div>
   </div>
 </template>
