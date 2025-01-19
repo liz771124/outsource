@@ -5,10 +5,6 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
 
-  onMounted(() => {
-    initTWE({ Tooltip, Modal, Collapse })
-  })
-
   const giftList = [
     {
       name: '澎澄飯店',
@@ -18,7 +14,17 @@
       note: '(加贈一位12歲以下兒童入住+開房禮)',
       description:
         '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
+      price: '＄獎項價值 10,000 元 / 200 名'
+    },
+    {
+      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
+      image:
+        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
+      room: 'CookieRun 薑餅人主題房',
+      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      description:
+        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
+      price: '＄獎項價值 1000 元 / 20 名'
     },
     {
       name: '澎澄飯店',
@@ -28,47 +34,7 @@
       note: '(加贈一位12歲以下兒童入住+開房禮)',
       description:
         '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
+      price: '＄獎項價值 50,000 元 / 10 名'
     }
   ]
 
@@ -132,6 +98,7 @@
     })
   }
   onMounted(() => {
+    initTWE({ Tooltip, Modal, Collapse })
     setFaqListItem()
     setGiftListItem()
   })
@@ -329,12 +296,10 @@
                 </button>
               </div>
 
-              <!-- Modal body -->
               <div class="relative p-4">
                 <p>This is a vertically centered modal.</p>
               </div>
 
-              <!-- Modal footer -->
               <div
                 class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-4 dark:border-white/10"
               >
@@ -370,57 +335,34 @@
             <div>超過50個好禮獎項，幸運兒就是你！</div>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
-          <div v-for="(item, index) in giftList" :key="index" class="gift-item">
-            <div
-              class="relative my-3 flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
-            >
-              <div class="relative mb-3 text-white">
-                <img :src="item.image" alt="w-full" />
-              </div>
-              <div class="p-3">
-                <h2 class="mb-2 text-xl font-semibold text-primary-500">
-                  {{ item.name }}
-                </h2>
-                <!-- <div class="mb-3">
-                  {{ item.note }}
-                </div>
-                <div class="font-light leading-normal text-slate-600">
-                  {{ item.description }}
-                </div> -->
-                <div
-                  class="mt-3 border-t p-2 text-center text-sm font-bold text-gray2-500"
-                >
-                  {{ item.price }}
-                </div>
-              </div>
+        <div class="grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
+          <div
+            v-for="(item, index) in giftList"
+            :key="index"
+            class="gift-item relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
+          >
+            <div class="relative mb-3 text-white">
+              <span
+                class="absolute start-0 top-0 inline-block h-full w-full scale-95 rounded-tl-xl rounded-tr-xl border border-white"
+              >
+              </span>
+              <img :src="item.image" alt="w-full" />
             </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
-          <div v-for="(item, index) in giftList" :key="index" class="gift-item">
-            <div
-              class="relative my-3 flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
-            >
-              <div class="relative mb-3 text-white">
-                <img :src="item.image" alt="w-full" />
-              </div>
-              <div class="p-3">
-                <h2 class="mb-2 text-xl font-semibold text-primary-500">
-                  {{ item.name }}
-                </h2>
-                <!-- <div class="mb-3">
+            <div class="mb-3 px-3">
+              <h2 class="text-xl font-semibold text-primary-500">
+                {{ item.name }}
+              </h2>
+              <!-- <div class="mb-3">
                   {{ item.note }}
                 </div>
                 <div class="font-light leading-normal text-slate-600">
                   {{ item.description }}
                 </div> -->
-                <div
-                  class="mt-3 border-t p-2 text-center text-sm font-bold text-gray2-500"
-                >
-                  {{ item.price }}
-                </div>
-              </div>
+            </div>
+            <div
+              class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"
+            >
+              {{ item.price }}
             </div>
           </div>
         </div>

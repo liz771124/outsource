@@ -8,156 +8,46 @@
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse })
   })
-
-  const giftList = [
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '$11,880 / 2名'
-    }
-  ]
-
-  const setFaqListItem = () => {
-    const items = document.querySelectorAll('#accordionContainer > div')
-    gsap.from(items, {
-      scrollTrigger: {
-        trigger: '#accordionContainer', // 整個容器作為觸發點
-        start: 'top 85%', // 容器進入視窗 85% 開始動畫
-        toggleActions: 'play none none none' // 滾動時播放一次
-      },
-      opacity: 0, // 初始透明度
-      y: 50, // 初始向下偏移
-      duration: 0.8, // 單個動畫時間
-      ease: 'power3.out', // 平滑效果
-      stagger: {
-        each: 0.3, // 每個項目之間間隔 300ms
-        from: 'start' // 從第一個開始依序顯示
-      }
-    })
-  }
-
-  const setGiftListItem = () => {
-    const items = document.querySelectorAll('.gift-item')
-
-    // 📌 1. 滑入畫面時，所有 item 依序由下而上淡入
-    gsap.from(items, {
-      scrollTrigger: {
-        trigger: '.grid', // 容器作為觸發點
-        start: 'top 85%', // 進入視窗 85% 開始動畫
-        toggleActions: 'play none none none' // 只播放一次
-      },
-      opacity: 0,
-      y: 50,
-      duration: 0.8,
-      ease: 'power3.out',
-      stagger: {
-        each: 0.3, // 每個項目延遲 300ms
-        from: 'start'
-      }
-    })
-
-    // 2. 單一 item 滑入時彈跳放大縮小效果
-    items.forEach((item) => {
-      gsap.to(item, {
-        scale: 1.05, // 輕微放大
-        duration: 0.8,
-        ease: 'bounce.inOut', // 彈性效果
-        repeat: -1, // 無限循環
-        yoyo: true, // 來回效果
-        paused: true // 預設暫停
-      })
-
-      item.addEventListener('mouseenter', () => {
-        gsap.to(item, { scale: 1.05, duration: 0.3, ease: 'power1.out' })
-      })
-
-      item.addEventListener('mouseleave', () => {
-        gsap.to(item, { scale: 1, duration: 0.3, ease: 'power1.out' })
-      })
-    })
-  }
-  onMounted(() => {
-    setFaqListItem()
-    setGiftListItem()
-  })
 </script>
 
 <template>
   <div>
     <Header />
     <div class="bg-yellow">
-      <div class="container py-10">
+      <div class="container py-16">
         <div class="mb-8 text-center">
-          <img class="mx-auto" width="300" src="/img/title-game.png" alt="" />
-          <div>
-            <div>只要集滿10個闖關印章，就能兌換抽獎券</div>
-            <div>超過50個好禮獎項，幸運兒就是你！</div>
+          <!-- <img class="mx-auto" width="300" src="/img/title-game.png" alt="" /> -->
+          <div class="mb-5 text-2xl font-bold text-primary-500">
+            未來親子野餐日，歡慶10周年
           </div>
+          <div>10大互動好禮搶先看！</div>
+          <div>全場活動趴趴走，好禮拿不停！</div>
+          <div>點擊按鈕，看更多活動說明</div>
         </div>
 
-        <div class="container py-10">
+        <div class="flex flex-col gap-16">
           <div
             class="relative grid divide-x divide-white rounded-xl bg-primary-500 p-8 md:grid-cols-2"
           >
             <span
-              class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-kv-yellow py-2 pe-5 ps-6 text-2xl font-bold tracking-wide"
+              class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-kv-yellow py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
             >
-              報名送福袋
+              慶生派對
+            </span>
+            <div class="text-center">
+              <img src="/img/gift-intro-07.svg" alt="" />
+            </div>
+            <div class="text-center">
+              <img src="/img/gift-intro-08.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="relative grid divide-x divide-white rounded-xl bg-kv-green p-8 text-white md:grid-cols-2"
+          >
+            <span
+              class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-[#6EE292] py-2 pe-5 ps-6 text-2xl font-bold tracking-wide"
+            >
+              慶生派對
             </span>
             <div class="text-center">
               <img src="/img/gift-intro-07.svg" alt="" />

@@ -8,7 +8,7 @@
   const props = defineProps({
     className: {
       type: String,
-      default: 'w-full'
+      default: 'bg-kv-yellow'
     },
     swiperConfig: {
       type: Object
@@ -40,7 +40,6 @@
   <div>
     <swiper
       :slides-per-view="4"
-      :space-between="20"
       :autoplay="{
         delay: 5000,
         disableOnInteraction: false
@@ -55,31 +54,32 @@
       <swiper-slide
         v-for="(item, index) in swiperItems"
         :key="index"
-        class="flex flex-col gap-3"
+        class="p-2.5"
       >
-        <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-          <div>
-            <a :href="item.link" class="flex flex-col">
-              <div>
-                <img
-                  class="rounded-tl-2xl"
-                  :src="`${imagePath}${item.src}`"
-                  :alt="item.title"
-                  @click="goToSlide(index)"
-                  data-twe-toggle="modal"
-                  data-twe-target="#exampleModalCenter2"
-                  data-twe-ripple-init
-                  data-twe-ripple-color="light"
-                />
-              </div>
-              <div
-                class="relative -end-8 bottom-0 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-              >
-                {{ item.title }}
-              </div>
-            </a>
+        <a
+          :href="item.link"
+          class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow"
+        >
+          <div class="flex flex-col">
+            <div class="mb-3">
+              <img
+                class="rounded-tl-2xl"
+                :src="`${imagePath}${item.src}`"
+                :alt="item.title"
+                @click="goToSlide(index)"
+                data-twe-toggle="modal"
+                data-twe-target="#exampleModalCenter2"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+              />
+            </div>
           </div>
-        </div>
+          <div
+            :class="`relative -start-0 bottom-0 inline-block w-full rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white ${className}`"
+          >
+            {{ item.title }}
+          </div>
+        </a>
       </swiper-slide>
     </swiper>
     <div

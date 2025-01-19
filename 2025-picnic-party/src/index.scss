@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
 }
 main {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 *::-webkit-scrollbar {
@@ -72,14 +72,6 @@ main {
   border: 3px solid var(--Primary-100);
 }
 
-.swiper-slide {
-  text-align: center;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -90,8 +82,9 @@ main {
 .swiper-button-next,
 .swiper-button-prev {
   background-color: #bd3c00;
-  width: 50px;
-  height: 50px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   &:hover {
     background-color: #de917a;
   }

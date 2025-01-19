@@ -20,7 +20,7 @@
 <template>
   <a
     :href="props.link"
-    class="relative mx-auto inline-block rounded-tl-3xl bg-kv-blue py-3 pe-16 ps-5 text-2xl font-bold tracking-wide text-white"
+    class="relative inline-block rounded-tl-3xl bg-kv-blue py-3 pe-16 ps-5 text-2xl font-bold tracking-wide text-white"
   >
     {{ props.title }}
     <span class="absolute -end-[30px] -top-[50px]">

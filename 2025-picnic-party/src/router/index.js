@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '@/views/Index.vue'
 import Gift from '@/views/Gift.vue'
 import Game from '@/views/Game.vue'
-import Knowledge from '@/views/Knowledge.vue'
+import Information from '@/views/Information.vue'
 import Notice from '@/views/Notice.vue'
 import Show from '@/views/Show.vue'
 import { useLoading } from '../composables/useLoading'
@@ -12,7 +12,7 @@ const routes = [
   { path: '/gift', component: Gift },
   { path: '/game', component: Game },
   { path: '/show', component: Show },
-  { path: '/knowledge', component: Knowledge },
+  { path: '/information', component: Information },
   { path: '/notice', component: Notice }
 ]
 

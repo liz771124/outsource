@@ -68,7 +68,28 @@
   const images = [
     {
       src: 'show-01.jpg',
-      title: '不只是我們共創的里程碑，也象徵著「幸福永續」',
+      title: '文章名稱文章名稱章名稱文章名稱',
+      link: '#'
+    },
+    {
+      src: 'show-01.jpg',
+      title: '文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱',
+      link: '#'
+    },
+    {
+      src: 'show-01.jpg',
+      title: '文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱',
+      link: '#'
+    },
+    {
+      src: 'show-01.jpg',
+      title: '文章名稱文章名稱文章名稱文',
+      link: '#'
+    },
+    {
+      src: 'show-01.jpg',
+      title:
+        '文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱名稱文章名稱文章名稱文',
       link: '#'
     }
   ]
@@ -79,7 +100,68 @@
 
     <div class="bg-green">
       <div class="container py-16">
-        <Swiper :swiperItems="images" />
+        <div class="mb-8 text-center">
+          <img class="mx-auto" width="300" src="/img/title-game.png" alt="" />
+          <div class="mt-4">
+            未來親子精心挑選四大主題文章，<br />
+            讓我們與爸爸媽媽站在一起，陪伴孩子快樂成長，<br />
+            最專業的教養好文都在這！
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+          <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+            <a
+            href="#"
+              class="rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
+            >
+              #運動學習力
+            </a>
+            <a
+              class="rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
+            >
+              #家庭陪伴力
+            </a>
+            <a
+              class="rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
+            >
+              #永續執行力
+            </a>
+            <a
+              class="rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
+            >
+              #野餐玩樂力
+            </a>
+          </div>
+        </div>
+        <div class="py-10">
+          <div class="mb-4 text-center text-3xl font-bold text-primary-500">
+            #運動學習力
+          </div>
+          <Swiper :swiperItems="images" :className="`bg-kv-yellow`" />
+        </div>
+        <div class="py-10">
+          <div class="mb-4 text-center text-3xl font-bold text-kv-green">
+            #家庭陪伴力
+          </div>
+          <Swiper :swiperItems="images" :className="`bg-kv-green`" />
+        </div>
+        <div class="py-10">
+          <div class="mb-4 text-center text-3xl font-bold text-primary-500">
+            #永續執行力
+          </div>
+          <Swiper :swiperItems="images" :className="`bg-kv-yellow`" />
+        </div>
+        <div class="py-10">
+          <div class="mb-4 text-center text-3xl font-bold text-kv-green">
+            #野餐玩樂力
+          </div>
+          <Swiper :swiperItems="images" :className="`bg-kv-green`" />
+        </div>
+
+        <div class="mt-20 flex w-full items-center justify-center gap-16">
+          <ButtonJoin :title="'看更多好文'" />
+          <ButtonJoin :title="'報名野餐日'" />
+        </div>
       </div>
     </div>
   </div>

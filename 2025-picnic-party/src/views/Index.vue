@@ -135,17 +135,24 @@
                     >趣味闖關</span
                   >
                 </div>
-                <div class="flex w-full flex-col text-2xl tracking-wider">
-                  <div class="border-b border-dashed border-white py-2">
-                    十大主題，兼具知識與趣味的闖關挑戰，
-                  </div>
-                  <div class="border-b border-dashed border-white py-2">
-                    親子共同完成任務，還有小農市集，
-                  </div>
-                  <div class="border-b border-dashed border-white py-2">
-                    美好回憶獎不完！
-                  </div>
+                <div
+                  class="flex w-full flex-col text-2xl leading-relaxed tracking-wider"
+                  style="
+                    background-image: linear-gradient(
+                      90deg,
+                      #000,
+                      #000 75%,
+                      transparent 75%,
+                      transparent 100%
+                    );
+                    background-size: 100% 2.4rem;
+                    /* background-repeat: repeat-y; */
+                  "
+                >
+                  十大主題，兼具知識與趣味的闖關挑戰，
+                  親子共同完成任務，還有小農市集， 美好回憶獎不完！
                 </div>
+
                 <div class="end-15 absolute -bottom-10 hidden md:block">
                   <img
                     class="w-[130px]"

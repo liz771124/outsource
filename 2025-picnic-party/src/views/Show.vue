@@ -51,11 +51,11 @@
       <div class="container">
         <div class="mb-8 text-center">
           <img class="mx-auto" width="300" src="/img/title-gift.png" alt="" />
-          <div>
-            <div>當然不能少了各種好Show炒熱氣氛！</div>
-            <div>音樂、故事、唱唱跳跳</div>
-            <div>最豐富的表演，都在未來親子野餐日！</div>
-          </div>
+        </div>
+        <div>
+          <div>當然不能少了各種好Show炒熱氣氛！</div>
+          <div>音樂、故事、唱唱跳跳</div>
+          <div>最豐富的表演，都在未來親子野餐日！</div>
         </div>
         <div
           ref="container"

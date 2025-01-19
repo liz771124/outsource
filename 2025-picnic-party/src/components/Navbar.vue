@@ -37,7 +37,7 @@
         </li>
         <li>
           <router-link
-            to="/knowledge"
+            to="/information"
             class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
             >延伸閱讀</router-link
           >
