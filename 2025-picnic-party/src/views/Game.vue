@@ -60,7 +60,6 @@
   const setGiftListItem = () => {
     const items = document.querySelectorAll('.gift-item')
 
-    // 📌 1. 滑入畫面時，所有 item 依序由下而上淡入
     gsap.from(items, {
       scrollTrigger: {
         trigger: '.grid', // 容器作為觸發點
@@ -77,7 +76,6 @@
       }
     })
 
-    // 2. 單一 item 滑入時彈跳放大縮小效果
     items.forEach((item) => {
       gsap.to(item, {
         scale: 1.05, // 輕微放大

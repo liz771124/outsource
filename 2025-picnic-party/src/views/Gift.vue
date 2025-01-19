@@ -27,14 +27,14 @@
 
         <div class="flex flex-col gap-16">
           <div
-            class="relative grid divide-x divide-white rounded-xl bg-primary-500 p-8 md:grid-cols-2"
+            class="relative grid rounded-xl bg-primary-500 p-5 md:grid-cols-2"
           >
             <span
               class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-kv-yellow py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
             >
               慶生派對
             </span>
-            <div class="text-center">
+            <div class="border-b text-center md:border-b-0 md:border-e">
               <img src="/img/gift-intro-07.svg" alt="" />
             </div>
             <div class="text-center">
@@ -42,19 +42,24 @@
             </div>
           </div>
           <div
-            class="relative grid divide-x divide-white rounded-xl bg-kv-green p-8 text-white md:grid-cols-2"
+            class="relative grid rounded-xl bg-kv-green p-5 text-white md:grid-cols-2"
           >
             <span
               class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-[#6EE292] py-2 pe-5 ps-6 text-2xl font-bold tracking-wide"
             >
               慶生派對
             </span>
-            <div class="text-center">
+            <div
+              class="border-b border-white text-center md:border-b-0 md:border-e"
+            >
               <img src="/img/gift-intro-07.svg" alt="" />
             </div>
             <div class="text-center">
               <img src="/img/gift-intro-08.svg" alt="" />
             </div>
+          </div>
+          <div class="mt-5 text-center">
+            <ButtonJoin :title="'立即購票'" :link="'/#purchase'"/>
           </div>
         </div>
       </div>

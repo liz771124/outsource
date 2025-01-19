@@ -38,8 +38,8 @@
         start: 'top 85%', // 進入視窗 85% 開始動畫
         toggleActions: 'play none none none' // 只播放一次
       },
-      opacity: 0,
-      y: 50,
+      // opacity: 0,
+      // y: 50,
       duration: 0.3,
       ease: 'power3.out',
       stagger: {
@@ -56,7 +56,7 @@
     class="fixed start-0 top-0 z-50 flex h-screen w-screen items-center justify-center"
   >
     <div class="pattern absolute inset-0"></div>
-    <div class="hero-bg absolute inset-0 h-full w-full">
+    <div class="hero-bg absolute inset-0 z-10 h-full w-full">
       <img
         class="h-full w-full object-cover"
         src="/img/speed-line.png"
@@ -65,7 +65,7 @@
     </div>
     <div class="z-10 flex flex-col items-center justify-center">
       <div class="hero-img">
-        <img width="200" src="/img/hero-img.png" alt="Hero Image" />
+        <img width="200" src="/img/hero-img.png" />
       </div>
       <div class="hero-title text-center text-xl font-bold">Loading...</div>
     </div>
@@ -85,5 +85,6 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
   }
 </style>

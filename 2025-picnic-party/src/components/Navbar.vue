@@ -1,65 +1,51 @@
 <script setup>
   import { onMounted } from 'vue'
+  import { useRoute } from 'vue-router'
   import { Offcanvas, initTWE } from 'tw-elements'
+  const route = useRoute()
+  const navItems = [
+    { to: '/gift', label: '互動好禮' },
+    { to: '/game', label: '歡樂闖關' },
+    { to: '/show', label: '精彩表演' },
+    { to: '/information', label: '延伸閱讀' },
+    { to: '/notice', label: '更多資訊' }
+  ]
+
   onMounted(() => {
     initTWE({ Offcanvas })
   })
 </script>
 <template>
-  <nav class="sticky top-0 z-10 bg-kv-green py-2">
+  <nav class="sticky top-0 z-10 bg-kv-green py-1.5 shadow-lg">
     <div class="container flex items-center justify-between">
       <h1>
         <router-link to="/">
-          <img src="/img/logo.svg" alt="logo" width="150" />
+          <img src="/img/logo.svg" alt="logo" width="135" />
         </router-link>
       </h1>
       <ul class="hidden items-center gap-5 md:flex">
-        <li>
+        <li v-for="(item, index) in navItems" :key="index">
           <router-link
-            to="/gift"
-            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
-            >互動好禮</router-link
+            :to="item.to"
+            :class="[
+              'rounded-full bg-white px-4 py-2 text-xl font-bold',
+              route.path === item.to ? 'text-primary-500' : 'text-kv-green'
+            ]"
           >
-        </li>
-        <li>
-          <router-link
-            to="/game"
-            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
-            >歡樂闖關</router-link
-          >
-        </li>
-        <li>
-          <router-link
-            to="/show"
-            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
-            >精彩表演</router-link
-          >
-        </li>
-        <li>
-          <router-link
-            to="/information"
-            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
-            >延伸閱讀</router-link
-          >
-        </li>
-        <li>
-          <router-link
-            to="/notice"
-            class="rounded-full bg-white px-4 py-2 text-xl font-bold text-kv-green"
-            >更多資訊</router-link
-          >
+            {{ item.label }}
+          </router-link>
         </li>
       </ul>
       <div class="text-white md:hidden">
         <svg
           data-twe-offcanvas-toggle
-          data-twe-target="#offcanvasRight"
-          aria-controls="offcanvasRight"
+          data-twe-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
           data-twe-ripple-init
           data-twe-ripple-color="light"
           fill="currentColor"
-          width="40"
-          height="40"
+          width="35"
+          height="35"
           viewBox="0 0 24 24"
         >
           <g data-name="Layer 2">
@@ -84,33 +70,57 @@
       </div>
 
       <div
-        class="invisible fixed bottom-0 right-0 top-0 z-[1045] flex w-96 max-w-full translate-x-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out data-[twe-offcanvas-show]:transform-none dark:bg-body-dark dark:text-white"
+        class="invisible fixed bottom-0 left-0 right-0 top-0 z-[1045] flex h-[200px] max-h-full max-w-full -translate-y-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out data-[twe-offcanvas-show]:transform-none dark:bg-body-dark dark:text-white"
         tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
+        id="offcanvasTop"
+        aria-labelledby="offcanvasTopLabel"
         data-twe-offcanvas-init
       >
-        <div class="offcanvas-body flex-grow overflow-y-auto p-4">
-          <ul class="flex flex-col gap-5 text-2xl">
-            <li class="border-b">
-              <router-link to="/gift" class="text-xl font-bold"
-                >互動好禮</router-link
+        <div class="flex items-center justify-between p-4">
+          <h5 class="mb-0 font-semibold leading-normal" id="offcanvasTopLabel">
+            <router-link to="/">
+              <img src="/img/logo.svg" alt="logo" width="135" />
+            </router-link>
+          </h5>
+          <button
+            type="button"
+            class="box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+            data-twe-offcanvas-dismiss
+            aria-label="Close"
+          >
+            <span class="[&>svg]:h-6 [&>svg]:w-6">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
               >
-            </li>
-            <li class="border-b">
-              <router-link to="/game" class="text-xl font-bold"
-                >闖關好樂</router-link
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="flex-grow overflow-y-auto px-4">
+          <ul class="grid grid-cols-3 justify-between gap-3 text-2xl">
+            <li
+              v-for="(item, index) in navItems"
+              :key="index"
+              data-twe-offcanvas-dismiss
+            >
+              <router-link
+                :to="item.to"
+                :class="[
+                  'block rounded-full px-4 py-2 text-center text-xl font-bold text-white',
+                  route.path === item.to ? 'bg-primary-500' : 'bg-kv-green'
+                ]"
               >
-            </li>
-            <li class="border-b">
-              <router-link to="/show" class="text-xl font-bold"
-                >派對好秀</router-link
-              >
-            </li>
-            <li class="border-b">
-              <router-link to="/knowledge" class="text-xl font-bold"
-                >知識好訊</router-link
-              >
+                {{ item.label }}
+              </router-link>
             </li>
           </ul>
         </div>

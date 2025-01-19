@@ -18,7 +18,19 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      const element = document.querySelector(to.hash)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0 }
+    }
+  }
 })
 
 router.beforeEach((to, from, next) => {
@@ -28,9 +40,6 @@ router.beforeEach((to, from, next) => {
 })
 
 router.afterEach(() => {
-  window.scrollTo({
-    top: 0
-  })
   const { setLoading } = useLoading()
   setTimeout(() => {
     setLoading(false)

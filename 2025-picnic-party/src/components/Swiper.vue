@@ -39,6 +39,7 @@
 <template>
   <div>
     <swiper
+      :spaceBetween="20"
       :slides-per-view="4"
       :autoplay="{
         delay: 5000,
@@ -54,7 +55,7 @@
       <swiper-slide
         v-for="(item, index) in swiperItems"
         :key="index"
-        class="p-2.5"
+        class="animate-zoom-in p-2.5"
       >
         <a
           :href="item.link"
@@ -67,15 +68,15 @@
                 :src="`${imagePath}${item.src}`"
                 :alt="item.title"
                 @click="goToSlide(index)"
-                data-twe-toggle="modal"
+              />
+              <!-- data-twe-toggle="modal"
                 data-twe-target="#exampleModalCenter2"
                 data-twe-ripple-init
-                data-twe-ripple-color="light"
-              />
+                data-twe-ripple-color="light" -->
             </div>
           </div>
           <div
-            :class="`relative -start-0 bottom-0 inline-block w-full rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white ${className}`"
+            :class="`relative -start-0 bottom-0 inline-block w-[calc(100%+30px)] rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white ${className}`"
           >
             {{ item.title }}
           </div>
