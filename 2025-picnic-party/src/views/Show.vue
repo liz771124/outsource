@@ -109,7 +109,7 @@
           <div
             v-for="(item, index) in showItems"
             :key="index"
-            class="card-item relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
+            class="scroll-animate-flip3D relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
           >
             <div class="flex flex-col">
               <div>
@@ -134,7 +134,7 @@
           <div
             v-for="(item, index) in showItems2"
             :key="index"
-            class="card-item relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
+            class="scroll-animate-flip3D relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
           >
             <div class="flex flex-col">
               <div>
@@ -196,7 +196,7 @@
             <img src="/img/title-faq.png" alt="" />
           </div>
         </div> -->
-        <div class="text-2xl">
+        <div class="scroll-animate-fadeInUp text-2xl">
           <div
             class="flex divide-x divide-white rounded-t-lg bg-primary-500 py-3 text-white"
           >

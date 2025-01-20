@@ -12,7 +12,11 @@
 
 <template>
   <div>
-    <Header />
+    <Header>
+      <!-- <router-link to="/">
+        <img src="/img/kv-play.png" alt="" width="650" />
+      </router-link> -->
+    </Header>
     <div class="bg-yellow">
       <div class="container py-16">
         <div class="mb-8 text-center">
@@ -27,17 +31,19 @@
 
         <div class="flex flex-col gap-16">
           <div
-            class="relative grid rounded-xl bg-primary-500 p-5 md:grid-cols-2"
+            class="scroll-animate-slideInLeft relative grid rounded-xl bg-primary-500 p-5 md:grid-cols-2"
           >
             <span
-              class="absolute -top-5 start-5 inline-block rounded-tr-3xl bg-kv-yellow py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
+              class="scroll-animate-slideInRight absolute -top-5 start-5 inline-block rounded-tr-3xl bg-kv-yellow py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
             >
               慶生派對
             </span>
-            <div class="border-b text-center md:border-b-0 md:border-e">
+            <div
+              class="scroll-animate-flip3D border-b text-center md:border-b-0 md:border-e"
+            >
               <img src="/img/gift-intro-07.svg" alt="" />
             </div>
-            <div class="text-center">
+            <div class="scroll-animate-flip3D text-center">
               <img src="/img/gift-intro-08.svg" alt="" />
             </div>
           </div>

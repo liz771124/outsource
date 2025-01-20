@@ -8,7 +8,13 @@ import 'swiper/css/pagination'
 import './index.scss'
 import Loading from './components/Loading.vue'
 
+import GsapPlugin from '../plugins/gsap'
+import GsapScrollPlugin from '../plugins/gsapScroll'
+
 const app = createApp(App)
+
+app.use(GsapPlugin)
+app.use(GsapScrollPlugin)
 
 const loadingInstance = app.component('Loading', Loading)
 let loadingTimeout

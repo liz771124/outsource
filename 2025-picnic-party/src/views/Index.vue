@@ -5,7 +5,6 @@
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
   const initializeAnimations = () => {
     // 清除所有 ScrollTrigger，避免動畫重疊
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
@@ -86,6 +85,22 @@
       </router-link> -->
     </Header>
 
+    <!-- <div class="animate-bounceFloat">上下跳動元素</div>
+    <div class="animate-scaleBounce">放大縮小元素</div>
+    <div class="animate-fadeIn">淡入元素</div>
+    <div class="animate-slideIn">滑入元素</div>
+    <div class="animate-rotateIn">旋轉元素</div>
+    <div class="scroll-animate-fadeIn">滾動到這裡時淡入</div>
+    <div class="scroll-animate-fadeInUp">從底部淡入</div>
+    <div class="scroll-animate-slideInLeft">從左側滑入</div>
+    <div class="scroll-animate-slideInRight">從右側滑入</div>
+    <div class="scroll-animate-zoomIn">放大淡入</div>
+    <div class="scroll-animate-flipIn">翻轉效果</div>
+    <div class="scroll-animate-bounceIn">彈跳效果</div>
+    <div class="scroll-animate-rotateIn">旋轉淡入</div>
+    <div class="scroll-animate-flip3D">3D翻頁效果</div>
+    <div class="scroll-animate-shake">震動效果</div>
+ -->
     <div>
       <div class="bg-yellow py-16">
         <div class="container">
@@ -114,10 +129,13 @@
         </div>
       </div>
       <div class="bg-green py-16">
-        <div class="container flex flex-col gap-10">
+        <span class="absolute -bottom-10 start-0">
+          <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
+        </span>
+        <div class="container relative flex flex-col gap-10">
           <a
-            href="#"
             class="animate-zoom-right rounded-rl-2xl relative rounded-bl-[50px] rounded-tr-[50px] bg-primary-500 p-6 text-white"
+            href="/show"
           >
             <div
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
@@ -154,16 +172,16 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl tracking-wide text-white"
+                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看表演
                 </div>
               </div>
             </div>
           </a>
-          <a
-            href="#"
+          <router-link
             class="animate-zoom-left rounded-rl-2xl relative rounded-br-[50px] rounded-tl-[50px] bg-kv-green p-6 text-white"
+            to="/game"
           >
             <div
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
@@ -200,13 +218,13 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl tracking-wide text-white"
+                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看闖關
                 </div>
               </div>
             </div>
-          </a>
+          </router-link>
         </div>
       </div>
       <div class="bg-yellow py-16">
@@ -269,12 +287,12 @@
             </div>
             <div
               id="purchase"
-              class="mb-16 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
+              class="m-10 mb-16 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
             >
               <a class="animate-zoom-in relative" href="#">
                 <img src="/img/ticket-01.png" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
@@ -282,7 +300,7 @@
               <a class="animate-zoom-in relative" href="#">
                 <img src="/img/ticket-02.png" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
@@ -290,7 +308,7 @@
               <a class="animate-zoom-in relative" href="#">
                 <img src="/img/ticket-03.png" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   立即購票
                 </div>

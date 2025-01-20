@@ -13,10 +13,10 @@
   onMounted(() => {
     // 放大縮小的動畫
     gsap.to('.scale-bounce', {
-      scale: 1.1,
+      scale: 0.9,
       repeat: -1,
       yoyo: true,
-      ease: 'elastic.inOut(1, 0.5)',
+      ease: 'elastic.inOut(.2, 0.5)',
       duration: 1.2
     })
   })

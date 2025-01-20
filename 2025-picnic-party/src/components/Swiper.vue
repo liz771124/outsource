@@ -55,11 +55,11 @@
       <swiper-slide
         v-for="(item, index) in swiperItems"
         :key="index"
-        class="animate-zoom-in ms:p-2.5 px-1 pb-3"
+        class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-3"
       >
         <a
           :href="item.link"
-          class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow"
+          class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
         >
           <div class="flex flex-col">
             <div class="mb-3">

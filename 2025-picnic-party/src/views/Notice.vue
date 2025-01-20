@@ -362,7 +362,8 @@
         </div>
         <div class="flex flex-col gap-3">
           <div class="txt-2xl mb-3 font-bold">領取方式</div>
-          <div>
+          <div class="flex flex-col gap-3">
+            
             1.早鳥報名得獎名單將於活動前一周公布在本網頁，敬請密切留意相關資訊。<br />
 
             2.活動當天攜帶官方發送之報到序號簡訊及身分證明文件報到完成，即可領取福袋禮(報到禮)。<br />

@@ -103,47 +103,47 @@
           <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
             <a
               href="#"
-              class="rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
+              class="scroll-animate-zoomIn rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
             >
               #運動學習力
             </a>
             <a
-              class="rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
+              class="scroll-animate-zoomIn rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
             >
               #家庭陪伴力
             </a>
             <a
-              class="rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
+              class="scroll-animate-zoomIn rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
             >
               #永續執行力
             </a>
             <a
-              class="rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
+              class="scroll-animate-zoomIn rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
             >
               #野餐玩樂力
             </a>
           </div>
         </div>
         <div class="py-10">
-          <div class="mb-4 text-center text-3xl font-bold text-primary-500">
+          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-primary-500">
             #運動學習力
           </div>
           <Swiper :swiperItems="images" :className="`bg-kv-yellow`" />
         </div>
         <div class="py-10">
-          <div class="mb-4 text-center text-3xl font-bold text-kv-green">
+          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-kv-green">
             #家庭陪伴力
           </div>
           <Swiper :swiperItems="images" :className="`bg-kv-green`" />
         </div>
         <div class="py-10">
-          <div class="mb-4 text-center text-3xl font-bold text-primary-500">
+          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-primary-500">
             #永續執行力
           </div>
           <Swiper :swiperItems="images" :className="`bg-kv-yellow`" />
         </div>
         <div class="py-10">
-          <div class="mb-4 text-center text-3xl font-bold text-kv-green">
+          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-kv-green">
             #野餐玩樂力
           </div>
           <Swiper :swiperItems="images" :className="`bg-kv-green`" />
