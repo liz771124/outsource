@@ -58,7 +58,7 @@
     <div class="pattern absolute inset-0"></div>
     <div class="hero-bg absolute inset-0 z-10 h-full w-full">
       <img
-        class="h-full w-full object-cover"
+        class="h-full w-full md:object-cover"
         src="/img/speed-line.png"
         alt=""
       />
@@ -74,12 +74,13 @@
 
 <style scoped>
   .pattern {
-    background: linear-gradient(
+    /* background: linear-gradient(
       to right,
       #ffdb32,
       #fdf5df,
       #ffdb32
-    ); /* 漸變色塊 */
+    );  */
+    background-color: #ffdb32;
     width: 100%;
     height: 100%;
     position: absolute;

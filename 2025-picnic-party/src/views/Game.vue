@@ -326,12 +326,12 @@
     </div>
     <div class="bg-yellow">
       <div class="container py-16">
-        <div class="mb-8 text-center">
+        <div class="mb-3 text-center">
           <img class="mx-auto" width="300" src="/img/title-gift.png" alt="" />
-          <div>
-            <div>只要集滿10個闖關印章，就能兌換抽獎券</div>
-            <div>超過50個好禮獎項，幸運兒就是你！</div>
-          </div>
+        </div>
+        <div class="mb-8 text-center">
+          <div>只要集滿10個闖關印章，就能兌換抽獎券</div>
+          <div>超過50個好禮獎項，幸運兒就是你！</div>
         </div>
         <div class="grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
           <div

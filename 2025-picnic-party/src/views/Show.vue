@@ -184,7 +184,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-5 text-center">
+        <div class="my-5 text-center">
           <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
         </div>
       </div>

@@ -58,8 +58,8 @@
               <img src="/img/gift-intro-08.svg" alt="" />
             </div>
           </div>
-          <div class="mt-5 text-center">
-            <ButtonJoin :title="'立即購票'" :link="'/#purchase'"/>
+          <div class="my-5 text-center">
+            <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
           </div>
         </div>
       </div>
