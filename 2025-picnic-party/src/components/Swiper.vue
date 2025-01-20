@@ -40,7 +40,7 @@
   <div>
     <swiper
       :spaceBetween="20"
-      :slides-per-view="4"
+      :slides-per-view="isMobile ? 1.4 : 4"
       :autoplay="{
         delay: 5000,
         disableOnInteraction: false
@@ -55,7 +55,7 @@
       <swiper-slide
         v-for="(item, index) in swiperItems"
         :key="index"
-        class="animate-zoom-in p-2.5"
+        class="animate-zoom-in ms:p-2.5 px-1 pb-3"
       >
         <a
           :href="item.link"
@@ -97,7 +97,7 @@
         class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
       >
         <div
-          class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
+          class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none"
         >
           <swiper
             id="modal-swiper"

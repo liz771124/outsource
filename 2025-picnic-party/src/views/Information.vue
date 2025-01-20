@@ -56,15 +56,6 @@
     }
   ]
 
-  const imagesTest = Object.fromEntries(
-    Object.entries(
-      import.meta.glob('@/assets/img/*.{jpg,png}', { eager: true })
-    ).map(([path, module]) => [
-      path.split('/').pop().split('.')[0],
-      module.default
-    ])
-  )
-
   const images = [
     {
       src: 'show-01.jpg',
@@ -111,7 +102,7 @@
         <div class="flex flex-col items-center gap-5">
           <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
             <a
-            href="#"
+              href="#"
               class="rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
             >
               #運動學習力
@@ -158,7 +149,9 @@
           <Swiper :swiperItems="images" :className="`bg-kv-green`" />
         </div>
 
-        <div class="mt-20 flex w-full items-center justify-center gap-16">
+        <div
+          class="mb-10 mt-20 flex w-full flex-wrap items-center justify-center gap-16"
+        >
           <ButtonJoin :title="'看更多好文'" />
           <ButtonJoin :title="'報名野餐日'" />
         </div>

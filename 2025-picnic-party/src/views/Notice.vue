@@ -55,20 +55,188 @@
       a: '有任何疑問，歡迎您撥打服務專線(02)2662-0012（週一到週五9:00~12:30 ; 13:30~17:00），將有專人為您解答。'
     }
   ]
-
 </script>
 <template>
   <div>
     <Header />
     <div class="bg-green">
-      <div class="container py-10">
+      <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-5">
             <img src="/img/title-faq.png" alt="" />
           </div>
         </div>
-        <div id="accordionContainer" class="bg-white">
-          <div v-for="(item, index) in faqList" :key="index" class="">
+        <div class="bg-white">
+          <div
+            v-for="(item, index) in faqList"
+            :key="index"
+            class="border-b border-primary-500"
+          >
+            <h2 class="mb-0" :id="`heading${index}`">
+              <button
+                class="group relative flex w-full items-center border-0 px-5 py-4 text-2xl font-extrabold text-primary-500 transition [overflow-anchor:none] hover:z-[2] focus:z-[3]"
+                type="button"
+                data-twe-collapse-init
+                :data-twe-collapse-collapsed="index !== 0"
+                :data-twe-target="`#collapse${index}`"
+                :aria-expanded="index === 0"
+                :aria-controls="`collapse${index}`"
+              >
+                <img class="me-3" src="/img/title-faq-item.svg" width="25" />
+                <span>{{ item.q }}</span>
+                <span
+                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="15"
+                      cy="15"
+                      r="15"
+                      transform="rotate(90 15 15)"
+                      fill="#68BE83"
+                    />
+                    <g clip-path="url(#clip0_420_256)">
+                      <path
+                        d="M23.045 18.2348C22.754 18.2346 22.475 18.1188 22.2694 17.9129L16.6557 12.2992C16.4859 12.1293 16.2842 11.9945 16.0622 11.9026C15.8403 11.8106 15.6023 11.7633 15.3621 11.7633C15.1218 11.7633 14.8839 11.8106 14.6619 11.9026C14.44 11.9945 14.2383 12.1293 14.0684 12.2992L8.46208 17.9056C8.25508 18.1055 7.97783 18.2161 7.69005 18.2136C7.40228 18.2111 7.12699 18.0957 6.9235 17.8922C6.72 17.6887 6.60457 17.4134 6.60207 17.1256C6.59957 16.8379 6.7102 16.5606 6.91013 16.3536L12.5121 10.7473C13.2674 9.99344 14.2909 9.57007 15.3581 9.57007C16.4252 9.57007 17.4487 9.99344 18.204 10.7473L23.8213 16.3609C23.9749 16.5144 24.0796 16.71 24.1219 16.923C24.1643 17.136 24.1426 17.3567 24.0595 17.5574C23.9764 17.758 23.8356 17.9294 23.655 18.05C23.4745 18.1706 23.2622 18.2349 23.045 18.2348Z"
+                        fill="white"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_420_256">
+                        <rect
+                          width="17.561"
+                          height="17.561"
+                          fill="white"
+                          transform="translate(24.1462 5.12183) rotate(90)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              :id="`collapse${index}`"
+              :class="`!visible ${index > 0 ? 'hidden' : null}`"
+              data-twe-collapse-item
+            >
+              <div class="px-16 pb-4 text-xl">
+                {{ item.a }}
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
+          >
+            <h2 class="mb-0" id="headingTwo5">
+              <button
+                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                type="button"
+                data-twe-collapse-init
+                data-twe-target="#collapseTwo5"
+                :aria-expanded="index !== 0"
+                aria-controls="collapseTwo5"
+              >
+                Accordion Item #2
+                <span
+                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo5"
+              class="!visible hidden"
+              data-twe-collapse-item
+              aria-labelledby="headingTwo5"
+            >
+              <div class="px-5 py-4">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
+          >
+            <h2 class="mb-0" id="headingThree5">
+              <button
+                class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg data-[twe-collapse-collapsed]:transition-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                type="button"
+                data-twe-collapse-init
+                data-twe-collapse-collapsed
+                data-twe-target="#collapseThree5"
+                aria-expanded="false"
+                aria-controls="collapseThree5"
+              >
+                Accordion Item #3
+                <span
+                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </h2>
+            <div
+              id="collapseThree5"
+              class="!visible hidden"
+              data-twe-collapse-item
+              aria-labelledby="headingThree5"
+            >
+              <div class="px-5 py-4">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- <div id="accordionContainer" class="bg-white">
+          <div v-for="(item, index) in faqList" :key="index">
             <h2 class="mb-0 border-b border-primary-500" :id="`test-${index}`">
               <button
                 class="group relative flex w-full items-center rounded-t-lg border-0 px-5 py-4 text-xl font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3]"
@@ -100,11 +268,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="bg-green">
-      <div class="container py-10">
+      <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-6">
             <img src="/img/title-transportation.png" alt="" />
@@ -173,7 +341,7 @@
       </div>
     </div>
     <div class="bg-yellow">
-      <div class="container py-10">
+      <div class="container py-16">
         <div class="txt-xl mb-3 font-bold">特別聲明</div>
         <div class="flex flex-col gap-3">
           1.本活動網頁僅為報名用途，非現場各項活動預約報名。各攤位現場活動體驗因適合年齡及容納人數皆不同，以現場排隊指示為主。<br />

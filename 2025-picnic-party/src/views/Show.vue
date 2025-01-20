@@ -64,28 +64,29 @@
     }
   ]
 
-  onMounted(() => {
-    const cards = container.value.querySelectorAll('.flip-card')
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: container.value,
-        start: 'top 80%'
-      }
-    })
+  const setAnimation = () => {
+    const cards = gsap.utils.toArray('.card-item')
 
-    cards.forEach((card, index) => {
-      timeline.to(
-        card,
-        {
-          opacity: 1,
-          rotateY: 0,
-          duration: 0.6,
-          delay: index * 0.25,
-          ease: 'power2.out'
-        },
-        index * 0.3
-      )
-    })
+    gsap.fromTo(
+      cards,
+      { rotateY: 90, opacity: 0 },
+      {
+        rotateY: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'power3.out',
+        stagger: 0.3, // 每個元素間延遲 0.3 秒
+        scrollTrigger: {
+          trigger: '.card-item',
+          start: 'top 80%', // 當元素進入視窗的 80% 時開始動畫
+          toggleActions: 'play none none none'
+        }
+      }
+    )
+  }
+
+  onMounted(() => {
+    setAnimation()
   })
 </script>
 <template>
@@ -108,26 +109,24 @@
           <div
             v-for="(item, index) in showItems"
             :key="index"
-            class="flip-card relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
+            class="card-item relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
           >
-            <div class="flip-card-inner">
-              <div class="flip-card-front flex flex-col">
-                <div>
-                  <img
-                    class="rounded-tl-2xl"
-                    :src="`${imagePath}${item.src}`"
-                    :alt="item?.title"
-                  />
+            <div class="flex flex-col">
+              <div>
+                <img
+                  class="rounded-tl-2xl"
+                  :src="`${imagePath}${item.src}`"
+                  :alt="item?.title"
+                />
+              </div>
+              <div class="relative">
+                <div
+                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+                >
+                  {{ item.title }}
                 </div>
-                <div class="relative">
-                  <div
-                    class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-                  >
-                    {{ item.title }}
-                  </div>
-                  <div>
-                    {{ item.description }}
-                  </div>
+                <div>
+                  {{ item.description }}
                 </div>
               </div>
             </div>
@@ -135,54 +134,51 @@
           <div
             v-for="(item, index) in showItems2"
             :key="index"
-            class="flip-card relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
+            class="card-item relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
           >
-            <div class="flip-card-inner">
-              <div class="flip-card-front flex flex-col">
-                <div>
-                  <img
-                    class="rounded-tl-2xl"
-                    :src="`${imagePath}${item.src}`"
-                    :alt="item?.title"
-                  />
+            <div class="flex flex-col">
+              <div>
+                <img
+                  class="rounded-tl-2xl"
+                  :src="`${imagePath}${item.src}`"
+                  :alt="item?.title"
+                />
+              </div>
+              <div class="relative">
+                <div
+                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+                >
+                  {{ item.title }}
                 </div>
-                <div class="relative">
-                  <div
-                    class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
-                  >
-                    {{ item.title }}
-                  </div>
-                  <div>
-                    {{ item.description }}
-                  </div>
+                <div>
+                  {{ item.description }}
                 </div>
               </div>
             </div>
           </div>
+
           <div
-            class="flip-card relative max-w-[450px] rounded-tl-2xl bg-white p-3 shadow-md"
+            class="card-item relative max-w-[450px] rounded-tl-2xl bg-white p-3 shadow-md"
           >
-            <div class="flip-card-inner">
-              <div class="flip-card-front flex flex-col">
-                <div>
-                  <img
-                    class="h-full w-full object-cover"
-                    src="/img/show-01.jpg"
-                    alt="1"
-                  />
+            <div class="flex flex-col">
+              <div>
+                <img
+                  class="h-full w-full object-cover"
+                  src="/img/show-01.jpg"
+                  alt="1"
+                />
+              </div>
+              <div class="relative">
+                <div
+                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
+                >
+                  F.S.D 藝術滑輪行動慶生舞
                 </div>
-                <div class="relative">
-                  <div
-                    class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
-                  >
-                    F.S.D 藝術滑輪行動慶生舞
+                <div class="flex gap-3">
+                  <div class="shrink-0">
+                    <img src="/img/title-special.svg" alt="" />
                   </div>
-                  <div class="flex gap-3">
-                    <div class="shrink-0">
-                      <img src="/img/title-special.svg" alt="" />
-                    </div>
-                    穿越整場的驚喜童趣慶生！慶生小隊定時不定點在走道上手拿慶生牌、氣球表演慶生輪舞，穿梭現場更顯熱鬧氣氛！慶生小隊將不定點出沒，一起來找他們玩滑輪、拿氣球吧！
-                  </div>
+                  穿越整場的驚喜童趣慶生！慶生小隊定時不定點在走道上手拿慶生牌、氣球表演慶生輪舞，穿梭現場更顯熱鬧氣氛！慶生小隊將不定點出沒，一起來找他們玩滑輪、拿氣球吧！
                 </div>
               </div>
             </div>
@@ -276,19 +272,7 @@
 </template>
 
 <style>
-  .flip-card {
-    perspective: 1000px;
-    transform: rotateY(-180deg);
-  }
-  .flip-card-inner {
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  .flip-card-front,
-  .flip-card-back {
-    backface-visibility: hidden;
-  }
-  .flip-card-back {
-    transform: rotateY(180deg);
+  .card-item {
+    transform-origin: center;
   }
 </style>

@@ -38,7 +38,7 @@
 <template>
   <router-link
     :to="props.link"
-    class="relative inline-block rounded-tl-3xl bg-kv-blue py-3 pe-16 ps-5 text-2xl font-bold tracking-wide text-white"
+    class="ms relative inline-block rounded-tl-3xl bg-kv-blue py-3 pe-20 ps-5 text-2xl font-bold tracking-wide text-white transition hover:bg-primary-500"
   >
     {{ props.title }}
     <span class="bounce-float absolute -end-[30px] -top-[50px]">

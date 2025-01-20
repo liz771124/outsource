@@ -110,7 +110,7 @@
       </router-link> -->
     </Header>
     <div class="bg-green">
-      <div class="container py-10">
+      <div class="container py-16">
         <div class="mb-8 text-center">
           <img class="mx-auto" width="300" src="/img/title-game.png" alt="" />
         </div>
@@ -325,7 +325,7 @@
       </div>
     </div>
     <div class="bg-yellow">
-      <div class="container py-10">
+      <div class="container py-16">
         <div class="mb-8 text-center">
           <img class="mx-auto" width="300" src="/img/title-gift.png" alt="" />
           <div>
