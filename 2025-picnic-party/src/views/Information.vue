@@ -2,6 +2,7 @@
   import { ref, onMounted, onUnmounted } from 'vue'
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import { gsap } from 'gsap'
+  import { useLoading } from '../composables/useLoading'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
 
@@ -56,34 +57,246 @@
     }
   ]
 
-  const images = [
-    {
-      src: 'show-01.jpg',
-      title: '文章名稱文章名稱章名稱文章名稱',
-      link: '#'
-    },
-    {
-      src: 'show-01.jpg',
-      title: '文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱',
-      link: '#'
-    },
-    {
-      src: 'show-01.jpg',
-      title: '文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱',
-      link: '#'
-    },
-    {
-      src: 'show-01.jpg',
-      title: '文章名稱文章名稱文章名稱文',
-      link: '#'
-    },
-    {
-      src: 'show-01.jpg',
-      title:
-        '文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱文章名稱名稱文章名稱文章名稱文',
-      link: '#'
-    }
-  ]
+  const imgList = ref({
+    sport: [
+      {
+        src: '/sport/1.png',
+        title:
+          '掌握3原則，讓孩子放下手機，親近自然》華德福戶外引導師：玩，是看起來不像學習的學習',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/31227'
+      },
+      {
+        src: '/sport/2.png',
+        title:
+          '不用花大錢的學習就在日常生活與大自然裡，而我們是否錯過了這份珍貴的成長禮物呢？',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/16519'
+      },
+      {
+        src: '/sport/3.png',
+        title: '理論與效益：戶外教育4大效益、10項學習成果',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/11867'
+      },
+      {
+        src: '/sport/4.png',
+        title: '好山好水好激勵，登山運動互相扶持，凝聚親子情',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/11900'
+      },
+      {
+        src: '/sport/5.png',
+        title: '翻轉教室學習模式〉帶孩子走向戶外， 知識才會貼近生活',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/3617'
+      },
+      {
+        src: '/sport/6.png',
+        title: '上山下海就是最棒的自然課',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/1987'
+      },
+      {
+        src: '/sport/7.png',
+        title:
+          '戶外活動不僅提升了孩子的感覺統合，更有助於孩子的創造能力及問題解決的能力',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/13985'
+      },
+      {
+        src: '/sport/8.png',
+        title:
+          '瑞典戶外教育家：只坐在教室裡學習，就像讀食譜書卻無法烹煮品嚐食物一樣',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/11928'
+      },
+      {
+        src: '/sport/9.png',
+        title: '探索自然，和家人共度美好時光',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/5330'
+      },
+      {
+        src: '/sport/10.png',
+        title:
+          '孩子太宅、不愛運動？念體育系的心理師、三寶爸張榮斌分享4招，輕鬆培養運動好習慣',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/29088'
+      },
+      {
+        src: '/sport/11.png',
+        title:
+          '天氣這麼熱，孩子喝的水就夠多了嗎? 兒醫：若5、6個小時沒有上廁所，就代表孩子是缺水了',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/18917'
+      },
+      {
+        src: '/sport/12.png',
+        title: '戶外運動是預防近視的防護罩 孩子其實可以不近視！',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/7839'
+      },
+      {
+        src: '/sport/13.png',
+        title:
+          '孩子睡不好又多夢？白天多曬太陽、運動，晚上泡腳，可改善睡眠品質、提升學習專注力',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/6243'
+      },
+      {
+        src: '/sport/14.png',
+        title:
+          '近視率飆升的原因是什麼》看太多電視電腦、玩手機太久？並不是！為了保健視力，兒童每天需要約３小時處於日照下',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/28285'
+      }
+    ],
+    family: [
+      {
+        src: '/family/1.png',
+        title:
+          '想要有良好的親子關係，就像任何關係一樣，需要時間培養——傾聽孩子的小事、全心全意地陪伴、疼愛但不溺愛....',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/4733'
+      },
+      {
+        src: '/family/2.png',
+        title:
+          '小時候的旅行，成為孩子長大後的養分；陳培瑜曾請假一週，帶建中兒去環島，讓大自然和美好回憶成為孩子的力量',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/27957'
+      },
+      {
+        src: '/family/3.png',
+        title: '孩子的快樂是來自於父母的陪伴，而非錢花了多少',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/4328'
+      },
+      {
+        src: '/family/4.png',
+        title: '其實，孩子願望比你想像的簡單',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/5261'
+      },
+      {
+        src: '/family/5.png',
+        title:
+          '長大後，孩子對家的記憶是什麼？6方法打造家的「記憶存摺」，養出懂愛、有幸福感的孩子',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/32396'
+      },
+      {
+        src: '/family/6.png',
+        title:
+          '允許孩子玩樂》「玩」是童年重要的事，爸媽應該鼓勵孩子出去玩耍，懂玩的孩子更懂得生存',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/23854'
+      },
+      {
+        src: '/family/7.png',
+        title:
+          '「匆忙孩子症候群」可能引發身心問題！心理師：家長不要把小孩的時間排滿滿，讓孩子的成長失去喘息的空間',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/32385'
+      },
+      {
+        src: '/family/8.png',
+        title: '不再快樂！台灣兒少幸福指數創新低 兒盟調查：遠低國際水準',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/32138'
+      },
+      {
+        src: '/family/9.png',
+        title:
+          '孩子最好的玩具就是他們的雙手，而不是手機或電視機，讓孩子用雙手盡情探索世界',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/14023'
+      },
+      {
+        src: '/family/10.png',
+        title:
+          '比起賺更多錢，送孩子補習或學才藝， 父母選擇花更多時間和心力陪伴，更能養出知足快樂的孩子',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/4154'
+      }
+    ],
+    fun: [
+      {
+        src: '/fun/1.png',
+        title:
+          '2024未來親子野餐日 盛大登場！闖關互動寓教於樂 國際級表演趣味精彩 千組家庭歡度周末 一起幸福Fun滿滿！',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/30620'
+      },
+      {
+        src: '/fun/2.png',
+        title:
+          '全台最盛大！【未來親子野餐日】上千組家庭草地曬幸福，闔家同樂趣味闖關比食力',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/27452'
+      },
+      {
+        src: '/fun/3.png',
+        title:
+          '2020未來親子野餐日：全台最盛大的「知識型野餐派對」， 萬人熱情參與，用食育打造幸福家庭時光！',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/20018'
+      },
+      {
+        src: '/fun/4.png',
+        title:
+          '2019未來親子野餐日前進高雄囉！食育嘉年華，全家大小嗨翻天、親子食育課，吃出孩子好未來！',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/16556'
+      },
+      {
+        src: '/fun/5.png',
+        title: '2019未來親子萬人綠地野餐，吃出孩子好未來！',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/14382'
+      },
+      {
+        src: '/fun/6.png',
+        title: '2018未來親子野餐日 8,000大手小手歡聚台中市民廣場',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/11132'
+      }
+    ],
+    sustainable: [
+      {
+        src: '/sustainable/1.png',
+        title: '從產地到餐桌：了解食物來源和生長環境，學會惜福感恩',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/14126'
+      },
+      {
+        src: '/sustainable/2.png',
+        title: '共食、共玩到共學：從食物入手，加深感情的凝聚力',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/14125'
+      },
+      {
+        src: '/sustainable/3.png',
+        title: '餐桌教養：生活中實踐飲食教育的10種方法',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/14724'
+      },
+      {
+        src: '/sustainable/4.png',
+        title:
+          '孩子愛挑食、不喜歡吃青菜？台南官田國小的食農教育，翻轉孩子愛上健康飲食',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/23229'
+      },
+      {
+        src: '/sustainable/5.png',
+        title: '健康教養術：從農場到餐桌的胡蘿蔔',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/10065'
+      },
+      {
+        src: '/sustainable/6.png',
+        title:
+          '高職學什麼》電機與電子群-冷凍空調科：節能環保趨勢下，就業前景看好；所學離不開「電」，數理能力要好',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/32412'
+      },
+      {
+        src: '/sustainable/7.png',
+        title:
+          '從生活中落實SDGs》關懷無家者，建中學生從種菜到料理，自製餐點送餐到北車，強調「真心款待」',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/26753'
+      },
+      {
+        src: '/sustainable/8.png',
+        title:
+          '石虎保育可以這樣做！農業部聯手家樂福，用友善石虎山蕉為石虎保育打前鋒，邁向ESG永續新世代',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/32302'
+      },
+      {
+        src: '/sustainable/9.png',
+        title: '打造SDGs幸福城市：從永續教育開始！新北特色學校帶給孩子們新未來',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/27511'
+      },
+      {
+        src: '/sustainable/10.png',
+        title:
+          '冷氣不冷怎麼辦？高雄市福山國小，將能源議題融入教學，引導孩子思考「我們與碳的距離」',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/29232'
+      },
+      {
+        src: '/sustainable/11.png',
+        title:
+          '不只關懷地球生態，更延伸物種關聯、媒體識讀！龍山國中「北極熊怎麼了」教出有思辨能力的孩子',
+        link: 'https://futureparenting.cwgv.com.tw/family/content/index/29324'
+      }
+    ]
+  })
 </script>
 <template>
   <div>
@@ -125,28 +338,39 @@
           </div>
         </div>
         <div class="py-10">
-          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-primary-500">
+          <div
+            class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-primary-500"
+          >
             #運動學習力
           </div>
-          <Swiper :swiperItems="images" :className="`bg-kv-yellow`" />
+          <Swiper :swiperItems="imgList.sport" :className="`bg-kv-yellow`" />
         </div>
         <div class="py-10">
-          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-kv-green">
+          <div
+            class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-kv-green"
+          >
             #家庭陪伴力
           </div>
-          <Swiper :swiperItems="images" :className="`bg-kv-green`" />
+          <Swiper :swiperItems="imgList.family" :className="`bg-kv-green`" />
         </div>
         <div class="py-10">
-          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-primary-500">
+          <div
+            class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-primary-500"
+          >
             #永續執行力
           </div>
-          <Swiper :swiperItems="images" :className="`bg-kv-yellow`" />
+          <Swiper
+            :swiperItems="imgList.sustainable"
+            :className="`bg-kv-yellow`"
+          />
         </div>
         <div class="py-10">
-          <div class="scroll-animate-fadeInUp mb-4 text-center text-3xl font-bold text-kv-green">
+          <div
+            class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-kv-green"
+          >
             #野餐玩樂力
           </div>
-          <Swiper :swiperItems="images" :className="`bg-kv-green`" />
+          <Swiper :swiperItems="imgList.fun" :className="`bg-kv-green`" />
         </div>
 
         <div

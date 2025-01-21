@@ -55,10 +55,11 @@
       <swiper-slide
         v-for="(item, index) in swiperItems"
         :key="index"
-        class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-3"
+        class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
       >
         <a
           :href="item.link"
+          target="_blank"
           class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
         >
           <div class="flex flex-col">
@@ -67,8 +68,8 @@
                 class="rounded-tl-2xl"
                 :src="`${imagePath}${item.src}`"
                 :alt="item.title"
-                @click="goToSlide(index)"
               />
+
               <!-- data-twe-toggle="modal"
                 data-twe-target="#exampleModalCenter2"
                 data-twe-ripple-init
@@ -83,7 +84,7 @@
         </a>
       </swiper-slide>
     </swiper>
-    <div
+    <!-- <div
       data-twe-modal-init
       class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       id="exampleModalCenter2"
@@ -117,22 +118,23 @@
               :key="index"
               class="flex flex-col gap-3"
             >
-              <div class="h-[300px] w-[300px] overflow-hidden">
-                <img
-                  :src="`${imagePath}${item.src}`"
-                  :alt="item.title"
-                  class="h-full w-full object-cover"
-                />
-              </div>
-              <div class="line-clamp-2 text-start">
-                <a :href="item.link" target="_blank">
+              <a :href="item.link" target="_blank">
+                <div class="h-[300px] w-[300px] overflow-hidden">
+                  {{ item.src }}
+                  <img
+                    :src="`${imagePath}${item.src}`"
+                    :alt="item.title"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div class="line-clamp-2 text-start">
                   {{ item.title }}
-                </a>
-              </div>
+                </div>
+              </a>
             </swiper-slide>
           </swiper>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>

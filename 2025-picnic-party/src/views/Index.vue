@@ -4,6 +4,7 @@
 
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
+  const imagePath = import.meta.env.VITE_IMAGE_PATH
 
   const initializeAnimations = () => {
     // 清除所有 ScrollTrigger，避免動畫重疊
@@ -80,9 +81,9 @@
 <template>
   <div>
     <Header>
-      <!-- <router-link to="/">
-        <img src="/img/kv-index.png" alt="" width="650" />
-      </router-link> -->
+      <router-link to="/">
+        <img src="/img/kv-gift.svg" alt="" width="650" />
+      </router-link>
     </Header>
 
     <!-- <div class="animate-bounceFloat">上下跳動元素</div>
