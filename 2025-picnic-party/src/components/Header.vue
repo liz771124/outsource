@@ -9,67 +9,68 @@
   gsap.registerPlugin(ScrollTrigger)
 
   onMounted(() => {
-    const flowingStars = ['#star-01', '#star-05']
-    flowingStars.forEach((star) => {
-      gsap.fromTo(
-        star,
-        { x: '-100vw', y: '-100vh', opacity: 0 },
-        {
-          x: 0,
-          y: 0,
-          opacity: 1,
-          duration: 1.5,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: star,
-            start: 'top 80%',
-            toggleActions: 'play none none none'
+    setTimeout(() => {
+      const flowingStars = ['#star-01', '#star-05']
+      flowingStars.forEach((star) => {
+        gsap.fromTo(
+          star,
+          { y: '-100', opacity: 0, scale: 0 },
+          {
+            x: 0,
+            y: 0,
+            scale: 1,
+            opacity: 1,
+            duration: 0.5,
+            ease: 'power4.out',
+            scrollTrigger: {
+              trigger: star,
+              start: 'top 80%',
+              toggleActions: 'play none none none'
+            }
           }
-        }
-      )
-    })
+        )
+      })
 
-    // Twinkling stars animation (star-02, star-03, star-04)
-    const twinklingStars = ['#star-02', '#star-03', '#star-04']
-    let sec = 3000
-    twinklingStars.forEach((star) => {
-      gsap.fromTo(
-        star,
-        { scale: 0.8, opacity: 0.5, rotation: 0 },
-        {
-          scale: 1.2,
-          opacity: 1,
-          rotation: 360,
-          repeat: -1,
-          yoyo: true,
-          duration: 3,
-          delay: sec * 1.2,
-          ease: 'sine.inOut',
-          scrollTrigger: {
-            trigger: star,
-            start: 'top 90%',
-            toggleActions: 'play none none none'
+      // Twinkling stars animation (star-02, star-03, star-04)
+      const twinklingStars = ['#star-02', '#star-03', '#star-04']
+      twinklingStars.forEach((star) => {
+        gsap.fromTo(
+          star,
+          { scale: 0.8, opacity: 0.5, rotation: 0 },
+          {
+            scale: 1.2,
+            opacity: 1,
+            rotation: 360,
+            repeat: -1,
+            yoyo: true,
+            duration: 3,
+            ease: 'sine.inOut',
+            scrollTrigger: {
+              trigger: star,
+              start: 'top 90%',
+              toggleActions: 'play none none none'
+            }
           }
-        }
-      )
-    })
+        )
+      })
 
-    // kv-main dissolve fade-in animation
-    // gsap.fromTo(
-    //   '#kv-main',
-    //   { opacity: 0, filter: 'blur(10px)' },
-    //   {
-    //     opacity: 1,
-    //     filter: 'blur(0px)',
-    //     duration: 2,
-    //     ease: 'power3.out',
-    //     scrollTrigger: {
-    //       trigger: '#kv-main',
-    //       start: 'top 80%',
-    //       toggleActions: 'play none none none'
-    //     }
-    //   }
-    // )
+      // kv-main dissolve fade-in animation
+      // gsap.fromTo(
+      //   '#kv-main',
+      //   { opacity: 0, filter: 'blur(10px)' },
+      //   {
+      //     opacity: 1,
+      //     filter: 'blur(0px)',
+      //     duration: 2,
+      //     ease: 'power3.out',
+      //     scrollTrigger: {
+      //       trigger: '#kv-main',
+      //       start: 'top 80%',
+      //       toggleActions: 'play none none none'
+      //     }
+      //   }
+      // )
+    }, 500)
   })
 </script>
 Ｚ

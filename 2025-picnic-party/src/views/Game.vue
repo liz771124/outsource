@@ -105,9 +105,9 @@
 <template>
   <div>
     <Header>
-      <!-- <router-link to="/">
-        <img src="/img/kv-play.png" alt="" width="650" />
-      </router-link> -->
+      <router-link to="/">
+        <img src="/img/kv-game.svg" alt="" width="650" />
+      </router-link>
     </Header>
     <div class="bg-green">
       <div class="container py-16">

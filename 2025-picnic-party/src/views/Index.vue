@@ -31,23 +31,23 @@
     })
 
     // Zoom Right 動畫
-    gsap.utils.toArray('.animate-zoom-right').forEach((element) => {
-      gsap.fromTo(
-        element,
-        { opacity: 0, x: 50 },
-        {
-          scrollTrigger: {
-            trigger: element,
-            start: 'left 80%',
-            toggleActions: 'play none none none'
-          },
-          duration: 0.8,
-          opacity: 1,
-          x: 0,
-          ease: 'power3.out'
-        }
-      )
-    })
+    // gsap.utils.toArray('.animate-zoom-right').forEach((element) => {
+    //   gsap.fromTo(
+    //     element,
+    //     { opacity: 0, x: 50 },
+    //     {
+    //       scrollTrigger: {
+    //         trigger: element,
+    //         start: 'left 80%',
+    //         toggleActions: 'play none none none'
+    //       },
+    //       duration: 0.8,
+    //       opacity: 1,
+    //       x: 0,
+    //       ease: 'power3.out'
+    //     }
+    //   )
+    // })
 
     // Zoom Left 動畫
     gsap.utils.toArray('.animate-zoom-left').forEach((element) => {
@@ -82,7 +82,15 @@
   <div>
     <Header>
       <router-link to="/">
-        <img src="/img/kv-gift.svg" alt="" width="650" />
+        <div class="relative">
+          <img src="/img/kv-main.svg" alt="" width="650" />
+          <img
+            class="animate-bounceFloat absolute right-0 top-20"
+            src="/img/kv-pic.svg"
+            alt=""
+            width="160"
+          />
+        </div>
       </router-link>
     </Header>
 
@@ -116,16 +124,7 @@
             <div
               class="flex grow flex-col items-center justify-center gap-3 text-xl font-black text-kv-blue"
             >
-              <!-- <p class="animate-zoom-in">未來親子野餐日陪伴孩子10週年啦！</p>
-              <p class="animate-zoom-in">
-                不只是我們共創的里程碑，也象徵著「幸福永續」
-              </p>
-              <p class="animate-zoom-in">
-                期待能陪伴孩子，朝著更美好的未來邁進！
-              </p>
-              <p class="animate-zoom-in">更多歡樂、甜蜜的親子時光，</p>
-              <p class="animate-zoom-in">就從今年的10歲生日派對開始吧！</p> -->
-              <img class="w-full" src="/img/index-video-into.png" alt="" />
+              <img class="w-full" src="/img/index-video-into.svg" alt="" />
             </div>
           </div>
         </div>

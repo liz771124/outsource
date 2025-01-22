@@ -13,9 +13,17 @@
 <template>
   <div>
     <Header>
-      <!-- <router-link to="/">
-        <img src="/img/kv-play.png" alt="" width="650" />
-      </router-link> -->
+      <router-link to="/">
+        <div class="relative">
+          <img src="/img/kv-main.svg" alt="" width="650" />
+          <img
+    class="animate-bounceFloat absolute right-0 top-20"
+            src="/img/kv-pic.svg"
+            alt=""
+            width="150"
+          />
+        </div>
+      </router-link>
     </Header>
     <div class="bg-yellow">
       <div class="container py-16">

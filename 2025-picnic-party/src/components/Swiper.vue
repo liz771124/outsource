@@ -68,6 +68,7 @@
                 class="rounded-tl-2xl"
                 :src="`${imagePath}${item.src}`"
                 :alt="item.title"
+                loading="lazy"
               />
 
               <!-- data-twe-toggle="modal"

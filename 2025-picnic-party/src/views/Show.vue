@@ -91,7 +91,20 @@
 </script>
 <template>
   <div>
-    <Header />
+    <Header>
+      <router-link to="/">
+        <div class="relative">
+          <img src="/img/kv-main.svg" alt="" width="650" />
+          <img
+    class="animate-bounceFloat absolute right-0 top-20"
+            src="/img/kv-pic.svg"
+            alt=""
+            width="150"
+          />
+        </div>
+      </router-link>
+    </Header>
+
     <div class="bg-green py-16">
       <div class="container">
         <div class="mb-8 text-center">
@@ -104,7 +117,7 @@
         </div>
         <div
           ref="container"
-          class="mb-5 flex flex-wrap justify-center gap-x-10 py-10 md:gap-y-10"
+          class="mb-5 grid grid-cols-3 justify-center gap-x-10 py-10 md:gap-y-10"
         >
           <div
             v-for="(item, index) in showItems"
@@ -131,32 +144,10 @@
               </div>
             </div>
           </div>
-          <div
-            v-for="(item, index) in showItems2"
-            :key="index"
-            class="scroll-animate-flip3D relative max-w-[350px] rounded-tl-2xl bg-white p-3 shadow-md"
-          >
-            <div class="flex flex-col">
-              <div>
-                <img
-                  class="rounded-tl-2xl"
-                  :src="`${imagePath}${item.src}`"
-                  :alt="item?.title"
-                />
-              </div>
-              <div class="relative">
-                <div
-                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-                >
-                  {{ item.title }}
-                </div>
-                <div>
-                  {{ item.description }}
-                </div>
-              </div>
-            </div>
-          </div>
-
+        </div>
+        <div
+          class="mb-5 grid grid-cols-2 items-center justify-center gap-x-10 py-10 md:gap-y-10"
+        >
           <div
             class="card-item relative max-w-[450px] rounded-tl-2xl bg-white p-3 shadow-md"
           >

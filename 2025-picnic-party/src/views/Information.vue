@@ -300,7 +300,19 @@
 </script>
 <template>
   <div>
-    <Header />
+    <Header>
+      <router-link to="/">
+        <div class="relative">
+          <img src="/img/kv-main.svg" alt="" width="650" />
+          <img
+            class="animate-bounceFloat absolute right-0 top-20"
+            src="/img/kv-pic.svg"
+            alt=""
+            width="150"
+          />
+        </div>
+      </router-link>
+    </Header>
 
     <div class="bg-green">
       <div class="container py-16">
