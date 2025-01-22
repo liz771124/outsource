@@ -112,13 +112,15 @@
     <div class="bg-green">
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <img class="mx-auto" width="300" src="/img/title-game.png" alt="" />
+          <img class="mx-auto" width="300" src="/img/title-game.svg" alt="" />
         </div>
-        <div class="flex flex-col items-center gap-5">
-          <div class="rounded-full bg-kv-green px-5 py-1 text-white">
+        <div class="flex items-center justify-center gap-5">
+          <div
+            class="border-e border-kv-green px-5 py-1 pe-5 text-[45px] font-black text-kv-green"
+          >
             #十在好玩
           </div>
-          <div class="text-center">
+          <div>
             各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br />
             一起享受闖關集章、學習知識，共度好時光！
           </div>
@@ -165,11 +167,13 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center gap-5">
-          <div class="rounded-full bg-kv-yellow px-5 py-1 text-white">
+        <div class="flex items-center justify-center gap-5">
+          <div
+            class="border-e border-primary-500 px-5 py-1 pe-5 text-[45px] font-black text-primary-500"
+          >
             #十在好食
           </div>
-          <div class="text-center">
+          <div>
             小農市集一起來到野餐日！<br />
             產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
           </div>
@@ -327,7 +331,7 @@
     <div class="bg-yellow">
       <div class="container py-16">
         <div class="mb-3 text-center">
-          <img class="mx-auto" width="300" src="/img/title-gift.png" alt="" />
+          <img class="mx-auto" width="300" src="/img/title-gift.svg" alt="" />
         </div>
         <div class="mb-8 text-center">
           <div>只要集滿10個闖關印章，就能兌換抽獎券</div>

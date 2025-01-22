@@ -60,15 +60,7 @@
   <div>
     <Header>
       <router-link to="/">
-        <div class="relative">
-          <img src="/img/kv-main.svg" alt="" width="650" />
-          <img
-    class="animate-bounceFloat absolute right-0 top-20"
-            src="/img/kv-pic.svg"
-            alt=""
-            width="150"
-          />
-        </div>
+        <img src="/img/kv-gift.svg" alt="" width="650" />
       </router-link>
     </Header>
 
@@ -76,7 +68,7 @@
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-5">
-            <img src="/img/title-faq.png" alt="" />
+            <img src="/img/title-faq.svg" alt="" />
           </div>
         </div>
         <div class="bg-white">
@@ -288,7 +280,7 @@
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-6">
-            <img src="/img/title-transportation.png" alt="" />
+            <img src="/img/title-transportation.svg" alt="" />
           </div>
         </div>
         <div class="mb-6">
@@ -376,7 +368,6 @@
         <div class="flex flex-col gap-3">
           <div class="txt-2xl mb-3 font-bold">領取方式</div>
           <div class="flex flex-col gap-3">
-            
             1.早鳥報名得獎名單將於活動前一周公布在本網頁，敬請密切留意相關資訊。<br />
 
             2.活動當天攜帶官方發送之報到序號簡訊及身分證明文件報到完成，即可領取福袋禮(報到禮)。<br />

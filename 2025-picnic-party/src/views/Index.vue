@@ -6,6 +6,12 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   const imagePath = import.meta.env.VITE_IMAGE_PATH
 
+  ScrollTrigger.create({
+    start: 'top center',
+    end: 'bottom center',
+    debounce: true // 避免頻繁觸發
+  })
+
   const initializeAnimations = () => {
     // 清除所有 ScrollTrigger，避免動畫重疊
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
@@ -82,15 +88,9 @@
   <div>
     <Header>
       <router-link to="/">
-        <div class="relative">
-          <img src="/img/kv-main.svg" alt="" width="650" />
-          <img
-            class="animate-bounceFloat absolute right-0 top-20"
-            src="/img/kv-pic.svg"
-            alt=""
-            width="160"
-          />
-        </div>
+        <router-link to="/">
+          <img src="/img/kv-show.svg" alt="" width="650" />
+        </router-link>
       </router-link>
     </Header>
 
@@ -251,22 +251,21 @@
                   <span class="bounce-float absolute -start-[30px] -top-[30px]">
                     <img
                       class="hidden md:block"
-                      width="100"
-                      src="/img/title-gift-01.svg"
+                      src="/img/index-gift-title-01.svg"
                       alt=""
                     />
                   </span>
                   <img src="/img/gift_01.png" alt="" />
-                  <span
+                  <!-- <span
                     class="absolute end-0 top-0 inline-block rounded-bl-3xl bg-primary-500 py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
                   >
                     報名送福袋
-                  </span>
+                  </span> -->
                 </div>
                 <div
                   class="mt-3 text-center text-2xl font-black text-primary-500"
                 >
-                  限量 600 組！
+                  <!-- 限量 600 組！ -->
                 </div>
               </div>
               <div class="animate-zoom-in relative bg-white p-5 shadow-xl">
@@ -274,17 +273,16 @@
                   <span class="bounce-float absolute -start-[30px] -top-[30px]">
                     <img
                       class="hidden md:block"
-                      width="100"
-                      src="/img/title-gift-02.svg"
+                      src="/img/index-gift-title-02.svg"
                       alt=""
                     />
                   </span>
                   <img src="/img/gift_01.png" alt="" />
-                  <span
+                  <!-- <span
                     class="absolute end-0 top-0 inline-block rounded-bl-3xl bg-primary-500 py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
                   >
                     早鳥加碼送
-                  </span>
+                  </span> -->
                 </div>
                 <div
                   class="mt-3 text-center text-2xl font-black text-primary-500"
@@ -325,8 +323,8 @@
             <div class="mt-5 text-center font-bold">
               ※【單組票】、【揪團票】、【慶生套票】下訂後，恕不接受換票。
             </div>
-            <div class="mt-20 text-center font-bold">
-              <ButtonJoin :title="'報名注意事項'" />
+            <div class="my-5 flex items-center justify-center">
+              <ButtonJoin />
             </div>
           </div>
         </div>

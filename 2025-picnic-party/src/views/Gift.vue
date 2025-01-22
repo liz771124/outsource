@@ -14,30 +14,28 @@
   <div>
     <Header>
       <router-link to="/">
-        <div class="relative">
-          <img src="/img/kv-main.svg" alt="" width="650" />
-          <img
-    class="animate-bounceFloat absolute right-0 top-20"
-            src="/img/kv-pic.svg"
-            alt=""
-            width="150"
-          />
-        </div>
+        <img src="/img/kv-gift.svg" alt="" width="650" />
       </router-link>
     </Header>
     <div class="bg-yellow">
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <!-- <img class="mx-auto" width="300" src="/img/title-game.png" alt="" /> -->
-          <div class="mb-5 text-2xl font-bold text-primary-500">
+          <img
+            width="500"
+            class="mx-auto mb-10 block"
+            src="/img/title-gift-main.svg"
+            alt=""
+          />
+          <img class="mx-auto mb-10" src="/img/title-gift-intro.svg" alt="" />
+          <!-- <div class="mb-5 text-2xl font-bold text-primary-500">
             未來親子野餐日，歡慶10周年
           </div>
           <div>10大互動好禮搶先看！</div>
           <div>全場活動趴趴走，好禮拿不停！</div>
-          <div>點擊按鈕，看更多活動說明</div>
+          <div>點擊按鈕，看更多活動說明</div> -->
         </div>
 
-        <div class="flex flex-col gap-16">
+        <div class="columns-2 gap-8">
           <div
             class="scroll-animate-slideInLeft relative grid rounded-xl bg-primary-500 p-5 md:grid-cols-2"
           >
@@ -72,9 +70,9 @@
               <img src="/img/gift-intro-08.svg" alt="" />
             </div>
           </div>
-          <div class="my-5 text-center">
-            <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
-          </div>
+        </div>
+        <div class="my-5 flex items-center justify-center">
+          <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
         </div>
       </div>
     </div>

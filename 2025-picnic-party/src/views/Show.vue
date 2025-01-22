@@ -93,22 +93,14 @@
   <div>
     <Header>
       <router-link to="/">
-        <div class="relative">
-          <img src="/img/kv-main.svg" alt="" width="650" />
-          <img
-    class="animate-bounceFloat absolute right-0 top-20"
-            src="/img/kv-pic.svg"
-            alt=""
-            width="150"
-          />
-        </div>
+        <img src="/img/kv-show.svg" alt="" width="650" />
       </router-link>
     </Header>
 
     <div class="bg-green py-16">
       <div class="container">
         <div class="mb-8 text-center">
-          <img class="mx-auto" width="300" src="/img/title-gift.png" alt="" />
+          <img class="mx-auto" width="300" src="/img/title-gift.svg" alt="" />
         </div>
         <div class="mb-8 text-center">
           <div>當然不能少了各種好Show炒熱氣氛！</div>
@@ -175,8 +167,8 @@
             </div>
           </div>
         </div>
-        <div class="my-5 text-center">
-          <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
+        <div class="my-5 flex items-center justify-center">
+          <ButtonJoin />
         </div>
       </div>
     </div>

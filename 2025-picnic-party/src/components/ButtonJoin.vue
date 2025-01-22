@@ -36,13 +36,7 @@
   })
 </script>
 <template>
-  <router-link
-    :to="props.link"
-    class="ms relative inline-block rounded-tl-3xl bg-kv-blue py-3 pe-20 ps-5 text-2xl font-bold tracking-wide text-white transition hover:bg-primary-500"
-  >
-    {{ props.title }}
-    <span class="bounce-float absolute -end-[30px] -top-[50px]">
-      <img src="/img/btn-d-01.png" alt="" />
-    </span>
+  <router-link to="/#purchase" class="">
+    <img width="300" src="/img/btn-join.png" alt="" />
   </router-link>
 </template>

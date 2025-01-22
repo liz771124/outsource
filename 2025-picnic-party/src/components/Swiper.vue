@@ -66,7 +66,7 @@
             <div class="mb-3">
               <img
                 class="rounded-tl-2xl"
-                :src="`${imagePath}${item.src}`"
+                :src="item.src"
                 :alt="item.title"
                 loading="lazy"
               />

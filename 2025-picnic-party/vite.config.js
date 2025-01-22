@@ -30,8 +30,14 @@ export default defineConfig({
           return `assets/${folder}/[name][extname]`
         },
         chunkFileNames: 'js/[name]-[hash].js',
-        entryFileNames: 'js/[name]-[hash].js'
+        entryFileNames: 'js/[name]-[hash].js',
+        manualChunks: {
+          vendor: ['vue', 'vue-router'],
+          swiper: ['swiper']
+        }
       }
-    }
+    },
+    assetsInlineLimit: 4096,
+    chunkSizeWarningLimit: 2000
   }
 })
