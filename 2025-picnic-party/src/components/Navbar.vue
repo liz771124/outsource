@@ -4,6 +4,7 @@
   import { Offcanvas, initTWE } from 'tw-elements'
   const route = useRoute()
   const navItems = [
+    { to: '/', label: '首頁' },
     { to: '/gift', label: '互動好禮' },
     { to: '/game', label: '歡樂闖關' },
     { to: '/show', label: '精彩表演' },
@@ -23,12 +24,12 @@
           <img src="/img/logo.svg" alt="logo" width="135" />
         </router-link>
       </h1>
-      <ul class="hidden items-center gap-5 md:flex">
+      <ul class="hidden items-center gap-3 md:flex">
         <li v-for="(item, index) in navItems" :key="index">
           <router-link
             :to="item.to"
             :class="[
-              'rounded-full bg-white px-4 py-2 text-xl font-bold',
+              'rounded-full bg-white px-4 py-1 text-xl font-bold',
               route.path === item.to ? 'text-primary-500' : 'text-kv-green'
             ]"
           >

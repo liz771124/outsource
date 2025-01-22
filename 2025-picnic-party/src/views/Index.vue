@@ -105,18 +105,18 @@
     <div>
       <div class="bg-yellow py-16">
         <div class="container">
-          <div class="animate-zoom-in flex flex-wrap gap-3">
+          <div class="animate-zoom-in flex flex-wrap gap-3 md:flex-nowrap">
             <iframe
-              class="aspect-video mx-auto w-full max-w-[700px] md:h-[450px]"
+              class="aspect-video mx-auto w-full max-w-[600px] md:h-[330px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
             <div
-              class="flex grow flex-col items-center justify-center gap-3 text-xl font-black text-kv-blue md:px-5"
+              class="flex grow flex-col items-center justify-center gap-3 text-xl font-black text-kv-blue"
             >
-              <p class="animate-zoom-in">未來親子野餐日陪伴孩子10週年啦！</p>
+              <!-- <p class="animate-zoom-in">未來親子野餐日陪伴孩子10週年啦！</p>
               <p class="animate-zoom-in">
                 不只是我們共創的里程碑，也象徵著「幸福永續」
               </p>
@@ -124,7 +124,8 @@
                 期待能陪伴孩子，朝著更美好的未來邁進！
               </p>
               <p class="animate-zoom-in">更多歡樂、甜蜜的親子時光，</p>
-              <p class="animate-zoom-in">就從今年的10歲生日派對開始吧！</p>
+              <p class="animate-zoom-in">就從今年的10歲生日派對開始吧！</p> -->
+              <img class="w-full" src="/img/index-video-into.png" alt="" />
             </div>
           </div>
         </div>
@@ -134,9 +135,9 @@
           <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
         </span>
         <div class="container relative flex flex-col gap-10">
-          <a
+          <router-link
             class="animate-zoom-right rounded-rl-2xl relative rounded-bl-[50px] rounded-tr-[50px] bg-primary-500 p-6 text-white"
-            href="/show"
+            to="/show"
           >
             <div
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
@@ -145,25 +146,29 @@
                 <img class="w-full" src="/img/index-intro-02.png" alt="" />
               </div>
               <div class="relative grow p-5">
-                <div class="relative mb-3 inline-block pe-5 ps-3">
+                <div
+                  class="relative z-10 flex text-[50px] font-black tracking-wide text-primary-500"
+                >
                   <span
-                    class="absolute bottom-0 left-0 w-full rounded-tr-xl bg-kv-yellow px-6 py-2"
-                  ></span>
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >精</span
+                  >
                   <span
-                    class="relative z-10 text-4xl font-black tracking-wide text-white"
-                    >精彩表演</span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >彩</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >表</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >演</span
                   >
                 </div>
-                <div class="flex w-full flex-col text-2xl tracking-wider">
-                  <div class="border-b border-dashed border-white py-2">
-                    孩子的春日派對、大人的歡聚時光！
-                  </div>
-                  <div class="border-b border-dashed border-white py-2">
-                    最精彩好看的舞台節目都在這，
-                  </div>
-                  <div class="border-b border-dashed border-white py-2">
-                    準備好一起 High 翻天吧！
-                  </div>
+                <div class="dashed-text-container">
+                  孩子的春日派對、大人的歡聚時光！最精彩好看的舞台節目都在這，準備好一起
+                  High 翻天吧！
                 </div>
                 <div class="absolute -bottom-10 start-10 hidden md:block">
                   <img
@@ -173,13 +178,13 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl tracking-wide text-white transition hover:bg-kv-blue"
+                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看表演
                 </div>
               </div>
             </div>
-          </a>
+          </router-link>
           <router-link
             class="animate-zoom-left rounded-rl-2xl relative rounded-br-[50px] rounded-tl-[50px] bg-kv-green p-6 text-white"
             to="/game"
@@ -188,38 +193,41 @@
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
             >
               <div class="order-2 lg:shrink-0">
-                <img class="w-full" src="/img/index-intro-02.png" alt="" />
+                <img class="w-full" src="/img/index-intro-03.png" alt="" />
               </div>
-              <div class="relative grow p-5">
-                <div class="relative mb-3 inline-block pe-5 ps-3">
+              <div class="relative order-2 grow p-5 md:order-1">
+                <div
+                  class="relative z-10 flex text-[50px] font-black tracking-wide text-kv-green"
+                >
                   <span
-                    class="absolute bottom-0 left-0 w-full rounded-tr-xl bg-kv-yellow px-6 py-2"
-                  ></span>
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >趣</span
+                  >
                   <span
-                    class="relative z-10 text-4xl font-black tracking-wide text-white"
-                    >趣味闖關</span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >味</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >闖</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >關</span
                   >
                 </div>
-                <div class="flex w-full flex-col text-2xl tracking-wider">
-                  <div class="border-b border-dashed border-white py-2">
-                    十大主題，兼具知識與趣味的闖關挑戰，
-                  </div>
-                  <div class="border-b border-dashed border-white py-2">
-                    親子共同完成任務，還有小農市集，
-                  </div>
-                  <div class="border-b border-dashed border-white py-2">
-                    美好回憶獎不完！
-                  </div>
+                <div class="dashed-text-container">
+                  十大主題，兼具知識與趣味的闖關挑戰，親子共同完成任務，還有小農市集，美好回憶獎不完！
                 </div>
                 <div class="end-15 absolute -bottom-10 hidden md:block">
                   <img
                     class="w-[130px]"
-                    src="/img/index-intro-icon-02.png"
+                    src="/img/index-intro-icon-03.png"
                     alt=""
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl tracking-wide text-white transition hover:bg-kv-blue"
+                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看闖關
                 </div>
@@ -290,26 +298,26 @@
               id="purchase"
               class="m-10 mb-16 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
             >
-              <a class="animate-zoom-in relative" href="#">
+              <a class="animate-zoom-in group relative" href="#">
                 <img src="/img/ticket-01.png" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
               </a>
-              <a class="animate-zoom-in relative" href="#">
+              <a class="animate-zoom-in group relative" href="#">
                 <img src="/img/ticket-02.png" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
               </a>
-              <a class="animate-zoom-in relative" href="#">
+              <a class="animate-zoom-in group relative" href="#">
                 <img src="/img/ticket-03.png" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
@@ -327,3 +335,23 @@
     </div>
   </div>
 </template>
+<style scoped>
+  .dashed-text-container {
+    width: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.8;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      transparent calc(2em - 1px),
+      rgba(255, 255, 255, 0.5) calc(2em - 1px),
+      rgba(255, 255, 255, 0.5) 2em,
+      transparent 2em
+    );
+    background-size: 100% 2em;
+    background-position: 0 0;
+    padding: 0.5em 0;
+    font-weight: bolder;
+  }
+</style>
