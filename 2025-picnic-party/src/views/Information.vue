@@ -60,13 +60,13 @@
   const imgList = ref({
     sport: [
       {
-        src: '/sport/1.png',
+        src: 'https://imgs.cwgv.com.tw/articles/27/31227/preview/31227.png',
         title:
           '掌握3原則，讓孩子放下手機，親近自然》華德福戶外引導師：玩，是看起來不像學習的學習',
         link: 'https://futureparenting.cwgv.com.tw/family/content/index/31227'
       },
       {
-        src: '/sport/2.png',
+        src: 'https://imgs.cwgv.com.tw/articles/27/31227/preview/16519.png',
         title:
           '不用花大錢的學習就在日常生活與大自然裡，而我們是否錯過了這份珍貴的成長禮物呢？',
         link: 'https://futureparenting.cwgv.com.tw/family/content/index/16519'
