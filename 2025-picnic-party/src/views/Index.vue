@@ -37,23 +37,23 @@
     })
 
     // Zoom Right 動畫
-    // gsap.utils.toArray('.animate-zoom-right').forEach((element) => {
-    //   gsap.fromTo(
-    //     element,
-    //     { opacity: 0, x: 50 },
-    //     {
-    //       scrollTrigger: {
-    //         trigger: element,
-    //         start: 'left 80%',
-    //         toggleActions: 'play none none none'
-    //       },
-    //       duration: 0.8,
-    //       opacity: 1,
-    //       x: 0,
-    //       ease: 'power3.out'
-    //     }
-    //   )
-    // })
+    gsap.utils.toArray('.animate-zoom-right').forEach((element) => {
+      gsap.fromTo(
+        element,
+        { opacity: 0, x: 50 },
+        {
+          scrollTrigger: {
+            trigger: element,
+            start: 'left 80%',
+            toggleActions: 'play none none none'
+          },
+          duration: 0.8,
+          opacity: 1,
+          x: 0,
+          ease: 'power3.out'
+        }
+      )
+    })
 
     // Zoom Left 動畫
     gsap.utils.toArray('.animate-zoom-left').forEach((element) => {
@@ -87,10 +87,8 @@
 <template>
   <div>
     <Header>
-      <router-link to="/">
-        <router-link to="/">
-          <img src="/img/kv-show.svg" alt="" width="650" />
-        </router-link>
+      <router-link class="animate-bounceFloat" to="/">
+        <img src="/img/kv-main.svg" alt="" width="650" />
       </router-link>
     </Header>
 
@@ -113,7 +111,9 @@
     <div>
       <div class="bg-yellow py-16">
         <div class="container">
-          <div class="animate-zoom-in flex flex-wrap gap-3 md:flex-nowrap">
+          <div
+            class="animate-zoom-in mb-16 flex flex-wrap gap-3 md:flex-nowrap"
+          >
             <iframe
               class="aspect-video mx-auto w-full max-w-[600px] md:h-[330px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"

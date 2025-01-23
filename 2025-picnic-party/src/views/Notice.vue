@@ -59,8 +59,8 @@
 <template>
   <div>
     <Header>
-      <router-link to="/">
-        <img src="/img/kv-gift.svg" alt="" width="650" />
+      <router-link class="animate-bounceFloat" to="/">
+        <img src="/img/kv-notice.svg" alt="" width="650" />
       </router-link>
     </Header>
 

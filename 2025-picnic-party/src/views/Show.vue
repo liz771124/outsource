@@ -92,7 +92,7 @@
 <template>
   <div>
     <Header>
-      <router-link to="/">
+      <router-link class="animate-bounceFloat" to="/">
         <img src="/img/kv-show.svg" alt="" width="650" />
       </router-link>
     </Header>

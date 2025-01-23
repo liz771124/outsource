@@ -84,13 +84,17 @@ main {
 
 .bg-yellow {
   background-image: url('../public/img/bg-yellow.jpg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 .bg-green {
   background-image: url('../public/img/bg-green.jpg');
   background-size: cover;
   position: relative;
   z-index: 1;
+  background-repeat: repeat;
+  background-attachment: fixed;
   // &:before,
   // &:after {
   //   content: '';

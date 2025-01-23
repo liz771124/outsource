@@ -273,42 +273,42 @@
       title:
         '高職學什麼》電機與電子群-冷凍空調科：節能環保趨勢下，就業前景看好；所學離不開「電」，數理能力要好',
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/32412'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/53/26753/preview/26753.png',
-      title:
-        '從生活中落實SDGs》關懷無家者，建中學生從種菜到料理，自製餐點送餐到北車，強調「真心款待」',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/26753'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/02/32302/preview/32302.png',
-      title:
-        '石虎保育可以這樣做！農業部聯手家樂福，用友善石虎山蕉為石虎保育打前鋒，邁向ESG永續新世代',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/32302'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/11/27511/preview/27511.png',
-      title: '打造SDGs幸福城市：從永續教育開始！新北特色學校帶給孩子們新未來',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/27511'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/32/29232/preview/29232.png',
-      title:
-        '冷氣不冷怎麼辦？高雄市福山國小，將能源議題融入教學，引導孩子思考「我們與碳的距離」',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/29232'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/24/29324/preview/29324.png',
-      title:
-        '不只關懷地球生態，更延伸物種關聯、媒體識讀！龍山國中「北極熊怎麼了」教出有思辨能力的孩子',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/29324'
     }
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/53/26753/preview/26753.png',
+    //   title:
+    //     '從生活中落實SDGs》關懷無家者，建中學生從種菜到料理，自製餐點送餐到北車，強調「真心款待」',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/26753'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/02/32302/preview/32302.png',
+    //   title:
+    //     '石虎保育可以這樣做！農業部聯手家樂福，用友善石虎山蕉為石虎保育打前鋒，邁向ESG永續新世代',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/32302'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/11/27511/preview/27511.png',
+    //   title: '打造SDGs幸福城市：從永續教育開始！新北特色學校帶給孩子們新未來',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/27511'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/32/29232/preview/29232.png',
+    //   title:
+    //     '冷氣不冷怎麼辦？高雄市福山國小，將能源議題融入教學，引導孩子思考「我們與碳的距離」',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/29232'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/24/29324/preview/29324.png',
+    //   title:
+    //     '不只關懷地球生態，更延伸物種關聯、媒體識讀！龍山國中「北極熊怎麼了」教出有思辨能力的孩子',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/29324'
+    // }
   ]
 </script>
 <template>
   <div>
     <Header>
-      <router-link to="/">
+      <router-link class="animate-bounceFloat" to="/">
         <img src="/img/kv-article.svg" alt="" width="650" />
       </router-link>
     </Header>
@@ -366,7 +366,7 @@
           >
             #運動學習力
           </div>
-          <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+          <div class="grid gap-3 md:grid-cols-3 md:gap-8">
             <div
               v-for="(item, index) in sportList"
               :key="index"
@@ -442,7 +442,7 @@
           >
             #家庭陪伴力
           </div>
-          <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+          <div class="grid gap-3 md:grid-cols-3 md:gap-8">
             <div
               v-for="(item, index) in familyList"
               :key="index"
@@ -463,7 +463,7 @@
                   </div>
                 </div>
                 <div
-                  class="bg-v-green relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="bg-v-green relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -518,7 +518,35 @@
           >
             #永續執行力
           </div>
-          <swiper
+          <div class="grid gap-3 md:grid-cols-3 md:gap-8">
+            <div
+              v-for="(item, index) in sustainableList"
+              :key="index"
+              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
+            >
+              <a
+                :href="item.link"
+                target="_blank"
+                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
+              >
+                <div class="flex flex-col">
+                  <div class="mb-3">
+                    <img
+                      class="rounded-tl-2xl"
+                      :src="item.src"
+                      :alt="item.title"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="bg-v-green relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                >
+                  {{ item.title }}
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- <swiper
             :spaceBetween="20"
             :slides-per-view="isMobile ? 1.4 : 3"
             :autoplay="{
@@ -558,7 +586,7 @@
                 </div>
               </a>
             </swiper-slide>
-          </swiper>
+          </swiper> -->
         </div>
         <div class="py-10">
           <div
@@ -566,8 +594,36 @@
           >
             #野餐玩樂力
           </div>
+          <div class="grid gap-3 md:grid-cols-3 md:gap-8">
+            <div
+              v-for="(item, index) in funList"
+              :key="index"
+              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
+            >
+              <a
+                :href="item.link"
+                target="_blank"
+                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
+              >
+                <div class="flex flex-col">
+                  <div class="mb-3">
+                    <img
+                      class="rounded-tl-2xl"
+                      :src="item.src"
+                      :alt="item.title"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                >
+                  {{ item.title }}
+                </div>
+              </a>
+            </div>
+          </div>
           <!-- <Swiper :swiperItems="funList" :className="`bg-kv-green`" /> -->
-          <swiper
+          <!-- <swiper
             :spaceBetween="20"
             :slides-per-view="isMobile ? 1.4 : 3"
             :autoplay="{
@@ -607,7 +663,7 @@
                 </div>
               </a>
             </swiper-slide>
-          </swiper>
+          </swiper> -->
         </div>
 
         <div

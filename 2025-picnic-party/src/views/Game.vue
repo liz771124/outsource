@@ -5,7 +5,50 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
 
+  const isHovered = ref(false)
   const giftList = [
+    {
+      name: '澎澄飯店',
+      image:
+        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
+      room: 'CookieRun 薑餅人主題房',
+      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      description:
+        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
+      price: '＄獎項價值 10,000 元 / 200 名'
+    },
+    {
+      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
+      image:
+        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
+      room: 'CookieRun 薑餅人主題房',
+      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      description:
+        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
+      price: '＄獎項價值 1000 元 / 20 名'
+    },
+    {
+      name: '澎澄飯店',
+      image:
+        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
+      room: 'CookieRun 薑餅人主題房',
+      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      description:
+        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
+      price: '＄獎項價值 50,000 元 / 10 名'
+    }
+  ]
+  const giftList2 = [
+    {
+      name: '澎澄飯店',
+      image:
+        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
+      room: 'CookieRun 薑餅人主題房',
+      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      description:
+        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
+      price: '＄獎項價值 10,000 元 / 200 名'
+    },
     {
       name: '澎澄飯店',
       image:
@@ -105,122 +148,199 @@
 <template>
   <div>
     <Header>
-      <router-link to="/">
+      <router-link class="animate-bounceFloat" to="/">
         <img src="/img/kv-game.svg" alt="" width="650" />
       </router-link>
     </Header>
-    <div class="bg-green">
-      <span class="absolute -top-[45px] start-0 rotate-180">
-        <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
-      </span>
+    <div id="game-01" class="bg-green">
+      <div
+        class="mx-auto flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3"
+      >
+        <router-link to="/game#game-01" class="px-8 py-1"
+          ><img src="/img/game-title-01.svg" alt=""
+        /></router-link>
+        <router-link to="game#game-02" class="px-8 py-1"
+          ><img src="/img/game-title-02.svg" alt=""
+        /></router-link>
+      </div>
       <div class="container py-16">
+        <div class="mb-20 text-center">
+          <div class="font-black text-primary-500 md:text-[35px]">
+            歡樂趴踢 十在玩不停
+          </div>
+          <div class="mt-5 font-black md:text-[20px]">
+            兼具知識、趣味的闖關挑戰 <br />
+            在未來親子野餐日10週年活動就玩得到！ <br />
+            爸爸媽媽陪著孩子共同完成任務 <br />
+            多樣品牌小禮拿滿滿，集滿10章再抽大獎！
+          </div>
+        </div>
         <div class="mb-8 text-center">
-          <img width="350" class="mx-auto" src="/img/title-game.svg" alt="" />
+          <img width="450" class="mx-auto" src="/img/title-game.svg" alt="" />
         </div>
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-kv-green px-5 py-1 pe-5 text-[45px] font-black text-kv-green"
+            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
           >
             #十在好玩
           </div>
-          <div>
+          <div class="font-black md:text-[20px]">
             各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br />
             一起享受闖關集章、學習知識，共度好時光！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-4 md:gap-5">
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
+        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+          <div
+            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+          >
+            <div class="overflow-hidden">
               <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered ? 'opacity-100' : 'opacity-0'"
               >
-                早鳥加碼送
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
+              <img
+                class="rounded-tl-2xl transition-opacity duration-300"
+                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                src="/img/gift_01.png"
+                alt=""
+              />
             </div>
+            <span
+              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+            >
+              早鳥加碼送
+            </span>
           </div>
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
+          <div
+            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+          >
+            <div class="overflow-hidden">
               <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered ? 'opacity-100' : 'opacity-0'"
               >
-                早鳥加碼送
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
+              <img
+                class="rounded-tl-2xl transition-opacity duration-300"
+                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                src="/img/gift_01.png"
+                alt=""
+              />
             </div>
+            <span
+              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+            >
+              早鳥加碼送
+            </span>
           </div>
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
+          <div
+            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+          >
+            <div class="overflow-hidden">
               <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered ? 'opacity-100' : 'opacity-0'"
               >
-                早鳥加碼送
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
+              <img
+                class="rounded-tl-2xl transition-opacity duration-300"
+                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                src="/img/gift_01.png"
+                alt=""
+              />
             </div>
-          </div>
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
-              <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-              >
-                早鳥加碼送
-              </span>
-            </div>
+            <span
+              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
+            >
+              早鳥加碼送
+            </span>
           </div>
         </div>
+
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-primary-500 px-5 py-1 pe-5 text-[45px] font-black text-primary-500"
+            class="border-e border-primary-500 px-5 py-1 pe-5 text-[45px] text-[50px] font-black text-primary-500"
           >
             #十在好食
           </div>
-          <div>
+          <div class="font-black md:text-[20px]">
             小農市集一起來到野餐日！<br />
             產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-4 md:gap-5">
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
+        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+          <div
+            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+          >
+            <div class="overflow-hidden">
               <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
+                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered ? 'opacity-100' : 'opacity-0'"
               >
-                早鳥加碼送
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
+              <img
+                class="rounded-tl-2xl transition-opacity duration-300"
+                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                src="/img/gift_01.png"
+                alt=""
+              />
             </div>
+            <span
+              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
+            >
+              早鳥加碼送
+            </span>
           </div>
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
+          <div
+            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+          >
+            <div class="overflow-hidden">
               <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
+                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered ? 'opacity-100' : 'opacity-0'"
               >
-                早鳥加碼送
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
+              <img
+                class="rounded-tl-2xl transition-opacity duration-300"
+                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                src="/img/gift_01.png"
+                alt=""
+              />
             </div>
+            <span
+              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
+            >
+              早鳥加碼送
+            </span>
           </div>
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
+          <div
+            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+          >
+            <div class="overflow-hidden">
               <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
+                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered ? 'opacity-100' : 'opacity-0'"
               >
-                早鳥加碼送
+                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
+              <img
+                class="rounded-tl-2xl transition-opacity duration-300"
+                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                src="/img/gift_01.png"
+                alt=""
+              />
             </div>
-          </div>
-          <div class="relative rounded-tl-2xl bg-white p-3 shadow-md">
-            <div>
-              <img class="rounded-tl-2xl" src="/img/gift_01.png" alt="" />
-              <span
-                class="absolute -end-3 -top-3 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
-              >
-                早鳥加碼送
-              </span>
-            </div>
+            <span
+              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
+            >
+              早鳥加碼送
+            </span>
           </div>
         </div>
 
@@ -334,18 +454,49 @@
         <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
       </span>
     </div>
-    <div class="bg-yellow">
+    <div id="game-02" class="bg-yellow">
       <div class="container py-16">
         <div class="mb-3 text-center">
-          <img width="350" class="mx-auto" src="/img/title-gift.svg" alt="" />
+          <img width="450" class="mx-auto" src="/img/title-gift.svg" alt="" />
         </div>
-        <div class="mb-8 text-center">
+        <div class="mb-8 text-center font-black">
           <div>只要集滿10個闖關印章，就能兌換抽獎券</div>
           <div>超過50個好禮獎項，幸運兒就是你！</div>
         </div>
-        <div class="grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
+        <div class="mb-8 grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
           <div
             v-for="(item, index) in giftList"
+            :key="index"
+            class="gift-item relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
+          >
+            <div class="relative mb-3 text-white">
+              <span
+                class="absolute start-0 top-0 inline-block h-full w-full scale-95 rounded-tl-xl rounded-tr-xl border border-white"
+              >
+              </span>
+              <img :src="item.image" alt="w-full" />
+            </div>
+            <div class="mb-3 px-3">
+              <h2 class="text-xl font-semibold text-primary-500">
+                {{ item.name }}
+              </h2>
+              <!-- <div class="mb-3">
+                  {{ item.note }}
+                </div>
+                <div class="font-light leading-normal text-slate-600">
+                  {{ item.description }}
+                </div> -->
+            </div>
+            <div
+              class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"
+            >
+              {{ item.price }}
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 items-stretch gap-8 md:grid-cols-4">
+          <div
+            v-for="(item, index) in giftList2"
             :key="index"
             class="gift-item relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
           >
