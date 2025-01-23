@@ -95,53 +95,53 @@
       src: 'https://imgs.cwgv.com.tw/articles/87/1987/preview/1987.png',
       title: '上山下海就是最棒的自然課',
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/1987'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/85/13985/preview/13985.png',
-      title:
-        '戶外活動不僅提升了孩子的感覺統合，更有助於孩子的創造能力及問題解決的能力',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/13985'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/28/11928/preview/11928.png',
-      title:
-        '瑞典戶外教育家：只坐在教室裡學習，就像讀食譜書卻無法烹煮品嚐食物一樣',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/11928'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/30/5330/preview/5330.png',
-      title: '探索自然，和家人共度美好時光',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/5330'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/88/29088/preview/29088.png',
-      title:
-        '孩子太宅、不愛運動？念體育系的心理師、三寶爸張榮斌分享4招，輕鬆培養運動好習慣',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/29088'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/17/18917/preview/18917.png',
-      title:
-        '天氣這麼熱，孩子喝的水就夠多了嗎? 兒醫：若5、6個小時沒有上廁所，就代表孩子是缺水了',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/18917'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/39/7839/preview/7839.png',
-      title: '戶外運動是預防近視的防護罩 孩子其實可以不近視！',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/7839'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/43/6243/preview/6243.png',
-      title:
-        '孩子睡不好又多夢？白天多曬太陽、運動，晚上泡腳，可改善睡眠品質、提升學習專注力',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/6243'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/85/28285/preview/28285.png',
-      title:
-        '近視率飆升的原因是什麼》看太多電視電腦、玩手機太久？並不是！為了保健視力，兒童每天需要約３小時處於日照下',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/28285'
     }
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/85/13985/preview/13985.png',
+    //   title:
+    //     '戶外活動不僅提升了孩子的感覺統合，更有助於孩子的創造能力及問題解決的能力',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/13985'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/28/11928/preview/11928.png',
+    //   title:
+    //     '瑞典戶外教育家：只坐在教室裡學習，就像讀食譜書卻無法烹煮品嚐食物一樣',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/11928'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/30/5330/preview/5330.png',
+    //   title: '探索自然，和家人共度美好時光',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/5330'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/88/29088/preview/29088.png',
+    //   title:
+    //     '孩子太宅、不愛運動？念體育系的心理師、三寶爸張榮斌分享4招，輕鬆培養運動好習慣',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/29088'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/17/18917/preview/18917.png',
+    //   title:
+    //     '天氣這麼熱，孩子喝的水就夠多了嗎? 兒醫：若5、6個小時沒有上廁所，就代表孩子是缺水了',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/18917'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/39/7839/preview/7839.png',
+    //   title: '戶外運動是預防近視的防護罩 孩子其實可以不近視！',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/7839'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/43/6243/preview/6243.png',
+    //   title:
+    //     '孩子睡不好又多夢？白天多曬太陽、運動，晚上泡腳，可改善睡眠品質、提升學習專注力',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/6243'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/85/28285/preview/28285.png',
+    //   title:
+    //     '近視率飆升的原因是什麼》看太多電視電腦、玩手機太久？並不是！為了保健視力，兒童每天需要約３小時處於日照下',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/28285'
+    // }
   ]
 
   const familyList = [
@@ -178,30 +178,30 @@
       title:
         '允許孩子玩樂》「玩」是童年重要的事，爸媽應該鼓勵孩子出去玩耍，懂玩的孩子更懂得生存',
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/23854'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/85/32385/preview/32385.png',
-      title:
-        '「匆忙孩子症候群」可能引發身心問題！心理師：家長不要把小孩的時間排滿滿，讓孩子的成長失去喘息的空間',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/32385'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/38/32138/preview/32138.png',
-      title: '不再快樂！台灣兒少幸福指數創新低 兒盟調查：遠低國際水準',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/32138'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/23/14023/preview/14023.png',
-      title:
-        '孩子最好的玩具就是他們的雙手，而不是手機或電視機，讓孩子用雙手盡情探索世界',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/14023'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/54/4154/preview/4154.png',
-      title:
-        '比起賺更多錢，送孩子補習或學才藝， 父母選擇花更多時間和心力陪伴，更能養出知足快樂的孩子',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/4154'
     }
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/85/32385/preview/32385.png',
+    //   title:
+    //     '「匆忙孩子症候群」可能引發身心問題！心理師：家長不要把小孩的時間排滿滿，讓孩子的成長失去喘息的空間',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/32385'
+    // }
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/38/32138/preview/32138.png',
+    //   title: '不再快樂！台灣兒少幸福指數創新低 兒盟調查：遠低國際水準',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/32138'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/23/14023/preview/14023.png',
+    //   title:
+    //     '孩子最好的玩具就是他們的雙手，而不是手機或電視機，讓孩子用雙手盡情探索世界',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/14023'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/54/4154/preview/4154.png',
+    //   title:
+    //     '比起賺更多錢，送孩子補習或學才藝， 父母選擇花更多時間和心力陪伴，更能養出知足快樂的孩子',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/4154'
+    // }
   ]
 
   const funList = [
@@ -366,7 +366,35 @@
           >
             #運動學習力
           </div>
-          <swiper
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+            <div
+              v-for="(item, index) in sportList"
+              :key="index"
+              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
+            >
+              <a
+                :href="item.link"
+                target="_blank"
+                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
+              >
+                <div class="flex flex-col">
+                  <div class="mb-3">
+                    <img
+                      class="rounded-tl-2xl"
+                      :src="item.src"
+                      :alt="item.title"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                >
+                  {{ item.title }}
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- <swiper
             :spaceBetween="20"
             :slides-per-view="isMobile ? 1.4 : 3"
             :autoplay="{
@@ -406,7 +434,7 @@
                 </div>
               </a>
             </swiper-slide>
-          </swiper>
+          </swiper> -->
         </div>
         <div class="py-10">
           <div
@@ -414,7 +442,35 @@
           >
             #家庭陪伴力
           </div>
-          <swiper
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+            <div
+              v-for="(item, index) in familyList"
+              :key="index"
+              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
+            >
+              <a
+                :href="item.link"
+                target="_blank"
+                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
+              >
+                <div class="flex flex-col">
+                  <div class="mb-3">
+                    <img
+                      class="rounded-tl-2xl"
+                      :src="item.src"
+                      :alt="item.title"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="bg-v-green relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                >
+                  {{ item.title }}
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- <swiper
             :spaceBetween="20"
             :slides-per-view="isMobile ? 1.4 : 3"
             :autoplay="{
@@ -454,7 +510,7 @@
                 </div>
               </a>
             </swiper-slide>
-          </swiper>
+          </swiper> -->
         </div>
         <div class="py-10">
           <div
