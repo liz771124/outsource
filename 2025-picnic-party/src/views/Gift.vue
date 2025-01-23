@@ -26,7 +26,12 @@
             src="/img/title-gift-main.svg"
             alt=""
           />
-          <img class="mx-auto mb-10" src="/img/title-gift-intro.svg" alt="" />
+          <img
+            width="350"
+            class="mx-auto mb-10"
+            src="/img/title-gift-intro.svg"
+            alt=""
+          />
           <!-- <div class="mb-5 text-2xl font-bold text-primary-500">
             未來親子野餐日，歡慶10周年
           </div>
@@ -35,8 +40,39 @@
           <div>點擊按鈕，看更多活動說明</div> -->
         </div>
 
-        <div class="columns-2 gap-8">
-          <div
+        <div class="grid gap-3 md:grid-cols-2">
+          <div>
+            <img class="w-full" src="/img/gift-item-01.svg" alt="" />
+          </div>
+          <div class="mt-20">
+            <img class="w-full" src="/img/gift-item-02.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-03.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-04.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-05.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-06.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-07.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-08.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-09.svg" alt="" />
+          </div>
+          <div>
+            <img class="w-full" src="/img/gift-item-10.svg" alt="" />
+          </div>
+
+          <!-- <div
             class="scroll-animate-slideInLeft relative grid rounded-xl bg-primary-500 p-5 md:grid-cols-2"
           >
             <span
@@ -69,7 +105,7 @@
             <div class="text-center">
               <img src="/img/gift-intro-08.svg" alt="" />
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="my-5 flex items-center justify-center">
           <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />

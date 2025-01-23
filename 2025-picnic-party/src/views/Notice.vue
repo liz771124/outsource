@@ -68,7 +68,7 @@
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-5">
-            <img src="/img/title-faq.svg" alt="" />
+            <img width="350" src="/img/title-faq.svg" alt="" />
           </div>
         </div>
         <div class="bg-white">

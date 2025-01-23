@@ -130,10 +130,14 @@
         </div>
       </div>
       <div class="bg-green py-16">
-        <span class="absolute -bottom-10 start-0">
-          <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
+        <span class="absolute -top-[80px] start-0 h-[100px] w-full rotate-180">
+          <img
+            class="w-full object-cover"
+            src="/img/bg-green-line-b.svg"
+            alt=""
+          />
         </span>
-        <div class="container relative flex flex-col gap-10">
+        <div class="container relative flex w-full flex-col gap-10">
           <router-link
             class="animate-zoom-right rounded-rl-2xl relative rounded-bl-[50px] rounded-tr-[50px] bg-primary-500 p-6 text-white"
             to="/show"
@@ -233,7 +237,112 @@
               </div>
             </div>
           </router-link>
+          <router-link
+            class="animate-zoom-right rounded-rl-2xl relative rounded-bl-[50px] rounded-tr-[50px] bg-primary-500 p-6 text-white"
+            to="/show"
+          >
+            <div
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+            >
+              <div class="lg:shrink-0">
+                <img class="w-full" src="/img/index-intro-02.png" alt="" />
+              </div>
+              <div class="relative grow p-5">
+                <div
+                  class="relative z-10 flex text-[50px] font-black tracking-wide text-primary-500"
+                >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >互</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >動</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >好</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >禮</span
+                  >
+                </div>
+                <div class="dashed-text-container">
+                  歡慶十週年，活動好禮拿不完！快來看看這次活動有哪些超亮點，把限量好禮通通帶回家！
+                </div>
+                <div class="absolute -bottom-10 start-10 hidden md:block">
+                  <img
+                    class="w-[130px]"
+                    src="/img/index-intro-icon-03.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                >
+                  看看好禮
+                </div>
+              </div>
+            </div>
+          </router-link>
+          <router-link
+            class="animate-zoom-left rounded-rl-2xl relative rounded-br-[50px] rounded-tl-[50px] bg-kv-green p-6 text-white"
+            to="/gift"
+          >
+            <div
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+            >
+              <div class="order-2 lg:shrink-0">
+                <img class="w-full" src="/img/index-intro-03.png" alt="" />
+              </div>
+              <div class="relative order-2 grow p-5 md:order-1">
+                <div
+                  class="relative z-10 flex text-[50px] font-black tracking-wide text-kv-green"
+                >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >歡</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >樂</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >抽</span
+                  >
+                  <span
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    >獎</span
+                  >
+                </div>
+                <div class="dashed-text-container">
+                  完成闖關集章，即可兌換一張抽獎券，獎項超豐富，好禮總價值超過50萬！
+                </div>
+                <div class="end-15 absolute -bottom-10 hidden md:block">
+                  <img
+                    class="w-[180px]"
+                    src="/img/index-intro-icon-04.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                >
+                  看看抽獎
+                </div>
+              </div>
+            </div>
+          </router-link>
         </div>
+        <span class="absolute -bottom-[80px] start-0 h-[100px]">
+          <img
+            class="h-full w-full object-cover"
+            src="/img/bg-green-line-b.svg"
+            alt=""
+          />
+        </span>
       </div>
       <div class="bg-yellow py-16">
         <div class="container flex flex-col gap-10">

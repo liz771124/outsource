@@ -76,7 +76,7 @@
 Ｚ
 <template>
   <header
-    class="relative flex h-[600px] w-screen items-center justify-center bg-cover bg-no-repeat p-5"
+    class="relative z-10 flex h-[600px] w-screen items-center justify-center bg-cover bg-no-repeat p-5"
     :style="{
       backgroundImage: `url(${imagePath}/kv-main.png)`,
       backgroundPosition: 'center'
@@ -97,7 +97,7 @@
     <span id="star-05" class="absolute right-20 top-40">
       <img src="/img/star-05.svg" alt="" />
     </span>
-    <div id="kv-main" class="flex flex-col gap-5">
+    <div id="kv-main" class="z-10 flex flex-col gap-5">
       <slot />
     </div>
   </header>

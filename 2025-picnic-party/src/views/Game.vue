@@ -110,11 +110,14 @@
       </router-link>
     </Header>
     <div class="bg-green">
+      <span class="absolute -top-[45px] start-0 rotate-180">
+        <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
+      </span>
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <img class="mx-auto" width="300" src="/img/title-game.svg" alt="" />
+          <img width="350" class="mx-auto" src="/img/title-game.svg" alt="" />
         </div>
-        <div class="flex items-center justify-center gap-5">
+        <div class="flex flex-wrap items-center justify-center gap-5">
           <div
             class="border-e border-kv-green px-5 py-1 pe-5 text-[45px] font-black text-kv-green"
           >
@@ -167,7 +170,7 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-center gap-5">
+        <div class="flex flex-wrap items-center justify-center gap-5">
           <div
             class="border-e border-primary-500 px-5 py-1 pe-5 text-[45px] font-black text-primary-500"
           >
@@ -327,11 +330,14 @@
           </div>
         </div>
       </div>
+      <span class="absolute -bottom-[45px] start-0">
+        <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
+      </span>
     </div>
     <div class="bg-yellow">
       <div class="container py-16">
         <div class="mb-3 text-center">
-          <img class="mx-auto" width="300" src="/img/title-gift.svg" alt="" />
+          <img width="350" class="mx-auto" src="/img/title-gift.svg" alt="" />
         </div>
         <div class="mb-8 text-center">
           <div>只要集滿10個闖關印章，就能兌換抽獎券</div>

@@ -316,7 +316,7 @@
     <div class="bg-green">
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <img class="mx-auto" width="300" src="/img/title-game.svg" alt="" />
+          <img width="350" class="mx-auto" src="/img/title-game.svg" alt="" />
           <div class="mt-4">
             未來親子精心挑選四大主題文章，<br />
             讓我們與爸爸媽媽站在一起，陪伴孩子快樂成長，<br />

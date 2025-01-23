@@ -159,7 +159,7 @@
                 </div>
                 <div class="flex gap-3">
                   <div class="shrink-0">
-                    <img src="/img/title-special.svg" alt="" />
+                    <img src="/img/title-special-01.svg" alt="" />
                   </div>
                   穿越整場的驚喜童趣慶生！慶生小隊定時不定點在走道上手拿慶生牌、氣球表演慶生輪舞，穿梭現場更顯熱鬧氣氛！慶生小隊將不定點出沒，一起來找他們玩滑輪、拿氣球吧！
                 </div>
