@@ -398,7 +398,7 @@
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
               >
-                <img src="/img/ticket-01.png" alt="" />
+                <img src="/img/ticket-01.svg" alt="" />
               </div>
             </swiper-slide>
           </swiper>
