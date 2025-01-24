@@ -37,6 +37,6 @@
 </script>
 <template>
   <router-link to="/#purchase" class="">
-    <img width="300" src="/img/btn-join.png" alt="" />
+    <img width="320" src="/img/btn-join.svg" alt="" />
   </router-link>
 </template>

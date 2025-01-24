@@ -4,6 +4,7 @@
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
+  const imagePath = import.meta.env.VITE_IMAGE_PATH
   const giftItems = Array.from({ length: 10 }, (_, i) => i + 1)
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse })
@@ -33,7 +34,7 @@
             alt=""
           />
         </div>
-        <div class="mb-36 grid gap-6 md:grid-cols-2">
+        <div class="md:mb-36 grid gap-6 md:grid-cols-2">
           <div
             v-for="(item, index) in giftItems"
             :key="index"
@@ -49,46 +50,13 @@
                   ? 'scroll-animate-slideInLeft'
                   : 'scroll-animate-slideInRight'
               ]"
-              :src="`/img/gift-item-${index + 1 < 10 ? '0' + (index + 1) : index + 1}.svg`"
+              :src="`${imagePath}/gift-item-${index + 1 < 10 ? '0' + (index + 1) : index + 1}.svg`"
               alt=""
             />
           </div>
         </div>
 
-        <!-- <div class="grid gap-10 md:grid-cols-2">
-          <div class="w-full">
-            <img src="/img/gift-item-01.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-02.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-03.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-04.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-05.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-06.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-07.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-08.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-09.svg" alt="" class="w-full" />
-          </div>
-          <div class="w-full">
-            <img src="/img/gift-item-10.svg" alt="" class="w-full" />
-          </div>
-        </div> -->
-
-        <div class="my-5 flex items-center justify-center">
+        <div class="mb-5 mt-10 flex items-center justify-center">
           <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
         </div>
       </div>

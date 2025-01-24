@@ -13,7 +13,7 @@
   onMounted(() => {
     // 放大縮小的動畫
     gsap.to('.scale-bounce', {
-      scale: 0.9,
+      scale: 1.08,
       repeat: -1,
       yoyo: true,
       ease: 'elastic.inOut(.2, 0.5)',
@@ -99,8 +99,8 @@
         <div
           class="fixed bottom-5 end-3 z-30 flex flex-col items-center justify-center"
         >
-          <router-link to="/#purchase" class="scale-bounce w-[80px]">
-            <img src="/img/fixed-buy-02.svg" alt="" />
+          <router-link to="/#purchase" class="scale-bounce">
+            <img width="80" src="/img/fixed-buy-02.svg" alt="" />
           </router-link>
           <div @click="goTop" class="mt-5 h-[65px] w-[65px] cursor-pointer">
             <img src="/img/gotop.svg" alt="" />

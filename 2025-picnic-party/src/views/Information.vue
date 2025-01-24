@@ -65,16 +65,16 @@
 
   const sportList = [
     {
-      src: 'https://imgs.cwgv.com.tw/articles/27/31227/preview/31227.png',
-      title:
-        '掌握3原則，讓孩子放下手機，親近自然》華德福戶外引導師：玩，是看起來不像學習的學習',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/31227'
-    },
-    {
       src: 'https://imgs.cwgv.com.tw/articles/19/16519/preview/16519.png',
       title:
         '不用花大錢的學習就在日常生活與大自然裡，而我們是否錯過了這份珍貴的成長禮物呢？',
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/16519'
+    },
+    {
+      src: 'https://imgs.cwgv.com.tw/articles/27/31227/preview/31227.png',
+      title:
+        '掌握3原則，讓孩子放下手機，親近自然》華德福戶外引導師：玩，是看起來不像學習的學習',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/31227'
     },
     {
       src: 'https://imgs.cwgv.com.tw/articles/67/11867/preview/11867.png',
@@ -82,20 +82,32 @@
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/11867'
     },
     {
-      src: 'https://imgs.cwgv.com.tw/articles/00/11900/preview/11900.png',
-      title: '好山好水好激勵，登山運動互相扶持，凝聚親子情',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/11900'
-    },
-    {
       src: 'https://imgs.cwgv.com.tw/articles/17/3617/preview/3617.png',
       title: '翻轉教室學習模式〉帶孩子走向戶外， 知識才會貼近生活',
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/3617'
     },
     {
-      src: 'https://imgs.cwgv.com.tw/articles/87/1987/preview/1987.png',
-      title: '上山下海就是最棒的自然課',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/1987'
+      src: 'https://imgs.cwgv.com.tw/articles/88/29088/preview/29088.png',
+      title:
+        '孩子太宅、不愛運動？念體育系的心理師、三寶爸張榮斌分享4招，輕鬆培養運動好習慣',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/29088'
+    },
+    {
+      src: 'https://imgs.cwgv.com.tw/articles/85/28285/preview/28285.png',
+      title:
+        '近視率飆升的原因是什麼》看太多電視電腦、玩手機太久？並不是！為了保健視力，兒童每天需要約３小時處於日照下',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/28285'
     }
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/00/11900/preview/11900.png',
+    //   title: '好山好水好激勵，登山運動互相扶持，凝聚親子情',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/11900'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/87/1987/preview/1987.png',
+    //   title: '上山下海就是最棒的自然課',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/1987'
+    // }
     // {
     //   src: 'https://imgs.cwgv.com.tw/articles/85/13985/preview/13985.png',
     //   title:
@@ -113,12 +125,7 @@
     //   title: '探索自然，和家人共度美好時光',
     //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/5330'
     // },
-    // {
-    //   src: 'https://imgs.cwgv.com.tw/articles/88/29088/preview/29088.png',
-    //   title:
-    //     '孩子太宅、不愛運動？念體育系的心理師、三寶爸張榮斌分享4招，輕鬆培養運動好習慣',
-    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/29088'
-    // },
+
     // {
     //   src: 'https://imgs.cwgv.com.tw/articles/17/18917/preview/18917.png',
     //   title:
@@ -136,21 +143,9 @@
     //     '孩子睡不好又多夢？白天多曬太陽、運動，晚上泡腳，可改善睡眠品質、提升學習專注力',
     //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/6243'
     // },
-    // {
-    //   src: 'https://imgs.cwgv.com.tw/articles/85/28285/preview/28285.png',
-    //   title:
-    //     '近視率飆升的原因是什麼》看太多電視電腦、玩手機太久？並不是！為了保健視力，兒童每天需要約３小時處於日照下',
-    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/28285'
-    // }
   ]
 
   const familyList = [
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/33/4733/preview/4733.png',
-      title:
-        '想要有良好的親子關係，就像任何關係一樣，需要時間培養——傾聽孩子的小事、全心全意地陪伴、疼愛但不溺愛....',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/4733'
-    },
     {
       src: 'https://imgs.cwgv.com.tw/articles/57/27957/preview/27957.png',
       title:
@@ -178,7 +173,21 @@
       title:
         '允許孩子玩樂》「玩」是童年重要的事，爸媽應該鼓勵孩子出去玩耍，懂玩的孩子更懂得生存',
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/23854'
+    },
+    {
+      src: 'https://imgs.cwgv.com.tw/articles/23/14023/preview/14023.png',
+      title:
+        '孩子最好的玩具就是他們的雙手，而不是手機或電視機，讓孩子用雙手盡情探索世界',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/14023'
     }
+
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/33/4733/preview/4733.png',
+    //   title:
+    //     '想要有良好的親子關係，就像任何關係一樣，需要時間培養——傾聽孩子的小事、全心全意地陪伴、疼愛但不溺愛....',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/4733'
+    // },
+
     // {
     //   src: 'https://imgs.cwgv.com.tw/articles/85/32385/preview/32385.png',
     //   title:
@@ -190,12 +199,7 @@
     //   title: '不再快樂！台灣兒少幸福指數創新低 兒盟調查：遠低國際水準',
     //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/32138'
     // },
-    // {
-    //   src: 'https://imgs.cwgv.com.tw/articles/23/14023/preview/14023.png',
-    //   title:
-    //     '孩子最好的玩具就是他們的雙手，而不是手機或電視機，讓孩子用雙手盡情探索世界',
-    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/14023'
-    // },
+
     // {
     //   src: 'https://imgs.cwgv.com.tw/articles/54/4154/preview/4154.png',
     //   title:
@@ -248,16 +252,6 @@
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/14126'
     },
     {
-      src: 'https://imgs.cwgv.com.tw/articles/25/14125/preview/14125.png',
-      title: '共食、共玩到共學：從食物入手，加深感情的凝聚力',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/14125'
-    },
-    {
-      src: 'https://imgs.cwgv.com.tw/articles/24/14724/preview/14724.png',
-      title: '餐桌教養：生活中實踐飲食教育的10種方法',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/14724'
-    },
-    {
       src: 'https://imgs.cwgv.com.tw/articles/29/23229/preview/23229.png',
       title:
         '孩子愛挑食、不喜歡吃青菜？台南官田國小的食農教育，翻轉孩子愛上健康飲食',
@@ -269,28 +263,40 @@
       link: 'https://futureparenting.cwgv.com.tw/family/content/index/10065'
     },
     {
-      src: 'https://imgs.cwgv.com.tw/articles/12/32412/preview/32412.png',
+      src: 'https://imgs.cwgv.com.tw/articles/53/26753/preview/26753.png',
       title:
-        '高職學什麼》電機與電子群-冷凍空調科：節能環保趨勢下，就業前景看好；所學離不開「電」，數理能力要好',
-      link: 'https://futureparenting.cwgv.com.tw/family/content/index/32412'
+        '從生活中落實SDGs》關懷無家者，建中學生從種菜到料理，自製餐點送餐到北車，強調「真心款待」',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/26753'
+    },
+    {
+      src: 'https://imgs.cwgv.com.tw/articles/02/32302/preview/32302.png',
+      title:
+        '石虎保育可以這樣做！農業部聯手家樂福，用友善石虎山蕉為石虎保育打前鋒，邁向ESG永續新世代',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/32302'
+    },
+
+    {
+      src: 'https://imgs.cwgv.com.tw/articles/11/27511/preview/27511.png',
+      title: '打造SDGs幸福城市：從永續教育開始！新北特色學校帶給孩子們新未來',
+      link: 'https://futureparenting.cwgv.com.tw/family/content/index/27511'
     }
+
     // {
-    //   src: 'https://imgs.cwgv.com.tw/articles/53/26753/preview/26753.png',
+    //   src: 'https://imgs.cwgv.com.tw/articles/25/14125/preview/14125.png',
+    //   title: '共食、共玩到共學：從食物入手，加深感情的凝聚力',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/14125'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/24/14724/preview/14724.png',
+    //   title: '餐桌教養：生活中實踐飲食教育的10種方法',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/14724'
+    // },
+    // {
+    //   src: 'https://imgs.cwgv.com.tw/articles/12/32412/preview/32412.png',
     //   title:
-    //     '從生活中落實SDGs》關懷無家者，建中學生從種菜到料理，自製餐點送餐到北車，強調「真心款待」',
-    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/26753'
-    // },
-    // {
-    //   src: 'https://imgs.cwgv.com.tw/articles/02/32302/preview/32302.png',
-    //   title:
-    //     '石虎保育可以這樣做！農業部聯手家樂福，用友善石虎山蕉為石虎保育打前鋒，邁向ESG永續新世代',
-    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/32302'
-    // },
-    // {
-    //   src: 'https://imgs.cwgv.com.tw/articles/11/27511/preview/27511.png',
-    //   title: '打造SDGs幸福城市：從永續教育開始！新北特色學校帶給孩子們新未來',
-    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/27511'
-    // },
+    //     '高職學什麼》電機與電子群-冷凍空調科：節能環保趨勢下，就業前景看好；所學離不開「電」，數理能力要好',
+    //   link: 'https://futureparenting.cwgv.com.tw/family/content/index/32412'
+    // }
     // {
     //   src: 'https://imgs.cwgv.com.tw/articles/32/29232/preview/29232.png',
     //   title:
@@ -316,7 +322,7 @@
     <div class="bg-green">
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <img width="350" class="mx-auto" src="/img/title-game.svg" alt="" />
+          <img width="450" class="mx-auto" src="/img/title-game.svg" alt="" />
           <div class="mt-4">
             未來親子精心挑選四大主題文章，<br />
             讓我們與爸爸媽媽站在一起，陪伴孩子快樂成長，<br />
@@ -337,27 +343,6 @@
             <a href="#">
               <img src="/img/article-icon-04.svg" alt="" />
             </a>
-            <!-- <a
-              href="#"
-              class="scroll-animate-zoomIn rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
-            >
-              #運動學習力
-            </a>
-            <a
-              class="scroll-animate-zoomIn rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
-            >
-              #家庭陪伴力
-            </a>
-            <a
-              class="scroll-animate-zoomIn rounded-full bg-kv-green px-5 py-1 text-xl font-bold text-white"
-            >
-              #永續執行力
-            </a>
-            <a
-              class="scroll-animate-zoomIn rounded-full bg-kv-yellow px-5 py-1 text-xl font-bold text-white"
-            >
-              #野餐玩樂力
-            </a> -->
           </div>
         </div>
         <div class="py-10">
