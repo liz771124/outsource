@@ -655,7 +655,7 @@
         <div
           class="mt-10 flex w-full flex-wrap items-center justify-center gap-16"
         >
-          <ButtonJoin :title="'報名野餐日'" />
+          <ButtonJoin />
         </div>
         <div
           class="mb-10 mt-5 flex w-full flex-wrap items-center justify-center gap-16"

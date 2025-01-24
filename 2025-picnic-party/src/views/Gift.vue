@@ -57,7 +57,7 @@
         </div>
 
         <div class="mb-5 mt-10 flex items-center justify-center">
-          <ButtonJoin :title="'立即購票'" :link="'/#purchase'" />
+          <ButtonJoin/>
         </div>
       </div>
     </div>

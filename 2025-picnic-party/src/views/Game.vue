@@ -6,79 +6,105 @@
   gsap.registerPlugin(ScrollTrigger)
 
   const isHovered = ref(false)
-  const giftList = [
+  const imagePath = import.meta.env.VITE_IMAGE_PATH
+  const lotteryList = [
+    // {
+    //   id: '01.jpg',
+    //   brand: '【妙管家】',
+    //   name: '瞬潔洗潔精(果香葡萄柚)500g',
+    //   description: '',
+    //   price: '＄獎項價值 元 /  名'
+    // },
     {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      id: '01.png',
+      brand: '【igogosport思博特】',
+      name: 'myFirst Fone S3 4G 智慧兒童手錶',
       description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 10,000 元 / 200 名'
+        'S3除了具備精準的GPS定位，更具有完善的APP，介面美觀且多功能! 手錶上更有通話、視訊、MP3和SOS求救功能，還有專門設計給孩子的社交圈CIRCLE，讓孩子可以自由上傳心情與分享圖片，讓孩子與家長之間0距離！',
+      price: '＄獎項價值 元 /  名'
     },
     {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      id: '02.jpg',
+      brand: '【igogosport思博特】',
+      name: 'myFirst 3D Pen Make - 3D 列印筆',
       description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 1000 元 / 20 名'
+        '培養孩子的美感，從小開始！myFirst 3D筆，選用無毒材料，孩子開心玩，爸媽好安心！此外加熱顏料更是溫感不燙，讓孩子可以盡情發揮創意做出獨特的3D作品，畫筆更不需要時刻充電，外出攜帶更方便！',
+      price: '＄獎項價值 元 /  名'
     },
     {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
+      id: '03.jpg',
+      brand: '【igogosport思博特】',
+      name: 'myFirst Camera 3 雙鏡頭兒童相機',
       description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 50,000 元 / 10 名'
+        '熱銷款兒童相機！鏡頭具備1600萬像素，此外更具備微距鏡頭，幫助寶貝更好對焦，還有前鏡頭讓寶貝輕鬆自拍、記錄生活，LED閃光燈，在黑暗的地方也可以捕捉畫面，內建麥克風，還可以錄影！是孩子記錄生活的最好玩伴！',
+      price: '＄獎項價值 元 /  名'
+    },
+    {
+      id: '04.jpg',
+      brand: '【台北喜來登大飯店】',
+      name: '手拉手樂園親子主題房住宿1晚',
+      description:
+        '台北喜來登大飯店以莫蘭迪色系融合動物童話繪本元素，打造四大主題「動物森林」、「叢林小鎮」、「史前探險」與「恐龍王國」故事場景客房，讓小孩玩到不想回家。入住主題親子客房皆可免費體驗樓層專屬「手拉手樂園」，分齡設計的室內遊戲區包含娃娃廚房、小車積木、樹洞滑梯，以及適合大小朋友的科技電玩區，為家庭的每一位成員打造一段充滿童趣與奇思妙想的歡聚之旅。（房型照片僅供參考，依實際入住房型為主）',
+      price: '＄獎項價值 元 /  名'
+    },
+    {
+      id: '05.jpg',
+      brand: '【知覺優格】',
+      name: '優格飲12入 (口味隨機)',
+      description:
+        '【清爽果粒 益菌隨行】知覺優格飲採用100%無調整鮮乳，搭配精心手工調製的果醬，口感豐盈綿密，完美呈現真實水果的酸甜風味！首創添加「菊苣膳食纖維護好菌」，嚴選優質菌種與法國專利菌株，幫助維持消化道機能，輕鬆搖一搖，即可隨時補充活性益生菌，健康與美味隨行無負擔！',
+      price: '＄獎項價值 元 /  名'
+    },
+    {
+      id: '06.jpg',
+      brand: '【象印】',
+      name: '童用ONE TOUCH保溫杯 (款式隨機)',
+      description: `
+        <p>象印專為孩童貼心設計的小熊杯，讓孩子夏日愛上喝水的秘密武器！色彩繽紛的可愛圖樣設計，不管男孩女孩通通都超愛！三大便利機能，讓孩子每日的飲水更加輕鬆又方便：</p>
+        <p>#小熊安全鎖簡單開關</p>
+        <p>#飲品集中扇形杯口設計方便飲用</p>
+        <p>#輕量好握讓孩子輕鬆好拿 </p>
+        <p>還有四大特色讓爸媽輕鬆清洗：</p>
+        <p>#一體式中栓設計</p>
+        <p>#可裝運動飲料的「防沾塗層+(plus)」</p>
+        <p>#高效保溫保冷力</p>
+        <p>#外袋可放置洗衣機清洗</p>
+      `,
+      price: '＄獎項價值 元 /  名'
+    },
+    {
+      id: '07.jpg',
+      brand: '【福容大飯店-高雄店】',
+      name: '精緻豪華雙床房─動物園主題房型入住一晚(含早餐)',
+      description:
+        '交通位置相當便利的福容高雄店，步行5分鐘到輕軌真愛碼頭站、8分鐘到捷運鹽埕埔站。可搭乘輕軌一路玩高雄流行音樂中心、駁二藝術特區、棧貳庫，也可悠閒在愛河畔散步、騎單車、搭乘愛之船欣賞高雄港灣的日夜之美。',
+      price: '＄獎項價值 元 /  名'
+    },
+    {
+      id: '08.jpg',
+      brand: '德恩奈',
+      name: '專業口腔保健禮盒組',
+      description:
+        '內含德恩奈清新雙效漱口水500mlx1瓶+清淨涼牙膏156gx1支+美白牙膏125gx1支+夜用牙膏126gx1支+兒童牙膏90gx1支+前觸兒童牙刷x1支+極淨細絲牙刷2支 (總價值1125元) 適合全家人使用。',
+      price: '＄獎項價值 元 /  名'
+    },
+    {
+      id: '09.jpg',
+      brand: '享居',
+      name: '天絲兩用被(DtD)（圖案隨機）',
+      description: `
+        <p>DOTDOT 天絲兩用被，利用材質透氣與親膚度，可自由調整厚度，打造最單純的簡單舒適！</p>
+        <p>輕巧多功能，雙面天絲材質，適合台灣氣候四季使用。額外可搭配水洗被胎來增加保暖度，還可以與DtD睡袋睡墊進行單邊結合。</p>
+      `,
+      price: '＄獎項價值 元 /  名'
     }
-  ]
-  const giftList2 = [
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 10,000 元 / 200 名'
-    },
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 10,000 元 / 200 名'
-    },
-    {
-      name: '澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 1000 元 / 20 名'
-    },
-    {
-      name: '澎澄飯店',
-      image:
-        'https://parenting.cwgv.com.tw/event/picnic/2024/assets/img/gift_p6.jpg',
-      room: 'CookieRun 薑餅人主題房',
-      note: '(加贈一位12歲以下兒童入住+開房禮)',
-      description:
-        '今年澎澄飯店特別攜手韓國人氣益智冒險遊戲CookieRun薑餅人打造專屬主題房，除了房內處處充滿CookieRun薑餅人元素，全館還設有多處拍照打卡區，並舉辦各式活動與房客共度歡樂時光，不容錯過的精彩體驗等你來參與！(飯店房型照片僅供參考，依實際入住房型為主)',
-      price: '＄獎項價值 50,000 元 / 10 名'
-    }
+    // {
+    //   id: '',
+    //   brand: '',
+    //   name: '',
+    //   description: '',
+    //   price: '＄獎項價值 元 /  名'
+    // }
   ]
 
   const setFaqListItem = () => {
@@ -278,6 +304,8 @@
         <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
           <div
             class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
+            v-for="(item, index) in giftItems"
+            :key="index"
           >
             <div class="overflow-hidden">
               <span
@@ -289,7 +317,7 @@
               <img
                 class="rounded-tl-2xl transition-opacity duration-300"
                 :class="isHovered ? 'opacity-0' : 'opacity-100'"
-                src="/img/gift_01.png"
+                :src="`${imagePath}/game-02/${index + 1 < 10 ? '0' + (index + 1) : index + 1}.jpg`"
                 alt=""
               />
             </div>
@@ -375,7 +403,7 @@
             </swiper-slide>
           </swiper>
         </div>
-        <div
+        <!-- <div
           data-twe-modal-init
           class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
           id="exampleModalCenter2"
@@ -451,7 +479,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <span class="absolute -bottom-[45px] start-0">
         <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
@@ -468,7 +496,7 @@
         </div>
         <div class="mb-8 grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
           <div
-            v-for="(item, index) in giftList"
+            v-for="(item, index) in lotteryList"
             :key="index"
             class="gift-item relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
           >
@@ -477,49 +505,19 @@
                 class="absolute start-0 top-0 inline-block h-full w-full scale-95 rounded-tl-xl rounded-tr-xl border border-white"
               >
               </span>
-              <img :src="item.image" alt="w-full" />
+              <img
+                class="aspect-6/4 h-[200px] w-full object-cover"
+                :src="`${imagePath}/lottery/${item.id}`"
+                alt="w-full"
+              />
             </div>
             <div class="mb-3 px-3">
+              <div class="mb-1 font-semibold text-primary-500">
+                {{ item.brand }}
+              </div>
               <h2 class="text-xl font-semibold text-primary-500">
                 {{ item.name }}
               </h2>
-              <!-- <div class="mb-3">
-                  {{ item.note }}
-                </div>
-                <div class="font-light leading-normal text-slate-600">
-                  {{ item.description }}
-                </div> -->
-            </div>
-            <div
-              class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"
-            >
-              {{ item.price }}
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-2 items-stretch gap-8 md:grid-cols-4">
-          <div
-            v-for="(item, index) in giftList2"
-            :key="index"
-            class="gift-item relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
-          >
-            <div class="relative mb-3 text-white">
-              <span
-                class="absolute start-0 top-0 inline-block h-full w-full scale-95 rounded-tl-xl rounded-tr-xl border border-white"
-              >
-              </span>
-              <img :src="item.image" alt="w-full" />
-            </div>
-            <div class="mb-3 px-3">
-              <h2 class="text-xl font-semibold text-primary-500">
-                {{ item.name }}
-              </h2>
-              <!-- <div class="mb-3">
-                  {{ item.note }}
-                </div>
-                <div class="font-light leading-normal text-slate-600">
-                  {{ item.description }}
-                </div> -->
             </div>
             <div
               class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"

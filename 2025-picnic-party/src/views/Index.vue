@@ -346,9 +346,11 @@
       </div>
       <div class="bg-yellow py-16">
         <div class="container flex flex-col gap-10">
-          <div class="flex flex-col items-center gap-2 text-2xl font-bold">
+          <div
+            class="mt-10 flex flex-col items-center gap-2 text-2xl font-bold"
+          >
             <div class="mb-5">
-              <img src="/img/title-ticket.png" alt="" />
+              <img width="350" src="/img/title-ticket.svg" alt="" />
             </div>
             <div>2025年4月3日10:30-15:00</div>
             <div>新北大都會公園</div>
@@ -365,17 +367,10 @@
                     />
                   </span>
                   <img src="/img/gift_01.png" alt="" />
-                  <!-- <span
-                    class="absolute end-0 top-0 inline-block rounded-bl-3xl bg-primary-500 py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
-                  >
-                    報名送福袋
-                  </span> -->
                 </div>
                 <div
                   class="mt-3 text-center text-2xl font-black text-primary-500"
-                >
-                  <!-- 限量 600 組！ -->
-                </div>
+                ></div>
               </div>
               <div class="animate-zoom-in relative bg-white p-5 shadow-xl">
                 <div>
@@ -405,7 +400,7 @@
               class="m-10 mb-16 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
             >
               <a class="animate-zoom-in group relative" href="#">
-                <img src="/img/ticket-01.png" alt="" />
+                <img src="/img/ticket-01.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
@@ -413,7 +408,7 @@
                 </div>
               </a>
               <a class="animate-zoom-in group relative" href="#">
-                <img src="/img/ticket-02.png" alt="" />
+                <img src="/img/ticket-02.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
@@ -421,7 +416,7 @@
                 </div>
               </a>
               <a class="animate-zoom-in group relative" href="#">
-                <img src="/img/ticket-03.png" alt="" />
+                <img src="/img/ticket-03.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
@@ -434,6 +429,29 @@
             </div>
             <div class="my-5 flex items-center justify-center">
               <ButtonJoin />
+            </div>
+            <div
+              class="mb-10 mt-5 flex w-full flex-wrap items-center justify-center gap-16"
+            >
+              <a
+                href="#"
+                class="inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white"
+              >
+                <svg
+                  width="35"
+                  height="35"
+                  viewBox="0 0 35 35"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 0C7.8351 0 0 7.83475 0 17.5C0 27.1652 7.8351 35 17.5 35C27.1649 35 35 27.1652 35 17.5C35 7.83475 27.1649 0 17.5 0ZM17.5 3.5C25.232 3.5 31.5 9.7685 31.5 17.5C31.5 25.2315 25.232 31.5 17.5 31.5C9.76797 31.5 3.5 25.2315 3.5 17.5C3.5 9.7685 9.76797 3.5 17.5 3.5ZM17.5 8.75C16.5335 8.75 15.75 9.534 15.75 10.5C15.75 11.466 16.5335 12.25 17.5 12.25C18.4665 12.25 19.25 11.466 19.25 10.5C19.25 9.534 18.4665 8.75 17.5 8.75ZM17.5 14C16.5335 14 15.75 14.784 15.75 15.75V24.5C15.75 25.466 16.5335 26.25 17.5 26.25C18.4665 26.25 19.25 25.466 19.25 24.5V15.75C19.25 14.784 18.4665 14 17.5 14Z"
+                    fill="white"
+                  />
+                </svg>
+
+                報名注意事項
+              </a>
             </div>
           </div>
         </div>
