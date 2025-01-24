@@ -5,7 +5,7 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
 
-  const isHovered = ref(false)
+  const isHovered = ref(null)
   const imagePath = import.meta.env.VITE_IMAGE_PATH
   const lotteryList = [
     // {
@@ -60,16 +60,16 @@
       brand: '【象印】',
       name: '童用ONE TOUCH保溫杯 (款式隨機)',
       description: `
-        <p>象印專為孩童貼心設計的小熊杯，讓孩子夏日愛上喝水的秘密武器！色彩繽紛的可愛圖樣設計，不管男孩女孩通通都超愛！三大便利機能，讓孩子每日的飲水更加輕鬆又方便：</p>
-        <p>#小熊安全鎖簡單開關</p>
-        <p>#飲品集中扇形杯口設計方便飲用</p>
-        <p>#輕量好握讓孩子輕鬆好拿 </p>
-        <p>還有四大特色讓爸媽輕鬆清洗：</p>
-        <p>#一體式中栓設計</p>
-        <p>#可裝運動飲料的「防沾塗層+(plus)」</p>
-        <p>#高效保溫保冷力</p>
-        <p>#外袋可放置洗衣機清洗</p>
-      `,
+         <p>象印專為孩童貼心設計的小熊杯，讓孩子夏日愛上喝水的秘密武器！色彩繽紛的可愛圖樣設計，不管男孩女孩通通都超愛！三大便利機能，讓孩子每日的飲水更加輕鬆又方便：</p>
+         <p>#小熊安全鎖簡單開關</p>
+         <p>#飲品集中扇形杯口設計方便飲用</p>
+         <p>#輕量好握讓孩子輕鬆好拿 </p>
+         <p>還有四大特色讓爸媽輕鬆清洗：</p>
+         <p>#一體式中栓設計</p>
+         <p>#可裝運動飲料的「防沾塗層+(plus)」</p>
+         <p>#高效保溫保冷力</p>
+         <p>#外袋可放置洗衣機清洗</p>
+       `,
       price: '＄獎項價值 元 /  名'
     },
     {
@@ -93,9 +93,9 @@
       brand: '享居',
       name: '天絲兩用被(DtD)（圖案隨機）',
       description: `
-        <p>DOTDOT 天絲兩用被，利用材質透氣與親膚度，可自由調整厚度，打造最單純的簡單舒適！</p>
-        <p>輕巧多功能，雙面天絲材質，適合台灣氣候四季使用。額外可搭配水洗被胎來增加保暖度，還可以與DtD睡袋睡墊進行單邊結合。</p>
-      `,
+         <p>DOTDOT 天絲兩用被，利用材質透氣與親膚度，可自由調整厚度，打造最單純的簡單舒適！</p>
+         <p>輕巧多功能，雙面天絲材質，適合台灣氣候四季使用。額外可搭配水洗被胎來增加保暖度，還可以與DtD睡袋睡墊進行單邊結合。</p>
+       `,
       price: '＄獎項價值 元 /  名'
     }
     // {
@@ -107,7 +107,90 @@
     // }
   ]
 
-  const activityList = [
+  const marketingList = [
+    {
+      id: '01.jpg',
+      brand: '',
+      name: '隨野家',
+      description:
+        '隨野家提供自由放養的優質雞蛋及加工品，同時致力於推廣友善農業與食農教育。我們精心設計兼具趣味與知識的多元體驗活動，適合各年齡層參與，讓大家在互動中深入了解從土地到餐桌的過程，並培養對環境永續的重視與實踐行動力。'
+    },
+    {
+      id: '02.jpeg',
+      brand: '',
+      name: '五寮尖山羊乳',
+      description:
+        '讓你喝新鮮直送的羊奶！這是離台北最近的羊場：位於三峽，五寮尖山的酪農：阿順一家人，每日餵養自己種牧草，並常清洗羊床管理糞便（羊的身體乾淨了，奶也不騷了）他採用低溫巴士殺菌，無均值化處理，直接展現天然的乳脂肪的清爽口感，準備好來一罐嗎？'
+    },
+    {
+      id: '03.jpg',
+      brand: '',
+      name: '錦川食堂	',
+      description:
+        '純米研磨、手工製作之港式蘿蔔糕 & 草仔粿，用料實在，無添加香精香料，讓您吃的健康吃的安心。蘿蔔糕讓您每一口都吃的到蘿蔔絲及綿密香甜 ; 而當您咬下草仔粿的第一口，Q彈的外皮加上層次感豐富的內餡，讓您一口接一口，停不下來。'
+    },
+    {
+      id: '04.jpg',
+      brand: '',
+      name: '芭寶米生態農場',
+      description:
+        '「芭寶米」五代務農位於中壢市的芝芭里，主要種植桃園3號米、帶有淡淡芋香味，怎麼煮都好吃。碗糕使用100%在來米製作有著濃濃米香，讓人人都愛吃台灣米！'
+    },
+    {
+      id: '05.jpg',
+      brand: '',
+      name: '添丁養生黑木耳',
+      description:
+        '(Tien-Ding)想找現炸菇菇、菇餅、白木耳露、黑木耳露和水果這裡通通有！新鮮養生又好吃！'
+    },
+    {
+      id: '06.png',
+      brand: '',
+      name: '甜馨農場',
+      description: '有機藍莓、無農藥草莓，品嚐每一口甜蜜～'
+    },
+    {
+      id: '07.jpeg',
+      brand: '',
+      name: '春蜂滿蜜大丘園',
+      description: `
+        <p>堅信「有樹枝，就有鳥棲」。腳踏實地養好每一隻蜂、採好每一滴蜜、做好每一個環節，用專業打磨每個“樹枝”，必會有識者擇木而棲。</p>
+        <p>自然的天工是生命在綻放，養蜂的匠心是對這份事業的追求。打造一片養蜂「迦南之地」，流淌著蜂蜜的人間樂土，消費者值得信賴的蜂蜜代名詞。大丘園養蜂場用匠心致敬大自然，用誠意回饋每位消費者。</p>
+      `
+    },
+    {
+      id: '08.jpg',
+      brand: '',
+      name: '古稻樂埕',
+      description: `
+        <p>講究「古」早傳統的飼養方法，採用天然酵母配方的酒糟「稻」穀作飼料，追求和「樂」自然、環境友善的飼養空間，創造人文和雞隻豐饒薈萃的大「埕」院。</p>
+        <p>孫家古道樂埕”的原創精神，就是堅持以給家人吃的真誠心意，來飼養每隻令人感動幸福的雞。期盼這份真心，同時也傳承分享給每一個值得健康的人。</p>
+        <p>【販售商品】茶葉蛋、雞肉肉鬆、麻油雞湯、蔥油雞</p>
+      `
+    },
+    {
+      id: '09.jpg',
+      brand: '',
+      name: '遇米甜',
+      description: `
+        <p>【白龍王水果玉米】生食帶點像水梨，甘蔗香甜</p>
+        <p>【日本雙色水果玉米】文青甜的特色，有點甜不會膩</p>
+        <p>【紫色甜玉米】獨特少有的濃郁花青素，健康滿分甜玉米</p>
+        <p>【彩虹甜糯玉米】口感QQ帶有嚼勁</p>
+        <p>【鮮嫩玉米筍】高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
+        <p>【水煮水果玉米】孩子們的最愛</p>
+      `
+    },
+    {
+      id: '10.jpg',
+      brand: '',
+      name: '芭樂主子與辣小妹',
+      description:
+        '【珍珠芭樂】珍珠芭樂成熟時由濃綠轉為淡綠色，沾染晨露的果實特別脆口，質地細緻，但香甜回甘。'
+    }
+  ]
+
+  const activityList2 = [
     {
       id: '',
       brand: '',
@@ -116,7 +199,6 @@
       price: '＄獎項價值 元 /  名'
     }
   ]
-
 
   const setFaqListItem = () => {
     const items = document.querySelectorAll('#accordionContainer > div')
@@ -236,13 +318,13 @@
             <div class="overflow-hidden">
               <span
                 class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered ? 'opacity-100' : 'opacity-0'"
+                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
               >
                 文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
               <img
                 class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
                 src="/img/gift_01.png"
                 alt=""
               />
@@ -259,13 +341,13 @@
             <div class="overflow-hidden">
               <span
                 class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered ? 'opacity-100' : 'opacity-0'"
+                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
               >
                 文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
               <img
                 class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
                 src="/img/gift_01.png"
                 alt=""
               />
@@ -282,13 +364,13 @@
             <div class="overflow-hidden">
               <span
                 class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered ? 'opacity-100' : 'opacity-0'"
+                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
               >
                 文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
               <img
                 class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered ? 'opacity-0' : 'opacity-100'"
+                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
                 src="/img/gift_01.png"
                 alt=""
               />
@@ -314,74 +396,30 @@
         </div>
         <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
           <div
-            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
-            v-for="(item, index) in giftItems"
+            class="group relative rounded-tl-2xl bg-white p-3 shadow-md"
+            v-for="(item, index) in marketingList"
             :key="index"
+            @mouseenter="isHovered = index"
+            @mouseleave="isHovered = null"
           >
             <div class="overflow-hidden">
               <span
-                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered ? 'opacity-100' : 'opacity-0'"
+                class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-auto bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
+                v-html="item.description"
               >
-                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
               </span>
               <img
-                class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered ? 'opacity-0' : 'opacity-100'"
-                :src="`${imagePath}/game-02/${index + 1 < 10 ? '0' + (index + 1) : index + 1}.jpg`"
+                class="aspect-6/4 h-[200px] w-full rounded-tl-2xl object-cover transition-opacity duration-300"
+                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
+                :src="`${imagePath}/game-02/${item.id}`"
                 alt=""
               />
             </div>
             <span
               class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
             >
-              早鳥加碼送
-            </span>
-          </div>
-          <div
-            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
-          >
-            <div class="overflow-hidden">
-              <span
-                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered ? 'opacity-100' : 'opacity-0'"
-              >
-                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
-              </span>
-              <img
-                class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered ? 'opacity-0' : 'opacity-100'"
-                src="/img/gift_01.png"
-                alt=""
-              />
-            </div>
-            <span
-              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
-            >
-              早鳥加碼送
-            </span>
-          </div>
-          <div
-            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
-          >
-            <div class="overflow-hidden">
-              <span
-                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered ? 'opacity-100' : 'opacity-0'"
-              >
-                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
-              </span>
-              <img
-                class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered ? 'opacity-0' : 'opacity-100'"
-                src="/img/gift_01.png"
-                alt=""
-              />
-            </div>
-            <span
-              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
-            >
-              早鳥加碼送
+              {{ item.name }}
             </span>
           </div>
         </div>
@@ -509,7 +547,9 @@
           <div
             v-for="(item, index) in lotteryList"
             :key="index"
-            class="gift-item relative flex flex-col overflow-hidden rounded-lg bg-white shadow-lg"
+            class="gift-item relative flex cursor-pointer flex-col overflow-hidden rounded-lg bg-white shadow-lg"
+            @mouseenter="isHovered = index"
+            @mouseleave="isHovered = null"
           >
             <div class="relative mb-3 text-white">
               <span
@@ -534,6 +574,26 @@
               class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"
             >
               {{ item.price }}
+            </div>
+            <div
+              :class="`absolute inset-0 z-10 bg-white p-3 px-3 transition-opacity duration-300 ${
+                isHovered === index ? 'opacity-100' : 'opacity-0'
+              }`"
+            >
+              <div class="flex flex-col">
+                <div
+                  class="mb-1 shrink-0 border-b p-2 font-semibold text-primary-500"
+                >
+                  <span>{{ item.brand }}</span>
+                  <h2 class="text-xl font-semibold text-primary-500">
+                    {{ item.name }}
+                  </h2>
+                </div>
+                <div
+                  class="h-full grow overflow-auto py-3"
+                  v-html="item.description"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
