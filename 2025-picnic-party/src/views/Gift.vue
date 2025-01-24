@@ -14,7 +14,7 @@
 <template>
   <div>
     <Header>
-      <router-link class="animate-bounceFloat" to="/">
+      <router-link to="/">
         <img src="/img/kv-gift.svg" alt="" width="650" />
       </router-link>
     </Header>
@@ -34,7 +34,7 @@
             alt=""
           />
         </div>
-        <div class="md:mb-36 grid gap-6 md:grid-cols-2">
+        <div class="grid gap-6 md:mb-36 md:grid-cols-2">
           <div
             v-for="(item, index) in giftItems"
             :key="index"

@@ -97,8 +97,15 @@
     <span id="star-05" class="absolute right-20 top-40">
       <img src="/img/star-05.svg" alt="" />
     </span>
-    <div id="kv-main" class="z-10 flex flex-col gap-5">
+
+    <div
+      id="kv-main"
+      class="animate-bounceFloat relative z-10 flex flex-col gap-5"
+    >
       <slot />
+      <span class="absolute -right-16 top-24 z-10">
+        <img src="/img/kv-main-img.png" alt="" width="150" />
+      </span>
     </div>
   </header>
 </template>

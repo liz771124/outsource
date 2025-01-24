@@ -314,7 +314,7 @@
 <template>
   <div>
     <Header>
-      <router-link class="animate-bounceFloat" to="/">
+      <router-link to="/">
         <img src="/img/kv-article.svg" alt="" width="650" />
       </router-link>
     </Header>
@@ -372,7 +372,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -bottom-3 -start-0 line-clamp-2 block inline-block h-[58px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -413,7 +413,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative -start-0 bottom-0 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -447,8 +447,9 @@
                     />
                   </div>
                 </div>
+
                 <div
-                  class="bg-v-green relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -bottom-3 -start-0 line-clamp-2 inline-block h-[58px] w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -489,7 +490,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative -start-0 bottom-0 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -524,7 +525,7 @@
                   </div>
                 </div>
                 <div
-                  class="bg-v-green relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="bg-v-green relative -bottom-3 -start-0 line-clamp-2 inline-block h-[58px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -565,7 +566,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative -start-0 bottom-0 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -600,7 +601,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative -start-0 bottom-0 line-clamp-2 inline-block h-[62px] w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -bottom-3 -start-0 line-clamp-2 inline-block h-[58px] w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -642,7 +643,7 @@
                   </div>
                 </div>
                 <div
-                  class="relative -start-0 bottom-0 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
+                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
@@ -652,7 +653,7 @@
         </div>
 
         <div
-          class="mt-20 flex w-full flex-wrap items-center justify-center gap-16"
+          class="mt-10 flex w-full flex-wrap items-center justify-center gap-16"
         >
           <ButtonJoin :title="'報名野餐日'" />
         </div>

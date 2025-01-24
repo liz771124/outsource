@@ -148,7 +148,7 @@
 <template>
   <div>
     <Header>
-      <router-link class="animate-bounceFloat" to="/">
+      <router-link to="/">
         <img src="/img/kv-game.svg" alt="" width="650" />
       </router-link>
     </Header>
@@ -165,15 +165,18 @@
       </div>
       <div class="container py-16">
         <div class="mb-20 text-center">
-          <div class="font-black text-primary-500 md:text-[35px]">
-            歡樂趴踢 十在玩不停
-          </div>
-          <div class="mt-5 font-black md:text-[20px]">
-            兼具知識、趣味的闖關挑戰 <br />
-            在未來親子野餐日10週年活動就玩得到！ <br />
-            爸爸媽媽陪著孩子共同完成任務 <br />
-            多樣品牌小禮拿滿滿，集滿10章再抽大獎！
-          </div>
+          <img
+            width="600"
+            class="mx-auto mb-10 block"
+            src="/img/title-game-main-01.svg"
+            alt=""
+          />
+          <img
+            width="350"
+            class="mx-auto mb-10"
+            src="/img/title-game-intro-01.svg"
+            alt=""
+          />
         </div>
         <div class="mb-8 text-center">
           <img width="450" class="mx-auto" src="/img/title-game.svg" alt="" />
