@@ -107,6 +107,17 @@
     // }
   ]
 
+  const activityList = [
+    {
+      id: '',
+      brand: '',
+      name: '',
+      description: '',
+      price: '＄獎項價值 元 /  名'
+    }
+  ]
+
+
   const setFaqListItem = () => {
     const items = document.querySelectorAll('#accordionContainer > div')
     gsap.from(items, {
