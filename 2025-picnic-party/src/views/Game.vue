@@ -392,7 +392,7 @@
             一起享受闖關集章、學習知識，共度好時光！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
           <GameItem :list="game01List" />
         </div>
 
@@ -407,7 +407,7 @@
             產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
           <GameItem :list="game02List" />
         </div>
 
@@ -422,7 +422,7 @@
             全家人一起共學共讀，不能不知道的快訊一次掌握！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
           <GameItem :list="game03List" />
         </div>
 
@@ -437,7 +437,7 @@
             讓資源與永續教育持續善的循環，帶孩子一起愛地球！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
           <GameItem :list="game04List" />
         </div>
 
@@ -452,7 +452,7 @@
             感受知識與閱讀的無限樂趣！
           </div>
         </div>
-        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
           <GameItem :list="game05List" />
         </div>
 
