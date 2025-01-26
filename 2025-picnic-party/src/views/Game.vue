@@ -233,7 +233,7 @@
   const game03List = [
     {
       id: '/game-03/01.jpg',
-      name: '新北市家教中心 無圖代補',
+      name: '新北市家教中心 無圖待補',
       description: '無圖代補'
     }
   ]
