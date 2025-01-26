@@ -4,9 +4,9 @@
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   gsap.registerPlugin(ScrollTrigger)
-
   const isHovered = ref(null)
   const imagePath = import.meta.env.VITE_IMAGE_PATH
+
   const lotteryList = [
     // {
     //   id: '01.jpg',
@@ -60,16 +60,16 @@
       brand: '【象印】',
       name: '童用ONE TOUCH保溫杯 (款式隨機)',
       description: `
-         <p>象印專為孩童貼心設計的小熊杯，讓孩子夏日愛上喝水的秘密武器！色彩繽紛的可愛圖樣設計，不管男孩女孩通通都超愛！三大便利機能，讓孩子每日的飲水更加輕鬆又方便：</p>
-         <p>#小熊安全鎖簡單開關</p>
-         <p>#飲品集中扇形杯口設計方便飲用</p>
-         <p>#輕量好握讓孩子輕鬆好拿 </p>
-         <p>還有四大特色讓爸媽輕鬆清洗：</p>
-         <p>#一體式中栓設計</p>
-         <p>#可裝運動飲料的「防沾塗層+(plus)」</p>
-         <p>#高效保溫保冷力</p>
-         <p>#外袋可放置洗衣機清洗</p>
-       `,
+           <p>象印專為孩童貼心設計的小熊杯，讓孩子夏日愛上喝水的秘密武器！色彩繽紛的可愛圖樣設計，不管男孩女孩通通都超愛！三大便利機能，讓孩子每日的飲水更加輕鬆又方便：</p>
+           <p>#小熊安全鎖簡單開關</p>
+           <p>#飲品集中扇形杯口設計方便飲用</p>
+           <p>#輕量好握讓孩子輕鬆好拿 </p>
+           <p>還有四大特色讓爸媽輕鬆清洗：</p>
+           <p>#一體式中栓設計</p>
+           <p>#可裝運動飲料的「防沾塗層+(plus)」</p>
+           <p>#高效保溫保冷力</p>
+           <p>#外袋可放置洗衣機清洗</p>
+         `,
       price: '＄獎項價值 元 /  名'
     },
     {
@@ -93,9 +93,9 @@
       brand: '享居',
       name: '天絲兩用被(DtD)（圖案隨機）',
       description: `
-         <p>DOTDOT 天絲兩用被，利用材質透氣與親膚度，可自由調整厚度，打造最單純的簡單舒適！</p>
-         <p>輕巧多功能，雙面天絲材質，適合台灣氣候四季使用。額外可搭配水洗被胎來增加保暖度，還可以與DtD睡袋睡墊進行單邊結合。</p>
-       `,
+           <p>DOTDOT 天絲兩用被，利用材質透氣與親膚度，可自由調整厚度，打造最單純的簡單舒適！</p>
+           <p>輕巧多功能，雙面天絲材質，適合台灣氣候四季使用。額外可搭配水洗被胎來增加保暖度，還可以與DtD睡袋睡墊進行單邊結合。</p>
+         `,
       price: '＄獎項價值 元 /  名'
     }
     // {
@@ -107,93 +107,174 @@
     // }
   ]
 
-  const marketingList = [
+  const game01List = [
     {
-      id: '01.jpg',
-      brand: '',
+      id: '/game-01/01.jpg',
+      name: '懂吃！早餐小博士',
+      description:
+        '想要長高高又跑得快，早餐記得要吃、而且營養要均衡喔！快來找超人氣「小初牛牛」，帶你到初鹿牧場，一起認識好吃又營養的早餐，還有好玩的闖關遊戲，讓寶貝變身懂吃的早餐小博士！'
+    },
+    {
+      id: '/game-01/02.jpg',
+      name: 'myFirst 快樂「喀擦」冒險',
+      description: `
+          <p>喀擦！喀擦！還記得第一次使用相機的感動嗎？現在，讓孩子也來感受這份快樂吧！現場不僅可以體驗myFirst Camera50兒童相機，開啟充滿驚喜的「喀擦」冒險！用孩子的視角捕捉生活中美好瞬間，無論是小小的快樂、奇妙的發現，還是成長的點滴，每一張照片都是美好記憶！</p>
+          <p>喀擦後，愛要分享！現場還可以利用myFirst Frame電子相框，把孩子作品瞬間送達爸媽爺奶身邊，讓全家人一起感受幸福時刻！myFirst 系列產品不僅記錄下孩子的快樂，也讓全家人的心更靠近！喀擦一下，開啟全家人的溫馨冒險！</p>
+        `
+    },
+    {
+      id: '/game-01/03.png',
+      name: '食農趣學園',
+      description:
+        '快來接受「蔬果校長」的挑戰吧！土裡還是樹上？一起揭開蔬果的生長祕密！完成任務後，分享家人最愛吃的蔬菜和水果，還能探索它們從產地到餐桌的奇妙旅程。現場還有趣味小知識和互動闖關，讓大朋友小朋友輕鬆變身「食農小專家」，玩得開心又學到滿滿知識！'
+    },
+    {
+      id: '/game-01/04.jpg',
+      name: '太空補給站的玩具發送任務',
+      description:
+        '太空補給站發送緊急玩具需求！快看看手邊的玩具，將玩具分類，也將符合需求的玩具發送給補給站，分享給其他小朋友吧！'
+    },
+    {
+      id: '/game-01/05.jpg',
+      name: '「可爾必思」Peace小問答',
+      description: `
+        <p>「可爾必思」Peace小問答	"你對「可爾必思」認識多少呢?等你來挑戰! </p>
+        <p>活動1.轉動輪盤回答問題，答對即可獲得口袋摺疊扇一個(數量有限)、闖關章一枚!</p>
+        <p>活動2.「可爾必思」試飲</p>
+        <p>活動3.按讚「可爾必思」FB或IG，與現場拍照道具合照，分享至個人FB或IG並tag#可爾必思，送水槍一支(數量有限)</p>
+        `
+    },
+    {
+      id: '/game-01/06.png',
+      name: '保護萌牙大作戰',
+      description:
+        '可愛的小萌牙陪伴著我們開心吃飯、哈哈大笑，真的好重要！到底該怎麼保護寶貝小萌牙呢？快和牙寶寶迪恩一起來對抗蛀牙蟲，用德恩奈兒童口腔保健組每天認真刷牙，一起成為迪恩的好朋友！'
+    }
+    // {
+    //   id: '/game-01/02.jpg',
+    //   name: '',
+    //   description: ''
+    // }
+  ]
+
+  const game02List = [
+    {
+      id: '/game-02/01.jpg',
       name: '隨野家',
       description:
         '隨野家提供自由放養的優質雞蛋及加工品，同時致力於推廣友善農業與食農教育。我們精心設計兼具趣味與知識的多元體驗活動，適合各年齡層參與，讓大家在互動中深入了解從土地到餐桌的過程，並培養對環境永續的重視與實踐行動力。'
     },
     {
-      id: '02.jpeg',
-      brand: '',
+      id: '/game-02/02.jpeg',
       name: '五寮尖山羊乳',
       description:
         '讓你喝新鮮直送的羊奶！這是離台北最近的羊場：位於三峽，五寮尖山的酪農：阿順一家人，每日餵養自己種牧草，並常清洗羊床管理糞便（羊的身體乾淨了，奶也不騷了）他採用低溫巴士殺菌，無均值化處理，直接展現天然的乳脂肪的清爽口感，準備好來一罐嗎？'
     },
     {
-      id: '03.jpg',
-      brand: '',
+      id: '/game-02/03.jpg',
       name: '錦川食堂	',
       description:
         '純米研磨、手工製作之港式蘿蔔糕 & 草仔粿，用料實在，無添加香精香料，讓您吃的健康吃的安心。蘿蔔糕讓您每一口都吃的到蘿蔔絲及綿密香甜 ; 而當您咬下草仔粿的第一口，Q彈的外皮加上層次感豐富的內餡，讓您一口接一口，停不下來。'
     },
     {
-      id: '04.jpg',
-      brand: '',
+      id: '/game-02/04.jpg',
       name: '芭寶米生態農場',
       description:
         '「芭寶米」五代務農位於中壢市的芝芭里，主要種植桃園3號米、帶有淡淡芋香味，怎麼煮都好吃。碗糕使用100%在來米製作有著濃濃米香，讓人人都愛吃台灣米！'
     },
     {
-      id: '05.jpg',
-      brand: '',
+      id: '/game-02/05.jpg',
       name: '添丁養生黑木耳',
       description:
         '(Tien-Ding)想找現炸菇菇、菇餅、白木耳露、黑木耳露和水果這裡通通有！新鮮養生又好吃！'
     },
     {
-      id: '06.png',
-      brand: '',
+      id: '/game-02/06.png',
       name: '甜馨農場',
       description: '有機藍莓、無農藥草莓，品嚐每一口甜蜜～'
     },
     {
-      id: '07.jpeg',
-      brand: '',
+      id: '/game-02/07.jpeg',
       name: '春蜂滿蜜大丘園',
       description: `
-        <p>堅信「有樹枝，就有鳥棲」。腳踏實地養好每一隻蜂、採好每一滴蜜、做好每一個環節，用專業打磨每個“樹枝”，必會有識者擇木而棲。</p>
-        <p>自然的天工是生命在綻放，養蜂的匠心是對這份事業的追求。打造一片養蜂「迦南之地」，流淌著蜂蜜的人間樂土，消費者值得信賴的蜂蜜代名詞。大丘園養蜂場用匠心致敬大自然，用誠意回饋每位消費者。</p>
-      `
+          <p>堅信「有樹枝，就有鳥棲」。腳踏實地養好每一隻蜂、採好每一滴蜜、做好每一個環節，用專業打磨每個“樹枝”，必會有識者擇木而棲。</p>
+          <p>自然的天工是生命在綻放，養蜂的匠心是對這份事業的追求。打造一片養蜂「迦南之地」，流淌著蜂蜜的人間樂土，消費者值得信賴的蜂蜜代名詞。大丘園養蜂場用匠心致敬大自然，用誠意回饋每位消費者。</p>
+        `
     },
     {
-      id: '08.jpg',
-      brand: '',
+      id: '/game-02/08.jpg',
       name: '古稻樂埕',
       description: `
-        <p>講究「古」早傳統的飼養方法，採用天然酵母配方的酒糟「稻」穀作飼料，追求和「樂」自然、環境友善的飼養空間，創造人文和雞隻豐饒薈萃的大「埕」院。</p>
-        <p>孫家古道樂埕”的原創精神，就是堅持以給家人吃的真誠心意，來飼養每隻令人感動幸福的雞。期盼這份真心，同時也傳承分享給每一個值得健康的人。</p>
-        <p>【販售商品】茶葉蛋、雞肉肉鬆、麻油雞湯、蔥油雞</p>
-      `
+          <p>講究「古」早傳統的飼養方法，採用天然酵母配方的酒糟「稻」穀作飼料，追求和「樂」自然、環境友善的飼養空間，創造人文和雞隻豐饒薈萃的大「埕」院。</p>
+          <p>孫家古道樂埕”的原創精神，就是堅持以給家人吃的真誠心意，來飼養每隻令人感動幸福的雞。期盼這份真心，同時也傳承分享給每一個值得健康的人。</p>
+          <p>【販售商品】茶葉蛋、雞肉肉鬆、麻油雞湯、蔥油雞</p>
+        `
     },
     {
-      id: '09.jpg',
-      brand: '',
+      id: '/game-02/09.jpg',
       name: '遇米甜',
       description: `
-        <p>【白龍王水果玉米】生食帶點像水梨，甘蔗香甜</p>
-        <p>【日本雙色水果玉米】文青甜的特色，有點甜不會膩</p>
-        <p>【紫色甜玉米】獨特少有的濃郁花青素，健康滿分甜玉米</p>
-        <p>【彩虹甜糯玉米】口感QQ帶有嚼勁</p>
-        <p>【鮮嫩玉米筍】高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
-        <p>【水煮水果玉米】孩子們的最愛</p>
-      `
+          <p>【白龍王水果玉米】生食帶點像水梨，甘蔗香甜</p>
+          <p>【日本雙色水果玉米】文青甜的特色，有點甜不會膩</p>
+          <p>【紫色甜玉米】獨特少有的濃郁花青素，健康滿分甜玉米</p>
+          <p>【彩虹甜糯玉米】口感QQ帶有嚼勁</p>
+          <p>【鮮嫩玉米筍】高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
+          <p>【水煮水果玉米】孩子們的最愛</p>
+        `
     },
     {
-      id: '10.jpg',
-      brand: '',
+      id: '/game-02/10.jpg',
       name: '芭樂主子與辣小妹',
       description:
         '【珍珠芭樂】珍珠芭樂成熟時由濃綠轉為淡綠色，沾染晨露的果實特別脆口，質地細緻，但香甜回甘。'
     }
   ]
 
+  const game03List = [
+    {
+      id: '/game-03/01.jpg',
+      name: '新北市家教中心 無圖代補',
+      description: '無圖代補'
+    }
+  ]
+
+  const game04List = [
+    {
+      id: '/game-04/01.jpg',
+      name: '探索縣市特色食材與永續飲食之旅',
+      description:
+        '來一場美味又綠意盎然的冒險吧！深入探索台灣各縣市的特色蔬果！從台北的多汁柑橘、台南的甜蜜鳳梨，到高雄的清新蓮霧，每一口都是在地的鮮美。如何將這些食材與低碳、零浪費的飲食理念結合，打造不僅好吃、還能幫助地球的永續生活方式？快來一起了解、品嚐並實踐！'
+    },
+    {
+      id: '/game-04/02.jpg',
+      name: '義美如木鮮乳永續自造所',
+      description: ''
+    }
+  ]
+
+  const game05List = [
+    {
+      id: '/game-05/01.jpg',
+      name: '我是未來知識王',
+      description:
+        '浩瀚的知識宇宙，你掌握了多少奧秘呢？趕快加入這場知識宇宙大冒險，成為未來知識王，還可抽萬元大獎並獲得《未來兒童》《未來少年》雜誌及多項精美好禮。'
+    },
+    {
+      id: '/game-05/02.jpg',
+      name: '小天下',
+      description: ''
+    },
+    {
+      id: '/game-05/02.jpg',
+      name: '未來親子故事屋',
+      description:
+        '	嚴選小天下人氣書籍與未來親子的小故事，跟著未來姐姐與來寶的腳步，一起進入歡樂有趣的故事樂園！'
+    }
+  ]
+
   const activityList2 = [
     {
       id: '',
-      brand: '',
       name: '',
       description: '',
       price: '＄獎項價值 元 /  名'
@@ -276,10 +357,10 @@
         class="mx-auto flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3"
       >
         <router-link to="/game#game-01" class="px-8 py-1"
-          ><img src="/img/game-title-01.svg" alt=""
+          ><img src="/img/game-tag-title-01.svg" alt=""
         /></router-link>
         <router-link to="game#game-02" class="px-8 py-1"
-          ><img src="/img/game-title-02.svg" alt=""
+          ><img src="/img/game-tag-title-02.svg" alt=""
         /></router-link>
       </div>
       <div class="container py-16">
@@ -304,7 +385,7 @@
           <div
             class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
           >
-            #十在好玩
+            <img src="/img/game-title-01.svg" alt="" />
           </div>
           <div class="font-black md:text-[20px]">
             各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br />
@@ -312,82 +393,14 @@
           </div>
         </div>
         <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
-          <div
-            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
-          >
-            <div class="overflow-hidden">
-              <span
-                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
-              >
-                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
-              </span>
-              <img
-                class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
-                src="/img/gift_01.png"
-                alt=""
-              />
-            </div>
-            <span
-              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-            >
-              早鳥加碼送
-            </span>
-          </div>
-          <div
-            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
-          >
-            <div class="overflow-hidden">
-              <span
-                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
-              >
-                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
-              </span>
-              <img
-                class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
-                src="/img/gift_01.png"
-                alt=""
-              />
-            </div>
-            <span
-              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-            >
-              早鳥加碼送
-            </span>
-          </div>
-          <div
-            class="game-ite group relative rounded-tl-2xl bg-white p-3 shadow-md"
-          >
-            <div class="overflow-hidden">
-              <span
-                class="intro absolute inset-0 z-10 bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
-              >
-                文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
-              </span>
-              <img
-                class="rounded-tl-2xl transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
-                src="/img/gift_01.png"
-                alt=""
-              />
-            </div>
-            <span
-              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-kv-green px-6 py-1.5 font-bold tracking-wide text-white"
-            >
-              早鳥加碼送
-            </span>
-          </div>
+          <GameItem :list="game01List" />
         </div>
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-primary-500 px-5 py-1 pe-5 text-[45px] text-[50px] font-black text-primary-500"
+            class="border-e border-primary-500 px-5 py-1 pe-5 font-black text-primary-500"
           >
-            #十在好食
+            <img src="/img/game-title-02.svg" alt="" />
           </div>
           <div class="font-black md:text-[20px]">
             小農市集一起來到野餐日！<br />
@@ -395,36 +408,55 @@
           </div>
         </div>
         <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
-          <div
-            class="group relative rounded-tl-2xl bg-white p-3 shadow-md"
-            v-for="(item, index) in marketingList"
-            :key="index"
-            @mouseenter="isHovered = index"
-            @mouseleave="isHovered = null"
-          >
-            <div class="overflow-hidden">
-              <span
-                class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-auto bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
-                v-html="item.description"
-              >
-              </span>
-              <img
-                class="aspect-6/4 h-[200px] w-full rounded-tl-2xl object-cover transition-opacity duration-300"
-                :class="isHovered === index ? 'opacity-0' : 'opacity-100'"
-                :src="`${imagePath}/game-02/${item.id}`"
-                alt=""
-              />
-            </div>
-            <span
-              class="absolute -end-3 -top-3 z-10 inline-block w-full max-w-[250px] rounded-tr-xl bg-primary-500 px-6 py-1.5 font-bold tracking-wide text-white"
-            >
-              {{ item.name }}
-            </span>
-          </div>
+          <GameItem :list="game02List" />
         </div>
 
-        <div>
+        <div class="flex flex-wrap items-center justify-center gap-5">
+          <div
+            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+          >
+            <img src="/img/game-title-03.svg" alt="" />
+          </div>
+          <div class="font-black md:text-[20px]">
+            讓教育與愛永續！新北市政府各單位攜手進駐，宣導政策並提供新知。<br />
+            全家人一起共學共讀，不能不知道的快訊一次掌握！
+          </div>
+        </div>
+        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+          <GameItem :list="game03List" />
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-5">
+          <div
+            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+          >
+            <img src="/img/game-title-04.svg" alt="" />
+          </div>
+          <div class="font-black md:text-[20px]">
+            由四大品牌共同打造環保、低負擔的永續迷宮，<br />
+            讓資源與永續教育持續善的循環，帶孩子一起愛地球！
+          </div>
+        </div>
+        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+          <GameItem :list="game04List" />
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-5">
+          <div
+            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+          >
+            <img src="/img/game-title-05.svg" alt="" />
+          </div>
+          <div class="font-black md:text-[20px]">
+            未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，<br />
+            感受知識與閱讀的無限樂趣！
+          </div>
+        </div>
+        <div class="mb-5 grid grid-cols-2 py-10 md:grid-cols-3 md:gap-8">
+          <GameItem :list="game05List" />
+        </div>
+
+        <!-- <div>
           <swiper
             :slides-per-view="isMobile ? 2.5 : 4"
             :space-between="isMobile ? 10 : 20"
@@ -451,7 +483,7 @@
               </div>
             </swiper-slide>
           </swiper>
-        </div>
+        </div> -->
         <!-- <div
           data-twe-modal-init
           class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
