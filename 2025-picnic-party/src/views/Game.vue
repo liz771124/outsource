@@ -560,18 +560,17 @@
           </div>
         </div> -->
       </div>
-      <span class="absolute -bottom-[45px] start-0">
+      <span class="absolute -bottom-[80px] start-0 h-[100px]">
         <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
       </span>
     </div>
-    <div id="game-02" class="bg-yellow">
-      <div class="container py-16">
-        <div class="mb-3 text-center">
-          <img width="450" class="mx-auto" src="/img/title-gift.svg" alt="" />
+    <div id="game-02" class="bg-yellow relative">
+      <div class="container py-24">
+        <div class="relative z-10 mb-2 text-center">
+          <img class="mx-auto" src="/img/title-lottery.svg" alt="" />
         </div>
-        <div class="mb-8 text-center font-black">
-          <div>只要集滿10個闖關印章，就能兌換抽獎券</div>
-          <div>超過50個好禮獎項，幸運兒就是你！</div>
+        <div class="mb-16 text-center font-black">
+          <img class="mx-auto" src="/img/intro-lottery.svg" alt="" />
         </div>
         <div class="mb-8 grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
           <div

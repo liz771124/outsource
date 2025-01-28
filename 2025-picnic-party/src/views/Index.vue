@@ -29,7 +29,7 @@
         `
     },
     {
-      id: '/gift-early-bird/02.jpg',
+      id: '/gift-early-bird/02.png',
       brand: '德恩奈​',
       title: '潔牙雙星組​',
       description: `
@@ -149,7 +149,7 @@
         `
     },
     {
-      id: '/gift-lucky-bag/05.jpg',
+      id: '/gift-lucky-bag/05.png',
       brand: '可爾必思',
       title: `開心成長1瓶<span class='text-xs'>(原味/蘋果) 兩種口味隨機</span>`,
       description: `
@@ -158,8 +158,8 @@
             <li>
               日本百年品牌「可爾必思」專為孩子打造的乳酸菌飲品，清爽酸甜的滋味榮獲袋鼠評鑑五星白金獎，滿足美味與健康雙重需求，陪伴您的寶貝開心成長。
             </li>
-            <li>🥛原味：含牛奶鈣，輕鬆灌鈣快快長大!</li>
-            <li>🍎蘋果：含葉黃素，輕鬆補給明亮元素!</li>
+            <li>🥛 原味：含牛奶鈣，輕鬆灌鈣快快長大!</li>
+            <li>🍎 蘋果：含葉黃素，輕鬆補給明亮元素!</li>
             <li></li>
             <li>★日本獨家乳酸菌，幫助消化好順暢。</li>
             <li>★160ml小包裝，一次一罐剛剛好。</li>

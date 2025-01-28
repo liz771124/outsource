@@ -330,21 +330,21 @@
         </div>
         <div class="flex flex-col items-center gap-5">
           <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
-            <a href="#">
+            <a class="animate-bounceFloat" href="/Article#article-01">
               <img src="/img/article-icon-01.svg" alt="" />
             </a>
-            <a href="#">
+            <a class="animate-bounceFloat" href="/Article#article-02">
               <img src="/img/article-icon-02.svg" alt="" />
             </a>
-            <a href="#">
+            <a class="animate-bounceFloat" href="/Article#article-03">
               <img src="/img/article-icon-03.svg" alt="" />
             </a>
-            <a href="#">
+            <a class="animate-bounceFloat" href="/Article#article-04">
               <img src="/img/article-icon-04.svg" alt="" />
             </a>
           </div>
         </div>
-        <div class="py-10">
+        <div id="article-01" class="py-10">
           <div
             class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-primary-500"
           >
@@ -378,49 +378,8 @@
               </a>
             </div>
           </div>
-          <!-- <swiper
-            :spaceBetween="20"
-            :slides-per-view="isMobile ? 1.4 : 3"
-            :autoplay="{
-              delay: 5000,
-              disableOnInteraction: false
-            }"
-            :pagination="{
-              clickable: true
-            }"
-            :modules="[Pagination, Navigation]"
-            navigation
-            loop
-          >
-            <swiper-slide
-              v-for="(item, index) in sportList"
-              :key="index"
-              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
-            >
-              <a
-                :href="item.link"
-                target="_blank"
-                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
-              >
-                <div class="flex flex-col">
-                  <div class="mb-3">
-                    <img
-                      class="rounded-tl-2xl"
-                      :src="item.src"
-                      :alt="item.title"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
-                >
-                  {{ item.title }}
-                </div>
-              </a>
-            </swiper-slide>
-          </swiper> -->
         </div>
-        <div class="py-10">
+        <div id="article-02" class="py-10">
           <div
             class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-kv-green"
           >
@@ -455,49 +414,8 @@
               </a>
             </div>
           </div>
-          <!-- <swiper
-            :spaceBetween="20"
-            :slides-per-view="isMobile ? 1.4 : 3"
-            :autoplay="{
-              delay: 5000,
-              disableOnInteraction: false
-            }"
-            :pagination="{
-              clickable: true
-            }"
-            :modules="[Pagination, Navigation]"
-            navigation
-            loop
-          >
-            <swiper-slide
-              v-for="(item, index) in familyList"
-              :key="index"
-              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
-            >
-              <a
-                :href="item.link"
-                target="_blank"
-                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
-              >
-                <div class="flex flex-col">
-                  <div class="mb-3">
-                    <img
-                      class="rounded-tl-2xl"
-                      :src="item.src"
-                      :alt="item.title"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
-                >
-                  {{ item.title }}
-                </div>
-              </a>
-            </swiper-slide>
-          </swiper> -->
         </div>
-        <div class="py-10">
+        <div id="article-03" class="py-10">
           <div
             class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-primary-500"
           >
@@ -509,49 +427,8 @@
               :className="`bg-primary-500`"
             />
           </div>
-          <!-- <swiper
-            :spaceBetween="20"
-            :slides-per-view="isMobile ? 1.4 : 3"
-            :autoplay="{
-              delay: 5000,
-              disableOnInteraction: false
-            }"
-            :pagination="{
-              clickable: true
-            }"
-            :modules="[Pagination, Navigation]"
-            navigation
-            loop
-          >
-            <swiper-slide
-              v-for="(item, index) in sustainableList"
-              :key="index"
-              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
-            >
-              <a
-                :href="item.link"
-                target="_blank"
-                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
-              >
-                <div class="flex flex-col">
-                  <div class="mb-3">
-                    <img
-                      class="rounded-tl-2xl"
-                      :src="item.src"
-                      :alt="item.title"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="relative -start-0 -bottom-3 inline-block w-[calc(100%+30px)] rounded-tr-xl bg-kv-green px-2 py-1.5 text-left font-bold tracking-wide text-white"
-                >
-                  {{ item.title }}
-                </div>
-              </a>
-            </swiper-slide>
-          </swiper> -->
         </div>
-        <div class="py-10">
+        <div id="article-04" class="py-10">
           <div
             class="scroll-animate-fadeInUp mb-4 text-center text-4xl font-black text-kv-green"
           >
