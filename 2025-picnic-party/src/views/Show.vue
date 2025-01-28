@@ -6,22 +6,52 @@
   const showItems = [
     {
       id: '/show/01.jpg',
-      title: '楊元慶魔術花式溜溜球',
-      description: '缺字缺字',
-      link: '#'
+      title: 'J HALL搖滾樂團',
+      subtitle: '孩子搖滾演唱會',
+      description:
+        '平均年齡只有10歲的「J HALL樂團」成軍3年，是華語樂壇史上最年輕的兒童樂團，將帶來孩子也能搖滾的演唱會，為現場爸爸媽媽與小朋友帶來多首朗朗上口的歌曲，也為野餐日慶生，一起來搖滾Party吧！'
     },
     {
       id: '/show/02.jpg',
-      title: '楊元慶魔術花式溜溜球',
-      description: '缺字缺字',
-      link: '#'
+      title: '楊元慶',
+      subtitle: '魔術花式溜溜球',
+      description:
+        '邀請溜溜球大師透過花式技巧演譯力與美！溜溜球項目金氏世界紀錄保持人楊元慶，用一顆溜溜球走遍全世界，期許孩子在熱愛的事情上不需要當最厲害的，而是成為無法取代。精彩演出將開啟藝術表演魔幻旅程！'
     },
     {
       id: '/show/03.jpg',
-      title: 'J HALL搖滾樂團孩子搖滾演唱會',
-      description: '缺字缺字',
-      link: '#'
+      title: '天馬戲創作劇團',
+      subtitle: '蟲蟲馬戲團',
+      description:
+        '故事派對就從探索藝術與關懷環境展開！由天馬戲創作劇團帶來蟲蟲馬戲團表演，森林探險家帶著大家一窺森林的秘密，找尋傳說中的神奇昆蟲並立志要保護美麗的森林，不只是特技，更融入了環保與教育意涵。'
+    },
+    {
+      id: '/show/03.jpg',
+      title: '來寶唱跳秀　',
+      subtitle: '',
+      description:
+        '缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字'
+    },
+    {
+      id: '/show/03.jpg',
+      title: '農業部表演',
+      subtitle: '',
+      description:
+        '缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字'
+    },
+    {
+      id: '/show/03.jpg',
+      title: '乖乖表演',
+      subtitle: '',
+      description:
+        '缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字'
     }
+    // {
+    //   id: '',
+    //   title: '',
+    //   subtitle: '',
+    //   description: ''
+    // }
   ]
 
   const setAnimation = () => {
@@ -83,15 +113,15 @@
               </div>
               <div class="relative">
                 <div
-                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-yellow px-6 py-1.5 font-bold tracking-wide text-white"
+                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-yellow px-6 py-1.5 text-xl font-bold tracking-wide text-white"
                 >
                   {{ item.title }}
                 </div>
-                <div class="flex gap-3">
-                  <!-- <div class="shrink-0">
-                    <img src="/img/title-special-01.svg" alt="" />
-                  </div> -->
-                  {{ item.description }}
+                <div>
+                  <div class="mb-2 text-xl font-bold text-kv-green">
+                    {{ item.subtitle }}
+                  </div>
+                  <div>{{ item.description }}</div>
                 </div>
               </div>
             </div>
