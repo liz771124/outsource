@@ -572,7 +572,7 @@
         <div class="mb-16 text-center font-black">
           <img class="mx-auto" src="/img/intro-lottery.svg" alt="" />
         </div>
-        <div class="mb-8 grid grid-cols-2 items-stretch gap-8 md:grid-cols-3">
+        <div class="mb-8 grid items-stretch gap-8 md:grid-cols-3">
           <div
             v-for="(item, index) in lotteryList"
             :key="index"
