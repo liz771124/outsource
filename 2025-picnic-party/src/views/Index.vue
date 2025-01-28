@@ -561,7 +561,7 @@
               <div
                 class="animate-zoom-in relative cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
                 data-twe-toggle="modal"
-                data-twe-target="#exampleModal"
+                data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
                 @click="selectedModalItems = giftEarlyBird"
@@ -584,10 +584,11 @@
                   class="mt-3 text-center text-2xl font-black text-primary-500"
                 ></div>
               </div>
+
               <div
                 class="animate-zoom-in relative cursor-pointer bg-white p-5 shadow-xl md:w-1/3"
                 data-twe-toggle="modal"
-                data-twe-target="#exampleModal"
+                data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
                 @click="selectedModalItems = giftLuckyBag"
@@ -675,7 +676,62 @@
 
             <div
               data-twe-modal-init
-              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-5 outline-none"
+              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+              id="exampleModalScrollable"
+              tabindex="-1"
+              aria-labelledby="exampleModalScrollableLabel"
+              aria-hidden="true"
+            >
+              <div
+                data-twe-modal-dialog-ref
+                class="pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+              >
+                <div
+                  class="pointer-events-auto relative flex max-h-[100%] w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
+                >
+                  <div
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md p-4"
+                  >
+                    <h5 class="text-xl" id="exampleModalScrollableLabel"></h5>
+                    <button
+                      type="button"
+                      class="absolute -right-2 -top-2 z-10 box-content rounded-full border-none bg-white text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none"
+                      data-twe-modal-dismiss
+                      aria-label="Close"
+                    >
+                      <img width="40" src="/img/modal-close.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="relative overflow-y-auto p-6">
+                    <div class="flex flex-col gap-5 divide-y">
+                      <div
+                        v-for="(item, index) in selectedModalItems"
+                        :key="index"
+                        class="border-b py-4"
+                      >
+                        <div class="mb-3">
+                          <img
+                            class="h-[300px] w-full bg-white object-contain text-center"
+                            :src="`${imagePath}${item.id}`"
+                            :alt="item.title"
+                          />
+                        </div>
+                        <div class="mb-3 text-center text-xl font-bold">
+                          <div class="mb-1">【{{ item.brand }}】</div>
+                          <div v-html="item.title"></div>
+                        </div>
+                        <div v-html="item.description"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-twe-modal-init
+              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
               id="exampleModal"
               tabindex="-1"
               aria-labelledby="exampleModalLabel"
@@ -702,28 +758,10 @@
                     </button>
                   </div>
 
-                  <div class="relative flex-auto p-4" data-twe-modal-body-ref>
-                    <div class="flex flex-col gap-5 divide-y">
-                      <div
-                        v-for="(item, index) in selectedModalItems"
-                        :key="index"
-                        class="border-b py-4"
-                      >
-                        <div class="mb-3">
-                          <img
-                            class="h-[300px] w-full bg-white object-contain text-center"
-                            :src="`${imagePath}${item.id}`"
-                            :alt="item.title"
-                          />
-                        </div>
-                        <div class="mb-3 text-center text-xl font-bold">
-                          <div class="mb-1">【{{ item.brand }}】</div>
-                          <div v-html="item.title"></div>
-                        </div>
-                        <div v-html="item.description"></div>
-                      </div>
-                    </div>
-                  </div>
+                  <div
+                    class="relative flex-auto p-4"
+                    data-twe-modal-body-ref
+                  ></div>
                 </div>
               </div>
             </div>
