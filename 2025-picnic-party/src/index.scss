@@ -56,12 +56,12 @@ main {
   width: 8px;
 }
 *::-webkit-scrollbar-track {
-  background: transparent;
+  background: white;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: var(--Gray-200);
+  background-color: var(--Primary-500);
   border-radius: 10px;
-  border: 5px solid var(--Gray-200);
+  border: 5px solid var(--Primary-500);
 }
 
 .swiper-slide img {

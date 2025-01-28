@@ -1,7 +1,8 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue'
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
-
+  import { Swiper, SwiperSlide } from 'swiper/vue'
+  import { Pagination, Navigation, Autoplay } from 'swiper/modules'
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   const imagePath = import.meta.env.VITE_IMAGE_PATH
@@ -11,6 +12,188 @@
     end: 'bottom center',
     debounce: true // 避免頻繁觸發
   })
+
+  const selectedModalItems = ref()
+
+  const giftEarlyBird = [
+    {
+      id: '/gift-early-bird/01.png',
+      brand: '美琪',
+      title: '抗菌洗手慕斯隨身瓶50ML​',
+      description: `
+          <ul>
+            <li>★【輕便隨身攜帶】小巧50ML設計，輕鬆放入包包   或口袋，隨時隨地保持手部清潔。一瓶可洗淨雙手約60次。​</li>
+            <li>★【植萃安心防護】含茶樹、百里香、金盞菊三大天然植萃精華，呵護肌膚並提供溫和抗菌效果，適合全家人使用。​</li>
+            <li>★【實驗證明有效抗菌】採用衛福部認可的抗菌成分，並經 SGS 檢測驗證，能有效抑制有害細菌，守護健康。</li>
+          </ul>
+        `
+    },
+    {
+      id: '/gift-early-bird/02.jpg',
+      brand: '德恩奈​',
+      title: '潔牙雙星組​',
+      description: `
+           <ul class='flex flex-col gap-3'>
+              <li>內含德恩奈清淨涼牙膏1支+德恩奈極淨細絲牙刷2支。</li>
+              <li>
+                德恩奈清淨涼牙膏採用特選歐薄荷結合濃郁冬青香，讓口氣散發清新自然好口氣，開口微笑更有自信，專業氟鈣配方搭配正確刷牙習慣可幫助修護受損琺瑯質及預防蛀牙。歐洲百年牙膏大廠生產製造，100%德國原裝進口，堅持好品質。
+              </li>
+              <li>
+                德恩奈極淨細絲牙刷，台灣製造，採用超柔軟纖絲立體刷毛，搭配「潔淨長纖」與「護齦短纖」二種刷毛，只要輕輕的刷洗，並配合貝氏刷牙法，即可輕鬆清潔口腔，確保牙齒及牙齦健康，預防牙周病及蛀牙。
+              </li>
+            </ul>
+          `
+    },
+    {
+      id: '/gift-early-bird/03.png',
+      brand: '小兒利撒爾',
+      title: '維生素D3+K2口含錠',
+      description: `
+          <ul class='flex flex-col gap-3'>
+            <li>
+              ★專業藥師、營養師推薦！專為兒童骨骼發育設計，結合維生素D3和K2，有助於鈣質吸收和利用，幫助骨骼與牙齒生長發育。
+            </li>
+            <li>★神奇雪花般速溶口感，免咀嚼、配水，適合飯後補充，微甜新滋味。</li>
+            <li>納豆菌發酵K2，純淨來源營養。</li>
+            <li>★羊毛脂萃取D3+</li>
+            <li>
+              ★小兒利撒爾60年的專業兒童健康守護，無塑化劑、重金屬、防腐劑、人工色素等拒絕成分，定期專業檢驗透明報告，媽媽安心的選擇。
+            </li>
+          </ul>
+        `
+    },
+    {
+      id: '/gift-early-bird/04.jpg',
+      brand: '兒福聯盟',
+      title: 'No Hit Zone｜野餐墊',
+      description: `
+          <ul class='flex flex-col gap-3'>
+            <li>
+              兒福聯盟致力於兒童福利發展、孩子的情緒與永續教育，野餐墊以象徵大人的「泡福」和代表小朋友的「心仔」為出發設計，闡述小朋友從起床、去學校，回家的一日生活。心仔整天會發生哪些事呢？當遇到圖上情境時，泡福要怎麼和心仔溝通，心仔又希望泡福如何和他討論傾聽心中的需求與期待，請家長帶著孩子一同演練吧！期待透過野餐墊陪伴您與孩子出遊共處，相信共同努力，能創造一個充滿愛、尊重和支持的家庭與社會。
+            </li>
+          </ul>
+        `
+    },
+    {
+      id: '/gift-early-bird/05.png',
+      brand: '清淨海',
+      title: '純淨泰迪植萃酵素洗衣膠囊(香味隨機) 5g*30顆/包',
+      description: `
+        <ul class='flex flex-col gap-3'>
+          <li>
+            清淨海純淨系列洗衣膠囊添加七大酵素瓦解多元髒污，堅持選用植物萃取配方，回歸原始潔淨感，不添加多餘的有害化學物質，友善敏感肌膚者，也不添加螢光增白劑，安心清洗貼身衣物與嬰幼兒衣服，適合各種家庭與族群。
+          </li>
+          <li>★添加植萃配方與七大酵素</li>
+          <li>★100%水溶性環保膠囊膜</li>
+          <li>★榮獲臺美中發明專利</li>
+          <li>★無動物實驗無有害成分</li>
+          <li>★10倍超濃縮抗菌配方</li>
+        </ul>
+      `
+    }
+  ]
+
+  const giftLuckyBag = [
+    {
+      id: '/gift-lucky-bag/01.jpg',
+      brand: '德恩奈',
+      title: '兒童口腔保健組',
+      description: `
+          <ul class='flex flex-col gap-3'>
+            <li>每款內含兒童牙膏90g+前觸兒童牙刷各一支。</li>
+            <li>
+              德國原裝進口”德恩奈兒童牙膏含氟量1000ppm，專業配方"維他命E+氟+鈣"配合正確刷牙習慣，幫助預防蛀牙。
+            </li>
+          </ul>
+        `
+    },
+    {
+      id: '/gift-lucky-bag/02.jpg',
+      brand: '德恩奈',
+      title: '兒童防蛀漱口水500ml',
+      description: `
+         <ul cl ass="flex flex-col gap-3">
+            <li>★強化琺瑯質、抗酸蝕</li>
+            <li>★去除引起蛀牙的細菌，預防蛀牙</li>
+            <li>★幫助強健牙齦組織</li>
+            <li>
+              德恩奈兒童防蛀漱口水，添加「氟+木糖醇」雙效防蛀配方，氟能加強牙齒再礦化作用，木糖醇能中和口中酸性，能更有效幫助預防蛀牙，長期使用能降低蛀牙率35%~50%。不含酒精，口感溫和不刺激，清香葡萄口味，沒有藥水味，不含色素，減少口腔黏膜負擔，是最適合小朋友使用漱口水。
+            </li>
+          </ul>
+              `
+    },
+    {
+      id: '/gift-lucky-bag/03.jpg',
+      brand: 'PURE YU 純淨之羽',
+      title: '超能營養QQ凍-晶亮醇兒童葉黃素凍 3入體驗包',
+      description: `
+          <ul class='flex flex-col gap-3'>
+            <li>寶貝提早接觸平板手機，晶亮醇葉黃素凍改善乾澀不適，升級添加PS腦磷脂＋鋅，提升學習成長動力！</li>
+            <li>100種蔬果酵素是挑食好幫手，輕鬆補充滿滿營養！</li>
+          </ul>
+          `
+    },
+    {
+      id: '/gift-lucky-bag/04.jpg',
+      brand: '小蚊清',
+      title: '植萃沁涼防蚊液_隨身瓶',
+      description: `
+          <ul class='flex flex-col gap-3'>
+          <li>
+          小蚊清全系列皆使用天然來源植萃配方，無添加DEET(敵避)、Paraben防腐劑、重金屬等化學成分，並添加法國有機認證的保濕成分，溫和不刺激，全家大小都適用!採美國高規格水霧噴頭，在皮膚表層形成清爽防護網，蚊蟲OUT!</li>
+            <li>★使用日本蚊連草萃取液，天然來源植萃配方，質地清爽，防蚊不黏膩</li>
+            <li>★添加法國有機認證保濕成份，溫和不刺激肌膚</li>
+            <li>★SGS檢測不含DEET(敵避)、Paraben防腐劑、重金屬</li>
+            <li>★小黑蚊忌避率99%成分，定期專業檢驗透明報告，媽媽安心的選擇。</li>
+          </ul>
+        `
+    },
+    {
+      id: '/gift-lucky-bag/05.jpg',
+      brand: '可爾必思',
+      title: `開心成長1瓶<span class='text-xs'>(原味/蘋果) 兩種口味隨機</span>`,
+      description: `
+          <ul class='flex flex-col gap-3'>
+            <li>【可爾必思】開心成長</li>
+            <li>
+              日本百年品牌「可爾必思」專為孩子打造的乳酸菌飲品，清爽酸甜的滋味榮獲袋鼠評鑑五星白金獎，滿足美味與健康雙重需求，陪伴您的寶貝開心成長。
+            </li>
+            <li>🥛原味：含牛奶鈣，輕鬆灌鈣快快長大!</li>
+            <li>🍎蘋果：含葉黃素，輕鬆補給明亮元素!</li>
+            <li></li>
+            <li>★日本獨家乳酸菌，幫助消化好順暢。</li>
+            <li>★160ml小包裝，一次一罐剛剛好。</li>
+            <li>★常溫保存設計，隨身包裝好攜帶。</li>
+          </ul>
+        `
+    },
+    {
+      id: '/gift-lucky-bag/06.png',
+      brand: '妙管家',
+      title: '瞬潔洗潔精(果香葡萄柚)500g',
+      description: `
+            <ul class='flex flex-col gap-3'>
+              <li>#只要一點點 用量省，超去油！</li>
+              <li>★【4倍特濃】高濃度去油因子，用量省起泡快，快速發揮深層潔淨力！</li>
+              <li>★【  科研導入】妙管家突破性離子乳化科技，Oil-ER Tech高效去油配方，快速分解油污</li>
+              <li>★【友善環境】添加歐盟ECOCERT洗淨因子，生物高分解度95%以上，洗後不殘留。</li>
+              <li>★【安心溫和】中性配方，清潔碗盤時較不易傷手。</li>
+            </ul>
+          `
+    },
+    {
+      id: '/gift-lucky-bag/07.jpg',
+      brand: '初鹿牧場',
+      title: '原味保久乳(200ml)',
+      description: `成分天然、無添加的初鹿牧場保久乳，堅持使用在地最純淨的「初鹿生乳」，風味香醇無可取代，成分單純無添加，只給家人最好的。【原味牛乳】100%使用初鹿生乳，成份天然，無調整無添加。`
+    },
+    {
+      id: '/gift-lucky-bag/08.jpg',
+      brand: '初鹿牧場',
+      title: '原味米牛乳(200ml)',
+      description: `【原味米牛乳】“米+牛乳”是孩子們最熟悉的第一口大人的食物！使用「初鹿生乳x台東米」天然在地食材，快充早餐所需營養，孩子愛喝，媽媽開心。`
+    }
+  ]
 
   const initializeAnimations = () => {
     // 清除所有 ScrollTrigger，避免動畫重疊
@@ -146,7 +329,7 @@
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
             >
               <div class="lg:shrink-0">
-                <img class="w-full" src="/img/index-intro-02.png" alt="" />
+                <img class="w-full" src="/img/index-intro-01.png" alt="" />
               </div>
               <div class="relative grow p-5">
                 <div
@@ -196,7 +379,7 @@
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
             >
               <div class="order-2 lg:shrink-0">
-                <img class="w-full" src="/img/index-intro-03.png" alt="" />
+                <img class="w-full" src="/img/index-intro-02.png" alt="" />
               </div>
               <div class="relative order-2 grow p-5 md:order-1">
                 <div
@@ -225,7 +408,7 @@
                 <div class="end-15 absolute -bottom-10 hidden md:block">
                   <img
                     class="w-[130px]"
-                    src="/img/index-intro-icon-03.png"
+                    src="/img/index-intro-icon-02.png"
                     alt=""
                   />
                 </div>
@@ -245,7 +428,7 @@
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
             >
               <div class="lg:shrink-0">
-                <img class="w-full" src="/img/index-intro-02.png" alt="" />
+                <img class="w-full" src="/img/index-intro-03.png" alt="" />
               </div>
               <div class="relative grow p-5">
                 <div
@@ -293,8 +476,26 @@
             <div
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
             >
-              <div class="order-2 lg:shrink-0">
-                <img class="w-full" src="/img/index-intro-03.png" alt="" />
+              <div class="order-2 max-w-[590px] lg:shrink-0">
+                <swiper
+                  class="w-full"
+                  :slides-per-view="1"
+                  :autoplay="{
+                    delay: 3000,
+                    disableOnInteraction: false
+                  }"
+                  loop
+                >
+                  <swiper-slide>
+                    <img class="w-full" src="/img/index-intro-04.png" alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img class="w-full" src="/img/index-intro-03.png" alt="" />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img class="w-full" src="/img/index-intro-01.png" alt="" />
+                  </swiper-slide>
+                </swiper>
               </div>
               <div class="relative order-2 grow p-5 md:order-1">
                 <div
@@ -356,37 +557,54 @@
             <div>新北大都會公園</div>
           </div>
           <div>
-            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10">
-              <div class="animate-zoom-in relative bg-white p-5 shadow-xl">
+            <div class="flex flex-wrap gap-5 md:flex-nowrap md:gap-10">
+              <div
+                class="animate-zoom-in relative cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
+                data-twe-toggle="modal"
+                data-twe-target="#exampleModal"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+                @click="selectedModalItems = giftEarlyBird"
+              >
                 <div>
-                  <span class="bounce-float absolute -start-[30px] -top-[30px]">
+                  <span class="absolute -start-[30px] -top-[35px]">
                     <img
                       class="hidden md:block"
                       src="/img/index-gift-title-01.svg"
                       alt=""
                     />
                   </span>
-                  <img src="/img/gift_01.png" alt="" />
+                  <img
+                    class="h-[350px] w-full object-cover"
+                    src="/img/gift_01.png"
+                    alt=""
+                  />
                 </div>
                 <div
                   class="mt-3 text-center text-2xl font-black text-primary-500"
                 ></div>
               </div>
-              <div class="animate-zoom-in relative bg-white p-5 shadow-xl">
+              <div
+                class="animate-zoom-in relative cursor-pointer bg-white p-5 shadow-xl md:w-1/3"
+                data-twe-toggle="modal"
+                data-twe-target="#exampleModal"
+                data-twe-ripple-init
+                data-twe-ripple-color="light"
+                @click="selectedModalItems = giftLuckyBag"
+              >
                 <div>
-                  <span class="bounce-float absolute -start-[30px] -top-[30px]">
+                  <span class="absolute -start-[30px] -top-[35px]">
                     <img
                       class="hidden md:block"
                       src="/img/index-gift-title-02.svg"
                       alt=""
                     />
                   </span>
-                  <img src="/img/gift_01.png" alt="" />
-                  <!-- <span
-                    class="absolute end-0 top-0 inline-block rounded-bl-3xl bg-primary-500 py-2 pe-5 ps-6 text-2xl font-bold tracking-wide text-white"
-                  >
-                    早鳥加碼送
-                  </span> -->
+                  <img
+                    class="h-[350px] w-full object-cover"
+                    src="/img/gift_01.png"
+                    alt=""
+                  />
                 </div>
                 <div
                   class="mt-3 text-center text-2xl font-black text-primary-500"
@@ -395,6 +613,7 @@
                 </div>
               </div>
             </div>
+
             <div
               id="purchase"
               class="m-10 mb-16 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
@@ -452,6 +671,61 @@
 
                 報名注意事項
               </a>
+            </div>
+
+            <div
+              data-twe-modal-init
+              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-5 outline-none"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                data-twe-modal-dialog-ref
+                class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]"
+              >
+                <div
+                  class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
+                >
+                  <div
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md"
+                  >
+                    <h5 class="text-xl font-medium leading-normal"></h5>
+                    <button
+                      type="button"
+                      class="absolute -right-2 -top-2 z-10 box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                      data-twe-modal-dismiss
+                      aria-label="Close"
+                    >
+                      <img width="40" src="/img/modal-close.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="relative flex-auto p-4" data-twe-modal-body-ref>
+                    <div class="flex flex-col gap-5 divide-y">
+                      <div
+                        v-for="(item, index) in selectedModalItems"
+                        :key="index"
+                        class="border-b py-4"
+                      >
+                        <div class="mb-3">
+                          <img
+                            class="h-[300px] w-full bg-white object-contain text-center"
+                            :src="`${imagePath}${item.id}`"
+                            :alt="item.title"
+                          />
+                        </div>
+                        <div class="mb-3 text-center text-xl font-bold">
+                          <div class="mb-1">【{{ item.brand }}】</div>
+                          <div v-html="item.title"></div>
+                        </div>
+                        <div v-html="item.description"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -21,19 +21,12 @@
     <div class="bg-yellow">
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <img
-            width="500"
-            class="mx-auto mb-10 block"
-            src="/img/title-gift-main.svg"
-            alt=""
-          />
-          <img
-            width="350"
-            class="mx-auto mb-10"
-            src="/img/title-gift-intro.svg"
-            alt=""
-          />
+          <img class="mx-auto" src="/img/title-gift-main.svg" alt="" />
         </div>
+        <div class="mb-8 text-center">
+          <img class="mx-auto" src="/img/title-gift-intro.svg" alt="" />
+        </div>
+
         <div class="grid gap-6 md:mb-36 md:grid-cols-2">
           <div
             v-for="(item, index) in giftItems"
@@ -57,7 +50,7 @@
         </div>
 
         <div class="mb-5 mt-10 flex items-center justify-center">
-          <ButtonJoin/>
+          <ButtonJoin />
         </div>
       </div>
     </div>

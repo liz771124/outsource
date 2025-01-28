@@ -366,13 +366,11 @@
       <div class="container py-16">
         <div class="mb-20 text-center">
           <img
-            width="600"
             class="mx-auto mb-10 block"
             src="/img/title-game-main-01.svg"
             alt=""
           />
           <img
-            width="350"
             class="mx-auto mb-10"
             src="/img/title-game-intro-01.svg"
             alt=""

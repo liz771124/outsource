@@ -8,7 +8,7 @@
     { to: '/gift', label: '互動好禮' },
     { to: '/game', label: '歡樂闖關' },
     { to: '/show', label: '精彩表演' },
-    { to: '/information', label: '延伸閱讀' },
+    { to: '/Article', label: '延伸閱讀' },
     { to: '/notice', label: '更多資訊' }
   ]
 
