@@ -1,3 +1,4 @@
+import { nextTick } from 'vue'
 import {
   initializeScrollAnimations,
   refreshScrollTriggers
@@ -7,7 +8,9 @@ export default {
   install(app) {
     app.mixin({
       mounted() {
-        initializeScrollAnimations()
+        nextTick(() => {
+          initializeScrollAnimations()
+        })
       },
       updated() {
         // 當組件更新時刷新 ScrollTrigger

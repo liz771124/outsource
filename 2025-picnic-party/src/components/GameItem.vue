@@ -19,7 +19,7 @@
 
 <template>
   <div
-    class="group relative rounded-tl-2xl bg-white p-3 shadow-md"
+    class="scroll-animate-zoomIn group relative rounded-tl-2xl bg-white p-3 shadow-md"
     v-for="(item, index) in list"
     :key="index"
     @mouseenter="isHovered = index"

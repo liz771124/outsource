@@ -354,7 +354,7 @@
     </Header>
     <div id="game-01" class="bg-green">
       <div
-        class="mx-auto flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3"
+        class="mx-6 flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
       >
         <router-link to="/game#game-01" class="px-8 py-1"
           ><img src="/img/game-tag-title-01.svg" alt=""

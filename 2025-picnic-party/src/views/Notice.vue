@@ -71,7 +71,7 @@
             <img width="450" src="/img/title-faq.svg" alt="" />
           </div>
         </div>
-        <div class="bg-white">
+        <div class="scroll-animate-fadeIn bg-white">
           <div
             v-for="(item, index) in faqList"
             :key="index"
@@ -240,40 +240,6 @@
             </div>
           </div> -->
         </div>
-        <!-- <div id="accordionContainer" class="bg-white">
-          <div v-for="(item, index) in faqList" :key="index">
-            <h2 class="mb-0 border-b border-primary-500" :id="`test-${index}`">
-              <button
-                class="group relative flex w-full items-center rounded-t-lg border-0 px-5 py-4 text-xl font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3]"
-                type="button"
-                data-twe-collapse-init
-                :data-twe-target="`#collapse${index}`"
-                aria-expanded="true"
-                :aria-controls="`collapse${index}`"
-              >
-                <img class="me-5" src="/img/title-faq-item.svg" width="25" />
-                <span>{{ item.q }}</span>
-                <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
-                >
-                  <img src="/img/icon-green-arrow.svg" width="40" />
-                </span>
-              </button>
-            </h2>
-            <div
-              :id="`collapse${index}`"
-              :class="`!visible ${index > 0 && 'hidden'}`"
-              data-twe-collapse-item
-              :data-twe-collapse-show="index === 0"
-              :aria-labelledby="`test-${index}`"
-              data-twe-parent="#accordionContainer"
-            >
-              <div class="font-lg px-5 py-4">
-                {{ item.a }}
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <div class="bg-green">
@@ -283,7 +249,7 @@
             <img src="/img/title-transportation.svg" alt="" />
           </div>
         </div>
-        <div class="mb-6">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="mb-1 text-xl font-bold text-primary-500">如何到達？</div>
           <div class="my-3 text-center">
             <iframe
@@ -298,20 +264,20 @@
             ></iframe>
           </div>
         </div>
-        <div class="mb-6">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="mb-1 text-xl font-bold text-primary-500">
             新北大都會公園
           </div>
           <div>地址:新北市三重區水漾路一段</div>
         </div>
-        <div class="mb-6">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="mb-1 text-xl font-bold text-primary-500">捷運</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運中和線三重站，1出口即可抵達。</div>
             <div>2.機場捷運線A2三重站，從1A出口即可抵達</div>
           </div>
         </div>
-        <div class="mb-6">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="mb-1 text-xl font-bold text-primary-500">公車</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運三重站:62、227區、232、264、640。</div>
@@ -323,11 +289,11 @@
             </div>
           </div>
         </div>
-        <div class="mb-6">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="mb-1 text-xl font-bold text-primary-500">微笑單車</div>
           <div>捷運三重站(3號出口)</div>
         </div>
-        <div class="mb-6">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="mb-1 text-xl font-bold text-primary-500">
             停車資訊(附近有多個付費停車場)
           </div>
@@ -347,35 +313,48 @@
     </div>
     <div class="bg-yellow">
       <div class="container py-16">
-        <div class="txt-xl mb-3 font-bold">特別聲明</div>
-        <div class="flex flex-col gap-3">
-          1.本活動網頁僅為報名用途，非現場各項活動預約報名。各攤位現場活動體驗因適合年齡及容納人數皆不同，以現場排隊指示為主。<br />
-
-          2.主辦單位保有活動場地、時間、形式異動與解釋之權利，若有更改將另行通知。<br />
-
-          3.參加本活動即同意無償授權主辦單位使用活動期間所拍攝之照片與影片，並運用刊登於主辦單位所發行之包括但不限於平面刊物、網站、部落格、Facebook粉絲專頁及相關社群平台、電子報、EDM等相關之行銷活動規劃。<br />
-
-          4.參與對象以家庭(訂單)為單位，憑報到序號領取乙張闖關卡，若資料有重複者，將以時間序取第一次報名為主。<br />
-
-          5.所有贈品及獎項以實物為準，如遇產品缺貨或其他不可抗力之事由，主辦單位得保留更換等值獎品之權利，不另行告知。<br />
+        <div class="scroll-animate-fadeIn mb-8">
+          <div class="txt-xl mb-3 font-bold">特別聲明</div>
+          <ul class="flex flex-col gap-3">
+            <li>
+              1.本活動網頁僅為報名用途，非現場各項活動預約報名。各攤位現場活動體驗因適合年齡及容納人數皆不同，以現場排隊指示為主。
+            </li>
+            <li>
+              2.主辦單位保有活動場地、時間、形式異動與解釋之權利，若有更改將另行通知。
+            </li>
+            <li>
+              3.參加本活動即同意無償授權主辦單位使用活動期間所拍攝之照片與影片，並運用刊登於主辦單位所發行之包括但不限於平面刊物、網站、部落格、Facebook粉絲專頁及相關社群平台、電子報、EDM等相關之行銷活動規劃。
+            </li>
+            <li>
+              4.參與對象以家庭(訂單)為單位，憑報到序號領取乙張闖關卡，若資料有重複者，將以時間序取第一次報名為主。
+            </li>
+            <li>
+              5.所有贈品及獎項以實物為準，如遇產品缺貨或其他不可抗力之事由，主辦單位得保留更換等值獎品之權利，不另行告知。
+            </li>
+          </ul>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="txt-2xl mb-3 font-bold">早鳥獎項</div>
           <div>
             登記報名並於現場報到完成者，可獲得超值驚喜包一份，依網路報名先後順序取符合資格者，於活動網頁上公告得獎名單。
           </div>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="txt-2xl mb-3 font-bold">領取方式</div>
-          <div class="flex flex-col gap-3">
-            1.早鳥報名得獎名單將於活動前一周公布在本網頁，敬請密切留意相關資訊。<br />
-
-            2.活動當天攜帶官方發送之報到序號簡訊及身分證明文件報到完成，即可領取福袋禮(報到禮)。<br />
-
-            ※若不符合參加資格，主辦單位有權取消得獎資格，獎項不後補，不得異議。<br />
-          </div>
+          <ul class="flex flex-col gap-3">
+            <li>
+              1.早鳥報名得獎名單將於活動前一周公布在本網頁，敬請密切留意相關資訊。
+            </li>
+            <li>
+              2.活動當天攜帶官方發送之報到序號簡訊及身分證明文件報到完成，即可領取福袋禮(報到禮)。
+            </li>
+            <li>
+              ※
+              若不符合參加資格，主辦單位有權取消得獎資格，獎項不後補，不得異議。
+            </li>
+          </ul>
         </div>
-        <div class="mb-8">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="txt-2xl mb-3 font-bold">現場舞台抽獎</div>
           <ul class="flex flex-col gap-3">
             <li>
@@ -392,7 +371,7 @@
             </li>
           </ul>
         </div>
-        <div class="mb-8">
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="txt-2xl mb-3 font-bold">注意事項</div>
           <ul class="flex flex-col gap-3">
             <li>
@@ -438,7 +417,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="scroll-animate-fadeIn mb-8">
           <div class="txt-2xl mb-3 font-bold">個資保護聲明</div>
           <ul class="flex flex-col gap-3">
             <li>

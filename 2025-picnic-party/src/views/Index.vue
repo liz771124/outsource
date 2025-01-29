@@ -196,10 +196,9 @@
   ]
 
   const initializeAnimations = () => {
-    // 清除所有 ScrollTrigger，避免動畫重疊
+  
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
 
-    // Zoom In 動畫
     gsap.utils.toArray('.animate-zoom-in').forEach((element) => {
       gsap.fromTo(
         element,

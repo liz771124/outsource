@@ -98,7 +98,7 @@
   <div>
     <Header>
       <router-link to="/">
-        <img src="/img/kv-show.svg" alt="" width="650" />
+        <img src="/img/kv-show.svg" alt="" />
       </router-link>
     </Header>
 
@@ -110,30 +110,30 @@
         <div class="mb-8 text-center">
           <img class="mx-auto" src="/img/intro-show.svg" alt="" />
         </div>
-        <div
-          class="mb-5 grid items-center gap-x-10 py-10 md:grid-cols-3 md:gap-y-10"
-        >
+        <div class="mb-5 grid gap-x-10 py-10 md:grid-cols-3 md:gap-y-10">
           <div
             v-for="(item, index) in showItems"
             :key="index"
-            class="card-item relative rounded-tl-2xl bg-white p-3 shadow-md"
+            class="scroll-animate-rotateIn relative rounded-tl-3xl bg-white p-3 shadow-md"
           >
             <div class="flex flex-col">
               <div>
                 <img
-                  class="h-full w-full object-cover"
+                  class="h-full w-full rounded-tl-3xl object-cover"
                   :src="`${imagePath}${item.id}`"
                   alt="1"
                 />
               </div>
               <div class="relative">
                 <div
-                  class="relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-yellow px-6 py-1.5 text-xl font-bold tracking-wide text-white"
+                  :class="`relative -end-8 -top-3 inline-block w-full rounded-tr-xl px-6 py-1.5 text-xl font-bold tracking-wide text-white ${index % 2 === 0 ? 'bg-primary-500' : 'bg-kv-green'}`"
                 >
                   {{ item.title }}
                 </div>
                 <div>
-                  <div class="mb-2 text-xl font-bold text-kv-green">
+                  <div
+                    :class="`mb-2 text-xl font-bold ${index % 2 === 0 ? 'text-primary-500' : 'text-kv-green'}`"
+                  >
                     {{ item.subtitle }}
                   </div>
                   <div>{{ item.description }}</div>
@@ -230,8 +230,8 @@
   </div>
 </template>
 
-<style>
+<!-- <style>
   .card-item {
     transform-origin: center;
   }
-</style>
+</style> -->

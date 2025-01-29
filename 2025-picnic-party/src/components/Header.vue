@@ -76,25 +76,25 @@
 Ｚ
 <template>
   <header
-    class="relative z-10 flex h-[600px] w-screen items-center justify-center bg-cover bg-no-repeat p-5"
+    class="relative z-10 flex h-[600px] w-screen items-center justify-center bg-cover bg-no-repeat"
     :style="{
       backgroundImage: `url(${imagePath}/kv-main.png)`,
       backgroundPosition: 'center'
     }"
   >
-    <span id="star-01" class="absolute left-32 top-3">
+    <span id="star-01" class="absolute left-0 top-3 md:left-32">
       <img src="/img/star-01.svg" alt="" />
     </span>
-    <span id="star-03" class="absolute left-20 top-3">
+    <span id="star-03" class="absolute left-0 top-3 md:left-20">
       <img src="/img/star-03.svg" alt="" />
     </span>
-    <span id="star-04" class="absolute left-48 top-3">
+    <span id="star-04" class="absolute left-0 top-3 md:left--48">
       <img src="/img/star-04.svg" alt="" />
     </span>
-    <span id="star-02" class="absolute bottom-60 right-10">
+    <span id="star-02" class="absolute bottom-60 right-0 md:right-10">
       <img src="/img/star-02.svg" alt="" />
     </span>
-    <span id="star-05" class="absolute right-20 top-40">
+    <span id="star-05" class="absolute right-0 top-40 md:right-20">
       <img src="/img/star-05.svg" alt="" />
     </span>
 
@@ -103,7 +103,7 @@
       class="animate-bounceFloat relative z-10 flex flex-col gap-5"
     >
       <slot />
-      <span class="absolute -right-16 top-24 z-10">
+      <span class="absolute -bottom-16 right-3 z-10 md:-right-16 md:top-24">
         <img src="/img/kv-main-img.png" alt="" width="150" />
       </span>
     </div>

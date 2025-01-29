@@ -90,11 +90,13 @@ main {
 }
 .bg-green {
   background-image: url('../public/img/bg-green.jpg');
-  background-size: cover;
+  background-size: contain;
   position: relative;
   z-index: 1;
   background-repeat: repeat;
-  background-attachment: fixed;
+  @media (max-width: 768px) {
+    background-attachment: fixed;
+  }
   // &:before,
   // &:after {
   //   content: '';
