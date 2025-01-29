@@ -1,17 +1,21 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
+  import { ref, onMounted, onUnmounted, nextTick } from 'vue'
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
   const imagePath = import.meta.env.VITE_IMAGE_PATH
-
-  // Register GSAP plugins
   gsap.registerPlugin(ScrollTrigger)
 
+  const props = defineProps({
+    height: {
+      type: String,
+      default: '600px'
+    }
+  })
+
   onMounted(() => {
-    setTimeout(() => {
+    nextTick(() => {
       const flowingStars = ['#star-01', '#star-05']
-      flowingStars.forEach((star) => {
+      flowingStars.forEach((star, index) => {
         gsap.fromTo(
           star,
           { y: '-100', opacity: 0, scale: 0 },
@@ -20,6 +24,7 @@
             y: 0,
             scale: 1,
             opacity: 1,
+            // delay: 0.5 + index,
             duration: 0.5,
             ease: 'power4.out',
             scrollTrigger: {
@@ -33,17 +38,18 @@
 
       // Twinkling stars animation (star-02, star-03, star-04)
       const twinklingStars = ['#star-02', '#star-03', '#star-04']
-      twinklingStars.forEach((star) => {
+      twinklingStars.forEach((star, index) => {
         gsap.fromTo(
           star,
-          { scale: 0.8, opacity: 0.5, rotation: 0 },
+          { scale: 0.6, opacity: 0.5, rotation: 0 },
           {
-            scale: 1.2,
+            scale: 1.1,
             opacity: 1,
             rotation: 360,
             repeat: -1,
             yoyo: true,
-            duration: 3,
+            delay: 0.5 + index,
+            duration: 2.5,
             ease: 'sine.inOut',
             scrollTrigger: {
               trigger: star,
@@ -70,31 +76,40 @@
       //     }
       //   }
       // )
-    }, 500)
+    })
   })
 </script>
-Ｚ
 <template>
   <header
-    class="relative z-10 flex h-[600px] w-screen items-center justify-center bg-cover bg-no-repeat"
+    :class="`relative z-10 flex h-[600px] w-screen items-center justify-center overflow-hidden bg-cover bg-no-repeat`"
     :style="{
       backgroundImage: `url(${imagePath}/kv-main.png)`,
-      backgroundPosition: 'center'
+      backgroundPosition: 'center right'
     }"
   >
-    <span id="star-01" class="absolute left-0 top-3 md:left-32">
+    <span
+      id="star-01"
+      class="absolute left-[70px] top-[20px] w-[250px] md:left-32 md:w-auto"
+    >
       <img src="/img/star-01.svg" alt="" />
     </span>
-    <span id="star-03" class="absolute left-0 top-3 md:left-20">
+    <span
+      id="star-03"
+      class="absolute right-[80px] top-[220px] w-[70px] md:left-20 md:right-auto md:w-auto"
+    >
       <img src="/img/star-03.svg" alt="" />
     </span>
-    <span id="star-04" class="absolute left-0 top-3 md:left--48">
+    <span
+      id="star-04"
+      class="absolute bottom-20 right-28 md:left-48 md:right-auto"
+    >
       <img src="/img/star-04.svg" alt="" />
     </span>
-    <span id="star-02" class="absolute bottom-60 right-0 md:right-10">
+
+    <span id="star-02" class="absolute bottom-28 right-10 md:right-10">
       <img src="/img/star-02.svg" alt="" />
     </span>
-    <span id="star-05" class="absolute right-0 top-40 md:right-20">
+    <span id="star-05" class="absolute right-0 top-40 w-[100px] md:right-20">
       <img src="/img/star-05.svg" alt="" />
     </span>
 
@@ -103,9 +118,6 @@
       class="animate-bounceFloat relative z-10 flex flex-col gap-5"
     >
       <slot />
-      <span class="absolute -bottom-16 right-3 z-10 md:-right-16 md:top-24">
-        <img src="/img/kv-main-img.png" alt="" width="150" />
-      </span>
     </div>
   </header>
 </template>

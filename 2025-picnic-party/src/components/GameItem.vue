@@ -27,10 +27,10 @@
   >
     <div class="overflow-hidden">
       <span
-        class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-auto bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
+        class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-auto overflow-hidden bg-white px-3 pb-3 pt-10 transition-opacity duration-300"
         :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
       >
-        <div v-html="item.description" class="overflow-auto"></div>
+        <div v-html="item.description" class="h-full overflow-auto"></div>
       </span>
       <img
         class="aspect-6/4 h-[250px] w-full rounded-tl-2xl object-cover transition-opacity duration-300"

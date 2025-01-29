@@ -15,8 +15,11 @@
   <div>
     <Header>
       <router-link to="/">
-        <img src="/img/kv-gift.svg" alt="" width="650" />
+        <img src="/img/kv-gift.svg" alt="" width="680" />
       </router-link>
+      <span class="absolute -bottom-16 right-3 z-10 md:-right-16 md:top-24">
+        <img src="/img/kv-main-img.png" alt="" width="150" />
+      </span>
     </Header>
     <div class="bg-yellow">
       <div class="container py-16">

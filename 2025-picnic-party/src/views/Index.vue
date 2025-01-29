@@ -2,7 +2,7 @@
   import { ref, onMounted, onUnmounted } from 'vue'
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import { Swiper, SwiperSlide } from 'swiper/vue'
-  import { Pagination, Navigation, Autoplay } from 'swiper/modules'
+  import { Autoplay, Pagination, Navigation } from 'swiper/modules'
   import { gsap } from 'gsap'
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   const imagePath = import.meta.env.VITE_IMAGE_PATH
@@ -196,7 +196,6 @@
   ]
 
   const initializeAnimations = () => {
-  
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
 
     gsap.utils.toArray('.animate-zoom-in').forEach((element) => {
@@ -268,10 +267,15 @@
 </script>
 <template>
   <div>
-    <Header>
+    <Header :height="'800px'">
       <router-link to="/">
-        <img src="/img/kv-main.svg" alt="" width="650" />
+        <img src="/img/kv-main.svg" alt="" width="700" />
       </router-link>
+      <span
+        class="absolute right-3 top-[50px] z-10 w-[85px] md:-right-20 md:top-20 md:w-[200px]"
+      >
+        <img src="/img/kv-main-img.png" alt="" />
+      </span>
     </Header>
 
     <!-- <div class="animate-bounceFloat">上下跳動元素</div>
@@ -325,7 +329,7 @@
             to="/show"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
             >
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-01.png" alt="" />
@@ -372,10 +376,10 @@
           </router-link>
           <router-link
             class="animate-zoom-left rounded-rl-2xl relative rounded-br-[50px] rounded-tl-[50px] bg-kv-green p-6 text-white"
-            to="/game"
+            to="/game#game-01"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
             >
               <div class="order-2 lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-02.png" alt="" />
@@ -421,10 +425,10 @@
           </router-link>
           <router-link
             class="animate-zoom-right rounded-rl-2xl relative rounded-bl-[50px] rounded-tr-[50px] bg-primary-500 p-6 text-white"
-            to="/show"
+            to="/gift"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
             >
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-03.png" alt="" />
@@ -470,19 +474,20 @@
           </router-link>
           <router-link
             class="animate-zoom-left rounded-rl-2xl relative rounded-br-[50px] rounded-tl-[50px] bg-kv-green p-6 text-white"
-            to="/gift"
+            to="/game#game-02"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap md:gap-10"
+              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
             >
               <div class="order-2 max-w-[590px] lg:shrink-0">
                 <swiper
                   class="w-full"
                   :slides-per-view="1"
                   :autoplay="{
-                    delay: 3000,
+                    delay: 3500,
                     disableOnInteraction: false
                   }"
+                  :modules="[Autoplay]"
                   loop
                 >
                   <swiper-slide>
@@ -549,11 +554,12 @@
           <div
             class="mt-10 flex flex-col items-center gap-2 text-2xl font-bold"
           >
-            <div class="mb-5">
+            <div class="mb-8">
               <img width="350" src="/img/title-ticket.svg" alt="" />
             </div>
-            <div>2025年4月3日10:30-15:00</div>
-            <div>新北大都會公園</div>
+            <div class="mb-8 text-center">
+              <img class="mx-auto" src="/img/title-gift-intro.svg" alt="" />
+            </div>
           </div>
           <div>
             <div class="flex flex-wrap gap-5 md:flex-nowrap md:gap-10">
