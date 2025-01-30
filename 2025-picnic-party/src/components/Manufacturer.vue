@@ -16,24 +16,24 @@
     ],
     assistantOrganizer: [
       {
-        id: '/sponsor/03.png',
+        id: '/sponsor/03.jpg',
         title: '遠見天下文化教育基金會',
         link: 'https://www.cwgv.com.tw/zh/foundation.html'
       }
     ],
     coOrganizer: [
       {
-        id: '/sponsor/03.jpg',
+        id: '/sponsor/04.png',
         title: '新北市政府',
         link: 'https://www.ntpc.gov.tw/ch/index.jsp'
       },
       {
-        id: '/sponsor/04.jpg',
+        id: '/sponsor/05.png',
         title: '新北市政府教育局',
         link: 'https://www.ntpc.edu.tw/'
       },
       {
-        id: '/sponsor/05.jpg',
+        id: '/sponsor/06.png',
         title: '新北市家庭教育中心',
         link: 'https://ntpc.familyedu.moe.gov.tw/'
       }
@@ -143,7 +143,7 @@
         </div>
       </div>
       <div class="border-b py-3">
-        <div class="mb-3 font-bold">協辦單位</div>
+        <div class="mb-3 font-bold">共同主辦</div>
         <div class="grid grid-cols-3 gap-3">
           <a
             v-for="(item, index) in companiesList?.coOrganizer"
@@ -157,10 +157,10 @@
       </div>
 
       <div class="border-b py-3">
-        <div class="mb-3 font-bold">共同主辦</div>
+        <div class="mb-3 font-bold">教育夥伴</div>
         <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
           <a
-            v-for="(item, index) in companiesList?.partners"
+            v-for="(item, index) in companiesList.educationPartners"
             :key="index"
             :href="item.link"
             target="_blank"
@@ -170,10 +170,10 @@
         </div>
       </div>
       <div class="border-b py-3">
-        <div class="mb-3 font-bold">共同主辦</div>
+        <div class="mb-3 font-bold">合作夥伴</div>
         <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
           <a
-            v-for="(item, index) in companiesList.educationPartners"
+            v-for="(item, index) in companiesList.partners"
             :key="index"
             :href="item.link"
             target="_blank"

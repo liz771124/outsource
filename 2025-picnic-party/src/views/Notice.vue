@@ -256,7 +256,7 @@
           <div class="mb-1 text-xl font-bold text-primary-500">如何到達？</div>
           <div class="my-3 text-center">
             <iframe
-              class="w-full"
+              class="h-[250px] w-full md:h-[450px]"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3623542421947!2d121.47821782537727!3d25.05570482780247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8fac6152a05%3A0x3821847e329dcd64!2z5paw5YyX5aSn6YO95pyD5YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1710127332403!5m2!1szh-TW!2stw"
               width="600"
               height="450"

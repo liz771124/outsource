@@ -564,7 +564,7 @@
               <img width="350" src="/img/title-ticket.svg" alt="" />
             </div>
             <div class="mb-8 text-center">
-              <img class="mx-auto" src="/img/title-gift-intro.svg" alt="" />
+              <img class="mx-auto" src="/img/intro-ticket.svg" alt="" />
             </div>
           </div>
           <div>
@@ -628,26 +628,26 @@
 
             <div
               id="purchase"
-              class="mb-16 mt-10 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
+              class="mb-16 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap"
             >
-              <a class="animate-zoom-in group relative" href="#">
-                <img src="/img/ticket-01.svg" alt="" />
+              <a class="animate-zoom-in group relative grow" href="#">
+                <img class="w-full" src="/img/ticket-01.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
               </a>
-              <a class="animate-zoom-in group relative" href="#">
-                <img src="/img/ticket-02.svg" alt="" />
+              <a class="animate-zoom-in group relative grow" href="#">
+                <img class="w-full" src="/img/ticket-02.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
               </a>
-              <a class="animate-zoom-in group relative" href="#">
-                <img src="/img/ticket-03.svg" alt="" />
+              <a class="animate-zoom-in group relative grow" href="#">
+                <img class="w-full" src="/img/ticket-03.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >

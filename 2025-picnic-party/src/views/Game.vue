@@ -391,11 +391,11 @@
         </div>
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-01.svg" alt="" />
           </div>
-          <div class="font-black md:text-[20px]">
+          <div class="text-[20px] font-black">
             各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br />
             一起享受闖關集章、學習知識，共度好時光！
           </div>
@@ -406,11 +406,11 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-primary-500 px-5 py-1 pe-5 font-black text-primary-500"
+            class="px-5 py-1 pe-5 font-black text-primary-500 md:border-e md:border-primary-500"
           >
             <img src="/img/game-title-02.svg" alt="" />
           </div>
-          <div class="font-black md:text-[20px]">
+          <div class="text-[20px] font-black">
             小農市集一起來到野餐日！<br />
             產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
           </div>
@@ -421,11 +421,11 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-03.svg" alt="" />
           </div>
-          <div class="font-black md:text-[20px]">
+          <div class="text-[20px] font-black">
             讓教育與愛永續！新北市政府各單位攜手進駐，宣導政策並提供新知。<br />
             全家人一起共學共讀，不能不知道的快訊一次掌握！
           </div>
@@ -436,11 +436,11 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-04.svg" alt="" />
           </div>
-          <div class="font-black md:text-[20px]">
+          <div class="text-[20px] font-black">
             由四大品牌共同打造環保、低負擔的永續迷宮，<br />
             讓資源與永續教育持續善的循環，帶孩子一起愛地球！
           </div>
@@ -451,11 +451,11 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="border-e border-kv-green px-5 py-1 pe-5 text-[50px] font-black text-kv-green"
+            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-05.svg" alt="" />
           </div>
-          <div class="font-black md:text-[20px]">
+          <div class="text-[20px] font-black">
             未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，<br />
             感受知識與閱讀的無限樂趣！
           </div>
