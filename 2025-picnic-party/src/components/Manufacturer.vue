@@ -1,4 +1,5 @@
-<script>
+<script setup>
+  import { ref, onMounted, onUnmounted } from 'vue'
   const imagePath = import.meta.env.VITE_IMAGE_PATH
   const companiesList = {
     organizer: [
@@ -11,6 +12,13 @@
         id: '/sponsor/02.jpg',
         title: '未來親子學習平台',
         link: 'https://futureparenting.cwgv.com.tw/'
+      }
+    ],
+    assistantOrganizer: [
+      {
+        id: '/sponsor/03.png',
+        title: '遠見天下文化教育基金會',
+        link: 'https://www.cwgv.com.tw/zh/foundation.html'
       }
     ],
     coOrganizer: [
@@ -30,41 +38,35 @@
         link: 'https://ntpc.familyedu.moe.gov.tw/'
       }
     ],
-    assistantOrganizer: [
-      {
-        id: '/sponsor/06.jpg',
-        title: '遠見天下文化教育基金會',
-        link: 'https://www.cwgv.com.tw/zh/foundation.html'
-      }
-    ],
+
     educationPartners: [
       {
-        id: '/sponsor/07.jpg',
+        id: '/sponsor/07.png',
         title: '思博特',
         link: 'https://www.igogosport.com/'
       },
       {
-        id: '/sponsor/08.jpg',
+        id: '/sponsor/08.png',
         title: '兒福聯盟',
         link: null
       },
       {
-        id: '/sponsor/09.jpg',
+        id: '/sponsor/09.png',
         title: '小蚊清',
         link: 'https://shop.farcent.com.tw/collections/p0'
       },
       {
-        id: '/sponsor/10.jpg',
+        id: '/sponsor/10.png',
         title: '初鹿牧場',
         link: 'https://www.chuluranch.com.tw/'
       },
       {
-        id: '/sponsor/11.jpg',
+        id: '/sponsor/11.png',
         title: '農業部',
         link: 'https://www.moa.gov.tw/'
       },
       {
-        id: '/sponsor/12.jpg',
+        id: '/sponsor/12.png',
         title: '德恩奈',
         link: 'https://www.day-night.com.tw/'
       }
@@ -111,43 +113,50 @@
 
 <template>
   <div class="py-16">
-    <div class="container flex flex-col divide-y">
-      <div class="grid-col-1 grid py-3 md:grid-cols-2">
+    <div class="container flex flex-col gap-y-5">
+      <div class="grid-col-1 grid border-b py-3 md:grid-cols-2">
         <div>
           <div class="mb-3 font-bold">主辦單位</div>
           <div class="grid grid-cols-2 gap-3">
-            <a href="#" target="_blank">
-              <img src="/img/sponsor/01.jpg" alt="" />
-            </a>
-            <a href="#" target="_blank"
-              ><img src="/img/sponsor/02.jpg" alt="" />
+            <a
+              v-for="(item, index) in companiesList?.organizer"
+              :key="index"
+              :href="item.link"
+              target="_blank"
+            >
+              <img :src="`${imagePath}${item.id}`" :alt="item.title" />
             </a>
           </div>
         </div>
         <div>
           <div class="mb-3 font-bold">協辦單位</div>
           <div class="grid grid-cols-2 gap-3">
-            <a href="#" target="_blank">
-              <img src="/img/sponsor/03.jpg" alt="" />
+            <a
+              v-for="(item, index) in companiesList?.assistantOrganizer"
+              :key="index"
+              :href="item.link"
+              target="_blank"
+            >
+              <img :src="`${imagePath}${item.id}`" :alt="item.title" />
             </a>
           </div>
         </div>
       </div>
-      <div>
+      <div class="border-b py-3">
         <div class="mb-3 font-bold">協辦單位</div>
         <div class="grid grid-cols-3 gap-3">
-          <a href="#" target="_blank">
-            <img src="/img/sponsor/04.png" alt="" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="/img/sponsor/05.png" alt="" />
-          </a>
-          <a href="#" target="_blank">
-            <img src="/img/sponsor/06.png" alt="" />
+          <a
+            v-for="(item, index) in companiesList?.coOrganizer"
+            :key="index"
+            :href="item.link"
+            target="_blank"
+          >
+            <img :src="`${imagePath}${item.id}`" :alt="item.title" />
           </a>
         </div>
       </div>
-      <div class="py-3">
+
+      <div class="border-b py-3">
         <div class="mb-3 font-bold">共同主辦</div>
         <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
           <a
@@ -156,20 +165,20 @@
             :href="item.link"
             target="_blank"
           >
-            <img :src="`${imagePath}${item.id}`" alt="" />
+            <img :src="`${imagePath}${item.id}`" :alt="item.title" />
           </a>
         </div>
       </div>
-      <div class="py-3">
+      <div class="border-b py-3">
         <div class="mb-3 font-bold">共同主辦</div>
         <div class="grid grid-cols-2 gap-3 md:grid-cols-4">
           <a
-            v-for="(item, index) in companiesList?.educationPartners"
+            v-for="(item, index) in companiesList.educationPartners"
             :key="index"
             :href="item.link"
             target="_blank"
           >
-            <img :src="`${imagePath}${item.id}`" alt="" />
+            <img :src="`${imagePath}${item.id}`" :alt="item.title" />
           </a>
         </div>
       </div>

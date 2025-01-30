@@ -298,19 +298,25 @@
       <div class="bg-yellow py-16">
         <div class="container">
           <div
-            class="animate-zoom-in mb-16 flex flex-wrap gap-3 md:flex-nowrap"
+            class="animate-zoom-in mb-16 flex flex-wrap items-center gap-3 md:flex-nowrap"
           >
             <iframe
-              class="aspect-video mx-auto w-full max-w-[600px] md:h-[330px]"
+              class="aspect-video mx-auto w-full max-w-[600px] md:h-[350px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
             <div
-              class="flex grow flex-col items-center justify-center gap-3 text-xl font-black text-kv-blue"
+              class="flex grow flex-col items-center justify-center gap-3 p-5 text-xl font-black text-kv-blue lg:p-10"
             >
-              <img class="w-full" src="/img/index-video-into.svg" alt="" />
+              <img width="450" class="mb-4" src="/img/title-video.svg" alt="" />
+              <img
+                width="400"
+                class="w-full"
+                src="/img/intro-video.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -479,7 +485,7 @@
             <div
               class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
             >
-              <div class="order-2 max-w-[590px] lg:shrink-0">
+              <div class="order-2 w-full max-w-[590px] lg:shrink-0">
                 <swiper
                   class="w-full"
                   :slides-per-view="1"
@@ -622,7 +628,7 @@
 
             <div
               id="purchase"
-              class="m-10 mb-16 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
+              class="mb-16 mt-10 flex flex-wrap items-center justify-between gap-8 md:flex-nowrap"
             >
               <a class="animate-zoom-in group relative" href="#">
                 <img src="/img/ticket-01.svg" alt="" />
@@ -652,14 +658,11 @@
             <div class="mt-5 text-center font-bold">
               ※【單組票】、【揪團票】、【慶生套票】下訂後，恕不接受換票。
             </div>
-            <div class="my-5 flex items-center justify-center">
-              <ButtonJoin />
-            </div>
             <div
-              class="mb-10 mt-5 flex w-full flex-wrap items-center justify-center gap-16"
+              class="mb-5 mt-16 flex w-full flex-wrap items-center justify-center gap-16"
             >
-              <a
-                href="#"
+              <router-link
+                to="/notice"
                 class="inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white"
               >
                 <svg
@@ -676,12 +679,12 @@
                 </svg>
 
                 報名注意事項
-              </a>
+              </router-link>
             </div>
 
             <div
               data-twe-modal-init
-              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-6 outline-none"
               id="exampleModalScrollable"
               tabindex="-1"
               aria-labelledby="exampleModalScrollableLabel"
@@ -730,43 +733,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <div
-              data-twe-modal-init
-              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div
-                data-twe-modal-dialog-ref
-                class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]"
-              >
-                <div
-                  class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
-                >
-                  <div
-                    class="flex flex-shrink-0 items-center justify-between rounded-t-md"
-                  >
-                    <h5 class="text-xl font-medium leading-normal"></h5>
-                    <button
-                      type="button"
-                      class="absolute -right-2 -top-2 z-10 box-content rounded-none border-none text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                      data-twe-modal-dismiss
-                      aria-label="Close"
-                    >
-                      <img width="40" src="/img/modal-close.svg" alt="" />
-                    </button>
-                  </div>
-
-                  <div
-                    class="relative flex-auto p-4"
-                    data-twe-modal-body-ref
-                  ></div>
                 </div>
               </div>
             </div>

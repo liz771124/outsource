@@ -71,7 +71,7 @@
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-5">
-            <img width="450" src="/img/title-faq.svg" alt="" />
+            <img width="400" src="/img/title-faq.svg" alt="" />
           </div>
         </div>
         <div class="scroll-animate-fadeIn bg-white">
@@ -249,7 +249,7 @@
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-6">
-            <img src="/img/title-transportation.svg" alt="" />
+            <img width="350" src="/img/title-transportation.svg" alt="" />
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">

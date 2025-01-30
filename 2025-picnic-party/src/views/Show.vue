@@ -113,7 +113,9 @@
         <div class="mb-8 text-center">
           <img class="mx-auto" src="/img/intro-show.svg" alt="" />
         </div>
-        <div class="mb-5 grid gap-x-10 py-10 md:grid-cols-3 md:gap-y-10">
+        <div
+          class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-3 md:gap-y-10 md:py-10"
+        >
           <div
             v-for="(item, index) in showItems"
             :key="index"
@@ -162,69 +164,117 @@
           <div
             class="flex divide-x divide-white rounded-t-lg bg-primary-500 py-3 text-white"
           >
-            <div class="max-w-[300px] grow px-10 text-center">時間</div>
+            <div class="grow px-3 text-center md:max-w-[300px]">時間</div>
             <div class="grow px-3 text-center">內容</div>
           </div>
-          <div class="flex border-b border-primary-500 bg-white py-3">
-            <div class="max-w-[300px] grow px-3 text-center">11:00-11:30</div>
+          <div
+            class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              11:00-11:30
+            </div>
             <div class="grow px-3 font-black text-kv-green">
               歡樂互動｜來寶唱跳秀
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-[#FFECE6] py-3">
-            <div class="max-w-[300px] grow px-3 text-center">11:30-11:50</div>
+          <div
+            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              11:30-11:50
+            </div>
             <div class="grow px-3 font-black">永續宣言</div>
           </div>
-          <div class="flex border-b border-primary-500 bg-white py-3">
-            <div class="max-w-[300px] grow px-3 text-center">11:50-12:05</div>
+          <div
+            class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              11:50-12:05
+            </div>
             <div class="grow px-3 font-black text-primary-500">企業時間</div>
           </div>
-          <div class="flex border-b border-primary-500 bg-[#FFECE6] py-3">
-            <div class="max-w-[300px] grow px-3 text-center">12:05-12:35</div>
+          <div
+            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              12:05-12:35
+            </div>
             <div class="grow px-3 font-black text-primary-500">
               專業表演｜KIDs Concert[J HALL]+慶生開趴
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-white py-3">
-            <div class="max-w-[300px] grow px-3 text-center">12:35-12:45</div>
+          <div
+            class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              12:35-12:45
+            </div>
             <div class="grow px-3 font-black text-kv-green">
               歡樂互動｜來寶唱跳秀
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-[#FFECE6] py-3">
-            <div class="max-w-[300px] grow px-3 text-center">12:45-13:00</div>
+          <div
+            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              12:45-13:00
+            </div>
             <div class="grow px-3 font-black text-primary-500">企業時間</div>
           </div>
-          <div class="flex border-b border-primary-500 bg-white py-3">
-            <div class="max-w-[300px] grow px-3 text-center">13:00-13:20</div>
+          <div
+            class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              13:00-13:20
+            </div>
             <div class="grow px-3 font-black text-kv-green">
               歡樂互動｜來寶唱跳秀
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-[#FFECE6] py-3">
-            <div class="max-w-[300px] grow px-3 text-center">13:20-13:30</div>
+          <div
+            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              13:20-13:30
+            </div>
             <div class="grow px-3 font-black text-primary-500">
               專業表演｜魔幻Party [溜溜球]
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-white py-3">
-            <div class="max-w-[300px] grow px-3 text-center">13:30-13:45</div>
+          <div
+            class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              13:30-13:45
+            </div>
             <div class="grow px-3 font-black text-kv-green">
               歡樂互動｜來寶唱跳秀
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-[#FFECE6] py-3">
-            <div class="max-w-[300px] grow px-3 text-center">13:45-13:55</div>
+          <div
+            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              13:45-13:55
+            </div>
             <div class="grow px-3 font-black text-primary-500">企業時間</div>
           </div>
-          <div class="flex border-b border-primary-500 bg-white py-3">
-            <div class="max-w-[300px] grow px-3 text-center">13:55-14:25</div>
+          <div
+            class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              13:55-14:25
+            </div>
             <div class="grow px-3 font-black text-kv-green">
               專業表演｜故事Party [蟲蟲馬戲團]
             </div>
           </div>
-          <div class="flex border-b border-primary-500 bg-[#FFECE6] py-3">
-            <div class="max-w-[300px] grow px-3 text-center">14:350-15:00</div>
+          <div
+            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
+          >
+            <div class="grow px-3 md:max-w-[300px] md:text-center">
+              14:350-15:00
+            </div>
             <div class="grow px-3 font-black">2025未來親子野餐日歡樂抽獎</div>
           </div>
         </div>
