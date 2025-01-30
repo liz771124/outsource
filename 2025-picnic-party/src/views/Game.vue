@@ -358,16 +358,16 @@
     </Header>
     <div class="bg-green">
       <div
-        class="mx-6 flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
+        class="mx-5 flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
       >
         <div
-          class="cursor-pointer px-8 py-1"
+          class="cursor-pointer py-1 px-5 md:px-8"
           @click="scrollToElement('game-01')"
         >
           <img src="/img/game-tag-title-01.svg" alt="" />
         </div>
         <div
-          class="cursor-pointer px-8 py-1"
+          class="cursor-pointer py-1 px-5 md:px-8"
           @click="scrollToElement('game-02')"
         >
           <img src="/img/game-tag-title-02.svg" alt="" />

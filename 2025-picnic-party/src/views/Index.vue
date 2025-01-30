@@ -298,17 +298,17 @@
       <div class="bg-yellow py-16">
         <div class="container">
           <div
-            class="animate-zoom-in mb-16 flex flex-wrap items-center gap-3 md:flex-nowrap"
+            class="animate-zoom-in flex flex-wrap items-center gap-3 md:mb-16 md:flex-nowrap"
           >
             <iframe
-              class="aspect-video mx-auto w-full max-w-[600px] md:h-[350px]"
+              class="aspect-video order-2 mx-auto h-[250px] w-full max-w-[600px] md:order-1 md:h-[350px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
             <div
-              class="flex grow flex-col items-center justify-center gap-3 p-5 text-xl font-black text-kv-blue lg:p-10"
+              class="order-1 flex grow flex-col items-center justify-center gap-3 pb-5 text-xl font-black text-kv-blue md:order-2 lg:p-10"
             >
               <img width="450" class="mb-4" src="/img/title-video.svg" alt="" />
               <img
@@ -586,7 +586,7 @@
                     />
                   </span>
                   <img
-                    class="h-[350px] w-full object-cover"
+                    class="w-full object-cover md:h-[350px]"
                     src="/img/gift_01.png"
                     alt=""
                   />
@@ -613,7 +613,7 @@
                     />
                   </span>
                   <img
-                    class="h-[350px] w-full object-cover"
+                    class="w-full object-cover md:h-[350px]"
                     src="/img/gift_01.png"
                     alt=""
                   />
