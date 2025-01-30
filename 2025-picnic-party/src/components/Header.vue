@@ -37,19 +37,23 @@
           )
         })
 
-        const twinklingStars = ['#star-02', '#star-03', '#star-04']
+        const twinklingStars = [
+          '#star-02',
+          '#star-03',
+          '#star-04',
+          '#star-05-b'
+        ]
         twinklingStars.forEach((star, index) => {
           gsap.fromTo(
             star,
-            { scale: 0.6, opacity: 0.5, rotation: 0 },
+            { scale: 0.1 * index, rotation: 0 },
             {
               scale: 1.1,
-              opacity: 1,
               rotation: 360,
               repeat: -1,
               yoyo: true,
               delay: 0.5 + index,
-              duration: 2.5,
+              duration: 2,
               ease: 'sine.inOut',
               scrollTrigger: {
                 trigger: star,
@@ -60,22 +64,22 @@
           )
         })
 
-        // kv-main dissolve fade-in animation
-        // gsap.fromTo(
-        //   '#kv-main',
-        //   { opacity: 0, filter: 'blur(10px)' },
-        //   {
-        //     opacity: 1,
-        //     filter: 'blur(0px)',
-        //     duration: 2,
-        //     ease: 'power3.out',
-        //     scrollTrigger: {
-        //       trigger: '#kv-main',
-        //       start: 'top 80%',
-        //       toggleActions: 'play none none none'
-        //     }
-        //   }
-        // )
+        gsap.fromTo(
+          '#kv-main',
+          { scale: 1.25, opacity: 0, filter: 'blur(100px)' },
+          {
+            scale: 1,
+            opacity: 1,
+            filter: 'blur(0px)',
+            duration: 1.25,
+            ease: 'power4.out',
+            scrollTrigger: {
+              trigger: '#kv-main',
+              start: 'top 80%',
+              toggleActions: 'play none none none'
+            }
+          }
+        )
       }, 500)
     })
   })
@@ -118,7 +122,8 @@
           alt=""
         />
         <img
-          class="animate-rotateIn absolute left-0 top-0"
+          id="star-05-b"
+          class="absolute left-0 top-0"
           src="/img/star-05-b.svg"
           alt=""
         />
