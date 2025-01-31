@@ -41,12 +41,13 @@
           '#star-02',
           '#star-03',
           '#star-04',
-          '#star-05-b'
+          '#star-05-b',
+          '#star-06'
         ]
         twinklingStars.forEach((star, index) => {
           gsap.fromTo(
             star,
-            { scale: 0.1 * index, rotation: 0 },
+            { scale: index % 2 === 0 ? 0.1 * index : 0.3 * index, rotation: 0 },
             {
               scale: 1.1,
               rotation: 360,
@@ -98,6 +99,9 @@
     >
       <img class="animate-bounceFloat" src="/img/star-01.svg" alt="" />
     </span>
+    <span id="star-06" class="absolute right-8 top-[100px] md:left-[100px]">
+      <img src="/img/star-04.svg" alt="" />
+    </span>
     <span
       id="star-03"
       class="absolute right-[80px] top-[220px] w-[70px] md:left-20 md:right-auto md:w-auto"
@@ -114,7 +118,10 @@
     <span id="star-02" class="absolute bottom-28 right-10 md:right-10">
       <img src="/img/star-02.svg" alt="" />
     </span>
-    <span id="star-05" class="absolute right-5 top-20 w-[150px] md:right-20">
+    <span
+      id="star-05"
+      class="absolute hidden w-[150px] md:right-20 md:top-[200px] md:block"
+    >
       <div class="relative">
         <img
           class="absolute -bottom-10 -right-12"

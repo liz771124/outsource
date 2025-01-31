@@ -1,16 +1,40 @@
-<script setup>
-  import { ref, onMounted } from 'vue'
+<script setup lang="ts">
+  import { ref, onMounted, onUnmounted } from 'vue'
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import gsap from 'gsap'
 
-  const goTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  const isVisible = ref(false)
+  let headerHeight = 0 // 儲存 .header 高度
+  let scrollTimer: number | null = null
+
+  // **滾動事件**
+  const handleScroll = () => {
+    if (scrollTimer) return // 避免短時間內頻繁觸發
+
+    scrollTimer = requestAnimationFrame(() => {
+      const scrollY = window.scrollY || window.pageYOffset
+      isVisible.value = scrollY > headerHeight + 30
+      scrollTimer = null
     })
   }
 
+  // **取得 .header 高度**
+  const updateHeaderHeight = () => {
+    const header = document.querySelector('.header') as HTMLElement
+    headerHeight = header ? header.offsetHeight : 0
+  }
+
+  // **回到頂部**
+  const goTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  // **監聽滾動事件**
   onMounted(() => {
+    updateHeaderHeight()
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    window.addEventListener('resize', updateHeaderHeight)
+
     // 放大縮小的動畫
     gsap.to('.scale-bounce', {
       scale: 1.08,
@@ -19,6 +43,11 @@
       ease: 'elastic.inOut(.2, 0.5)',
       duration: 1.2
     })
+  })
+
+  onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+    window.removeEventListener('resize', updateHeaderHeight)
   })
 </script>
 <template>

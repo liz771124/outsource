@@ -84,7 +84,7 @@
           >
             <h2 class="mb-0" :id="`heading${index}`">
               <button
-                class="group relative flex w-full items-center border-0 px-5 py-4 text-2xl font-extrabold text-primary-500 transition [overflow-anchor:none] hover:z-[2] focus:z-[3]"
+                class="group relative flex w-full border-0 px-5 py-4 text-start text-2xl font-extrabold text-primary-500 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] md:items-center"
                 type="button"
                 data-twe-collapse-init
                 :data-twe-collapse-collapsed="index !== 0"
@@ -92,10 +92,14 @@
                 :aria-expanded="index === 0"
                 :aria-controls="`collapse${index}`"
               >
-                <img class="me-3" src="/img/title-faq-item.svg" width="25" />
+                <img
+                  class="me-3 mt-1"
+                  src="/img/title-faq-item.svg"
+                  width="25"
+                />
                 <span>{{ item.q }}</span>
                 <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
+                  :class="`-me-1 ms-auto mt-1.5 h-4 w-4 shrink-0 ${index === 0 && 'rotate-[-180deg]'} transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none md:mt-0 [&>svg]:h-6 [&>svg]:w-6`"
                 >
                   <svg
                     width="30"
@@ -104,13 +108,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <circle
-                      cx="15"
-                      cy="15"
-                      r="15"
-                      transform="rotate(90 15 15)"
-                      fill="#68BE83"
-                    />
+                    <circle cx="15" cy="15" r="15" fill="#68BE83" />
                     <g clip-path="url(#clip0_420_256)">
                       <path
                         d="M23.045 18.2348C22.754 18.2346 22.475 18.1188 22.2694 17.9129L16.6557 12.2992C16.4859 12.1293 16.2842 11.9945 16.0622 11.9026C15.8403 11.8106 15.6023 11.7633 15.3621 11.7633C15.1218 11.7633 14.8839 11.8106 14.6619 11.9026C14.44 11.9945 14.2383 12.1293 14.0684 12.2992L8.46208 17.9056C8.25508 18.1055 7.97783 18.2161 7.69005 18.2136C7.40228 18.2111 7.12699 18.0957 6.9235 17.8922C6.72 17.6887 6.60457 17.4134 6.60207 17.1256C6.59957 16.8379 6.7102 16.5606 6.91013 16.3536L12.5121 10.7473C13.2674 9.99344 14.2909 9.57007 15.3581 9.57007C16.4252 9.57007 17.4487 9.99344 18.204 10.7473L23.8213 16.3609C23.9749 16.5144 24.0796 16.71 24.1219 16.923C24.1643 17.136 24.1426 17.3567 24.0595 17.5574C23.9764 17.758 23.8356 17.9294 23.655 18.05C23.4745 18.1706 23.2622 18.2349 23.045 18.2348Z"

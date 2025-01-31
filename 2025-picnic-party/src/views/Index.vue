@@ -272,7 +272,7 @@
         <img src="/img/kv-main.svg" alt="" width="700" />
       </router-link>
       <span
-        class="absolute right-3 top-[50px] z-10 w-[85px] md:-right-20 md:top-20 md:w-[200px]"
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
         <img src="/img/kv-main-img.png" alt="" />
       </span>
@@ -298,17 +298,17 @@
       <div class="bg-yellow py-16">
         <div class="container">
           <div
-            class="animate-zoom-in flex flex-wrap items-center gap-3 md:mb-16 md:flex-nowrap"
+            class="flex flex-wrap items-center gap-3 md:mb-16 md:flex-nowrap"
           >
             <iframe
-              class="aspect-video order-2 mx-auto h-[250px] w-full max-w-[600px] md:order-1 md:h-[350px]"
+              class="aspect-video scroll-animate-slideInLeft order-2 mx-auto h-[250px] w-full max-w-[600px] md:order-1 md:h-[350px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
             <div
-              class="order-1 flex grow flex-col items-center justify-center gap-3 pb-5 text-xl font-black text-kv-blue md:order-2 lg:p-10"
+              class="scroll-animate-slideInRight order-1 flex grow flex-col items-center justify-center gap-3 pb-5 text-xl font-black text-kv-blue md:order-2 lg:p-10"
             >
               <img width="450" class="mb-4" src="/img/title-video.svg" alt="" />
               <img

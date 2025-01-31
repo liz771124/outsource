@@ -352,7 +352,9 @@
       <router-link to="/">
         <img src="/img/kv-game.svg" alt="" width="680" />
       </router-link>
-      <span class="absolute -bottom-16 right-3 z-10 md:-right-16 md:top-24">
+      <span
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+      >
         <img src="/img/kv-main-img.png" alt="" width="150" />
       </span>
     </Header>
@@ -361,13 +363,13 @@
         class="mx-5 flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
       >
         <div
-          class="cursor-pointer py-1 px-5 md:px-8"
+          class="cursor-pointer px-5 py-1 md:px-8"
           @click="scrollToElement('game-01')"
         >
           <img src="/img/game-tag-title-01.svg" alt="" />
         </div>
         <div
-          class="cursor-pointer py-1 px-5 md:px-8"
+          class="cursor-pointer px-5 py-1 md:px-8"
           @click="scrollToElement('game-02')"
         >
           <img src="/img/game-tag-title-02.svg" alt="" />
