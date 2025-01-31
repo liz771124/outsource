@@ -272,7 +272,7 @@
         <img src="/img/kv-main.svg" alt="" width="700" />
       </router-link>
       <span
-        class="absolute right-3 top-0 z-10 w-[100px] md:-right-2 md:top-10 md:w-[200px]"
+        class="absolute right-3 top-12 z-10 w-[100px] md:-right-2 md:top-10 md:w-[200px]"
       >
         <img src="/img/kv-main-img.svg" alt="" />
       </span>
