@@ -103,7 +103,7 @@
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
-        <img src="/img/kv-main-img.png" alt="" width="150" />
+        <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
     </Header>
 
@@ -153,10 +153,19 @@
           <ButtonJoin />
         </div>
       </div>
+      <span class="absolute -bottom-[80px] start-0 h-[100px] w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="/img/bg-green-line-b.svg"
+          alt=""
+        />
+      </span>
     </div>
     <div class="bg-yellow py-16">
-      <div class="container">
-        <div class="mb-8 flex flex-col items-center gap-3 font-bold">
+      <div class="container pt-20">
+        <div
+          class="relative z-10 mb-8 flex flex-col items-center gap-3 font-bold"
+        >
           <div class="mb-5">
             <img src="/img/title-schedule.svg" alt="" />
           </div>

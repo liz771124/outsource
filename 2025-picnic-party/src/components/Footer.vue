@@ -1,41 +1,35 @@
 <script setup lang="ts">
   import { ref, onMounted, onUnmounted } from 'vue'
-  import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import gsap from 'gsap'
 
   const isVisible = ref(false)
-  let headerHeight = 0 // 儲存 .header 高度
-  let scrollTimer: number | null = null
+  let headerHeight = 0
+  let scrollTimer = null
 
   // **滾動事件**
   const handleScroll = () => {
     if (scrollTimer) return // 避免短時間內頻繁觸發
-
     scrollTimer = requestAnimationFrame(() => {
       const scrollY = window.scrollY || window.pageYOffset
-      isVisible.value = scrollY > headerHeight + 30
+      isVisible.value = scrollY > headerHeight + 200
       scrollTimer = null
     })
   }
 
-  // **取得 .header 高度**
   const updateHeaderHeight = () => {
-    const header = document.querySelector('.header') as HTMLElement
+    const header = document.querySelector('.header')
     headerHeight = header ? header.offsetHeight : 0
   }
 
-  // **回到頂部**
   const goTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  // **監聽滾動事件**
   onMounted(() => {
     updateHeaderHeight()
     window.addEventListener('scroll', handleScroll, { passive: true })
     window.addEventListener('resize', updateHeaderHeight)
 
-    // 放大縮小的動畫
     gsap.to('.scale-bounce', {
       scale: 1.08,
       repeat: -1,
@@ -126,7 +120,11 @@
           </div>
         </div>
         <div
-          class="fixed bottom-5 end-3 z-30 flex flex-col items-center justify-center"
+          class="fixed bottom-5 end-3 z-30 flex flex-col items-center justify-center transition-opacity duration-300"
+          :class="{
+            'pointer-events-auto opacity-100': isVisible,
+            'pointer-events-none opacity-0': !isVisible
+          }"
         >
           <router-link to="/#purchase" class="scale-bounce">
             <img width="80" src="/img/fixed-buy-02.svg" alt="" />

@@ -355,7 +355,7 @@
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
-        <img src="/img/kv-main-img.png" alt="" width="150" />
+        <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
     </Header>
     <div class="bg-green">
@@ -466,7 +466,7 @@
           <GameItem :list="game05List" :className="'bg-kv-green'" />
         </div>
       </div>
-      <span class="absolute -bottom-[80px] start-0 h-[100px]">
+      <span class="absolute -bottom-[80px] start-0 h-[100px] w-full">
         <img class="w-full" src="/img/bg-green-line-b.svg" alt="" />
       </span>
     </div>

@@ -20,7 +20,7 @@
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
-        <img src="/img/kv-main-img.png" alt="" width="150" />
+        <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
     </Header>
     <div class="bg-yellow">

@@ -65,15 +65,15 @@
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
-        <img src="/img/kv-main-img.png" alt="" width="150" />
+        <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
     </Header>
 
     <div class="bg-green">
       <div class="container py-16">
-        <div class="flex flex-col items-center gap-3 text-3xl font-bold">
+        <div class="my-8 flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-5">
-            <img width="400" src="/img/title-faq.svg" alt="" />
+            <img width="450" src="/img/title-faq.svg" alt="" />
           </div>
         </div>
         <div class="scroll-animate-fadeIn bg-white">
@@ -244,8 +244,6 @@
           </div> -->
         </div>
       </div>
-    </div>
-    <div class="bg-green">
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-6">
@@ -313,6 +311,13 @@
           </div>
         </div>
       </div>
+      <span class="absolute -bottom-[80px] start-0 h-[100px] w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="/img/bg-green-line-b.svg"
+          alt=""
+        />
+      </span>
     </div>
     <div class="bg-yellow">
       <div class="container py-16">

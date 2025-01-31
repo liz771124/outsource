@@ -19,15 +19,15 @@
         flowingStars.forEach((star, index) => {
           gsap.fromTo(
             star,
-            { y: '-100', opacity: 0, scale: 0 },
+            { transformOrigin: '-500% 50% -100px', opacity: 0, scale: 0 },
             {
-              x: 0,
-              y: 0,
+              z: 0,
               scale: 1,
               opacity: 1,
-              // delay: 0.5 + index,
-              duration: 0.5,
-              ease: 'power4.out',
+              transformOrigin: '500% 50% -100px',
+              delay: 0.25 * index,
+              duration: 0.35,
+              ease: 'power3.inOut',
               scrollTrigger: {
                 trigger: star,
                 start: 'top 80%',
@@ -77,7 +77,10 @@
             scrollTrigger: {
               trigger: '#kv-main',
               start: 'top 80%',
-              toggleActions: 'play none none none'
+              toggleActions: 'play none none none',
+              scale: 1.1,
+              yoyo: true,
+              repeat: '-1'
             }
           }
         )
@@ -95,11 +98,14 @@
   >
     <span
       id="star-01"
-      class="absolute left-[30px] top-[20px] w-[250px] md:left-32 md:w-auto"
+      class="absolute left-[30px] top-[20px] w-[250px] md:left-[220px] md:w-auto"
     >
       <img class="animate-bounceFloat" src="/img/star-01.svg" alt="" />
     </span>
-    <span id="star-06" class="absolute right-8 top-[100px] md:left-[100px]">
+    <span
+      id="star-06"
+      class="absolute right-8 top-[100px] md:left-[100px] md:right-auto"
+    >
       <img src="/img/star-04.svg" alt="" />
     </span>
     <span
