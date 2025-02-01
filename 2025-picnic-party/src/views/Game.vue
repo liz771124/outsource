@@ -11,14 +11,14 @@
   const lotteryList = [
     // {
     //   id: '01.jpg',
-    //   brand: '【妙管家】',
+    //   brand: '妙管家',
     //   name: '瞬潔洗潔精(果香葡萄柚)500g',
     //   description: '',
     //   price: '＄獎項價值 元 /  名'
     // },
     {
       id: '01.png',
-      brand: '【igogosport思博特】',
+      brand: 'igogosport思博特',
       name: 'myFirst Fone S3 4G 智慧兒童手錶',
       description:
         'S3除了具備精準的GPS定位，更具有完善的APP，介面美觀且多功能! 手錶上更有通話、視訊、MP3和SOS求救功能，還有專門設計給孩子的社交圈CIRCLE，讓孩子可以自由上傳心情與分享圖片，讓孩子與家長之間0距離！',
@@ -26,7 +26,7 @@
     },
     {
       id: '02.jpg',
-      brand: '【igogosport思博特】',
+      brand: 'igogosport思博特',
       name: 'myFirst 3D Pen Make - 3D 列印筆',
       description:
         '培養孩子的美感，從小開始！myFirst 3D筆，選用無毒材料，孩子開心玩，爸媽好安心！此外加熱顏料更是溫感不燙，讓孩子可以盡情發揮創意做出獨特的3D作品，畫筆更不需要時刻充電，外出攜帶更方便！',
@@ -34,7 +34,7 @@
     },
     {
       id: '03.jpg',
-      brand: '【igogosport思博特】',
+      brand: 'igogosport思博特',
       name: 'myFirst Camera 3 雙鏡頭兒童相機',
       description:
         '熱銷款兒童相機！鏡頭具備1600萬像素，此外更具備微距鏡頭，幫助寶貝更好對焦，還有前鏡頭讓寶貝輕鬆自拍、記錄生活，LED閃光燈，在黑暗的地方也可以捕捉畫面，內建麥克風，還可以錄影！是孩子記錄生活的最好玩伴！',
@@ -42,7 +42,7 @@
     },
     {
       id: '04.jpg',
-      brand: '【台北喜來登大飯店】',
+      brand: '台北喜來登大飯店',
       name: '手拉手樂園親子主題房住宿1晚',
       description:
         '台北喜來登大飯店以莫蘭迪色系融合動物童話繪本元素，打造四大主題「動物森林」、「叢林小鎮」、「史前探險」與「恐龍王國」故事場景客房，讓小孩玩到不想回家。入住主題親子客房皆可免費體驗樓層專屬「手拉手樂園」，分齡設計的室內遊戲區包含娃娃廚房、小車積木、樹洞滑梯，以及適合大小朋友的科技電玩區，為家庭的每一位成員打造一段充滿童趣與奇思妙想的歡聚之旅。（房型照片僅供參考，依實際入住房型為主）',
@@ -50,15 +50,15 @@
     },
     {
       id: '05.jpg',
-      brand: '【知覺優格】',
+      brand: '知覺優格',
       name: '優格飲12入 (口味隨機)',
       description:
-        '【清爽果粒 益菌隨行】知覺優格飲採用100%無調整鮮乳，搭配精心手工調製的果醬，口感豐盈綿密，完美呈現真實水果的酸甜風味！首創添加「菊苣膳食纖維護好菌」，嚴選優質菌種與法國專利菌株，幫助維持消化道機能，輕鬆搖一搖，即可隨時補充活性益生菌，健康與美味隨行無負擔！',
+        '清爽果粒 益菌隨行知覺優格飲採用100%無調整鮮乳，搭配精心手工調製的果醬，口感豐盈綿密，完美呈現真實水果的酸甜風味！首創添加「菊苣膳食纖維護好菌」，嚴選優質菌種與法國專利菌株，幫助維持消化道機能，輕鬆搖一搖，即可隨時補充活性益生菌，健康與美味隨行無負擔！',
       price: '＄獎項價值 元 /  名'
     },
     {
       id: '06.jpg',
-      brand: '【象印】',
+      brand: '象印',
       name: '童用ONE TOUCH保溫杯 (款式隨機)',
       description: `
            <p>象印專為孩童貼心設計的小熊杯，讓孩子夏日愛上喝水的秘密武器！色彩繽紛的可愛圖樣設計，不管男孩女孩通通都超愛！三大便利機能，讓孩子每日的飲水更加輕鬆又方便：</p>
@@ -75,7 +75,7 @@
     },
     {
       id: '07.jpg',
-      brand: '【福容大飯店-高雄店】',
+      brand: '福容大飯店-高雄店',
       name: '精緻豪華雙床房─動物園主題房型入住一晚(含早餐)',
       description:
         '交通位置相當便利的福容高雄店，步行5分鐘到輕軌真愛碼頭站、8分鐘到捷運鹽埕埔站。可搭乘輕軌一路玩高雄流行音樂中心、駁二藝術特區、棧貳庫，也可悠閒在愛河畔散步、騎單車、搭乘愛之船欣賞高雄港灣的日夜之美。',
@@ -208,26 +208,26 @@
       description: `
           <p>講究「古」早傳統的飼養方法，採用天然酵母配方的酒糟「稻」穀作飼料，追求和「樂」自然、環境友善的飼養空間，創造人文和雞隻豐饒薈萃的大「埕」院。</p>
           <p>孫家古道樂埕”的原創精神，就是堅持以給家人吃的真誠心意，來飼養每隻令人感動幸福的雞。期盼這份真心，同時也傳承分享給每一個值得健康的人。</p>
-          <p>【販售商品】茶葉蛋、雞肉肉鬆、麻油雞湯、蔥油雞</p>
+          <p>販售商品茶葉蛋、雞肉肉鬆、麻油雞湯、蔥油雞</p>
         `
     },
     {
       id: '/game-02/09.jpg',
       name: '遇米甜',
       description: `
-          <p>【白龍王水果玉米】生食帶點像水梨，甘蔗香甜</p>
-          <p>【日本雙色水果玉米】文青甜的特色，有點甜不會膩</p>
-          <p>【紫色甜玉米】獨特少有的濃郁花青素，健康滿分甜玉米</p>
-          <p>【彩虹甜糯玉米】口感QQ帶有嚼勁</p>
-          <p>【鮮嫩玉米筍】高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
-          <p>【水煮水果玉米】孩子們的最愛</p>
+          <p>白龍王水果玉米生食帶點像水梨，甘蔗香甜</p>
+          <p>日本雙色水果玉米文青甜的特色，有點甜不會膩</p>
+          <p>紫色甜玉米獨特少有的濃郁花青素，健康滿分甜玉米</p>
+          <p>彩虹甜糯玉米口感QQ帶有嚼勁</p>
+          <p>鮮嫩玉米筍高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
+          <p>水煮水果玉米孩子們的最愛</p>
         `
     },
     {
       id: '/game-02/10.jpg',
       name: '芭樂主子與辣小妹',
       description:
-        '【珍珠芭樂】珍珠芭樂成熟時由濃綠轉為淡綠色，沾染晨露的果實特別脆口，質地細緻，但香甜回甘。'
+        '珍珠芭樂珍珠芭樂成熟時由濃綠轉為淡綠色，沾染晨露的果實特別脆口，質地細緻，但香甜回甘。'
     }
   ]
 
@@ -378,27 +378,30 @@
       <div class="container py-16">
         <div class="mb-20 text-center">
           <img
-            class="mx-auto mb-10 block"
+            class="mx-auto mb-5 block"
             src="/img/title-game-main-01.svg"
             alt=""
           />
-          <img
-            class="mx-auto mb-10"
-            src="/img/title-game-intro-01.svg"
-            alt=""
-          />
+          <div class="text-center text-[20px] font-black">
+            <div>兼具知識、趣味的闖關挑戰</div>
+            <div>在未來親子野餐日10週年活動就玩得到！</div>
+            <div>爸爸媽媽陪著孩子共同完成任務</div>
+            <div>多樣品牌小禮拿滿滿，集滿10章再抽大獎！</div>
+          </div>
         </div>
-        <div id="game-01" class="mb-8 text-center">
+        <div id="game-01" class="text-center">
           <img class="mx-auto" width="550" src="/img/title-game.svg" alt="" />
         </div>
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
+            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-01.svg" alt="" />
           </div>
           <div class="text-[20px] font-black">
-            各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br />
+            各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br
+              class="hidden md:block"
+            />
             一起享受闖關集章、學習知識，共度好時光！
           </div>
         </div>
@@ -408,12 +411,12 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="px-5 py-1 pe-5 font-black text-primary-500 md:border-e md:border-primary-500"
+            class="w-[220px] px-5 py-1 pe-5 text-primary-500 md:w-auto md:border-e md:border-primary-500"
           >
             <img src="/img/game-title-02.svg" alt="" />
           </div>
           <div class="text-[20px] font-black">
-            小農市集一起來到野餐日！<br />
+            小農市集一起來到野餐日！<br class="hidden md:block" />
             產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
           </div>
         </div>
@@ -423,12 +426,14 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
+            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-03.svg" alt="" />
           </div>
           <div class="text-[20px] font-black">
-            讓教育與愛永續！新北市政府各單位攜手進駐，宣導政策並提供新知。<br />
+            讓教育與愛永續！新北市政府各單位攜手進駐，宣導政策並提供新知。<br
+              class="hidden md:block"
+            />
             全家人一起共學共讀，不能不知道的快訊一次掌握！
           </div>
         </div>
@@ -438,12 +443,14 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
+            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-04.svg" alt="" />
           </div>
           <div class="text-[20px] font-black">
-            由四大品牌共同打造環保、低負擔的永續迷宮，<br />
+            由四大品牌共同打造環保、低負擔的永續迷宮，<br
+              class="hidden md:block"
+            />
             讓資源與永續教育持續善的循環，帶孩子一起愛地球！
           </div>
         </div>
@@ -453,12 +460,14 @@
 
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
-            class="px-5 py-1 pe-5 text-[50px] font-black text-kv-green md:border-e md:border-kv-green"
+            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
             <img src="/img/game-title-05.svg" alt="" />
           </div>
           <div class="text-[20px] font-black">
-            未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，<br />
+            未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，<br
+              class="hidden md:block"
+            />
             感受知識與閱讀的無限樂趣！
           </div>
         </div>
@@ -502,11 +511,11 @@
                 alt="w-full"
               />
             </div>
-            <div class="mb-3 px-3">
+            <div class="mb-3 px-3 text-center text-xl">
               <div class="mb-1 font-semibold text-primary-500">
-                {{ item.brand }}
+                【{{ item.brand }}】
               </div>
-              <h2 class="text-xl font-semibold text-primary-500">
+              <h2 class="font-semibold text-primary-500">
                 {{ item.name }}
               </h2>
             </div>
@@ -522,10 +531,10 @@
             >
               <div class="flex h-full flex-col">
                 <div
-                  class="mb-1 shrink-0 border-b p-2 text-center font-semibold text-primary-500"
+                  class="mb-1 shrink-0 border-b p-2 text-center text-xl font-semibold text-primary-500"
                 >
-                  <span>{{ item.brand }}</span>
-                  <h2 class="text-xl font-semibold text-primary-500">
+                  <span>【{{ item.brand }}】</span>
+                  <h2 class="font-semibold text-primary-500">
                     {{ item.name }}
                   </h2>
                 </div>

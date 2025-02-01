@@ -28,8 +28,10 @@
         <div class="mb-8 text-center">
           <img class="mx-auto" src="/img/title-gift-main.svg" alt="" />
         </div>
-        <div class="mb-8 text-center">
-          <img class="mx-auto" src="/img/title-gift-intro.svg" alt="" />
+        <div class="text-center text-[20px] font-black">
+          <div>10大互動好禮搶先看！</div>
+          <div>全場活動趴趴走，好禮拿不停！</div>
+          <div>點擊按鈕，看更多活動說明</div>
         </div>
 
         <div class="grid gap-6 md:mb-36 md:grid-cols-2">

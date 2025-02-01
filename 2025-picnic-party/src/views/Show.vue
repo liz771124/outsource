@@ -112,8 +112,10 @@
         <div class="mb-8 text-center">
           <img class="mx-auto" src="/img/title-show.svg" alt="" />
         </div>
-        <div class="mb-8 text-center">
-          <img class="mx-auto" src="/img/intro-show.svg" alt="" />
+        <div class="text-center text-[20px] font-black">
+          <div>當然不能少了各種好Show炒熱氣氛！</div>
+          <div>音樂、故事、唱唱跳跳</div>
+          <div>最豐富的表演，都在未來親子野餐日！</div>
         </div>
         <div
           class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-3 md:gap-y-10 md:py-10"

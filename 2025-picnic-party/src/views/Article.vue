@@ -283,8 +283,11 @@
         <div class="mb-8 text-center">
           <img class="mx-auto" src="/img/title-article.svg" alt="" />
         </div>
-        <div class="mb-8 text-center">
-          <img class="mx-auto" src="/img/intro-article.svg" alt="" />
+        <div class="text-center text-[20px] font-black">
+          <div>未來親子精選四大主題文章</div>
+          <div>透過專業實用的教養好文</div>
+          <div>為生活增添質地</div>
+          <div>讓爸媽與孩子共創永續而美好的家庭回憶！</div>
         </div>
         <div class="flex flex-col items-center gap-5">
           <div class="grid grid-cols-2 gap-5 md:grid-cols-4">

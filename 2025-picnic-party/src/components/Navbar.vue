@@ -7,9 +7,9 @@
     { to: '/', label: '首頁' },
     { to: '/gift', label: '互動好禮' },
     { to: '/game', label: '歡樂闖關' },
-    { to: '/show', label: '精彩表演' },
-    { to: '/Article', label: '延伸閱讀' },
-    { to: '/notice', label: '更多資訊' }
+    { to: '/show', label: '精采表演' },
+    { to: '/Article', label: '閱讀好文' },
+    { to: '/notice', label: '詳細資訊' }
   ]
 
   onMounted(() => {

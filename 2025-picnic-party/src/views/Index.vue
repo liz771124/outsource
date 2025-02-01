@@ -340,24 +340,24 @@
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-01.png" alt="" />
               </div>
-              <div class="relative grow p-5">
+              <div class="relative grow pt-5 md:p-5">
                 <div
-                  class="relative z-10 flex text-[50px] font-black tracking-wide text-primary-500"
+                  class="relative z-10 flex text-[35px] font-black tracking-wide text-primary-500 md:text-[50px]"
                 >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >精</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >彩</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >表</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >演</span
                   >
                 </div>
@@ -373,7 +373,7 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="ms-auto inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看表演
                 </div>
@@ -390,24 +390,24 @@
               <div class="order-2 lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-02.png" alt="" />
               </div>
-              <div class="relative order-2 grow p-5 md:order-1">
+              <div class="relative order-2 grow pt-5 md:order-1 md:p-5">
                 <div
-                  class="relative z-10 flex text-[50px] font-black tracking-wide text-kv-green"
+                  class="relative z-10 flex text-[35px] font-black tracking-wide text-kv-green md:text-[50px]"
                 >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >趣</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >味</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >闖</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >關</span
                   >
                 </div>
@@ -422,7 +422,7 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="ms-auto inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看闖關
                 </div>
@@ -439,24 +439,24 @@
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-03.png" alt="" />
               </div>
-              <div class="relative grow p-5">
+              <div class="relative grow pt-5 md:p-5">
                 <div
-                  class="relative z-10 flex text-[50px] font-black tracking-wide text-primary-500"
+                  class="relative z-10 flex text-[35px] font-black tracking-wide text-primary-500 md:text-[50px]"
                 >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >互</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >動</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >好</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >禮</span
                   >
                 </div>
@@ -471,7 +471,7 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="ms-auto inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看好禮
                 </div>
@@ -507,24 +507,24 @@
                   </swiper-slide>
                 </swiper>
               </div>
-              <div class="relative order-2 grow p-5 md:order-1">
+              <div class="relative order-2 grow pt-5 md:order-1 md:p-5">
                 <div
-                  class="relative z-10 flex text-[50px] font-black tracking-wide text-kv-green"
+                  class="relative z-10 flex text-[35px] font-black tracking-wide text-kv-green md:text-[50px]"
                 >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >歡</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >樂</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >抽</span
                   >
                   <span
-                    class="flex h-16 w-16 items-center justify-center rounded-full bg-white"
+                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
                     >獎</span
                   >
                 </div>
@@ -539,7 +539,7 @@
                   />
                 </div>
                 <div
-                  class="absolute -bottom-10 end-0 inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="ms-auto inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
                 >
                   看看抽獎
                 </div>
@@ -561,14 +561,15 @@
             class="mt-10 flex flex-col items-center gap-2 text-2xl font-bold"
           >
             <div class="mb-8">
-              <img width="350" src="/img/title-ticket.svg" alt="" />
+              <img width="300" src="/img/title-ticket.svg" alt="" />
             </div>
-            <div class="mb-8 text-center">
-              <img class="mx-auto" src="/img/intro-ticket.svg" alt="" />
+            <div class="text-center text-[20px] font-black">
+              <div>2025年4月3日 10:30-15:00</div>
+              <div>新北大都會公園</div>
             </div>
           </div>
           <div>
-            <div class="flex flex-wrap gap-5 md:flex-nowrap md:gap-10">
+            <div class="flex flex-wrap gap-14 md:flex-nowrap md:gap-10">
               <div
                 class="animate-zoom-in relative cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
                 data-twe-toggle="modal"
@@ -578,12 +579,10 @@
                 @click="selectedModalItems = giftEarlyBird"
               >
                 <div>
-                  <span class="absolute -start-[30px] -top-[35px]">
-                    <img
-                      class="hidden md:block"
-                      src="/img/index-gift-title-01.svg"
-                      alt=""
-                    />
+                  <span
+                    class="absolute -top-[35px] start-0 w-[280px] md:w-[350px]"
+                  >
+                    <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
                   <img
                     class="w-full object-cover md:h-[350px]"
@@ -605,12 +604,10 @@
                 @click="selectedModalItems = giftLuckyBag"
               >
                 <div>
-                  <span class="absolute -start-[30px] -top-[35px]">
-                    <img
-                      class="hidden md:block"
-                      src="/img/index-gift-title-02.svg"
-                      alt=""
-                    />
+                  <span
+                    class="absolute -top-[35px] start-0 w-[280px] md:w-[350px]"
+                  >
+                    <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
                   <img
                     class="w-full object-cover md:h-[350px]"
@@ -628,10 +625,10 @@
 
             <div
               id="purchase"
-              class="mb-16 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap"
+              class="md:gap-15 mb-16 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap"
             >
               <a class="animate-zoom-in group relative grow" href="#">
-                <img class="w-full" src="/img/ticket-01.svg" alt="" />
+                <img class="mx-auto" src="/img/ticket-01.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
@@ -639,7 +636,7 @@
                 </div>
               </a>
               <a class="animate-zoom-in group relative grow" href="#">
-                <img class="w-full" src="/img/ticket-02.svg" alt="" />
+                <img class="mx-auto" src="/img/ticket-02.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
@@ -647,7 +644,7 @@
                 </div>
               </a>
               <a class="animate-zoom-in group relative grow" href="#">
-                <img class="w-full" src="/img/ticket-03.svg" alt="" />
+                <img class="mx-auto" src="/img/ticket-03.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >

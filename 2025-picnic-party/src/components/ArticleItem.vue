@@ -34,7 +34,7 @@
         </div>
       </div>
       <div
-        :class="`relative -bottom-3 -start-0 line-clamp-2 inline-block h-[58px] w-[calc(100%+30px)] rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white ${className}`"
+        :class="`relative -bottom-3 -start-0 line-clamp-2 h-[58px] w-[calc(100%+30px)] rounded-tr-xl px-2 py-1.5 text-left font-bold tracking-wide text-white ${className}`"
       >
         {{ item.title }}
       </div>

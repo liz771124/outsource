@@ -73,7 +73,7 @@
       <div class="container py-16">
         <div class="my-8 flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-5">
-            <img width="450" src="/img/title-faq.svg" alt="" />
+            <img width="345" src="/img/title-faq.svg" alt="" />
           </div>
         </div>
         <div class="scroll-animate-fadeIn bg-white">
@@ -99,7 +99,7 @@
                 />
                 <span>{{ item.q }}</span>
                 <span
-                  :class="`-me-1 ms-auto mt-1.5 h-4 w-4 shrink-0 ${index === 0 && 'rotate-[-180deg]'} transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none md:mt-0 [&>svg]:h-6 [&>svg]:w-6`"
+                  :class="`-me-1 ms-auto mt-1.5 h-4 w-4 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none md:mt-0 [&>svg]:h-6 [&>svg]:w-6`"
                 >
                   <svg
                     width="30"
@@ -247,11 +247,11 @@
       <div class="container py-16">
         <div class="flex flex-col items-center gap-3 text-3xl font-bold">
           <div class="mb-6">
-            <img width="350" src="/img/title-transportation.svg" alt="" />
+            <img width="300" src="/img/title-transportation.svg" alt="" />
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-xl font-bold text-primary-500">如何到達？</div>
+          <div class="mb-1 text-2xl font-bold text-primary-500">如何到達？</div>
           <div class="my-3 text-center">
             <iframe
               class="h-[250px] w-full md:h-[450px]"
@@ -266,20 +266,20 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-xl font-bold text-primary-500">
+          <div class="mb-1 text-2xl font-bold text-primary-500">
             新北大都會公園
           </div>
           <div>地址:新北市三重區水漾路一段</div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-xl font-bold text-primary-500">捷運</div>
+          <div class="mb-1 text-2xl font-bold text-primary-500">捷運</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運中和線三重站，1出口即可抵達。</div>
             <div>2.機場捷運線A2三重站，從1A出口即可抵達</div>
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-xl font-bold text-primary-500">公車</div>
+          <div class="mb-1 text-2xl font-bold text-primary-500">公車</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運三重站:62、227區、232、264、640。</div>
             <div>
@@ -291,11 +291,11 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-xl font-bold text-primary-500">微笑單車</div>
+          <div class="mb-1 text-2xl font-bold text-primary-500">微笑單車</div>
           <div>捷運三重站(3號出口)</div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-xl font-bold text-primary-500">
+          <div class="mb-1 text-2xl font-bold text-primary-500">
             停車資訊(附近有多個付費停車場)
           </div>
           <div class="flex flex-col gap-3">
@@ -320,9 +320,9 @@
       </span>
     </div>
     <div class="bg-yellow">
-      <div class="container py-16">
+      <div class="container pb-20 pt-28">
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="txt-xl mb-3 font-bold">特別聲明</div>
+          <div class="mb-3 text-2xl font-bold">特別聲明</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.本活動網頁僅為報名用途，非現場各項活動預約報名。各攤位現場活動體驗因適合年齡及容納人數皆不同，以現場排隊指示為主。
@@ -342,13 +342,13 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="txt-2xl mb-3 font-bold">早鳥獎項</div>
+          <div class="mb-3 text-2xl font-bold">早鳥獎項</div>
           <div>
             登記報名並於現場報到完成者，可獲得超值驚喜包一份，依網路報名先後順序取符合資格者，於活動網頁上公告得獎名單。
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="txt-2xl mb-3 font-bold">領取方式</div>
+          <div class="mb-3 text-2xl font-bold">領取方式</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.早鳥報名得獎名單將於活動前一周公布在本網頁，敬請密切留意相關資訊。
@@ -363,7 +363,7 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="txt-2xl mb-3 font-bold">現場舞台抽獎</div>
+          <div class="mb-3 text-2xl font-bold">現場舞台抽獎</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.活動現場將提供：一個家庭(一筆訂單)一張闖關卡，合計2,000張供索取，發完為止。
@@ -380,7 +380,7 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="txt-2xl mb-3 font-bold">注意事項</div>
+          <div class="mb-3 text-2xl font-bold">注意事項</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.參加者於參加活動時，即視同為同意接受本活動規範，若本活動因不可抗力之因素(例如：天候狀況)無法執行時，主辦單位有權決定取消、終止、修改或暫停本活動及相關獎項得獎資格。
@@ -426,7 +426,7 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="txt-2xl mb-3 font-bold">個資保護聲明</div>
+          <div class="mb-3 text-2xl font-bold">個資保護聲明</div>
           <ul class="flex flex-col gap-3">
             <li>
               遠見天下文化出版股份有限公司蒐集、處理及利用個人資料告知事項
