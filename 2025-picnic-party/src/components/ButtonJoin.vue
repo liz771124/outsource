@@ -36,7 +36,10 @@
   })
 </script>
 <template>
-  <router-link to="/#purchase" class="animate-bounceFloat">
+  <router-link
+    to="/#purchase"
+    class="scroll-animate-zoomIn animate-bounceFloat"
+  >
     <img width="320" src="/img/btn-join.svg" alt="" />
   </router-link>
 </template>

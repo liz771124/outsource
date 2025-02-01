@@ -56,7 +56,7 @@
           </div>
         </div>
 
-        <div class="mb-5 mt-10 flex items-center justify-center">
+        <div class="mb-5 flex items-center justify-center pt-5 md:pt-16">
           <ButtonJoin />
         </div>
       </div>

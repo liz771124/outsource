@@ -289,7 +289,7 @@
           <div>為生活增添質地</div>
           <div>讓爸媽與孩子共創永續而美好的家庭回憶！</div>
         </div>
-        <div class="flex flex-col items-center gap-5">
+        <div class="mt-10 flex flex-col items-center gap-5">
           <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
             <div
               class="animate-bounceFloat cursor-pointer"
@@ -317,9 +317,9 @@
             </div>
           </div>
         </div>
-        <div id="article-01" class="py-10">
+        <div id="article-01" class="py-5 md:py-10">
           <div
-            class="scroll-animate-fadeInUp mb-4 text-center text-[50px] font-black text-primary-500"
+            class="scroll-animate-fadeInUp mb-4 text-center text-[35px] font-black text-primary-500 md:text-[45px]"
           >
             #運動學習力
           </div>
@@ -352,9 +352,9 @@
             </div>
           </div>
         </div>
-        <div id="article-02" class="py-10">
+        <div id="article-02" class="py-5 md:py-10">
           <div
-            class="scroll-animate-fadeInUp mb-4 text-center text-[50px] font-black text-kv-green"
+            class="scroll-animate-fadeInUp mb-4 text-center text-[35px] font-black text-kv-green md:text-[45px]"
           >
             #家庭陪伴力
           </div>
@@ -388,9 +388,9 @@
             </div>
           </div>
         </div>
-        <div id="article-03" class="py-10">
+        <div id="article-03" class="py-5 md:py-10">
           <div
-            class="scroll-animate-fadeInUp mb-4 text-center text-[50px] font-black text-primary-500"
+            class="scroll-animate-fadeInUp mb-4 text-center text-[35px] font-black text-primary-500 md:text-[45px]"
           >
             #永續執行力
           </div>
@@ -401,9 +401,9 @@
             />
           </div>
         </div>
-        <div id="article-04" class="py-10">
+        <div id="article-04" class="py-5 md:py-10">
           <div
-            class="scroll-animate-fadeInUp mb-4 text-center text-[50px] font-black text-kv-green"
+            class="scroll-animate-fadeInUp mb-4 text-center text-[35px] font-black text-kv-green md:text-[45px]"
           >
             #野餐玩樂力
           </div>
@@ -455,7 +455,7 @@
         </div>
 
         <div
-          class="mt-10 flex w-full flex-wrap items-center justify-center gap-16"
+          class="mt-5 flex w-full flex-wrap items-center justify-center gap-16"
         >
           <ButtonJoin />
         </div>
