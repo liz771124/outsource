@@ -157,6 +157,7 @@
       </div>
       <span class="absolute -bottom-[80px] start-0 h-[100px] w-full">
         <img
+        
           class="h-full w-full object-cover"
           src="/img/bg-green-line-b.svg"
           alt=""
@@ -169,7 +170,7 @@
           class="relative z-10 mb-8 flex flex-col items-center gap-3 font-bold"
         >
           <div class="mb-5">
-            <img src="/img/title-schedule.svg" alt="" />
+            <img width="450" src="/img/title-schedule.svg" alt="" />
           </div>
           <div class="mb-">※ 將依現場實際流程為主。</div>
         </div>

@@ -390,7 +390,7 @@
           </div>
         </div>
         <div id="game-01" class="text-center">
-          <img class="mx-auto" width="550" src="/img/title-game.svg" alt="" />
+          <img class="mx-auto" width="450" src="/img/title-game.svg" alt="" />
         </div>
         <div class="flex flex-wrap items-center justify-center gap-5">
           <div
@@ -481,18 +481,19 @@
     </div>
     <div id="game-02" class="bg-yellow relative">
       <div class="container py-24">
-        <div class="relative z-10 mb-2 text-center">
-          <img class="mx-auto" src="/img/title-lottery.svg" alt="" />
-        </div>
-        <div class="mb-16 text-center font-black">
+        <div class="relative z-10 text-center">
           <img
+            width="450"
             class="mx-auto"
-            width="550"
-            src="/img/intro-lottery.svg"
+            src="/img/title-lottery.svg"
             alt=""
           />
         </div>
-        <div class="mb-8 grid items-stretch gap-8 md:grid-cols-3">
+        <div class="text-center text-[20px] font-black">
+          <div>集滿10個闖關印章，就能兌換抽獎券！</div>
+          <div>超過60個幸運獎項，超級豪禮等你來拿！</div>
+        </div>
+        <div class="my-8 grid items-stretch gap-8 md:grid-cols-3">
           <div
             v-for="(item, index) in lotteryList"
             :key="index"
