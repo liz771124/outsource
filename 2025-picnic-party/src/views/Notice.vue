@@ -99,11 +99,11 @@
                 />
                 <span>{{ item.q }}</span>
                 <span
-                  :class="`-me-1 ms-auto mt-1.5 h-4 w-4 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none md:mt-0 [&>svg]:h-6 [&>svg]:w-6`"
+                  :class="`ms-auto mt-1.5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none md:mt-0`"
                 >
                   <svg
-                    width="30"
-                    height="30"
+                    width="23"
+                    height="23"
                     viewBox="0 0 30 30"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -139,109 +139,6 @@
               </div>
             </div>
           </div>
-          <!-- <div
-            class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
-          >
-            <h2 class="mb-0" id="headingTwo5">
-              <button
-                class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-                type="button"
-                data-twe-collapse-init
-                data-twe-target="#collapseTwo5"
-                :aria-expanded="index !== 0"
-                aria-controls="collapseTwo5"
-              >
-                Accordion Item #2
-                <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </h2>
-            <div
-              id="collapseTwo5"
-              class="!visible hidden"
-              data-twe-collapse-item
-              aria-labelledby="headingTwo5"
-            >
-              <div class="px-5 py-4">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div
-            class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark"
-          >
-            <h2 class="mb-0" id="headingThree5">
-              <button
-                class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg data-[twe-collapse-collapsed]:transition-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
-                type="button"
-                data-twe-collapse-init
-                data-twe-collapse-collapsed
-                data-twe-target="#collapseThree5"
-                aria-expanded="false"
-                aria-controls="collapseThree5"
-              >
-                Accordion Item #3
-                <span
-                  class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </h2>
-            <div
-              id="collapseThree5"
-              class="!visible hidden"
-              data-twe-collapse-item
-              aria-labelledby="headingThree5"
-            >
-              <div class="px-5 py-4">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
       <div class="container py-16">
@@ -251,7 +148,7 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-2xl font-bold text-primary-500">如何到達？</div>
+          <div class="mb-3 text-2xl font-bold text-primary-500">如何到達？</div>
           <div class="my-3 text-center">
             <iframe
               class="h-[250px] w-full md:h-[450px]"
@@ -266,20 +163,20 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-2xl font-bold text-primary-500">
+          <div class="mb-3 text-2xl font-bold text-primary-500">
             新北大都會公園
           </div>
           <div>地址:新北市三重區水漾路一段</div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-2xl font-bold text-primary-500">捷運</div>
+          <div class="mb-3 text-2xl font-bold text-primary-500">捷運</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運中和線三重站，1出口即可抵達。</div>
             <div>2.機場捷運線A2三重站，從1A出口即可抵達</div>
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-2xl font-bold text-primary-500">公車</div>
+          <div class="mb-3 text-2xl font-bold text-primary-500">公車</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運三重站:62、227區、232、264、640。</div>
             <div>
@@ -291,11 +188,11 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-2xl font-bold text-primary-500">微笑單車</div>
+          <div class="mb-3 text-2xl font-bold text-primary-500">微笑單車</div>
           <div>捷運三重站(3號出口)</div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-1 text-2xl font-bold text-primary-500">
+          <div class="mb-3 text-2xl font-bold text-primary-500">
             停車資訊(附近有多個付費停車場)
           </div>
           <div class="flex flex-col gap-3">
