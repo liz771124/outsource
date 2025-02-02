@@ -1,3 +1,4 @@
+// src/utils/scrollAnimations.js
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
@@ -5,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 // 基礎動畫配置
 const animations = {
-  // 淡入效果
+  // 原有的動畫效果...
   fadeIn: {
     opacity: 0,
     animation: {
@@ -15,7 +16,6 @@ const animations = {
     }
   },
 
-  // 從底部淡入
   fadeInUp: {
     opacity: 0,
     y: 50,
@@ -27,7 +27,6 @@ const animations = {
     }
   },
 
-  // 從左側滑入
   slideInLeft: {
     opacity: 0,
     x: -100,
@@ -39,7 +38,6 @@ const animations = {
     }
   },
 
-  // 從右側滑入
   slideInRight: {
     opacity: 0,
     x: 100,
@@ -50,7 +48,6 @@ const animations = {
       ease: 'power2.out'
     }
   },
-
   // 放大淡入
   zoomIn: {
     opacity: 0,
@@ -121,21 +118,248 @@ const animations = {
       duration: 0.5,
       ease: 'power1.inOut'
     }
+  },
+
+  // 跳動效果系列
+  bounceHorizontal: {
+    x: 0,
+    animation: {
+      x: 10,
+      duration: 1,
+      ease: 'power1.inOut',
+      yoyo: true,
+      repeat: -1
+    }
+  },
+
+  bounceVertical: {
+    y: 0,
+    animation: {
+      y: 10,
+      duration: 1,
+      ease: 'power1.inOut',
+      yoyo: true,
+      repeat: -1
+    }
+  },
+
+  bouncePulse: {
+    scale: 1,
+    animation: {
+      scale: 1.1,
+      duration: 0.5,
+      ease: 'power1.inOut',
+      yoyo: true,
+      repeat: -1
+    }
+  },
+
+  // 淡入系列
+  fadeInDown: {
+    opacity: 0,
+    y: -50,
+    animation: {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  fadeInLeft: {
+    opacity: 0,
+    x: -50,
+    animation: {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  fadeInRight: {
+    opacity: 0,
+    x: 50,
+    animation: {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  // 放大縮小系列
+  zoomInLeft: {
+    opacity: 0,
+    scale: 0.5,
+    x: -100,
+    animation: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  zoomInRight: {
+    opacity: 0,
+    scale: 0.5,
+    x: 100,
+    animation: {
+      opacity: 1,
+      scale: 1,
+      x: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  // 翻轉系列
+  flipInX: {
+    opacity: 0,
+    rotationX: 90,
+    animation: {
+      opacity: 1,
+      rotationX: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  flipInY: {
+    opacity: 0,
+    rotationY: 90,
+    animation: {
+      opacity: 1,
+      rotationY: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  // 特效系列
+  lightSpeedIn: {
+    opacity: 0,
+    x: 200,
+    skewX: -30,
+    animation: {
+      opacity: 1,
+      x: 0,
+      skewX: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  rubberBand: {
+    scale: 1,
+    animation: {
+      keyframes: [
+        { scale: 1, duration: 0 },
+        { scaleX: 1.25, scaleY: 0.75, duration: 0.3 },
+        { scaleX: 0.75, scaleY: 1.25, duration: 0.3 },
+        { scaleX: 1.15, scaleY: 0.85, duration: 0.3 },
+        { scale: 1, duration: 0.3 }
+      ],
+      repeat: -1,
+      repeatDelay: 1
+    }
+  },
+
+  swing: {
+    rotation: 0,
+    transformOrigin: 'top center',
+    animation: {
+      rotation: 15,
+      duration: 1,
+      ease: 'power1.inOut',
+      yoyo: true,
+      repeat: -1
+    }
+  },
+
+  // 3D效果系列
+  tiltIn: {
+    opacity: 0,
+    rotationX: 35,
+    rotationY: -35,
+    z: -100,
+    animation: {
+      opacity: 1,
+      rotationX: 0,
+      rotationY: 0,
+      z: 0,
+      duration: 1,
+      ease: 'power2.out'
+    }
+  },
+
+  rotateRoom: {
+    opacity: 0,
+    rotationY: 180,
+    perspective: 1000,
+    animation: {
+      opacity: 1,
+      rotationY: 0,
+      duration: 1,
+      ease: 'power2.inOut'
+    }
+  },
+
+  // 文字效果系列
+  typewriter: {
+    opacity: 0,
+    width: 0,
+    animation: {
+      opacity: 1,
+      width: 'auto',
+      duration: 1,
+      ease: 'none'
+    }
+  },
+
+  splitLetters: {
+    opacity: 0,
+    y: 50,
+    stagger: {
+      amount: 0.3,
+      from: 'start'
+    },
+    animation: {
+      opacity: 1,
+      y: 0,
+      duration: 0.5,
+      ease: 'back.out'
+    }
   }
 }
 
-// ScrollTrigger 基礎配置
+// ScrollTrigger 配置增強
 const defaultScrollConfig = {
   trigger: null,
-  start: 'top 80%', // 當元素頂部到達視窗 80% 位置時觸發
+  start: 'top 80%',
   end: 'bottom 20%',
-  toggleActions: 'play none none none', // 進入時播放，離開時反轉 'play none none reverse'
-  markers: false // 開發時可設為 true 以顯示觸發點
+  toggleActions: 'play none none reverse',
+  markers: false,
+  scrub: false, // 某些動畫可能需要跟隨滾動
+  once: false // 某些動畫可能只需要執行一次
+}
+
+// 輔助函數：分割文字
+function splitText(element) {
+  const text = element.textContent
+  element.textContent = ''
+  return [...text].map((char) => {
+    const span = document.createElement('span')
+    span.textContent = char
+    element.appendChild(span)
+    return span
+  })
 }
 
 // 初始化動畫
 export function initializeScrollAnimations() {
-  // 找到所有帶有動畫 class 的元素
   const animateElements = document.querySelectorAll(
     '[class*="scroll-animate-"]'
   )
@@ -146,17 +370,28 @@ export function initializeScrollAnimations() {
       if (className.startsWith('scroll-animate-')) {
         const animationName = className.replace('scroll-animate-', '')
         if (animations[animationName]) {
-          // 設置初始狀態
-          gsap.set(element, animations[animationName])
-
-          // 創建動畫
-          gsap.to(element, {
-            ...animations[animationName].animation,
-            scrollTrigger: {
-              ...defaultScrollConfig,
-              trigger: element
-            }
-          })
+          // 特殊處理文字動畫
+          if (animationName === 'splitLetters') {
+            const chars = splitText(element)
+            gsap.set(chars, animations[animationName])
+            gsap.to(chars, {
+              ...animations[animationName].animation,
+              scrollTrigger: {
+                ...defaultScrollConfig,
+                trigger: element
+              }
+            })
+          } else {
+            // 一般動畫處理
+            gsap.set(element, animations[animationName])
+            gsap.to(element, {
+              ...animations[animationName].animation,
+              scrollTrigger: {
+                ...defaultScrollConfig,
+                trigger: element
+              }
+            })
+          }
         }
       }
     })

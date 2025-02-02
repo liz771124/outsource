@@ -84,7 +84,7 @@
           >
             <h2 class="mb-0" :id="`heading${index}`">
               <button
-                class="group relative flex w-full border-0 px-5 py-4 text-start text-2xl font-extrabold text-primary-500 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] md:items-center"
+                class="group relative flex w-full border-0 px-5 py-3 text-start text-[19px] font-extrabold text-primary-500 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] md:items-center"
                 type="button"
                 data-twe-collapse-init
                 :data-twe-collapse-collapsed="index !== 0"
@@ -134,7 +134,7 @@
               :class="`!visible ${index > 0 ? 'hidden' : null}`"
               data-twe-collapse-item
             >
-              <div class="px-16 pb-4 text-xl">
+              <div class="px-6 pb-4 text-xl md:px-14">
                 {{ item.a }}
               </div>
             </div>
@@ -148,7 +148,9 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold text-primary-500">如何到達？</div>
+          <div class="mb-3 text-[19px] font-bold text-primary-500">
+            如何到達？
+          </div>
           <div class="my-3 text-center">
             <iframe
               class="h-[250px] w-full md:h-[450px]"
@@ -163,20 +165,20 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold text-primary-500">
+          <div class="mb-3 text-[19px] font-bold text-primary-500">
             新北大都會公園
           </div>
           <div>地址:新北市三重區水漾路一段</div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold text-primary-500">捷運</div>
+          <div class="mb-3 text-[19px] font-bold text-primary-500">捷運</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運中和線三重站，1出口即可抵達。</div>
             <div>2.機場捷運線A2三重站，從1A出口即可抵達</div>
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold text-primary-500">公車</div>
+          <div class="mb-3 text-[19px] font-bold text-primary-500">公車</div>
           <div class="flex flex-col gap-3">
             <div>1.捷運三重站:62、227區、232、264、640。</div>
             <div>
@@ -188,11 +190,13 @@
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold text-primary-500">微笑單車</div>
+          <div class="mb-3 text-[19px] font-bold text-primary-500">
+            微笑單車
+          </div>
           <div>捷運三重站(3號出口)</div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold text-primary-500">
+          <div class="mb-3 text-[19px] font-bold text-primary-500">
             停車資訊(附近有多個付費停車場)
           </div>
           <div class="flex flex-col gap-3">
@@ -219,7 +223,7 @@
     <div class="bg-yellow">
       <div class="container pb-20 pt-28">
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold">特別聲明</div>
+          <div class="mb-3 text-[19px] font-bold">特別聲明</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.本活動網頁僅為報名用途，非現場各項活動預約報名。各攤位現場活動體驗因適合年齡及容納人數皆不同，以現場排隊指示為主。
@@ -239,13 +243,13 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold">早鳥獎項</div>
+          <div class="mb-3 text-[19px] font-bold">早鳥獎項</div>
           <div>
             登記報名並於現場報到完成者，可獲得超值驚喜包一份，依網路報名先後順序取符合資格者，於活動網頁上公告得獎名單。
           </div>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold">領取方式</div>
+          <div class="mb-3 text-[19px] font-bold">領取方式</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.早鳥報名得獎名單將於活動前一周公布在本網頁，敬請密切留意相關資訊。
@@ -260,7 +264,7 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold">現場舞台抽獎</div>
+          <div class="mb-3 text-[19px] font-bold">現場舞台抽獎</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.活動現場將提供：一個家庭(一筆訂單)一張闖關卡，合計2,000張供索取，發完為止。
@@ -277,7 +281,7 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold">注意事項</div>
+          <div class="mb-3 text-[19px] font-bold">注意事項</div>
           <ul class="flex flex-col gap-3">
             <li>
               1.參加者於參加活動時，即視同為同意接受本活動規範，若本活動因不可抗力之因素(例如：天候狀況)無法執行時，主辦單位有權決定取消、終止、修改或暫停本活動及相關獎項得獎資格。
@@ -323,7 +327,7 @@
           </ul>
         </div>
         <div class="scroll-animate-fadeIn mb-8">
-          <div class="mb-3 text-2xl font-bold">個資保護聲明</div>
+          <div class="mb-3 text-[19px] font-bold">個資保護聲明</div>
           <ul class="flex flex-col gap-3">
             <li>
               遠見天下文化出版股份有限公司蒐集、處理及利用個人資料告知事項

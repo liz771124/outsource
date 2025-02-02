@@ -15,28 +15,6 @@
   onMounted(() => {
     nextTick(() => {
       setTimeout(() => {
-        const flowingStars = ['#star-01', '#star-05']
-        flowingStars.forEach((star, index) => {
-          gsap.fromTo(
-            star,
-            { transformOrigin: '-500% 50% -100px', opacity: 0, scale: 0 },
-            {
-              z: 0,
-              scale: 1,
-              opacity: 1,
-              transformOrigin: '500% 50% -100px',
-              delay: 0.25 * index,
-              duration: 0.35,
-              ease: 'power3.inOut',
-              scrollTrigger: {
-                trigger: star,
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-              }
-            }
-          )
-        })
-
         const twinklingStars = [
           '#star-02',
           '#star-03',
@@ -84,7 +62,31 @@
             }
           }
         )
-      }, 500)
+        setTimeout(() => {
+          const flowingStars = ['#star-05', '#star-01']
+          flowingStars.forEach((star, index) => {
+            gsap.fromTo(
+              star,
+              { transformOrigin: '-500% 150% -100px', opacity: 0, scale: 0 },
+              {
+                z: 0,
+                scale: 1,
+                opacity: 1,
+                transformOrigin: '500% -150% -100px',
+                delay: 0.25 * index,
+                duration: 0.35,
+                ease: 'power3.inOut',
+                repeatDelay: 2,
+                scrollTrigger: {
+                  trigger: star,
+                  start: 'top 80%',
+                  toggleActions: 'play none none none'
+                }
+              }
+            )
+          })
+        }, 500)
+      }, 400)
     })
   })
 </script>
@@ -98,9 +100,14 @@
   >
     <span
       id="star-01"
-      class="absolute left-[30px] top-[20px] w-[250px] md:left-[220px] md:w-auto"
+      class="absolute left-[30px] top-[40px] md:left-[220px] md:w-auto"
     >
-      <img class="animate-bounceFloat" src="/img/star-01.svg" alt="" />
+      <img
+        class="scroll-animate-bouncePulse"
+        width="300"
+        src="/img/star-01.svg"
+        alt=""
+      />
     </span>
     <span
       id="star-06"

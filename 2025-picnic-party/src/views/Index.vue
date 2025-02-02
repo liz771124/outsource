@@ -293,7 +293,28 @@
     <div class="scroll-animate-rotateIn">旋轉淡入</div>
     <div class="scroll-animate-flip3D">3D翻頁效果</div>
     <div class="scroll-animate-shake">震動效果</div>
- -->
+
+
+    <div class="scroll-animate-bounceHorizontal">左右跳動</div>
+    <div class="scroll-animate-bounceVertical">上下跳動</div>
+    <div class="scroll-animate-bouncePulse">放大縮小跳動</div>
+
+    <div class="scroll-animate-fadeInDown">從上方淡入</div>
+    <div class="scroll-animate-fadeInLeft">從左側淡入</div>
+
+    <div class="scroll-animate-lightSpeedIn">光速進入</div>
+    <div class="scroll-animate-rubberBand">橡皮筋效果</div>
+    <div class="scroll-animate-swing">搖擺效果</div>
+
+    <div class="scroll-animate-tiltIn">傾斜進入</div>
+    <div class="scroll-animate-rotateRoom">房間旋轉</div>
+
+    <div class="scroll-animate-typewriter">打字機效果</div>
+    <div class="scroll-animate-splitLetters">文字分裂效果</div>
+
+
+     -->
+
     <div>
       <div class="bg-yellow py-16">
         <div class="container">
@@ -560,7 +581,7 @@
           <div
             class="mt-10 flex flex-col items-center gap-2 text-2xl font-bold"
           >
-            <div class="mb-8">
+            <div class="mb-3">
               <img width="300" src="/img/title-ticket.svg" alt="" />
             </div>
             <div class="text-center text-[20px] font-black">
