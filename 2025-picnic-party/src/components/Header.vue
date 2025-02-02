@@ -67,7 +67,7 @@
           flowingStars.forEach((star, index) => {
             gsap.fromTo(
               star,
-              { transformOrigin: '-500% 150% -100px', opacity: 0, scale: 0 },
+              { transformOrigin: '-500% -150% -100px', opacity: 0, scale: 0 },
               {
                 z: 0,
                 scale: 1,
