@@ -98,7 +98,7 @@
   <div>
     <Header>
       <router-link to="/">
-        <img src="/img/kv-show.svg" alt="" width="680" />
+        <img src="/img/kv-show.svg" alt="" width="650" />
       </router-link>
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
@@ -157,7 +157,6 @@
       </div>
       <span class="absolute -bottom-[80px] start-0 h-[100px] w-full">
         <img
-        
           class="h-full w-full object-cover"
           src="/img/bg-green-line-b.svg"
           alt=""

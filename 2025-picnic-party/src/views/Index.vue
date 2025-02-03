@@ -331,9 +331,9 @@
             <div
               class="scroll-animate-slideInRight order-1 flex grow flex-col items-center justify-center gap-3 pb-5 text-xl font-black text-kv-blue md:order-2 lg:p-10"
             >
-              <img width="450" class="mb-4" src="/img/title-video.svg" alt="" />
+              <img width="400" class="mb-4" src="/img/title-video.svg" alt="" />
               <div
-                class="flex flex-col gap-2 text-center font-black text-kv-blue"
+                class="flex flex-col gap-1 text-center text-[22px] font-black tracking-wide text-kv-blue"
               >
                 <div>未來親子野餐日陪伴孩子10週年啦!</div>
                 <div>這象徵著「幸福永續」的里程碑，</div>
@@ -359,7 +359,7 @@
             to="/show"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
             >
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-01.png" alt="" />
@@ -390,15 +390,15 @@
                   孩子的春日派對、大人的歡聚時光！最精彩好看的舞台節目都在這，準備好一起
                   High 翻天吧！
                 </div>
-                <div class="absolute -bottom-10 start-10 hidden md:block">
+                <div class="absolute -bottom-10 start-10 hidden lg:block">
                   <img
                     class="w-[130px]"
-                    src="/img/index-intro-icon-01.png"
+                    src="/img/index-intro-icon-01.svg"
                     alt=""
                   />
                 </div>
                 <div
-                  class="absolute bottom-0 right-0 ms-auto inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="bottom-0 right-0 ms-auto mt-2 inline-block w-full rounded-tr-xl bg-kv-green px-10 py-1.5 text-center text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue md:mt-auto md:w-auto lg:absolute"
                 >
                   看看表演
                 </div>
@@ -410,7 +410,7 @@
             to="/game#game-01"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
             >
               <div class="order-2 lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-02.png" alt="" />
@@ -440,15 +440,15 @@
                 <div class="dashed-text-container">
                   十大主題，兼具知識與趣味的闖關挑戰，親子共同完成任務，還有小農市集，美好回憶獎不完！
                 </div>
-                <div class="end-15 absolute -bottom-10 hidden md:block">
+                <div class="end-15 absolute -bottom-10 hidden lg:block">
                   <img
                     class="w-[130px]"
-                    src="/img/index-intro-icon-02.png"
+                    src="/img/index-intro-icon-02.svg"
                     alt=""
                   />
                 </div>
                 <div
-                  class="absolute bottom-0 right-0 ms-auto inline-block rounded-tl-xl bg-primary-500 px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="bottom-0 right-0 ms-auto mt-2 inline-block w-full rounded-tl-xl bg-primary-500 px-10 py-1.5 text-center text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue md:mt-auto md:w-auto lg:absolute"
                 >
                   看看闖關
                 </div>
@@ -460,10 +460,10 @@
             to="/gift"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
             >
               <div class="lg:shrink-0">
-                <img class="w-full" src="/img/index-intro-03.png" alt="" />
+                <img class="500" src="/img/index-intro-03.png" alt="" />
               </div>
               <div class="relative grow pt-5 md:p-5">
                 <img width="250" src="/img/page-title-03.svg" alt="" />
@@ -490,15 +490,15 @@
                 <div class="dashed-text-container">
                   歡慶十週年，活動好禮拿不完！快來看看這次活動有哪些超亮點，把限量好禮通通帶回家！
                 </div>
-                <div class="absolute -bottom-10 start-10 hidden md:block">
+                <div class="absolute -bottom-10 start-10 hidden lg:block">
                   <img
                     class="w-[130px]"
-                    src="/img/index-intro-icon-03.png"
+                    src="/img/index-intro-icon-03.svg"
                     alt=""
                   />
                 </div>
                 <div
-                  class="absolute bottom-0 right-0 ms-auto inline-block rounded-tr-xl bg-kv-green px-10 py-1.5 text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue"
+                  class="bottom-0 right-0 ms-auto mt-2 inline-block w-full rounded-tr-xl bg-kv-green px-10 py-1.5 text-center text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue md:mt-auto md:w-auto lg:absolute"
                 >
                   看看好禮
                 </div>
@@ -510,9 +510,9 @@
             to="/game#game-02"
           >
             <div
-              class="flex flex-wrap items-stretch justify-between md:flex-nowrap xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
             >
-              <div class="order-2 w-full max-w-[590px] lg:shrink-0">
+              <div class="order-2 w-full md:max-w-[590px]">
                 <swiper
                   class="w-full"
                   :slides-per-view="1"
@@ -559,15 +559,15 @@
                 <div class="dashed-text-container">
                   完成闖關集章，即可兌換一張抽獎券，獎項超豐富，好禮總價值超過50萬！
                 </div>
-                <div class="end-15 absolute -bottom-10 hidden md:block">
+                <div class="end-15 absolute -bottom-10 hidden lg:block">
                   <img
                     class="w-[180px]"
-                    src="/img/index-intro-icon-04.png"
+                    src="/img/index-intro-icon-04.svg"
                     alt=""
                   />
                 </div>
                 <div
-                  class="ms-auto inline-block w-full rounded-tl-xl bg-primary-500 px-10 py-1.5 text-center text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue md:absolute md:bottom-0 md:right-0 md:w-auto"
+                  class="ms-auto mt-2 inline-block w-full rounded-tl-xl bg-primary-500 px-10 py-1.5 text-center text-2xl font-black tracking-wide text-white transition hover:bg-kv-blue md:bottom-0 md:right-0 md:mt-auto md:w-auto lg:absolute"
                 >
                   看看抽獎
                 </div>
@@ -608,7 +608,7 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[35px] w-[280px] md:-start-[8px] md:w-[350px]"
+                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-start-[8px] md:-top-[30px] md:w-[300px]"
                   >
                     <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
@@ -633,7 +633,7 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[35px] w-[280px] md:-start-[8px] md:w-[350px]"
+                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-start-[8px] md:-top-[30px] md:w-[300px]"
                   >
                     <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
@@ -655,31 +655,31 @@
               id="purchase"
               class="md:gap-15 mb-16 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
             >
-              <a class="animate-zoom-in group relative grow md:px-5" href="#">
+              <a class="animate-zoom-in group relative grow lg:px-5" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-2 border-kv-green bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
               </a>
               <a
-                class="animate-zoom-in group relative grow text-primary-500 md:px-5"
+                class="animate-zoom-in group relative grow text-primary-500 lg:px-5"
                 href="#"
               >
                 <img class="w-full" src="/img/ticket-02.svg" alt="" />
 
                 <div
-                  class="absolute inset-x-0 bottom-0 mx-auto inline-block max-w-[250px] rounded-xl border-2 border-primary-500 bg-primary-500 px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                  class="absolute inset-x-0 bottom-0 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
               </a>
-              <a class="animate-zoom-in group relative grow md:p-5" href="#">
+              <a class="animate-zoom-in group relative grow lg:px-5" href="#">
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
 
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-2 border-kv-green bg-kv-green px-10 py-3 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
                 >
                   立即購票
                 </div>
@@ -775,7 +775,7 @@
 <style scoped>
   .dashed-text-container {
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     letter-spacing: 0.1rem;
     line-height: 2;
     background-image: linear-gradient(

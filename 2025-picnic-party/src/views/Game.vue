@@ -115,7 +115,7 @@
       description: `
         <p>小天下及未來出版所製作的書籍，不但備受小讀者的喜愛，更受師長父母的肯定。在每年所公布的金鼎獎、好書大家讀、行政院優良固書推薦等得獎書單中，小天下的出版品往往囊括超過三分之一的獎項。</p>
       `,
-      price: '＄獎項價值 12,000 元 / 1 名'
+      price: '＄獎項價值 6000 元 / 1 名'
     }
     // {
     //   id: '',
@@ -368,7 +368,7 @@
   <div>
     <Header>
       <router-link to="/">
-        <img src="/img/kv-game.svg" alt="" width="680" />
+        <img src="/img/kv-game.svg" alt="" width="650" />
       </router-link>
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"

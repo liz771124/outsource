@@ -24,7 +24,7 @@
           <img src="/img/logo.svg" alt="logo" width="135" />
         </router-link>
       </h1>
-      <ul class="hidden items-center gap-3 md:flex">
+      <ul class="hidden items-center gap-3 lg:flex">
         <li v-for="(item, index) in navItems" :key="index">
           <router-link
             :to="item.to"
@@ -37,7 +37,7 @@
           </router-link>
         </li>
       </ul>
-      <div class="text-white md:hidden">
+      <div class="text-white lg:hidden">
         <svg
           data-twe-offcanvas-toggle
           data-twe-target="#offcanvasTop"

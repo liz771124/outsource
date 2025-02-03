@@ -5,7 +5,7 @@
   import { ScrollTrigger } from 'gsap/ScrollTrigger'
   import { scrollToElement } from '../../utils/scrollToElement'
   import ArticleItem from '../components/ArticleItem.vue'
-  
+
   gsap.registerPlugin(ScrollTrigger)
 
   onMounted(() => {
@@ -264,7 +264,7 @@
   <div>
     <Header>
       <router-link to="/">
-        <img src="/img/kv-article.svg" alt="" width="680" />
+        <img src="/img/kv-article.svg" alt="" width="650" />
       </router-link>
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
@@ -354,10 +354,7 @@
             #家庭陪伴力
           </div>
           <div class="grid gap-3 md:grid-cols-3 md:gap-8">
-            <ArticleItem
-              :list="familyList"
-              :className="`bg-primary-500`"
-            />
+            <ArticleItem :list="familyList" :className="`bg-primary-500`" />
           </div>
         </div>
         <div id="article-03" class="py-5 md:py-10">
