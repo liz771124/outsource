@@ -94,13 +94,13 @@
   <header
     :class="`relative z-10 flex h-[600px] w-screen items-center justify-center overflow-hidden bg-cover bg-no-repeat`"
     :style="{
-      backgroundImage: `url(${imagePath}/kv-main.png)`,
+      backgroundImage: `url(${imagePath}/kv-main.jpg)`,
       backgroundPosition: 'center right'
     }"
   >
     <span
       id="star-01"
-      class="absolute left-[30px] top-[40px] md:left-[220px] md:w-auto"
+      class="absolute left-[30px] top-[40px] w-[250px] md:left-[220px] md:w-auto"
     >
       <img
         class="scroll-animate-bouncePulse"
@@ -143,7 +143,7 @@
         />
         <img
           id="star-05-b"
-          class="absolute left-0 top-0"
+          class="absolute left-1 top-0"
           src="/img/star-05-b.svg"
           alt=""
         />
