@@ -10,12 +10,12 @@
   ScrollTrigger.create({
     start: 'top center',
     end: 'bottom center',
-    debounce: true // 避免頻繁觸發
+    debounce: true
   })
 
   const selectedModalItems = ref()
 
-  const giftEarlyBird = [
+  const giftLuckyBag = [
     {
       id: '/gift-early-bird/01.png',
       brand: '美琪',
@@ -93,7 +93,7 @@
     }
   ]
 
-  const giftLuckyBag = [
+  const giftEarlyBird = [
     {
       id: '/gift-lucky-bag/01.jpg',
       brand: '德恩奈',
@@ -139,12 +139,11 @@
       title: '植萃沁涼防蚊液_隨身瓶',
       description: `
           <ul class='flex flex-col gap-3'>
-          <li>
-          小蚊清全系列皆使用天然來源植萃配方，無添加DEET(敵避)、Paraben防腐劑、重金屬等化學成分，並添加法國有機認證的保濕成分，溫和不刺激，全家大小都適用!採美國高規格水霧噴頭，在皮膚表層形成清爽防護網，蚊蟲OUT!</li>
+            <li>小蚊清全系列皆使用天然來源植萃配方，無添加DEET(敵避)、Paraben防腐劑、重金屬等化學成分，並添加法國有機認證的保濕成分，溫和不刺激，全家大小都適用!採美國高規格水霧噴頭，在皮膚表層形成清爽防護網，蚊蟲OUT！</li>
             <li>★使用日本蚊連草萃取液，天然來源植萃配方，質地清爽，防蚊不黏膩</li>
             <li>★添加法國有機認證保濕成份，溫和不刺激肌膚</li>
-            <li>★SGS檢測不含DEET(敵避)、Paraben防腐劑、重金屬</li>
-            <li>★小黑蚊忌避率99%成分，定期專業檢驗透明報告，媽媽安心的選擇。</li>
+            <li>★SGS檢測不含DEET(敵避)、 Paraben防腐劑、重金屬</li>
+            <li>★小黑蚊忌避率達99%，皮膚科醫師專業推薦，媽媽安心的選擇</li>
           </ul>
         `
     },
@@ -608,7 +607,7 @@
               >
                 <div>
                   <span
-                    class="absolute -top-[28px] w-[280px] -start-[4px] md:-top-[30px] md:w-[300px]"
+                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-top-[30px] md:w-[300px]"
                   >
                     <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
@@ -633,7 +632,7 @@
               >
                 <div>
                   <span
-                    class="absolute -top-[28px] w-[280px] -start-[4px] md:-top-[30px] md:w-[300px]"
+                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-top-[30px] md:w-[300px]"
                   >
                     <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
@@ -742,7 +741,7 @@
                   </div>
 
                   <div class="relative overflow-y-auto p-6">
-                    <div class="flex flex-col gap-5 divide-y">
+                    <div class="flex flex-col gap-5 divide-y text-justify">
                       <div
                         v-for="(item, index) in selectedModalItems"
                         :key="index"
