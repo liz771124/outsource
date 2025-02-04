@@ -608,7 +608,7 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-start-[8px] md:-top-[30px] md:w-[300px]"
+                    class="absolute -top-[28px] w-[280px] -start-[4px] md:-top-[30px] md:w-[300px]"
                   >
                     <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
@@ -633,7 +633,7 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-start-[8px] md:-top-[30px] md:w-[300px]"
+                    class="absolute -top-[28px] w-[280px] -start-[4px] md:-top-[30px] md:w-[300px]"
                   >
                     <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
