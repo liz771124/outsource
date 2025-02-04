@@ -319,32 +319,7 @@
             #運動學習力
           </div>
           <div class="grid gap-3 md:grid-cols-3 md:gap-8">
-            <div
-              v-for="(item, index) in sportList"
-              :key="index"
-              class="scroll-animate-fadeInUp ms:p-2.5 animate-slideIn px-1 pb-5"
-            >
-              <a
-                :href="item.link"
-                target="_blank"
-                class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
-              >
-                <div class="flex flex-col">
-                  <div class="mb-3">
-                    <img
-                      class="rounded-tl-2xl"
-                      :src="item.src"
-                      :alt="item.title"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="relative -bottom-3 -start-0 line-clamp-2 h-[58px] w-[calc(100%+30px)] rounded-tr-xl bg-primary-500 px-2 py-1.5 text-left font-bold tracking-wide text-white"
-                >
-                  {{ item.title }}
-                </div>
-              </a>
-            </div>
+            <ArticleItem :list="sportList" :className="`bg-primary-500`" />
           </div>
         </div>
         <div id="article-02" class="py-5 md:py-10">

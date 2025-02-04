@@ -342,8 +342,8 @@ const defaultScrollConfig = {
   end: 'bottom 20%',
   toggleActions: 'play none none reverse',
   markers: false,
-  scrub: false // 某些動畫可能需要跟隨滾動
-  // once: false // 某些動畫可能只需要執行一次
+  scrub: false, // 某些動畫可能需要跟隨滾動
+  once: true // 某些動畫可能只需要執行一次
 }
 
 // 輔助函數：分割文字

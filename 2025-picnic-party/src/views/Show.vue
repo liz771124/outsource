@@ -295,9 +295,3 @@
     </div>
   </div>
 </template>
-
-<!-- <style>
-  .card-item {
-    transform-origin: center;
-  }
-</style> -->

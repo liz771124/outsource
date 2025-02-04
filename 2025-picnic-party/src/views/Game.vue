@@ -453,7 +453,7 @@
             一起享受闖關集章、學習知識，共度好時光！
           </div>
         </div>
-        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
+        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
           <GameItem :list="game01List" :className="'bg-kv-green'" />
         </div>
 
@@ -468,7 +468,7 @@
             產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
           </div>
         </div>
-        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
+        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
           <GameItem :list="game02List" />
         </div>
 
@@ -485,7 +485,7 @@
             全家人一起共學共讀，不能不知道的快訊一次掌握！
           </div>
         </div>
-        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
+        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
           <GameItem :list="game03List" :className="'bg-kv-green'" />
         </div>
 
@@ -502,7 +502,7 @@
             讓資源與永續教育持續善的循環，帶孩子一起愛地球！
           </div>
         </div>
-        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
+        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
           <GameItem :list="game04List" />
         </div>
 
@@ -519,7 +519,7 @@
             感受知識與閱讀的無限樂趣！
           </div>
         </div>
-        <div class="mb-5 grid gap-8 py-10 md:grid-cols-3">
+        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
           <GameItem :list="game05List" :className="'bg-kv-green'" />
         </div>
       </div>
@@ -554,11 +554,15 @@
                 class="absolute start-0 top-0 inline-block h-full w-full scale-95 rounded-tl-xl rounded-tr-xl border border-white"
               >
               </span>
-              <img
-                class="aspect-6/4 h-[200px] w-full object-cover"
-                :src="`${imagePath}/lottery/${item.id}`"
-                alt="w-full"
-              />
+              <div
+                class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-2xl bg-gray-100 transition-opacity duration-300"
+              >
+                <img
+                  class="h-full w-full object-cover"
+                  :src="`${imagePath}/lottery/${item.id}`"
+                  :alt="`【${item.brand}】${item.name}`"
+                />
+              </div>
             </div>
             <div class="mb-3 px-3 text-center text-xl">
               <div class="mb-1 font-semibold text-primary-500">

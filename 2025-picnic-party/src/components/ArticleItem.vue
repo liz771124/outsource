@@ -29,8 +29,14 @@
       class="relative block rounded-tl-2xl bg-white px-3 pt-3 shadow-lg"
     >
       <div class="flex flex-col">
-        <div class="mb-3">
-          <img class="rounded-tl-2xl" :src="item.src" :alt="item.title" />
+        <div
+          class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-2xl bg-gray-100 transition-opacity duration-300"
+        >
+          <img
+            class="h-full w-full object-cover"
+            :src="item.src"
+            :alt="item.title"
+          />
         </div>
       </div>
       <div
