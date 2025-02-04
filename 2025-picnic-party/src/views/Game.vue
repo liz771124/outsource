@@ -440,7 +440,7 @@
         <div id="game-01" class="text-center">
           <img class="mx-auto" width="450" src="/img/title-game.svg" alt="" />
         </div>
-        <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
@@ -457,7 +457,7 @@
           <GameItem :list="game01List" :className="'bg-kv-green'" />
         </div>
 
-        <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
           <div
             class="w-[220px] px-5 py-1 pe-5 text-primary-500 md:w-auto md:border-e md:border-primary-500"
           >
@@ -472,7 +472,7 @@
           <GameItem :list="game02List" />
         </div>
 
-        <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
@@ -489,7 +489,7 @@
           <GameItem :list="game03List" :className="'bg-kv-green'" />
         </div>
 
-        <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
@@ -506,7 +506,7 @@
           <GameItem :list="game04List" />
         </div>
 
-        <div class="flex flex-wrap items-center justify-center gap-5">
+        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
