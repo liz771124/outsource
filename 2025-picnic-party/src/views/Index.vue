@@ -15,7 +15,7 @@
 
   const selectedModalItems = ref()
 
-  const giftLuckyBag = [
+  const giftEarlyBird = [
     {
       id: '/gift-early-bird/01.png',
       brand: '美琪',
@@ -91,9 +91,27 @@
         </ul>
       `
     }
+    // {
+    //   id: '/gift-lucky-bag/06.jpg',
+    //   brand: '果利生技',
+    //   title: 'SPD高濃度魚油EX(10入)',
+    //   description: ``
+    // },
+    // {
+    //   id: '/gift-lucky-bag/07.jpg',
+    //   brand: '乖乖',
+    //   title: '餅乾四入',
+    //   description: ``
+    // },
+    // {
+    //   id: '',
+    //   brand: '',
+    //   title: '',
+    //   description: ``
+    // },
   ]
 
-  const giftEarlyBird = [
+  const giftLuckyBag = [
     {
       id: '/gift-lucky-bag/01.jpg',
       brand: '德恩奈',
@@ -113,14 +131,17 @@
       title: '兒童防蛀漱口水500ml',
       description: `
          <ul cl ass="flex flex-col gap-3">
-            <li>★強化琺瑯質、抗酸蝕</li>
+            <li>★強化琺瑯質、抗酸蝕 </li>
             <li>★去除引起蛀牙的細菌，預防蛀牙</li>
             <li>★幫助強健牙齦組織</li>
             <li>
-              德恩奈兒童防蛀漱口水，添加「氟+木糖醇」雙效防蛀配方，氟能加強牙齒再礦化作用，木糖醇能中和口中酸性，能更有效幫助預防蛀牙，長期使用能降低蛀牙率35%~50%。不含酒精，口感溫和不刺激，清香葡萄口味，沒有藥水味，不含色素，減少口腔黏膜負擔，是最適合小朋友使用漱口水。
+              德恩奈兒童防蛀漱口水，添加「氟+木糖醇」雙效防蛀配方，氟能加強牙齒再礦化作用，木糖醇能中和口中酸性，配合正確刷牙習慣，能更有效幫助預防蛀牙，長期使用能降低蛀牙率35%~50%。
+            </li>
+            <li>
+              不含酒精，口感溫和不刺激，清香葡萄口味，沒有藥水味，不含色素，減少口腔黏膜負擔，是最適合小朋友使用漱口水。"
             </li>
           </ul>
-              `
+        `
     },
     {
       id: '/gift-lucky-bag/03.jpg',
@@ -190,8 +211,54 @@
       id: '/gift-lucky-bag/08.jpg',
       brand: '初鹿牧場',
       title: '原味米牛乳(200ml)',
-      description: `【原味米牛乳】“米+牛乳”是孩子們最熟悉的第一口大人的食物！使用「初鹿生乳x台東米」天然在地食材，快充早餐所需營養，孩子愛喝，媽媽開心。`
+      description: `【原味米牛乳】“米+牛乳”是孩子們最熟悉的第一口大人的食物！使用「初鹿生乳x台東米」天然在地食材，快充早餐所需營養，成分單純、無添加，孩子愛喝，媽媽開心。`
+    },
+    {
+      id: '/gift-lucky-bag/09.jpg',
+      brand: '未來親子',
+      title: '《未來兒童》',
+      description: `
+        金鼎獎最佳兒童雜誌，適讀年齡：小學中低年級，搭配注音輕鬆讀、音檔下載隨時聽、精彩圖文好記憶，讓孩子生活知識一把罩！專業編輯團隊製作，頂尖專家把關，讓孩子贏在學習起跑點！
+      `
+    },
+
+    {
+      id: '/gift-lucky-bag/10.jpg',
+      brand: '未來親子',
+      title: '《用點心學校1（15週年暢銷慶祝版）》',
+      description: `
+        <ul>
+          <li>鬼才作家林哲璋x超人氣畫家BO2聯手創作最受小孩喜愛的超人氣橋梁書系列 </li>
+          <li>風靡校園15年，爆笑幽默+趣味想像，跟著點心人吸收美食情報、領會文字趣味。</li>
+          <li>輕鬆連結圖畫書與文字書，自然導引孩子進入自主閱讀，創造無限的可能，一起朝全方位的點心人邁進吧！</li>
+        </ul>
+      `
+    },
+    {
+      id: '/gift-lucky-bag/11.jpg',
+      brand: '未來親子',
+      title: '來寶圖鑑貼紙',
+      description: ``
     }
+    // {
+    //   id: '/gift-lucky-bag/12.jpg',
+    //   brand: '乖乖',
+    //   title: '孔雀香酥脆',
+    //   description: ``
+    // },
+    // {
+    //   id: '/gift-lucky-bag/13.jpg',
+    //   brand: '農業部',
+    //   title: '學習單(A4摺頁)',
+    //   description: ``
+    // },
+
+    // {
+    //   id: '',
+    //   brand: '',
+    //   title: '',
+    //   description: ``
+    // },
   ]
 
   const initializeAnimations = () => {
@@ -603,7 +670,7 @@
                 data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
-                @click="selectedModalItems = giftEarlyBird"
+                @click="selectedModalItems = giftLuckyBag"
               >
                 <div>
                   <span
@@ -628,7 +695,7 @@
                 data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
-                @click="selectedModalItems = giftLuckyBag"
+                @click="selectedModalItems = giftEarlyBird"
               >
                 <div>
                   <span
@@ -776,6 +843,7 @@
     width: 100%;
     font-size: 1.3rem;
     letter-spacing: 0.1rem;
+    text-align: justify;
     line-height: 2;
     background-image: linear-gradient(
       to bottom,
