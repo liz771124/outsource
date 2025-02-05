@@ -667,7 +667,7 @@
           <div>
             <div
               id="purchase"
-              class="md:gap-15 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
+              class="md:gap-15 mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
             >
               <a class="animate-zoom-in group relative grow lg:px-5" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />

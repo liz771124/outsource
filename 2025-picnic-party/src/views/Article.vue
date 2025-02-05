@@ -263,7 +263,7 @@
 <template>
   <div>
     <Header>
-        <img src="/img/kv-article.svg" alt="" width="650" />
+      <img src="/img/kv-article.svg" alt="" width="650" />
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
@@ -274,7 +274,12 @@
     <div class="bg-green">
       <div class="container py-16">
         <div class="mb-8 text-center">
-          <img class="mx-auto" src="/img/title-article.svg" alt="" />
+          <img
+            width="650"
+            class="mx-auto"
+            src="/img/title-article.svg"
+            alt=""
+          />
         </div>
         <div class="text-center text-[20px] font-black">
           <div>未來親子精選四大主題文章</div>

@@ -108,7 +108,7 @@
     <div class="bg-green py-16">
       <div class="container">
         <div class="mb-8 text-center">
-          <img class="mx-auto" src="/img/title-show.svg" alt="" />
+          <img width="650" class="mx-auto" src="/img/title-show.svg" alt="" />
         </div>
         <div class="text-center text-[20px] font-black">
           <div>當然不能少了各種好Show炒熱氣氛！</div>
@@ -116,7 +116,7 @@
           <div>最豐富的表演，都在未來親子野餐日！</div>
         </div>
         <div
-          class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-3 md:gap-y-10 md:py-10"
+          class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-3 md:gap-y-10 md:pt-10"
         >
           <div
             v-for="(item, index) in showItems"
@@ -144,6 +144,52 @@
                     {{ item.subtitle }}
                   </div>
                   <div>{{ item.description }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-2 md:gap-y-10 md:pb-10 md:pt-5"
+        >
+          <div
+            v-for="(item, index) in showBirthday"
+            :key="index"
+            class="scroll-animate-rotateIn relative rounded-tl-3xl bg-white p-3 shadow-md"
+          >
+            <div class="flex flex-col">
+              <div
+                class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-2xl bg-gray-100 transition-opacity duration-300"
+              >
+                <img
+                  class="h-full w-full rounded-tl-3xl object-cover"
+                  :src="`${imagePath}${item.id}`"
+                  alt="1"
+                />
+              </div>
+              <div class="relative">
+                <div
+                  :class="`relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 text-xl font-bold tracking-wide text-white`"
+                >
+                  {{ item.title }}
+                </div>
+                <div>
+                  <div :class="`mb-2 text-xl font-bold text-kv-green`">
+                    {{ item.subtitle }}
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="shrink-0">
+                      <img
+                        width="100"
+                        height="100"
+                        :src="`${imagePath}/special-show-0${index + 1}.svg`"
+                        alt="1"
+                      />
+                    </div>
+                    <div>
+                      {{ item.description }}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
