@@ -29,7 +29,7 @@
           <router-link
             :to="item.to"
             :class="[
-              'rounded-full bg-white px-4 py-1 text-xl font-bold',
+              'rounded-full bg-white px-4 py-1 text-xl font-bold transition hover:bg-primary-500 hover:text-white',
               route.path === item.to ? 'text-primary-500' : 'text-kv-green'
             ]"
           >

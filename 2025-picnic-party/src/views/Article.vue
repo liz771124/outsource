@@ -263,9 +263,7 @@
 <template>
   <div>
     <Header>
-      <router-link to="/">
         <img src="/img/kv-article.svg" alt="" width="650" />
-      </router-link>
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >

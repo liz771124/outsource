@@ -90,13 +90,17 @@
           <li>★10倍超濃縮抗菌配方</li>
         </ul>
       `
+    },
+    {
+      id: '/gift-lucky-bag/06.jpg',
+      brand: '果利生技',
+      title: 'SPD高濃度魚油EX(10入)',
+      description: `
+        <ul>
+          <li>Omega-3高濃度魚油，SGS檢驗高達98.6%！促進新陳代謝的救星，讓健康全面升級。24項專利技術，榮獲世界品質評鑑金獎，品質值得信賴。國際GOED Omega-3會員認證與IFOS 五星最高評價，無腥味、新鮮度有保證，全球權威認可！獨特rTG型式，吸收率提升3倍，小顆易吞食，營養補充更有效！</li>
+        </ul>
+      `
     }
-    // {
-    //   id: '/gift-lucky-bag/06.jpg',
-    //   brand: '果利生技',
-    //   title: 'SPD高濃度魚油EX(10入)',
-    //   description: ``
-    // },
     // {
     //   id: '/gift-lucky-bag/07.jpg',
     //   brand: '乖乖',
@@ -169,12 +173,11 @@
         `
     },
     {
-      id: '/gift-lucky-bag/05.png',
+      id: '/gift-lucky-bag/05.jpg',
       brand: '可爾必思',
       title: `開心成長1瓶<span class='text-xs'>(原味/蘋果) 兩種口味隨機</span>`,
       description: `
           <ul class='flex flex-col gap-3'>
-            <li>【可爾必思】開心成長</li>
             <li>
               日本百年品牌「可爾必思」專為孩子打造的乳酸菌飲品，清爽酸甜的滋味榮獲袋鼠評鑑五星白金獎，滿足美味與健康雙重需求，陪伴您的寶貝開心成長。
             </li>
@@ -237,8 +240,8 @@
     {
       id: '/gift-lucky-bag/11.jpg',
       brand: '未來親子',
-      title: '來寶圖鑑貼紙',
-      description: ``
+      title: '來寶圖鑑貼紙/來寶紋身貼紙',
+      description: `深受小朋友喜愛的來寶推出圖鑑貼紙囉，9款實用生活情境，讓充滿好奇與熱愛閱讀的來寶，陪著小朋友一起探索學習；特別搭配10週年限定派對紋身貼紙，讓我們一起Party！一起狂歡！`
     }
     // {
     //   id: '/gift-lucky-bag/12.jpg',
@@ -334,9 +337,8 @@
 <template>
   <div>
     <Header :height="'800px'">
-      <router-link to="/">
-        <img src="/img/kv-main.svg" alt="" width="700" />
-      </router-link>
+      <img src="/img/kv-main.svg" alt="" width="700" />
+
       <span
         class="absolute right-3 top-12 z-10 w-[100px] md:-right-2 md:top-10 md:w-[200px]"
       >
@@ -650,7 +652,7 @@
         </span>
       </div>
       <div class="bg-yellow py-16">
-        <div class="container flex flex-col gap-10">
+        <div class="container">
           <div
             class="mt-10 flex flex-col items-center gap-2 text-2xl font-bold"
           >
@@ -663,7 +665,42 @@
             </div>
           </div>
           <div>
-            <div class="flex flex-wrap gap-14 md:flex-nowrap md:gap-10">
+            <div
+              id="purchase"
+              class="md:gap-15 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
+            >
+              <a class="animate-zoom-in group relative grow lg:px-5" href="#">
+                <img class="w-full" src="/img/ticket-01.svg" alt="" />
+                <div
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                >
+                  立即購票
+                </div>
+              </a>
+              <a
+                class="animate-zoom-in group relative grow text-primary-500 lg:px-5"
+                href="#"
+              >
+                <img class="w-full" src="/img/ticket-02.svg" alt="" />
+
+                <div
+                  class="absolute inset-x-0 bottom-0 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                >
+                  立即購票
+                </div>
+              </a>
+              <a class="animate-zoom-in group relative grow lg:px-5" href="#">
+                <img class="w-full" src="/img/ticket-03.svg" alt="" />
+
+                <div
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                >
+                  立即購票
+                </div>
+              </a>
+            </div>
+
+            <div class="mt-10 flex flex-wrap gap-14 md:flex-nowrap md:gap-10">
               <div
                 class="animate-zoom-in relative w-full cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
                 data-twe-toggle="modal"
@@ -717,65 +754,36 @@
               </div>
             </div>
 
-            <div
-              id="purchase"
-              class="md:gap-15 mb-16 mt-10 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
-            >
-              <a class="animate-zoom-in group relative grow lg:px-5" href="#">
-                <img class="w-full" src="/img/ticket-01.svg" alt="" />
-                <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+            <div class="mb-8 mt-10 flex flex-col gap-2 text-center font-bold">
+              <div>
+                ※【單組票】、【揪團票】、【慶生套票】下訂後，恕不接受換票。
+              </div>
+              <div>
+                ※
+                產品圖片僅供示意，以現場實物為主，現場不挑款式、花色，隨機出貨。
+              </div>
+              <div>※ 報名前，請務必詳閱報名注意事項。</div>
+              <div>
+                <router-link
+                  to="/notice"
+                  class="mt-5 inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white"
                 >
-                  立即購票
-                </div>
-              </a>
-              <a
-                class="animate-zoom-in group relative grow text-primary-500 lg:px-5"
-                href="#"
-              >
-                <img class="w-full" src="/img/ticket-02.svg" alt="" />
+                  <svg
+                    width="35"
+                    height="35"
+                    viewBox="0 0 35 35"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.5 0C7.8351 0 0 7.83475 0 17.5C0 27.1652 7.8351 35 17.5 35C27.1649 35 35 27.1652 35 17.5C35 7.83475 27.1649 0 17.5 0ZM17.5 3.5C25.232 3.5 31.5 9.7685 31.5 17.5C31.5 25.2315 25.232 31.5 17.5 31.5C9.76797 31.5 3.5 25.2315 3.5 17.5C3.5 9.7685 9.76797 3.5 17.5 3.5ZM17.5 8.75C16.5335 8.75 15.75 9.534 15.75 10.5C15.75 11.466 16.5335 12.25 17.5 12.25C18.4665 12.25 19.25 11.466 19.25 10.5C19.25 9.534 18.4665 8.75 17.5 8.75ZM17.5 14C16.5335 14 15.75 14.784 15.75 15.75V24.5C15.75 25.466 16.5335 26.25 17.5 26.25C18.4665 26.25 19.25 25.466 19.25 24.5V15.75C19.25 14.784 18.4665 14 17.5 14Z"
+                      fill="white"
+                    />
+                  </svg>
 
-                <div
-                  class="absolute inset-x-0 bottom-0 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
-                >
-                  立即購票
-                </div>
-              </a>
-              <a class="animate-zoom-in group relative grow lg:px-5" href="#">
-                <img class="w-full" src="/img/ticket-03.svg" alt="" />
-
-                <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
-                >
-                  立即購票
-                </div>
-              </a>
-            </div>
-            <div class="mt-5 text-center font-bold">
-              ※【單組票】、【揪團票】、【慶生套票】下訂後，恕不接受換票。
-            </div>
-            <div
-              class="mb-5 mt-16 flex w-full flex-wrap items-center justify-center gap-16"
-            >
-              <router-link
-                to="/notice"
-                class="inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white"
-              >
-                <svg
-                  width="35"
-                  height="35"
-                  viewBox="0 0 35 35"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17.5 0C7.8351 0 0 7.83475 0 17.5C0 27.1652 7.8351 35 17.5 35C27.1649 35 35 27.1652 35 17.5C35 7.83475 27.1649 0 17.5 0ZM17.5 3.5C25.232 3.5 31.5 9.7685 31.5 17.5C31.5 25.2315 25.232 31.5 17.5 31.5C9.76797 31.5 3.5 25.2315 3.5 17.5C3.5 9.7685 9.76797 3.5 17.5 3.5ZM17.5 8.75C16.5335 8.75 15.75 9.534 15.75 10.5C15.75 11.466 16.5335 12.25 17.5 12.25C18.4665 12.25 19.25 11.466 19.25 10.5C19.25 9.534 18.4665 8.75 17.5 8.75ZM17.5 14C16.5335 14 15.75 14.784 15.75 15.75V24.5C15.75 25.466 16.5335 26.25 17.5 26.25C18.4665 26.25 19.25 25.466 19.25 24.5V15.75C19.25 14.784 18.4665 14 17.5 14Z"
-                    fill="white"
-                  />
-                </svg>
-
-                報名注意事項
-              </router-link>
+                  報名注意事項
+                </router-link>
+              </div>
             </div>
 
             <div

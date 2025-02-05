@@ -26,11 +26,11 @@
         '故事派對就從探索藝術與關懷環境展開！由天馬戲創作劇團帶來蟲蟲馬戲團表演，森林探險家帶著大家一窺森林的秘密，找尋傳說中的神奇昆蟲並立志要保護美麗的森林，不只是特技，更融入了環保與教育意涵。'
     },
     {
-      id: '/show/03.jpg',
+      id: '/show/04.jpg',
       title: '來寶唱跳秀　',
       subtitle: '',
       description:
-        '缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字'
+        '未來親子最可愛的大明星「來寶」來囉！快來參加來寶慶生派對，跟著來寶和他的好朋友們一起唱歌跳舞去！'
     },
     {
       id: '/show/05.jpg',
@@ -97,9 +97,7 @@
 <template>
   <div>
     <Header>
-      <router-link to="/">
-        <img src="/img/kv-show.svg" alt="" width="650" />
-      </router-link>
+      <img src="/img/kv-show.svg" alt="" width="650" />
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >

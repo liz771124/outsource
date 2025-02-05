@@ -68,7 +68,9 @@
       <div class="hero-img">
         <img width="200" src="/img/hero-img.png" />
       </div>
-      <div class="hero-title text-center text-xl font-bold">Loading...</div>
+      <div class="hero-title mt-8 text-center text-xl font-bold">
+        Loading...
+      </div>
     </div>
   </div>
 </template>
