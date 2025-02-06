@@ -411,7 +411,7 @@
         >
           <a
             href="#"
-            class="inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white"
+            class="mt-5 inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white transition md:hover:bg-kv-green"
           >
             <svg width="41" height="41" viewBox="0 0 41 41" fill="none">
               <path

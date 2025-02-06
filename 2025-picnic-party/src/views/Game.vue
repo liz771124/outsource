@@ -163,12 +163,14 @@
   const game01List = [
     {
       id: '/game-01/01.jpg',
+      brand: '初鹿牧場',
       name: '懂吃！早餐小博士',
       description:
         '想要長高高又跑得快，早餐記得要吃、而且營養要均衡喔！快來找超人氣「小初牛牛」，帶你到初鹿牧場，一起認識好吃又營養的早餐，還有好玩的闖關遊戲，讓寶貝變身懂吃的早餐小博士！'
     },
     {
       id: '/game-01/02.jpg',
+      brand: 'igogosport思博特',
       name: 'myFirst 快樂「喀擦」冒險',
       description: `
           <p>喀擦！喀擦！還記得第一次使用相機的感動嗎？現在，讓孩子也來感受這份快樂吧！現場不僅可以體驗myFirst Camera50兒童相機，開啟充滿驚喜的「喀擦」冒險！用孩子的視角捕捉生活中美好瞬間，無論是小小的快樂、奇妙的發現，還是成長的點滴，每一張照片都是美好記憶！</p>
@@ -177,34 +179,39 @@
     },
     {
       id: '/game-01/03.jpg',
+      brand: '農業部',
       name: '食農趣學園',
       description:
         '快來接受「蔬果校長」的挑戰吧！土裡還是樹上？一起揭開蔬果的生長祕密！完成任務後，分享家人最愛吃的蔬菜和水果，還能探索它們從產地到餐桌的奇妙旅程。現場還有趣味小知識和互動闖關，讓大朋友小朋友輕鬆變身「食農小專家」，玩得開心又學到滿滿知識！'
     },
     {
       id: '/game-01/04.jpg',
+      brand: '兒童福利聯盟',
       name: '太空補給站的玩具發送任務',
       description:
         '太空補給站發送緊急玩具需求！快看看手邊的玩具，將玩具分類，也將符合需求的玩具發送給補給站，分享給其他小朋友吧！'
     },
     {
       id: '/game-01/05.jpg',
+      brand: '可爾必思',
       name: '「可爾必思」Peace小問答',
       description: `
-        <p>「可爾必思」Peace小問答	"你對「可爾必思」認識多少呢?等你來挑戰! </p>
-        <p>活動1.轉動輪盤回答問題，答對即可獲得口袋摺疊扇一個(數量有限)、闖關章一枚!</p>
-        <p>活動2.「可爾必思」試飲</p>
-        <p>活動3.按讚「可爾必思」FB或IG，與現場拍照道具合照，分享至個人FB或IG並tag#可爾必思，送水槍一支(數量有限)</p>
-        `
+        <p>你對「可爾必思」認識多少呢？等你來挑戰！</p>
+        <p>• 活動1. 轉動輪盤回答問題，答對即可獲得口袋摺疊扇一個（數量有限）、闖關章一枚！</p>
+        <p>• 活動2. 「可爾必思」試飲</p>
+        <p>• 活動3. 按讚「可爾必思」FB或IG，與現場拍照道具合照，分享至個人FB或IG並tag #可爾必思，送水槍一支（數量有限）</p>
+      `
     },
     {
       id: '/game-01/06.jpg',
+      brand: '德恩奈',
       name: '保護萌牙大作戰',
       description:
         '可愛的小萌牙陪伴著我們開心吃飯、哈哈大笑，真的好重要！到底該怎麼保護寶貝小萌牙呢？快和牙寶寶迪恩一起來對抗蛀牙蟲，用德恩奈兒童口腔保健組每天認真刷牙，一起成為迪恩的好朋友！'
     },
     {
       id: '/game-01/07.jpg',
+      brand: 'Life with Flower｜花宅日常',
       name: 'Life with Flower｜花宅日常',
       description: `
         <p>「帶一束花，回到生活裡。」</p>
@@ -276,12 +283,12 @@
       id: '/game-02/09.jpg',
       name: '遇米甜',
       description: `
-          <p>白龍王水果玉米生食帶點像水梨，甘蔗香甜</p>
-          <p>日本雙色水果玉米文青甜的特色，有點甜不會膩</p>
-          <p>紫色甜玉米獨特少有的濃郁花青素，健康滿分甜玉米</p>
-          <p>彩虹甜糯玉米口感QQ帶有嚼勁</p>
-          <p>鮮嫩玉米筍高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
-          <p>水煮水果玉米孩子們的最愛</p>
+          <p>◆白龍王水果玉米－生食帶點像水梨，甘蔗香甜</p>
+          <p>◆日本雙色水果玉米－文青甜的特色，有點甜不會膩</p>
+          <p>◆紫色甜玉米－獨特少有的濃郁花青素，健康滿分甜玉米</p>
+          <p>◆彩虹甜糯玉米－口感QQ帶有嚼勁</p>
+          <p>◆鮮嫩玉米筍－高纖減重減脂的最佳蔬菜，玉米鬚還能煮茶喝，促進代謝</p>
+          <p>◆水煮水果玉米－孩子們的最愛</p>
         `
     },
     {
@@ -295,6 +302,7 @@
   const game03List = [
     {
       id: '/game-03/01.jpg',
+      brand: '新北市家教中心',
       name: '新北市家教中心 無圖待補',
       description: '無圖代補'
     }
@@ -303,12 +311,14 @@
   const game04List = [
     {
       id: '/game-04/01.jpg',
+      brand: '農業部',
       name: '探索縣市特色食材與永續飲食之旅',
       description:
         '來一場美味又綠意盎然的冒險吧！深入探索台灣各縣市的特色蔬果！從台北的多汁柑橘、台南的甜蜜鳳梨，到高雄的清新蓮霧，每一口都是在地的鮮美。如何將這些食材與低碳、零浪費的飲食理念結合，打造不僅好吃、還能幫助地球的永續生活方式？快來一起了解、品嚐並實踐！'
     },
     {
       id: '/game-04/02.jpg',
+      brand: '利樂包裝、正隆公司',
       name: '紙超人和紙盒小兵的奇幻歷險',
       description: `
         <p>你知道嗎？紙張與紙容器應該分開回收！正確分類紙製品，是我們輕鬆實踐環保的第一步，使用後進行妥善回收，不僅能減少資源浪費，還能提升再利用的效率。</p>
@@ -317,12 +327,14 @@
     },
     {
       id: '/game-04/03.jpg',
+      brand: '義美鮮乳',
       name: '義美如木鮮乳永續自造所',
       description:
         'Making and Thinking！邀請所有的小朋友一起利用大自然的素材、生活中二次利用的物品，發揮創意與美感，集體創作義美如木鮮乳盒，一起來體驗永續自造所！'
     },
     {
       id: '/game-04/04.jpg',
+      brand: '',
       name: '未來親子',
       description: ''
     }
@@ -345,7 +357,7 @@
       id: '/game-05/03.jpg',
       name: '未來親子故事屋',
       description:
-        '	嚴選小天下人氣書籍與未來親子的小故事，跟著未來姐姐與來寶的腳步，一起進入歡樂有趣的故事樂園！'
+        '大朋友、小朋友～一起來聽故事囉！生動有趣的未來姐姐說故事、加上趣味又好玩的遊戲，趕快加入這場故事派對，一起讓想像夢遊！'
     }
   ]
 
@@ -482,7 +494,9 @@
             一起享受闖關集章、學習知識，共度好時光！
           </div>
         </div>
-        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
+        <div
+          class="mb-5 grid grid-cols-1 gap-x-8 gap-y-12 py-10 sm:grid-cols-2 md:grid-cols-3"
+        >
           <GameItem :list="game01List" :className="'bg-kv-green'" />
         </div>
 
@@ -501,7 +515,9 @@
             這裡不僅是美味的起點，更是與家人認識環境永續、共享歡樂時光的最佳選擇！
           </div>
         </div>
-        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
+        <div
+          class="mb-5 grid grid-cols-1 gap-x-8 gap-y-12 py-10 sm:grid-cols-2 md:grid-cols-3"
+        >
           <GameItem :list="game02List" />
         </div>
 
@@ -520,7 +536,9 @@
             全家人一起共學共讀，不能不知道的快訊一次掌握！
           </div>
         </div>
-        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
+        <div
+          class="mb-5 grid grid-cols-1 gap-x-8 gap-y-12 py-10 sm:grid-cols-2 md:grid-cols-3"
+        >
           <GameItem :list="game03List" :className="'bg-kv-green'" />
         </div>
 
@@ -528,7 +546,7 @@
           class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
         >
           <div
-            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
+            class="w-[220px] px-5 py-1 pe-5 text-primary-500 md:w-auto md:border-e md:border-primary-500"
           >
             <img src="/img/game-title-04.svg" alt="" />
           </div>
@@ -539,7 +557,9 @@
             讓資源與永續教育持續善的循環，帶孩子一起愛地球！
           </div>
         </div>
-        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
+        <div
+          class="mb-5 grid grid-cols-1 gap-x-8 gap-y-12 py-10 sm:grid-cols-2 md:grid-cols-3"
+        >
           <GameItem :list="game04List" />
         </div>
 
@@ -558,7 +578,9 @@
             感受知識與閱讀的無限樂趣！
           </div>
         </div>
-        <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
+        <div
+          class="mb-5 grid grid-cols-1 gap-x-8 gap-y-12 py-10 sm:grid-cols-2 md:grid-cols-3"
+        >
           <GameItem :list="game05List" :className="'bg-kv-green'" />
         </div>
       </div>

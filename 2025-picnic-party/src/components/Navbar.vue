@@ -17,11 +17,11 @@
   })
 </script>
 <template>
-  <nav class="sticky top-0 z-20 h-[65px] bg-kv-green py-1.5 shadow-lg">
+  <nav class="sticky top-0 z-20 bg-kv-green py-2.5 shadow-lg">
     <div class="container flex items-center justify-between">
       <h1>
         <router-link to="/">
-          <img src="/img/logo.svg" alt="logo" width="130" />
+          <img src="/img/logo.svg" alt="logo" width="100" />
         </router-link>
       </h1>
       <ul class="hidden items-center gap-3 lg:flex">

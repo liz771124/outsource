@@ -224,7 +224,7 @@
     </div>
     <div class="bg-yellow">
       <div class="container pb-20 pt-28">
-        <div class="scroll-animate-fadeIn mb-8">
+        <div id="notice-02" class="scroll-animate-fadeIn mb-8">
           <div class="mb-3 text-[19px] font-bold">特別聲明</div>
           <ul class="flex flex-col gap-3">
             <li>

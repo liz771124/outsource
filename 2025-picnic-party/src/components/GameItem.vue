@@ -30,6 +30,7 @@
         class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-hidden bg-white p-6 transition-opacity duration-300"
         :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
       >
+        <div class="mb-2 text-xl font-bold">{{ item.brand }}</div>
         <div v-html="item.description" class="h-full overflow-auto"></div>
       </span>
       <div
