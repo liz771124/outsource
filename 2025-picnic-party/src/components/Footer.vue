@@ -201,9 +201,9 @@
           }"
         >
           <router-link to="/#purchase" class="scale-bounce">
-            <img width="80" src="/img/fixed-buy-02.svg" alt="" />
+            <img width="60" src="/img/fixed-buy-02.svg" alt="" />
           </router-link>
-          <div @click="goTop" class="mt-3 h-[65px] w-[65px] cursor-pointer">
+          <div @click="goTop" class="mt-5 h-[65px] w-[65px] cursor-pointer">
             <img src="/img/gotop.svg" alt="" />
           </div>
         </div>

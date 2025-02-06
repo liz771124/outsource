@@ -66,9 +66,9 @@
     </div>
     <div class="z-10 flex flex-col items-center justify-center">
       <div class="hero-img">
-        <img width="200" src="/img/hero-img.png" />
+        <img width="160" src="/img/hero-img.png" />
       </div>
-      <div class="hero-title mt-8 text-center text-xl font-bold">
+      <div class="hero-title mt-5 text-center text-xl font-bold">
         Loading...
       </div>
     </div>

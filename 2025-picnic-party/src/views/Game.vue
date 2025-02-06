@@ -490,8 +490,13 @@
             <img src="/img/game-title-02.svg" alt="" />
           </div>
           <div class="text-[20px] font-black">
-            小農市集一起來到野餐日！<br class="hidden md:block" />
-            產地直送有機蔬果及加工品一次購足，走走逛逛更要吃好、吃健康！
+            攜手農業部，來小農市集體驗從產地到餐桌的永續之旅吧！<br
+              class="hidden md:block"
+            />
+            新鮮直送的食材、手作美食的溫度，這裡不僅是美味的起點，<br
+              class="hidden md:block"
+            />
+            更是與家人認識環境永續、共享歡樂時光的最佳選擇！
           </div>
         </div>
         <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">

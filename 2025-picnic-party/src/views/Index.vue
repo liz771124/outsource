@@ -337,12 +337,11 @@
 <template>
   <div>
     <Header :height="'800px'">
-      <img src="/img/kv-main.svg" alt="" width="700" />
-
+      <img class="px-3" src="/img/kv-main.svg" alt="" width="600" />
       <span
-        class="absolute right-3 top-12 z-10 w-[100px] md:-right-2 md:top-10 md:w-[200px]"
+        class="absolute right-1 top-10 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
-        <img src="/img/kv-main-img.svg" alt="" />
+        <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
     </Header>
 
@@ -667,12 +666,12 @@
           <div>
             <div
               id="purchase"
-              class="md:gap-15 mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
+              class="mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-14 md:gap-3"
             >
               <a class="animate-zoom-in group relative grow lg:px-5" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition group-hover:bg-kv-blue md:py-1.5"
                 >
                   立即購票
                 </div>
@@ -684,7 +683,7 @@
                 <img class="w-full" src="/img/ticket-02.svg" alt="" />
 
                 <div
-                  class="absolute inset-x-0 bottom-0 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition group-hover:bg-kv-blue md:py-1.5"
                 >
                   立即購票
                 </div>
@@ -693,14 +692,16 @@
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
 
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-2xl font-bold tracking-wide text-white transition group-hover:bg-kv-blue"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition group-hover:bg-kv-blue md:py-1.5"
                 >
                   立即購票
                 </div>
               </a>
             </div>
 
-            <div class="mt-10 flex flex-wrap gap-14 md:flex-nowrap md:gap-10">
+            <div
+              class="mt-20 flex flex-wrap gap-14 md:mt-10 md:flex-nowrap md:gap-10"
+            >
               <div
                 class="animate-zoom-in relative w-full cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
                 data-twe-toggle="modal"

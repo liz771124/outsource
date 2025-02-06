@@ -92,7 +92,7 @@
 </script>
 <template>
   <header
-    :class="`relative z-10 flex h-[600px] w-screen items-center justify-center overflow-hidden bg-cover bg-no-repeat`"
+    :class="`relative z-10 flex h-[600px] w-screen items-center justify-center bg-cover bg-no-repeat`"
     :style="{
       backgroundImage: `url(${imagePath}/kv-main.jpg)`,
       backgroundPosition: 'center right'
@@ -100,14 +100,9 @@
   >
     <span
       id="star-01"
-      class="absolute left-[30px] top-[40px] w-[250px] md:left-[220px] md:w-auto"
+      class="absolute left-[30px] top-[40px] w-[220px] md:w-auto"
     >
-      <img
-        class="scroll-animate-bouncePulse"
-        width="300"
-        src="/img/star-01.svg"
-        alt=""
-      />
+      <img class="scroll-animate-bouncePulse" src="/img/star-01.svg" alt="" />
     </span>
     <span
       id="star-06"

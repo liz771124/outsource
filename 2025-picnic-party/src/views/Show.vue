@@ -5,8 +5,15 @@
   const imagePath = import.meta.env.VITE_IMAGE_PATH
   const showItems = [
     {
+      id: '/show/05.jpg',
+      title: null,
+      subtitle: '泥寶寶的魔法音樂會',
+      description:
+        '聽說星球上的泥土寶寶生病了，需要注入營養能量才能讓他打起精神！「微笑姐姐」使出神奇魔法帶領蔬果樂手演奏能量樂曲，泥土寶寶終於冒出新芽了！由農業部帶來精采的食農教育故事劇，讓孩子在悠揚的四季旋律中學習愛與珍惜！'
+    },
+    {
       id: '/show/01.jpg',
-      title: 'J HALL搖滾樂團',
+      title: 'J HALL樂團',
       subtitle: '孩子搖滾演唱會',
       description:
         '平均年齡只有10歲的「J HALL樂團」成軍3年，是華語樂壇史上最年輕的兒童樂團，將帶來孩子也能搖滾的演唱會，為現場爸爸媽媽與小朋友帶來多首朗朗上口的歌曲，一起來搖滾慶生Party吧！'
@@ -27,24 +34,17 @@
     },
     {
       id: '/show/04.jpg',
-      title: '來寶唱跳秀　',
-      subtitle: '',
+      title: null,
+      subtitle: '歡樂派對秀',
       description:
-        '未來親子最可愛的大明星「來寶」來囉！快來參加來寶慶生派對，跟著來寶和他的好朋友們一起唱歌跳舞去！'
-    },
-    {
-      id: '/show/05.jpg',
-      title: '農業部表演',
-      subtitle: '',
-      description:
-        '聽說星球上的泥土寶寶生病了，需要注入營養能量才能讓他打起精神！「微笑姐姐」使出神奇魔法帶領蔬果樂手演奏能量樂曲，泥土寶寶終於冒出新芽了！由農業部帶來精采的食農教育故事劇，讓孩子在悠揚的四季旋律中學習愛與珍惜！'
+        '歡慶來寶過生日！還有神祕小夥伴來同樂，猜猜看會是誰呢？快來野餐日揭曉謎題～（小提示：是爸爸媽媽也都認識的好朋友哦）'
     },
     {
       id: '/show/03.jpg',
-      title: '乖乖表演',
-      subtitle: '',
+      title: '泡泡哥哥',
+      subtitle: '波波星球',
       description:
-        '缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字缺字'
+        '舞台前卡位預備備～超人氣偶像泡泡哥哥來囉！要跟小朋友們一起開派對、唱唱跳跳high玩一整天！'
     }
     // {
     //   id: '',
@@ -58,14 +58,16 @@
     {
       id: '/show/05.jpg',
       title: 'F.S.D 藝術滑輪行動慶生舞',
+      subtitle: '行動慶生輪舞',
       description:
-        '穿越整場的驚喜童趣慶生！慶生小隊定時不定點在走道上手拿慶生牌、氣球表演慶生輪舞，穿梭現場更顯熱鬧氣氛！慶生小隊將不定點出沒，一起來找他們玩滑輪、拿氣球吧！'
+        '將藝術輪滑結合生活、穿越整場的驚喜童趣慶生！慶生小隊不定點出沒在活動中，一起來找他們玩滑輪、拿氣球吧！★表演場次★ 13:00、13:30、14:00、14:30'
     },
     {
       id: '/show/05.jpg',
-      title: '來寶好朋友遊行',
+      title: null,
+      subtitle: '來寶好朋友大遊行',
       description:
-        '穿越整場的驚喜童趣慶生！慶生小隊定時不定點在走道上手拿慶生牌、氣球表演慶生輪舞，穿梭現場更顯熱鬧氣氛！慶生小隊將不定點出沒，一起來找他們玩滑輪、拿氣球吧！'
+        '最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！★遊行場次★ 12:00、13:40、15:00'
     }
   ]
 
@@ -133,13 +135,14 @@
               </div>
               <div class="relative">
                 <div
+                  v-if="item.title"
                   :class="`relative -end-8 -top-3 inline-block w-full rounded-tr-xl px-6 py-1.5 text-xl font-bold tracking-wide text-white ${index % 2 === 0 ? 'bg-primary-500' : 'bg-kv-green'}`"
                 >
                   {{ item.title }}
                 </div>
                 <div>
                   <div
-                    :class="`mb-2 text-xl font-bold ${index % 2 === 0 ? 'text-primary-500' : 'text-kv-green'}`"
+                    :class="`mb-2 text-xl font-bold ${index % 2 === 0 ? 'text-primary-500' : 'text-kv-green'} ${!item.title ? 'mt-3' : ''}`"
                   >
                     {{ item.subtitle }}
                   </div>
@@ -227,47 +230,38 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              11:00-11:30
-            </div>
-            <div class="grow px-3 font-black text-kv-green">
-              歡樂互動｜來寶唱跳秀
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">11:00</div>
+            <div class="grow px-3 font-black">活力開場</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              11:30-11:50
-            </div>
-            <div class="grow px-3 font-black">永續宣言</div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">11:15</div>
+            <div class="grow px-3 font-black">Q萌來寶唱跳秀</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              11:50-12:05
-            </div>
-            <div class="grow px-3 font-black text-primary-500">企業時間</div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">11:25</div>
+            <div class="grow px-3 font-black">Q萌來寶唱跳秀</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              12:05-12:35
-            </div>
-            <div class="grow px-3 font-black text-primary-500">
-              專業表演｜KIDs Concert[J HALL]+慶生開趴
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">11:30</div>
+            <div class="grow px-3 font-black">貴賓致詞暨開幕儀式</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              12:35-12:45
-            </div>
-            <div class="grow px-3 font-black text-kv-green">
-              歡樂互動｜來寶唱跳秀
+            <div class="grow px-3 md:max-w-[300px] md:text-center">12:00</div>
+            <div class="flex grow flex-wrap gap-2 px-3 font-black">
+              <div
+                class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
+              >
+                歡樂互動
+              </div>
+              <div class="text-kv-green">泥寶寶的魔法音樂會</div>
             </div>
           </div>
           <div
@@ -276,7 +270,14 @@
             <div class="grow px-3 md:max-w-[300px] md:text-center">
               12:45-13:00
             </div>
-            <div class="grow px-3 font-black text-primary-500">企業時間</div>
+            <div class="flex grow flex-wrap gap-2 px-3 font-black">
+              <div
+                class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
+              >
+                KIDs Concert
+              </div>
+              <div class="text-primary-500">J HALL樂團搖滾開趴</div>
+            </div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
@@ -284,8 +285,13 @@
             <div class="grow px-3 md:max-w-[300px] md:text-center">
               13:00-13:20
             </div>
-            <div class="grow px-3 font-black text-kv-green">
-              歡樂互動｜來寶唱跳秀
+            <div class="flex grow flex-wrap gap-2 px-3 font-black">
+              <div
+                class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
+              >
+                歡樂互動
+              </div>
+              <div class="text-kv-green">來寶唱跳秀</div>
             </div>
           </div>
           <div
@@ -294,8 +300,13 @@
             <div class="grow px-3 md:max-w-[300px] md:text-center">
               13:20-13:30
             </div>
-            <div class="grow px-3 font-black text-primary-500">
-              專業表演｜魔幻Party [溜溜球]
+            <div class="flex grow flex-wrap gap-2 px-3 font-black">
+              <div
+                class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
+              >
+                魔幻Party
+              </div>
+              <div class="text-primary-500">楊元慶—花式溜溜球</div>
             </div>
           </div>
           <div
@@ -304,35 +315,37 @@
             <div class="grow px-3 md:max-w-[300px] md:text-center">
               13:30-13:45
             </div>
-            <div class="grow px-3 font-black text-kv-green">
-              歡樂互動｜來寶唱跳秀
+            <div class="flex grow flex-wrap gap-2 px-3 font-black">
+              <div
+                class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
+              >
+                歡樂互動
+              </div>
+              <div class="text-kv-green">來寶唱跳秀</div>
             </div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
             <div class="grow px-3 md:max-w-[300px] md:text-center">
-              13:45-13:55
+              13:30-13:45
             </div>
-            <div class="grow px-3 font-black text-primary-500">企業時間</div>
+            <div class="flex grow flex-wrap gap-2 px-3 font-black">
+              <div
+                class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
+              >
+                魔幻Party
+              </div>
+              <div class="text-primary-500">天馬戲創作劇團—蟲蟲馬戲團</div>
+            </div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              13:55-14:25
+            <div class="grow px-3 md:max-w-[300px] md:text-center">14:10</div>
+            <div class="grow px-3 font-black">
+              2025 未來親子野餐日 歡樂抽獎​
             </div>
-            <div class="grow px-3 font-black text-kv-green">
-              專業表演｜故事Party [蟲蟲馬戲團]
-            </div>
-          </div>
-          <div
-            class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
-          >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              14:350-15:00
-            </div>
-            <div class="grow px-3 font-black">2025未來親子野餐日歡樂抽獎</div>
           </div>
         </div>
       </div>
