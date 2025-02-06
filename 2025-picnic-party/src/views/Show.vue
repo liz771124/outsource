@@ -267,9 +267,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              12:45-13:00
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">12:15</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
@@ -282,9 +280,7 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              13:00-13:20
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">12:50</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
@@ -297,9 +293,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              13:20-13:30
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">13:00</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
@@ -312,9 +306,7 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              13:30-13:45
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">13:25</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
@@ -327,9 +319,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">
-              13:30-13:45
-            </div>
+            <div class="grow px-3 md:max-w-[300px] md:text-center">13:35</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
