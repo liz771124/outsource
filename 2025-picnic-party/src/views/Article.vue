@@ -263,7 +263,7 @@
 <template>
   <div>
     <Header>
-      <img src="/img/kv-article.svg" alt="" width="650" />
+      <img src="/img/kv-article.svg" alt="" width="600" />
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
@@ -275,7 +275,7 @@
       <div class="container py-16">
         <div class="mb-8 text-center">
           <img
-            width="650"
+            width="600"
             class="mx-auto"
             src="/img/title-article.svg"
             alt=""

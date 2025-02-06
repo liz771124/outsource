@@ -139,7 +139,7 @@
         />
         <img
           id="star-05-b"
-          class="absolute left-1 top-0"
+          class="absolute left-4 top-0 w-[70px]"
           src="/img/star-05-b.svg"
           alt=""
         />

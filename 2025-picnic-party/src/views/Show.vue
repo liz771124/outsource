@@ -99,7 +99,7 @@
 <template>
   <div>
     <Header>
-      <img src="/img/kv-show.svg" alt="" width="650" />
+      <img src="/img/kv-show.svg" alt="" width="600" />
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
@@ -110,7 +110,7 @@
     <div class="bg-green py-16">
       <div class="container">
         <div class="mb-8 text-center">
-          <img width="650" class="mx-auto" src="/img/title-show.svg" alt="" />
+          <img width="600" class="mx-auto" src="/img/title-show.svg" alt="" />
         </div>
         <div class="text-center text-[1.1rem] font-black">
           <div>當然不能少了各種好Show炒熱氣氛！</div>

@@ -14,7 +14,7 @@
 <template>
   <div>
     <Header>
-      <img src="/img/kv-gift.svg" alt="" width="650" />
+      <img src="/img/kv-gift.svg" alt="" width="600" />
 
       <span
         class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
@@ -26,7 +26,7 @@
       <div class="container py-16">
         <div class="mb-8 text-center">
           <img
-            width="650"
+            width="600"
             class="mx-auto"
             src="/img/title-gift-main.svg"
             alt=""
@@ -43,9 +43,20 @@
             v-for="(item, index) in giftItems"
             :key="index"
             :class="[
-              'w-full cursor-pointer',
-              index % 2 === 0 ? 'md:translate-y-0' : 'md:translate-y-1/2'
+              'w-full',
+              index % 2 === 0 ? 'md:translate-y-0' : 'md:translate-y-1/2',
+              index === 5 ? 'cursor-pointer' : ''
             ]"
+            v-bind="
+              index === 5
+                ? {
+                    'data-twe-toggle': 'modal',
+                    'data-twe-target': '#exampleModalScrollable',
+                    'data-twe-ripple-init': '',
+                    'data-twe-ripple-color': 'light'
+                  }
+                : {}
+            "
           >
             <img
               :class="[
@@ -62,6 +73,84 @@
 
         <div class="mb-5 flex items-center justify-center pt-5 md:pt-8">
           <ButtonJoin />
+        </div>
+        <div
+          data-twe-modal-init
+          class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-6 outline-none"
+          id="exampleModalScrollable"
+          tabindex="-1"
+          aria-labelledby="exampleModalScrollableLabel"
+          aria-hidden="true"
+        >
+          <div
+            data-twe-modal-dialog-ref
+            class="pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+          >
+            <div
+              class="pointer-events-auto relative flex max-h-[100%] w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
+            >
+              <div
+                class="flex flex-shrink-0 items-center justify-between rounded-t-md p-4"
+              >
+                <h5 class="text-xl font-bold" id="exampleModalScrollableLabel">
+                  換書說明
+                </h5>
+                <button
+                  type="button"
+                  class="absolute -right-2 -top-2 z-10 box-content rounded-full border-none bg-white text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none"
+                  data-twe-modal-dismiss
+                  aria-label="Close"
+                >
+                  <img width="40" src="/img/modal-close.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="relative overflow-y-auto p-6">
+                <div class="flex flex-col gap-5 divide-y text-justify">
+                  <div class="flex flex-col gap-2">
+                    <p>
+                      <img
+                        class="w-full"
+                        src="/img/gift-item-img-01.jpg"
+                        alt=""
+                      />
+                    </p>
+                    <p class="text-xl font-bold">好書大風吹</p>
+                    <p>
+                      凡攜帶家中用不到且狀態良好的舊書至活動攤位，即可兌換一本小天下/未來出版書籍，原捐獻之舊書將整理後捐給______（捐贈單位待定），讓美好知識永續傳承。
+                    </p>
+                    <p></p>
+                    <p>※ 注意事項：</p>
+                    <ul class="list-decimal px-4">
+                      <li>
+                        一組家庭限捐1本紙本書，並兌換1本小天下/未來出版書籍。
+                      </li>
+                      <li>捐贈書籍限兒童讀物，並需有版權及價格註記。</li>
+                      <li>
+                        圖書封面及內頁需清潔完好，8成新，無破損、污損或塗鴉情形者。
+                      </li>
+                      <li>電腦類書籍、教科書、期刊雜誌恕不收取。</li>
+                      <li>若捐贈之書籍書況極差，未來親子擁有拒收的權利。</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- <div
+                      class="mt-4 flex flex-col items-center font-bold text-primary-500"
+                    >
+                      <div>福袋禮：</div>
+                      <div>總價值超過1,800元</div>
+                      <div>產品圖片僅供示意，以現場實物為主</div>
+                      <div>現場不挑款式、花色，隨機出貨</div>
+
+                      <div>早鳥禮：</div>
+                      <div>總價值超過1,700元</div>
+                      <div>產品圖片僅供示意，以現場實物為主</div>
+                      <div>現場不挑款式、花色，隨機出貨</div>
+                    </div> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -339,7 +339,7 @@
     <Header :height="'800px'">
       <img class="px-3" src="/img/kv-main.svg" alt="" width="600" />
       <span
-        class="absolute right-1 top-10 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute bottom-4 right-1 top-auto z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
@@ -389,7 +389,7 @@
             class="flex flex-wrap items-center gap-3 md:mb-16 md:flex-nowrap"
           >
             <iframe
-              class="aspect-video scroll-animate-slideInLeft order-2 mx-auto h-[250px] w-full max-w-[600px] md:order-1 md:h-[350px]"
+              class="aspect-video scroll-animate-slideInLeft order-2 mx-auto h-[250px] w-full max-w-[450px] md:order-1 md:h-[350px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -666,7 +666,7 @@
           <div>
             <div
               id="purchase"
-              class="mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
+              class="mt-5 flex flex-wrap items-end justify-between gap-10 md:flex-nowrap md:gap-5"
             >
               <a class="animate-zoom-in group relative grow" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
@@ -700,7 +700,7 @@
             </div>
 
             <div
-              class="flex flex-wrap gap-14 pt-8 md:mt-10 md:flex-nowrap md:gap-10"
+              class="flex flex-wrap gap-14 pt-8 md:mt-10 md:flex-nowrap md:gap-8"
             >
               <div
                 class="animate-zoom-in relative w-full cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
