@@ -453,6 +453,7 @@
         <div class="mb-20 text-center">
           <img
             class="mx-auto mb-5 block"
+            width="780"
             src="/img/title-game-main-01.svg"
             alt=""
           />
