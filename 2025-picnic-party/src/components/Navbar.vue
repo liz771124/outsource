@@ -21,7 +21,7 @@
     <div class="container flex items-center justify-between">
       <h1>
         <router-link to="/">
-          <img src="/img/logo.svg" alt="logo" width="135" />
+          <img src="/img/logo.svg" alt="logo" width="130" />
         </router-link>
       </h1>
       <ul class="hidden items-center gap-3 lg:flex">

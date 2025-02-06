@@ -259,7 +259,7 @@
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
               >
-                歡樂互動
+                故事時間
               </div>
               <div class="text-kv-green">泥寶寶的魔法音樂會</div>
             </div>
@@ -334,7 +334,7 @@
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
               >
-                魔幻Party
+                故事Party
               </div>
               <div class="text-primary-500">天馬戲創作劇團—蟲蟲馬戲團</div>
             </div>

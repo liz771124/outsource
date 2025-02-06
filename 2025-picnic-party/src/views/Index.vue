@@ -666,12 +666,12 @@
           <div>
             <div
               id="purchase"
-              class="mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-14 md:gap-3"
+              class="mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-14"
             >
               <a class="animate-zoom-in group relative grow lg:px-5" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition group-hover:bg-kv-blue md:py-1.5"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
                 >
                   立即購票
                 </div>
@@ -683,7 +683,7 @@
                 <img class="w-full" src="/img/ticket-02.svg" alt="" />
 
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition group-hover:bg-kv-blue md:py-1.5"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-primary-500"
                 >
                   立即購票
                 </div>
@@ -692,7 +692,7 @@
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
 
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition group-hover:bg-kv-blue md:py-1.5"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
                 >
                   立即購票
                 </div>
@@ -767,7 +767,7 @@
               <div>
                 <router-link
                   to="/notice"
-                  class="mt-5 inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white"
+                  class="mt-5 inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white transition md:hover:bg-kv-green"
                 >
                   <svg
                     width="35"
@@ -805,7 +805,12 @@
                   <div
                     class="flex flex-shrink-0 items-center justify-between rounded-t-md p-4"
                   >
-                    <h5 class="text-xl" id="exampleModalScrollableLabel"></h5>
+                    <h5
+                      class="text-xl font-bold"
+                      id="exampleModalScrollableLabel"
+                    >
+                      <!-- 福袋禮 早鳥禮 -->
+                    </h5>
                     <button
                       type="button"
                       class="absolute -right-2 -top-2 z-10 box-content rounded-full border-none bg-white text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -837,6 +842,20 @@
                         <div v-html="item.description"></div>
                       </div>
                     </div>
+
+                    <!-- <div
+                      class="mt-4 flex flex-col items-center font-bold text-primary-500"
+                    >
+                      <div>福袋禮：</div>
+                      <div>總價值超過1,800元</div>
+                      <div>產品圖片僅供示意，以現場實物為主</div>
+                      <div>現場不挑款式、花色，隨機出貨</div>
+
+                      <div>早鳥禮：</div>
+                      <div>總價值超過1,700元</div>
+                      <div>產品圖片僅供示意，以現場實物為主</div>
+                      <div>現場不挑款式、花色，隨機出貨</div>
+                    </div> -->
                   </div>
                 </div>
               </div>
