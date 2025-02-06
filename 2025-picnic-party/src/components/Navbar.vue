@@ -29,7 +29,7 @@
           <router-link
             :to="item.to"
             :class="[
-              'rounded-full bg-white px-4 py-1 text-xl font-bold transition hover:bg-primary-500 hover:text-white',
+              'rounded-full bg-white px-4 py-1 text-[1.1rem] font-bold transition hover:bg-primary-500 hover:text-white',
               route.path === item.to ? 'text-primary-500' : 'text-kv-green'
             ]"
           >
@@ -107,7 +107,7 @@
           </button>
         </div>
         <div class="flex-grow overflow-y-auto px-4">
-          <ul class="grid grid-cols-3 justify-between gap-3 text-2xl">
+          <ul class="grid grid-cols-3 justify-between gap-1">
             <li
               v-for="(item, index) in navItems"
               :key="index"
@@ -116,7 +116,7 @@
               <router-link
                 :to="item.to"
                 :class="[
-                  'block rounded-full px-4 py-2 text-center text-xl font-bold text-white',
+                  'block rounded-full px-4 py-2 text-center text-[1.1rem] font-bold text-white',
                   route.path === item.to ? 'bg-primary-500' : 'bg-kv-green'
                 ]"
               >
