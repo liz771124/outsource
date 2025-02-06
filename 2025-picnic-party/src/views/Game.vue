@@ -467,7 +467,9 @@
         <div id="game-01" class="text-center">
           <img class="mx-auto" width="450" src="/img/title-game.svg" alt="" />
         </div>
-        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
+        <div
+          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
+        >
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
@@ -484,7 +486,9 @@
           <GameItem :list="game01List" :className="'bg-kv-green'" />
         </div>
 
-        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
+        <div
+          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
+        >
           <div
             class="w-[220px] px-5 py-1 pe-5 text-primary-500 md:w-auto md:border-e md:border-primary-500"
           >
@@ -494,17 +498,16 @@
             攜手農業部，來小農市集體驗從產地到餐桌的永續之旅吧！<br
               class="hidden md:block"
             />
-            新鮮直送的食材、手作美食的溫度，這裡不僅是美味的起點，<br
-              class="hidden md:block"
-            />
-            更是與家人認識環境永續、共享歡樂時光的最佳選擇！
+            這裡不僅是美味的起點，更是與家人認識環境永續、共享歡樂時光的最佳選擇！
           </div>
         </div>
         <div class="mb-5 grid gap-x-8 gap-y-12 py-10 md:grid-cols-3">
           <GameItem :list="game02List" />
         </div>
 
-        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
+        <div
+          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
+        >
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
@@ -521,7 +524,9 @@
           <GameItem :list="game03List" :className="'bg-kv-green'" />
         </div>
 
-        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
+        <div
+          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
+        >
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
@@ -538,7 +543,9 @@
           <GameItem :list="game04List" />
         </div>
 
-        <div class="mb-5 flex flex-wrap items-center justify-center gap-5">
+        <div
+          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
+        >
           <div
             class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
           >
