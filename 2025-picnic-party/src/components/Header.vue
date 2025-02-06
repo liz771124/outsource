@@ -15,6 +15,26 @@
   onMounted(() => {
     nextTick(() => {
       setTimeout(() => {
+        gsap.fromTo(
+          '#kv-main',
+          { scale: 1.25, opacity: 0, filter: 'blur(100px)' },
+          {
+            scale: 1,
+            opacity: 1,
+            filter: 'blur(0px)',
+            duration: 1.25,
+            ease: 'power4.out',
+            scrollTrigger: {
+              trigger: '#kv-main',
+              start: 'top 100%',
+              toggleActions: 'play none none none',
+              scale: 1.1,
+              yoyo: true,
+              repeat: '-1'
+            }
+          }
+        )
+
         const twinklingStars = [
           '#star-02',
           '#star-03',
@@ -43,25 +63,6 @@
           )
         })
 
-        gsap.fromTo(
-          '#kv-main',
-          { scale: 1.25, opacity: 0, filter: 'blur(100px)' },
-          {
-            scale: 1,
-            opacity: 1,
-            filter: 'blur(0px)',
-            duration: 1.25,
-            ease: 'power4.out',
-            scrollTrigger: {
-              trigger: '#kv-main',
-              start: 'top 80%',
-              toggleActions: 'play none none none',
-              scale: 1.1,
-              yoyo: true,
-              repeat: '-1'
-            }
-          }
-        )
         setTimeout(() => {
           const flowingStars = ['#star-05', '#star-01']
           flowingStars.forEach((star, index) => {
@@ -100,7 +101,7 @@
   >
     <span
       id="star-01"
-      class="absolute left-[30px] top-[40px] w-[220px] md:w-auto"
+      class="absolute left-6 top-[50px] w-[190px] md:left-[200px] md:w-[300px]"
     >
       <img class="scroll-animate-bouncePulse" src="/img/star-01.svg" alt="" />
     </span>

@@ -396,11 +396,11 @@
               allowFullScreen
             ></iframe>
             <div
-              class="scroll-animate-slideInRight order-1 flex grow flex-col items-center justify-center gap-3 pb-5 text-xl font-black text-kv-blue md:order-2 lg:p-10"
+              class="scroll-animate-slideInRight order-1 flex grow flex-col items-center justify-center gap-3 pb-5 text-xl font-black text-kv-blue md:order-2 lg:p-5"
             >
               <img width="400" class="mb-4" src="/img/title-video.svg" alt="" />
               <div
-                class="flex flex-col gap-1 text-center text-[1.2rem] font-black tracking-wide text-kv-blue"
+                class="flex flex-col gap-1 text-center text-[1.1rem] font-black tracking-wide text-kv-blue"
               >
                 <div>未來親子野餐日陪伴孩子10週年啦!</div>
                 <div>這象徵著「幸福永續」的里程碑，</div>
@@ -426,12 +426,12 @@
             to="/show"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
             >
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-01.png" alt="" />
               </div>
-              <div class="relative grow pt-5 md:p-5">
+              <div class="relative grow pt-5">
                 <img width="250" src="/img/page-title-01.svg" alt="" />
                 <!-- <div
                   class="relative z-10 flex text-[35px] font-black tracking-wide text-primary-500 md:text-[50px]"
@@ -459,7 +459,7 @@
                 </div>
                 <div class="absolute -bottom-10 start-10 hidden lg:block">
                   <img
-                    class="w-[130px]"
+                    class="w-[100px]"
                     src="/img/index-intro-icon-01.svg"
                     alt=""
                   />
@@ -477,12 +477,12 @@
             to="/game#game-01"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
             >
               <div class="order-2 lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-02.png" alt="" />
               </div>
-              <div class="relative order-2 grow pt-5 md:order-1 md:p-5">
+              <div class="relative order-2 grow pt-5 md:order-1">
                 <img width="250" src="/img/page-title-02.svg" alt="" />
                 <!-- <div
                   class="relative z-10 flex text-[35px] font-black tracking-wide text-kv-green md:text-[50px]"
@@ -509,7 +509,7 @@
                 </div>
                 <div class="end-15 absolute -bottom-10 hidden lg:block">
                   <img
-                    class="w-[130px]"
+                    class="w-[100px]"
                     src="/img/index-intro-icon-02.svg"
                     alt=""
                   />
@@ -527,12 +527,12 @@
             to="/gift"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
             >
               <div class="lg:shrink-0">
                 <img class="500" src="/img/index-intro-03.png" alt="" />
               </div>
-              <div class="relative grow pt-5 md:p-5">
+              <div class="relative grow pt-5">
                 <img width="250" src="/img/page-title-03.svg" alt="" />
                 <!-- <div
                   class="relative z-10 flex text-[35px] font-black tracking-wide text-primary-500 md:text-[50px]"
@@ -559,7 +559,7 @@
                 </div>
                 <div class="absolute -bottom-10 start-10 hidden lg:block">
                   <img
-                    class="w-[130px]"
+                    class="w-[100px]"
                     src="/img/index-intro-icon-03.svg"
                     alt=""
                   />
@@ -577,7 +577,7 @@
             to="/game#game-02"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-10"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
             >
               <div class="order-2 w-full md:max-w-[590px]">
                 <swiper
@@ -601,7 +601,7 @@
                   </swiper-slide>
                 </swiper>
               </div>
-              <div class="relative order-2 grow pt-5 md:order-1 md:p-5">
+              <div class="relative order-2 grow pt-5 md:order-1">
                 <img width="250" src="/img/page-title-04.svg" alt="" />
                 <!-- <div
                   class="relative z-10 flex text-[35px] font-black tracking-wide text-kv-green md:text-[50px]"
@@ -626,7 +626,7 @@
                 <div class="dashed-text-container">
                   完成闖關集章，即可兌換一張抽獎券，獎項超豐富，好禮總價值超過50萬！
                 </div>
-                <div class="end-15 absolute -bottom-10 hidden lg:block">
+                <div class="absolute -bottom-10 -start-20 hidden lg:block">
                   <img
                     class="w-[180px]"
                     src="/img/index-intro-icon-04.svg"
@@ -658,7 +658,7 @@
             <div class="mb-3">
               <img width="300" src="/img/title-ticket.svg" alt="" />
             </div>
-            <div class="text-center text-[20px] font-black">
+            <div class="text-center text-[1.1rem] font-black">
               <div>2025年4月3日 10:30-15:00</div>
               <div>新北大都會公園</div>
             </div>
@@ -666,7 +666,7 @@
           <div>
             <div
               id="purchase"
-              class="mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-14"
+              class="mt-5 flex flex-wrap items-center justify-between gap-10 md:flex-nowrap md:gap-5"
             >
               <a class="animate-zoom-in group relative grow" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
@@ -869,7 +869,7 @@
 <style scoped>
   .dashed-text-container {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     text-align: justify;
     line-height: 2;

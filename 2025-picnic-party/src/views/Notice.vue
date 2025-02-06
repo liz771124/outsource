@@ -65,7 +65,7 @@
     <Header>
       <img src="/img/kv-notice.svg" alt="" width="650" />
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>

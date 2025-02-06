@@ -40,6 +40,6 @@
     to="/#purchase"
     class="scroll-animate-zoomIn animate-bounceFloat"
   >
-    <img width="320" src="/img/btn-join.svg" alt="" />
+    <img width="250" src="/img/btn-join.svg" alt="" />
   </router-link>
 </template>

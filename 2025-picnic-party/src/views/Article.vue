@@ -265,7 +265,7 @@
     <Header>
       <img src="/img/kv-article.svg" alt="" width="650" />
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
@@ -281,7 +281,7 @@
             alt=""
           />
         </div>
-        <div class="text-center text-[20px] font-black">
+        <div class="text-center text-[1.1rem] font-black">
           <div>未來親子精選四大主題文章</div>
           <div>透過專業實用的教養好文</div>
           <div>為生活增添質地</div>
@@ -402,7 +402,7 @@
         </div>
 
         <div
-          class="mt-5 flex w-full flex-wrap items-center justify-center gap-16"
+          class="mb-8 mt-3 flex w-full flex-wrap items-center justify-center gap-16"
         >
           <ButtonJoin />
         </div>

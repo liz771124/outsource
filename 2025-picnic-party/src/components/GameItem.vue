@@ -44,7 +44,7 @@
         />
       </div>
       <span
-        :class="`absolute -end-3 -top-[23px] z-10 inline-block w-full max-w-[330px] rounded-tr-xl px-6 py-1.5 text-[16px] font-bold tracking-wide text-white md:text-[14px] xl:text-[16px] ${className}`"
+        :class="`absolute -end-3 -top-[23px] z-10 inline-block w-full max-w-[300px] rounded-tr-xl px-4 py-1.5 font-bold tracking-wide text-white ${className}`"
       >
         {{ item.name }}
       </span>

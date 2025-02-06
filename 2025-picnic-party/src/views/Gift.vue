@@ -17,7 +17,7 @@
       <img src="/img/kv-gift.svg" alt="" width="650" />
 
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
@@ -32,7 +32,7 @@
             alt=""
           />
         </div>
-        <div class="text-center text-[20px] font-black">
+        <div class="text-center text-[1.1rem] font-black">
           <div>10大互動好禮搶先看！</div>
           <div>全場活動趴趴走，好禮拿不停！</div>
           <div>點擊按鈕，看更多活動說明</div>
@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="mb-5 flex items-center justify-center pt-5 md:pt-16">
+        <div class="mb-5 flex items-center justify-center pt-5 md:pt-8">
           <ButtonJoin />
         </div>
       </div>

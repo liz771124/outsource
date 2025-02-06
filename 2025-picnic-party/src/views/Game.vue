@@ -439,7 +439,7 @@
     <Header>
       <img src="/img/kv-game.svg" alt="" width="650" />
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
@@ -469,7 +469,7 @@
             src="/img/title-game-main-01.svg"
             alt=""
           />
-          <div class="text-center text-[20px] font-black">
+          <div class="text-center text-[1.1rem] font-black">
             <div>兼具知識、趣味的闖關挑戰</div>
             <div>在未來親子野餐日10週年活動就玩得到！</div>
             <div>爸爸媽媽陪著孩子共同完成任務</div>
@@ -479,18 +479,14 @@
         <div id="game-01" class="text-center">
           <img class="mx-auto" width="450" src="/img/title-game.svg" alt="" />
         </div>
-        <div
-          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
-        >
+        <div class="mb-5 flex flex-wrap items-center gap-5 md:flex-nowrap">
           <div
-            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
+            class="w-[200px] shrink-0 px-5 py-1 pe-5 text-kv-green md:w-[280px] md:border-e md:border-kv-green"
           >
-            <img src="/img/game-title-01.svg" alt="" />
+            <img class="w-full" src="/img/game-title-01.svg" alt="" />
           </div>
-          <div class="text-[20px] font-black">
-            各大知名品牌帶來寓教於樂、全家共玩的親子活動，<br
-              class="hidden md:block"
-            />
+          <div class="text-[1.1rem] font-black">
+            各大知名品牌帶來寓教於樂、全家共玩的親子活動，
             一起享受闖關集章、學習知識，共度好時光！
           </div>
         </div>
@@ -500,18 +496,14 @@
           <GameItem :list="game01List" :className="'bg-kv-green'" />
         </div>
 
-        <div
-          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
-        >
+        <div class="mb-5 flex flex-wrap items-center gap-5 md:flex-nowrap">
           <div
-            class="w-[220px] px-5 py-1 pe-5 text-primary-500 md:w-auto md:border-e md:border-primary-500"
+            class="w-[200px] shrink-0 px-5 py-1 pe-5 text-primary-500 md:w-[280px] md:border-e md:border-primary-500"
           >
-            <img src="/img/game-title-02.svg" alt="" />
+            <img class="w-full" src="/img/game-title-02.svg" alt="" />
           </div>
-          <div class="text-[20px] font-black">
-            攜手農業部，來小農市集體驗從產地到餐桌的永續之旅吧！<br
-              class="hidden md:block"
-            />
+          <div class="text-[1.1rem] font-black">
+            攜手農業部，來小農市集體驗從產地到餐桌的永續之旅吧！
             這裡不僅是美味的起點，更是與家人認識環境永續、共享歡樂時光的最佳選擇！
           </div>
         </div>
@@ -521,18 +513,14 @@
           <GameItem :list="game02List" />
         </div>
 
-        <div
-          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
-        >
+        <div class="mb-5 flex flex-wrap items-center gap-5 md:flex-nowrap">
           <div
-            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
+            class="w-[200px] shrink-0 px-5 py-1 pe-5 text-kv-green md:w-[280px] md:border-e md:border-kv-green"
           >
-            <img src="/img/game-title-03.svg" alt="" />
+            <img class="w-full" src="/img/game-title-03.svg" alt="" />
           </div>
-          <div class="text-[20px] font-black">
-            讓教育與愛永續！新北市政府各單位攜手進駐，宣導政策並提供新知。<br
-              class="hidden md:block"
-            />
+          <div class="text-[1.1rem] font-black">
+            讓教育與愛永續！新北市政府各單位攜手進駐，宣導政策並提供新知。
             全家人一起共學共讀，不能不知道的快訊一次掌握！
           </div>
         </div>
@@ -542,18 +530,14 @@
           <GameItem :list="game03List" :className="'bg-kv-green'" />
         </div>
 
-        <div
-          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
-        >
+        <div class="mb-5 flex flex-wrap items-center gap-5 md:flex-nowrap">
           <div
-            class="w-[220px] px-5 py-1 pe-5 text-primary-500 md:w-auto md:border-e md:border-primary-500"
+            class="w-[200px] shrink-0 px-5 py-1 pe-5 text-primary-500 md:w-[280px] md:border-e md:border-primary-500"
           >
-            <img src="/img/game-title-04.svg" alt="" />
+            <img class="w-full" src="/img/game-title-04.svg" alt="" />
           </div>
-          <div class="text-[20px] font-black">
-            由四大品牌共同打造環保、低負擔的永續迷宮，<br
-              class="hidden md:block"
-            />
+          <div class="text-[1.1rem] font-black">
+            由四大品牌共同打造環保、低負擔的永續迷宮，
             讓資源與永續教育持續善的循環，帶孩子一起愛地球！
           </div>
         </div>
@@ -563,18 +547,17 @@
           <GameItem :list="game04List" />
         </div>
 
-        <div
-          class="mb-5 flex flex-wrap items-center justify-center gap-5 md:flex-nowrap"
-        >
+        <div class="mb-5 flex flex-wrap items-center gap-5 md:flex-nowrap">
           <div
-            class="w-[220px] px-5 py-1 pe-5 text-kv-green md:w-auto md:border-e md:border-kv-green"
+            class="w-[200px] shrink-0 px-5 py-1 pe-5 text-kv-green md:w-[280px] md:border-e md:border-kv-green"
           >
-            <img src="/img/game-title-05.svg" alt="" />
+            <img class="w-full" src="/img/game-title-05.svg" alt="" />
           </div>
-          <div class="text-[20px] font-black">
-            未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，<br
+          <div class="text-[1.1rem] font-black">
+            未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，
+            <!-- <br
               class="hidden md:block"
-            />
+            /> -->
             感受知識與閱讀的無限樂趣！
           </div>
         </div>
@@ -598,7 +581,7 @@
             alt=""
           />
         </div>
-        <div class="text-center text-[20px] font-black">
+        <div class="text-center text-[1.1rem] font-black">
           <div>集滿10個闖關印章，就能兌換抽獎券！</div>
           <div>超過60個幸運獎項，超級豪禮等你來拿！</div>
         </div>
@@ -625,7 +608,7 @@
                 />
               </div>
             </div>
-            <div class="mb-3 px-3 text-center text-xl">
+            <div class="mb-3 px-3 text-center">
               <div class="mb-1 font-semibold text-primary-500">
                 【{{ item.brand }}】
               </div>
@@ -653,12 +636,15 @@
                   </h2>
                 </div>
                 <div
-                  class="h-full grow overflow-auto py-3"
+                  class="h-full grow overflow-y-auto overflow-x-hidden py-3"
                   v-html="item.description"
                 ></div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="mt-5 flex items-center justify-center">
+          <ButtonJoin />
         </div>
       </div>
     </div>

@@ -40,12 +40,27 @@
         '歡慶來寶過生日！還有神祕小夥伴來同樂，猜猜看會是誰呢？快來野餐日揭曉謎題～（小提示：是爸爸媽媽也都認識的好朋友哦）'
     },
     {
-      id: '/show/03.jpg',
+      id: '/show/05.jpg',
+      title: null,
+      subtitle: '來寶好朋友大遊行',
+      description:
+        '最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！★遊行場次★ 12:00、13:40、15:00'
+    },
+    {
+      id: '/show/06.jpg',
       title: '泡泡哥哥',
       subtitle: '波波星球',
       description:
         '舞台前卡位預備備～超人氣偶像泡泡哥哥來囉！要跟小朋友們一起開派對、唱唱跳跳high玩一整天！'
+    },
+    {
+      id: '/show/07.jpg',
+      title: 'F.S.D 藝術滑輪行動慶生舞',
+      subtitle: 'F.S.D 兒童輪舞團｜行動慶生輪舞',
+      description:
+        '將藝術輪滑結合生活、穿越整場的驚喜童趣慶生！慶生小隊不定點出沒在活動中，一起來找他們玩滑輪、拿氣球吧！★表演場次★ 13:00、13:30、14:00、14:30'
     }
+
     // {
     //   id: '',
     //   title: '',
@@ -54,22 +69,7 @@
     // }
   ]
 
-  const showBirthday = [
-    {
-      id: '/show/05.jpg',
-      title: 'F.S.D 藝術滑輪行動慶生舞',
-      subtitle: 'F.S.D 兒童輪舞團｜行動慶生輪舞',
-      description:
-        '將藝術輪滑結合生活、穿越整場的驚喜童趣慶生！慶生小隊不定點出沒在活動中，一起來找他們玩滑輪、拿氣球吧！★表演場次★ 13:00、13:30、14:00、14:30'
-    },
-    {
-      id: '/show/05.jpg',
-      title: null,
-      subtitle: '來寶好朋友大遊行',
-      description:
-        '最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！★遊行場次★ 12:00、13:40、15:00'
-    }
-  ]
+  const showBirthday = []
 
   const setAnimation = () => {
     const cards = gsap.utils.toArray('.card-item')
@@ -101,7 +101,7 @@
     <Header>
       <img src="/img/kv-show.svg" alt="" width="650" />
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
@@ -112,7 +112,7 @@
         <div class="mb-8 text-center">
           <img width="650" class="mx-auto" src="/img/title-show.svg" alt="" />
         </div>
-        <div class="text-center text-[20px] font-black">
+        <div class="text-center text-[1.1rem] font-black">
           <div>當然不能少了各種好Show炒熱氣氛！</div>
           <div>音樂、故事、唱唱跳跳</div>
           <div>最豐富的表演，都在未來親子野餐日！</div>
@@ -126,67 +126,39 @@
             class="scroll-animate-rotateIn relative rounded-tl-3xl bg-white p-3 shadow-md"
           >
             <div class="flex flex-col">
-              <div>
+              <div
+                class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-2xl rounded-tl-3xl bg-gray-100 transition-opacity duration-300"
+              >
                 <img
-                  class="h-full w-full rounded-tl-3xl object-cover"
+                  class="h-full w-full object-cover"
                   :src="`${imagePath}${item.id}`"
                   alt="1"
                 />
               </div>
               <div class="relative">
-                <!-- <div
-                  v-if="item.title"
-                  :class="`relative -end-8 -top-3 inline-block w-full rounded-tr-xl px-6 py-1.5 text-xl font-bold tracking-wide text-white ${index % 2 === 0 ? 'bg-primary-500' : 'bg-kv-green'}`"
+                <div
+                  :class="`relative -end-8 -top-3 inline-block w-full rounded-tr-xl px-4 py-1.5 font-bold tracking-wide text-white ${index % 2 === 0 ? 'bg-primary-500' : 'bg-kv-green'}`"
                 >
-                  {{ item.title }}
-                </div> -->
+                  {{ item.subtitle }}
+                </div>
                 <div>
-                  <div
+                  <!-- <div
                     :class="`mb-2 mt-2 text-xl font-bold ${index % 2 === 0 ? 'text-primary-500' : 'text-kv-green'}`"
                   >
                     {{ item.subtitle }}
-                  </div>
-                  <div>{{ item.description }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-2 md:gap-y-10 md:pb-10 md:pt-5"
-        >
-          <div
-            v-for="(item, index) in showBirthday"
-            :key="index"
-            class="scroll-animate-rotateIn relative rounded-tl-3xl bg-white p-3 shadow-md"
-          >
-            <div class="flex flex-col">
-              <div
-                class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-2xl bg-gray-100 transition-opacity duration-300"
-              >
-                <img
-                  class="h-full w-full rounded-tl-3xl object-cover"
-                  :src="`${imagePath}${item.id}`"
-                  alt="1"
-                />
-              </div>
-              <div class="relative">
-                <!-- <div
-                  v-if="item.title"
-                  :class="`relative -end-8 -top-3 inline-block w-full rounded-tr-xl bg-kv-green px-6 py-1.5 text-xl font-bold tracking-wide text-white`"
-                >
-                  {{ item.title }}
-                </div> -->
-                <div>
-                  <div :class="`mb-2 mt-2 text-xl font-bold text-kv-green`">
-                    {{ item.subtitle }}
-                  </div>
+                  </div> -->
                   <div class="flex gap-4">
-                    <div class="shrink-0">
+                    <div
+                      v-if="
+                        index === showItems.length - 2 &&
+                        index === showItems.length - 3
+                      "
+                      class="shrink-0"
+                    >
                       <img
                         width="100"
                         height="100"
-                        :src="`${imagePath}/special-show-0${index + 1}.svg`"
+                        :src="`${imagePath}/special-show-0${index === showItems.length - 2 ? 1 : 2}.svg`"
                         alt="1"
                       />
                     </div>
@@ -198,9 +170,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="my-5 flex items-center justify-center">
-          <ButtonJoin />
         </div>
       </div>
       <span class="absolute -bottom-[80px] start-0 h-[100px] w-full">
@@ -221,41 +190,41 @@
           </div>
           <div class="mb-">※ 將依現場實際流程為主。</div>
         </div>
-        <div class="scroll-animate-fadeInUp text-2xl">
+        <div class="scroll-animate-fadeInUp text-[1.2rem]">
           <div
             class="flex divide-x divide-white rounded-t-lg bg-primary-500 py-3 text-white"
           >
-            <div class="grow px-3 text-center md:max-w-[300px]">時間</div>
+            <div class="grow px-3 text-center md:max-w-[200px]">時間</div>
             <div class="grow px-3 text-center">內容</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">11:00</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">11:00</div>
             <div class="grow px-3 font-black">活力開場</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">11:15</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">11:15</div>
             <div class="grow px-3 font-black">Q萌來寶唱跳秀</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">11:25</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">11:25</div>
             <div class="grow px-3 font-black">Q萌來寶唱跳秀</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">11:30</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">11:30</div>
             <div class="grow px-3 font-black">貴賓致詞暨開幕儀式</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">12:00</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">12:00</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
@@ -268,7 +237,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">12:15</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">12:15</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
@@ -281,7 +250,7 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">12:50</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">12:50</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
@@ -294,7 +263,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">13:00</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">13:00</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
@@ -307,7 +276,7 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">13:25</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">13:25</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
@@ -320,7 +289,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">13:35</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">13:35</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
@@ -333,11 +302,14 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[300px] md:text-center">14:10</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">14:10</div>
             <div class="grow px-3 font-black">
               2025 未來親子野餐日 歡樂抽獎​
             </div>
           </div>
+        </div>
+        <div class="my-5 flex items-center justify-center">
+          <ButtonJoin />
         </div>
       </div>
     </div>
