@@ -20,7 +20,7 @@
     {
       id: '/gift-early-bird/01.png',
       brand: '美琪',
-      title: '抗菌洗手慕斯隨身瓶50ML​',
+      title: '抗菌洗手慕斯隨身瓶50ml',
       description: `
           <ul>
             <li>★【輕便隨身攜帶】小巧50ML設計，輕鬆放入包包   或口袋，隨時隨地保持手部清潔。一瓶可洗淨雙手約60次。​</li>
@@ -48,7 +48,7 @@
     {
       id: '/gift-early-bird/03.png',
       brand: '小兒利撒爾',
-      title: '維生素D3+K2口含錠',
+      title: '維生素D3+K2口含錠 (60粒)',
       description: `
           <ul class='flex flex-col gap-3'>
             <li>
@@ -162,7 +162,7 @@
     {
       id: '/gift-lucky-bag/04.jpg',
       brand: '小蚊清',
-      title: '植萃沁涼防蚊液_隨身瓶',
+      title: '植萃沁涼防蚊液_隨身瓶 30g',
       description: `
           <ul class='flex flex-col gap-3'>
             <li>小蚊清全系列皆使用天然來源植萃配方，無添加DEET(敵避)、Paraben防腐劑、重金屬等化學成分，並添加法國有機認證的保濕成分，溫和不刺激，全家大小都適用！採美國高規格水霧噴頭，在皮膚表層形成清爽防護網，蚊蟲OUT！</li>
@@ -176,7 +176,7 @@
     {
       id: '/gift-lucky-bag/05.jpg',
       brand: '可爾必思',
-      title: `開心成長1瓶<span class='text-xs'>(原味/蘋果) 兩種口味隨機</span>`,
+      title: `開心成長1瓶 160 ml<span class='text-xs'>(原味/蘋果) 兩種口味隨機</span>`,
       description: `
           <ul class='flex flex-col gap-3'>
             <li>
@@ -220,7 +220,7 @@
     {
       id: '/gift-lucky-bag/09.jpg',
       brand: '未來親子',
-      title: '《未來兒童》',
+      title: '《未來兒童月刊》',
       description: `
         金鼎獎最佳兒童雜誌，適讀年齡：小學中低年級，搭配注音輕鬆讀、音檔下載隨時聽、精彩圖文好記憶，讓孩子生活知識一把罩！專業編輯團隊製作，頂尖專家把關，讓孩子贏在學習起跑點！
       `
@@ -847,16 +847,14 @@
                     </div>
 
                     <div
-                      class="mt-4 rounded-lg bg-yellow-100 p-3 text-xs font-bold text-primary-500"
+                      class="mt-4 rounded-lg bg-yellow-100 p-3 text-center text-xs font-bold text-primary-500"
                     >
                       <template v-if="modalOrder === 1">
-                        <div>福袋禮：</div>
                         <div>總價值超過 1,800 元</div>
                         <div>產品圖片僅供示意，以現場實物為主</div>
                         <div>現場不挑款式、花色，隨機出貨</div>
                       </template>
-                      <template v-esle>
-                        <div>早鳥禮：</div>
+                      <template v-else>
                         <div>總價值超過 1,700 元</div>
                         <div>產品圖片僅供示意，以現場實物為主</div>
                         <div>現場不挑款式、花色，隨機出貨</div>
