@@ -93,7 +93,7 @@
       `
     },
     {
-      id: '/gift-lucky-bag/06.jpg',
+      id: '/gift-early-bird/06.jpg',
       brand: '果利生技',
       title: 'SPD高濃度魚油EX(10入)',
       description: `
@@ -809,8 +809,8 @@
                     class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
                   >
                     <h5
-                      class="text-xl font-bold"
-                      id="exampleModalScrollableLabel"
+                      class="mx-auto text-xl font-bold"
+                      id="exampleModalScrollableLabel "
                     >
                       {{ modalOrder === 1 ? '福袋禮' : '早鳥禮' }}
                     </h5>

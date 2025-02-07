@@ -9,6 +9,47 @@
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse })
   })
+  const selectedIndex = ref()
+  const modelContent = ref([
+    {
+      id: 'gift-model-img-1.jpg',
+      title: '換書說明',
+      description: `
+        <p class="text-xl font-bold">好書大風吹</p>
+        <p>
+          凡攜帶家中用不到且狀態良好的舊書至活動攤位，即可兌換一本小天下/未來出版書籍，原捐獻之舊書將整理後捐給______（捐贈單位待定），讓美好知識永續傳承。
+        </p>
+        <p></p>
+        <p>※ 注意事項：</p>
+        <ul class="list-decimal px-4">
+          <li>
+            一組家庭限捐1本紙本書，並兌換1本小天下/未來出版書籍。
+          </li>
+          <li>捐贈書籍限兒童讀物，並需有版權及價格註記。</li>
+          <li>
+            圖書封面及內頁需清潔完好，8成新，無破損、污損或塗鴉情形者。
+          </li>
+          <li>電腦類書籍、教科書、期刊雜誌恕不收取。</li>
+          <li>若捐贈之書籍書況極差，未來親子擁有拒收的權利。</li>
+        </ul>
+      `
+    },
+    {
+      id: 'gift-model-img-2.jpg',
+      title: '貓下去爆米花',
+      description: `
+        <p class="text-xl font-bold mb-2">限時歡樂送</p>
+        <p>歡慶未來親子野餐日10週年，特邀台北超人氣餐酒館「貓下去敦北俱樂部」一起同樂！ </p>
+        <p>凡自行攜帶容器，憑闖關卡即可免費兌換「#貓下去爆米花」一份，一組家庭限兌換一次，數量有限，贈完為止。 </p>
+        <p>★期間限定★13:00-15:00</p>
+      `
+    }
+  ])
+
+  const selectModel = (index) => {
+    if (index !== 5 && index !== 8) return
+    selectedIndex.value = index === 5 ? 0 : 1
+  }
 </script>
 
 <template>
@@ -45,10 +86,10 @@
             :class="[
               'w-full',
               index % 2 === 0 ? 'md:translate-y-0' : 'md:translate-y-1/2',
-              index === 5 ? 'cursor-pointer' : ''
+              index === 5 || index === 8 ? 'cursor-pointer' : ''
             ]"
             v-bind="
-              index === 5
+              index === 5 || index === 8
                 ? {
                     'data-twe-toggle': 'modal',
                     'data-twe-target': '#exampleModalScrollable',
@@ -57,6 +98,7 @@
                   }
                 : {}
             "
+            @click="selectModel(index)"
           >
             <img
               :class="[
@@ -90,10 +132,13 @@
               class="pointer-events-auto relative flex max-h-[100%] w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
             >
               <div
-                class="flex flex-shrink-0 items-center justify-between rounded-t-md p-4"
+                class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
               >
-                <h5 class="text-xl font-bold" id="exampleModalScrollableLabel">
-                  換書說明
+                <h5
+                  class="tmx-auto text-xl font-bold"
+                  id="exampleModalScrollableLabel"
+                >
+                  {{ modelContent[selectedIndex]?.title }}
                 </h5>
                 <button
                   type="button"
@@ -111,43 +156,15 @@
                     <p>
                       <img
                         class="w-full"
-                        src="/img/gift-item-img-01.jpg"
+                        :src="`${imagePath}${modelContent[selectedIndex]?.id}`"
                         alt=""
                       />
                     </p>
-                    <p class="text-xl font-bold">好書大風吹</p>
-                    <p>
-                      凡攜帶家中用不到且狀態良好的舊書至活動攤位，即可兌換一本小天下/未來出版書籍，原捐獻之舊書將整理後捐給______（捐贈單位待定），讓美好知識永續傳承。
-                    </p>
-                    <p></p>
-                    <p>※ 注意事項：</p>
-                    <ul class="list-decimal px-4">
-                      <li>
-                        一組家庭限捐1本紙本書，並兌換1本小天下/未來出版書籍。
-                      </li>
-                      <li>捐贈書籍限兒童讀物，並需有版權及價格註記。</li>
-                      <li>
-                        圖書封面及內頁需清潔完好，8成新，無破損、污損或塗鴉情形者。
-                      </li>
-                      <li>電腦類書籍、教科書、期刊雜誌恕不收取。</li>
-                      <li>若捐贈之書籍書況極差，未來親子擁有拒收的權利。</li>
-                    </ul>
+                    <div
+                      v-html="modelContent[selectedIndex]?.description"
+                    ></div>
                   </div>
                 </div>
-
-                <!-- <div
-                      class="mt-4 flex flex-col items-center font-bold text-primary-500"
-                    >
-                      <div>福袋禮：</div>
-                      <div>總價值超過1,800元</div>
-                      <div>產品圖片僅供示意，以現場實物為主</div>
-                      <div>現場不挑款式、花色，隨機出貨</div>
-
-                      <div>早鳥禮：</div>
-                      <div>總價值超過1,700元</div>
-                      <div>產品圖片僅供示意，以現場實物為主</div>
-                      <div>現場不挑款式、花色，隨機出貨</div>
-                    </div> -->
               </div>
             </div>
           </div>
