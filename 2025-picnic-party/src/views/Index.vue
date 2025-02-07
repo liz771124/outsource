@@ -724,7 +724,7 @@
                   />
                 </div>
                 <div
-                  class="mt-3 text-center text-2xl font-black text-primary-500"
+                  class="mt-3 text-center text-xl font-black text-primary-500"
                 ></div>
               </div>
 
@@ -751,7 +751,7 @@
                   />
                 </div>
                 <div
-                  class="mt-3 text-center text-2xl font-black text-primary-500"
+                  class="mt-3 text-center text-xl font-black text-primary-500"
                 >
                   數量有限，要搶要快！
                 </div>
