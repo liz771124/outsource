@@ -337,9 +337,13 @@
 <template>
   <div>
     <Header :height="'800px'">
-      <img class="px-3" src="/img/kv-main.svg" alt="" width="600" />
+      <img
+        class="w-[450px] px-3 md:w-[600px]"
+        src="/img/kv-main.svg"
+        alt=""
+      />
       <span
-        class="absolute bottom-4 right-1 top-auto z-10 w-[80px] md:-right-16 md:top-24 md:w-[150px]"
+        class="absolute bottom-14 right-1 top-auto z-10 w-[70px] sm:-right-16 sm:top-24 sm:w-[150px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>

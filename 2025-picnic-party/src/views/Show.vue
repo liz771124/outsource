@@ -40,13 +40,6 @@
         '歡慶來寶過生日！還有神祕小夥伴來同樂，猜猜看會是誰呢？快來野餐日揭曉謎題～（小提示：是爸爸媽媽也都認識的好朋友哦）'
     },
     {
-      id: '/show/05.jpg',
-      title: null,
-      subtitle: '來寶好朋友大遊行',
-      description:
-        '最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！★遊行場次★ 12:00、13:40、15:00'
-    },
-    {
       id: '/show/06.jpg',
       title: '泡泡哥哥',
       subtitle: '波波星球',
@@ -59,6 +52,13 @@
       subtitle: 'F.S.D 兒童輪舞團｜行動慶生輪舞',
       description:
         '將藝術輪滑結合生活、穿越整場的驚喜童趣慶生！慶生小隊不定點出沒在活動中，一起來找他們玩滑輪、拿氣球吧！★表演場次★ 13:00、13:30、14:00、14:30'
+    },
+    {
+      id: '/show/05.jpg',
+      title: null,
+      subtitle: '來寶好朋友大遊行',
+      description:
+        '最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！★遊行場次★ 12:00、13:40、15:00'
     }
 
     // {
@@ -68,8 +68,6 @@
     //   description: ''
     // }
   ]
-
-  const showBirthday = []
 
   const setAnimation = () => {
     const cards = gsap.utils.toArray('.card-item')
@@ -99,9 +97,9 @@
 <template>
   <div>
     <Header>
-      <img src="/img/kv-show.svg" alt="" width="600" />
+      <img src="/img/kv-show.svg" alt="" class="w-[450px] px-3 sm:w-[600px]" />
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
+        class="absolute bottom-0 right-2 top-auto z-10 w-[70px] sm:-right-[100px] sm:top-24 sm:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
@@ -127,7 +125,7 @@
           >
             <div class="flex flex-col">
               <div
-                class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-2xl rounded-tl-3xl bg-gray-100 transition-opacity duration-300"
+                class="aspect-h-4 aspect-w-6 overflow-hidden rounded-tl-3xl bg-gray-100 transition-opacity duration-300"
               >
                 <img
                   class="h-full w-full object-cover"

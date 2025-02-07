@@ -14,10 +14,10 @@
 <template>
   <div>
     <Header>
-      <img src="/img/kv-gift.svg" alt="" width="600" />
+      <img src="/img/kv-gift.svg" alt="" class="w-[450px] px-3 sm:w-[600px]" />
 
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
+        class="absolute bottom-0 right-2 top-auto z-10 w-[70px] sm:-right-[100px] sm:top-24 sm:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>

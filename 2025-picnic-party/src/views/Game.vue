@@ -437,16 +437,16 @@
 <template>
   <div>
     <Header>
-      <img src="/img/kv-game.svg" alt="" width="600" />
+      <img src="/img/kv-game.svg" alt="" class="w-[450px] px-3 sm:w-[600px]" />
       <span
-        class="absolute right-3 top-0 z-10 w-[80px] md:-right-[130px] md:top-24 md:w-[180px]"
+        class="absolute bottom-0 right-2 top-auto z-10 w-[70px] sm:-right-[100px] sm:top-24 sm:w-[180px]"
       >
         <img src="/img/kv-main-img.svg" alt="" width="150" />
       </span>
     </Header>
     <div class="bg-green">
       <div
-        class="mx-5 flex max-w-[500px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
+        class="mx-5 flex max-w-[400px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
       >
         <div
           class="cursor-pointer px-5 py-1 md:px-8"
@@ -477,7 +477,7 @@
           </div>
         </div>
         <div id="game-01" class="text-center">
-          <img class="mx-auto" width="450" src="/img/title-game.svg" alt="" />
+          <img class="mx-auto" width="430" src="/img/title-game.svg" alt="" />
         </div>
         <div class="mb-5 flex flex-wrap items-center gap-5 md:flex-nowrap">
           <div
@@ -575,7 +575,7 @@
       <div class="container py-24">
         <div class="relative z-10 text-center">
           <img
-            width="450"
+            width="430"
             class="mx-auto"
             src="/img/title-lottery.svg"
             alt=""
@@ -585,7 +585,9 @@
           <div>集滿10個闖關印章，就能兌換抽獎券！</div>
           <div>超過60個幸運獎項，超級豪禮等你來拿！</div>
         </div>
-        <div class="my-8 grid items-stretch gap-8 md:grid-cols-3">
+        <div
+          class="my-8 grid grid-cols-1 items-stretch gap-8 sm:grid-cols-2 md:grid-cols-3"
+        >
           <div
             v-for="(item, index) in lotteryList"
             :key="index"
