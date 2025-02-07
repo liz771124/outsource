@@ -5,35 +5,35 @@
   const imagePath = import.meta.env.VITE_IMAGE_PATH
   const showItems = [
     {
-      id: '/show/05.jpg',
+      id: '/show/01.jpg',
       title: null,
       subtitle: '泥寶寶的魔法音樂會',
       description:
         '聽說星球上的泥土寶寶生病了，需要注入營養能量才能讓他打起精神！「微笑姐姐」使出神奇魔法帶領蔬果樂手演奏能量樂曲，泥土寶寶終於冒出新芽了！由農業部帶來精采的食農教育故事劇，讓孩子在悠揚的四季旋律中學習愛與珍惜！'
     },
     {
-      id: '/show/01.jpg',
+      id: '/show/02.jpg',
       title: 'J HALL樂團',
       subtitle: 'J HALL樂團｜孩子搖滾演唱會',
       description:
         '平均年齡只有10歲的「J HALL樂團」成軍3年，是華語樂壇史上最年輕的兒童樂團，將帶來孩子也能搖滾的演唱會，為現場爸爸媽媽與小朋友帶來多首朗朗上口的歌曲，一起來搖滾慶生Party吧！'
     },
     {
-      id: '/show/02.jpg',
+      id: '/show/03.jpg',
       title: '楊元慶',
       subtitle: '楊元慶｜魔術花式溜溜球',
       description:
         '溜溜球大師透過花式技巧演譯力與美！溜溜球項目金氏世界紀錄保持人楊元慶，用一顆溜溜球走遍全世界，期許孩子在熱愛的事情上不需要當最厲害的，而是成為無法取代。'
     },
     {
-      id: '/show/03.jpg',
+      id: '/show/04.jpg',
       title: '天馬戲創作劇團',
       subtitle: '天馬戲創作劇團｜蟲蟲馬戲團',
       description:
         '故事派對就從探索藝術與關懷環境展開！由天馬戲創作劇團帶來蟲蟲馬戲團表演，森林探險家帶著大家一窺森林的秘密，找尋傳說中的神奇昆蟲並立志要保護美麗的森林，不只是特技，更融入了環保與教育意涵。'
     },
     {
-      id: '/show/04.jpg',
+      id: '/show/05.jpg',
       title: null,
       subtitle: '歡樂派對秀',
       description:
@@ -41,24 +41,35 @@
     },
     {
       id: '/show/06.jpg',
+      title: null,
+      subtitle: 'Ｑ萌來寶唱跳秀',
+      description:
+        '未來親子最可愛的大明星「來寶」來囉！快來參加來寶慶生派對，跟著來寶和他的好朋友們一起唱歌跳舞去！'
+    },
+    {
+      id: '/show/07.jpg',
       title: '泡泡哥哥',
       subtitle: '波波星球',
       description:
         '舞台前卡位預備備～超人氣偶像泡泡哥哥來囉！要跟小朋友們一起開派對、唱唱跳跳high玩一整天！'
     },
     {
-      id: '/show/07.jpg',
+      id: '/show/08.jpg',
       title: 'F.S.D 藝術滑輪行動慶生舞',
       subtitle: 'F.S.D 兒童輪舞團｜行動慶生輪舞',
-      description:
-        '將藝術輪滑結合生活、穿越整場的驚喜童趣慶生！慶生小隊不定點出沒在活動中，一起來找他們玩滑輪、拿氣球吧！★表演場次★ 13:00、13:30、14:00、14:30'
+      description: `
+        <p>將藝術輪滑結合生活、穿越整場的驚喜童趣慶生！慶生小隊不定點出沒在活動中，一起來找他們玩滑輪、拿氣球吧！</p>
+        <p> ★表演場次★ 13:00、13:30、14:00、14:30</p>
+      `
     },
     {
-      id: '/show/05.jpg',
+      id: '/show/09.jpg',
       title: null,
       subtitle: '來寶好朋友大遊行',
-      description:
-        '最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！★遊行場次★ 12:00、13:40、15:00'
+      description: `
+        <p>最萌的來寶小壽星和他的好朋友們浩浩蕩蕩來跟大小朋友拍照囉！Ｑ度和顏值都爆表的見面會，絕對不能錯過！</p>
+        <p>★遊行場次★ 12:00、13:40、15:00</p>
+      `
     }
 
     // {
@@ -110,13 +121,13 @@
         <div class="mb-8 text-center">
           <img width="600" class="mx-auto" src="/img/title-show.svg" alt="" />
         </div>
-        <div class="text-center text-[1.1rem] font-black">
+        <div class="mb-5 text-center text-[1.1rem] font-black md:mb-10">
           <div>當然不能少了各種好Show炒熱氣氛！</div>
           <div>音樂、故事、唱唱跳跳</div>
           <div>最豐富的表演，都在未來親子野餐日！</div>
         </div>
         <div
-          class="mb-5 grid gap-x-10 gap-y-8 md:grid-cols-3 md:gap-y-10 md:pt-10"
+          class="relative mb-5 grid grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2 md:grid-cols-3 md:gap-y-10"
         >
           <div
             v-for="(item, index) in showItems"
@@ -146,26 +157,22 @@
                     {{ item.subtitle }}
                   </div> -->
                   <div class="flex gap-4">
-                    <div
-                      v-if="
-                        index === showItems.length - 2 &&
-                        index === showItems.length - 3
-                      "
-                      class="shrink-0"
-                    >
-                      <img
-                        width="100"
-                        height="100"
-                        :src="`${imagePath}/special-show-0${index === showItems.length - 2 ? 1 : 2}.svg`"
-                        alt="1"
-                      />
-                    </div>
-                    <div class="text-justify">
-                      {{ item.description }}
-                    </div>
+                    <div v-html="item.description" class="text-justify"></div>
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              v-if="
+                index === showItems.length - 2 || index === showItems.length - 1
+              "
+              class="absolute -start-3 -top-3 z-10"
+            >
+              <img
+                class="h-[80px] w-[80px]"
+                :src="`${imagePath}/special-show-0${index === showItems.length - 1 ? 2 : 1}.svg`"
+                alt="1"
+              />
             </div>
           </div>
         </div>
