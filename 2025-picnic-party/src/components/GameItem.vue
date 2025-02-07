@@ -31,7 +31,7 @@
         :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
       >
         <div class="mb-2 text-xl font-bold">{{ item.brand }}</div>
-        <div v-html="item.description" class="h-full overflow-auto"></div>
+        <div v-html="item.description" class="h-full overflow-auto text-justify"></div>
       </span>
       <div
         class="aspect-h-3 aspect-w-3 overflow-hidden rounded-tl-2xl bg-gray-100 transition-opacity duration-300"

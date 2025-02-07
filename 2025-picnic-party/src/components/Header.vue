@@ -101,7 +101,7 @@
   >
     <span
       id="star-01"
-      class="absolute left-6 top-[50px] w-[190px] md:left-[200px] md:w-[300px]"
+      class="absolute left-6 top-[50px] w-[190px] md:left-[150px] lg:left-[200px] lg:w-[300px]"
     >
       <img class="scroll-animate-bouncePulse" src="/img/star-01.svg" alt="" />
     </span>

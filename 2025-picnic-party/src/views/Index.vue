@@ -14,6 +14,7 @@
   })
 
   const selectedModalItems = ref()
+  const modalOrder = ref()
 
   const giftEarlyBird = [
     {
@@ -337,11 +338,7 @@
 <template>
   <div>
     <Header :height="'800px'">
-      <img
-        class="w-[450px] px-3 md:w-[600px]"
-        src="/img/kv-main.svg"
-        alt=""
-      />
+      <img class="w-[450px] px-3 md:w-[600px]" src="/img/kv-main.svg" alt="" />
       <span
         class="absolute bottom-14 right-1 top-auto z-10 w-[70px] sm:-right-16 sm:top-24 sm:w-[150px]"
       >
@@ -393,7 +390,7 @@
             class="flex flex-wrap items-center gap-3 md:mb-16 md:flex-nowrap"
           >
             <iframe
-              class="aspect-video scroll-animate-slideInLeft order-2 mx-auto h-[250px] w-full max-w-[450px] md:order-1 md:h-[350px]"
+              class="aspect-video scroll-animate-slideInLeft order-2 mx-auto h-[250px] w-full max-w-[500px] md:order-1 md:h-[350px]"
               src="https://www.youtube.com/embed/Sef8LyqvRJk?si=qtjNJwouQu-pgyAa&amp;controls=0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -461,7 +458,7 @@
                   孩子的春日派對、大人的歡聚時光！最精彩好看的舞台節目都在這，準備好一起
                   High 翻天吧！
                 </div>
-                <div class="absolute -bottom-10 start-10 hidden lg:block">
+                <div class="absolute -bottom-10 -start-3 hidden lg:block">
                   <img
                     class="w-[100px]"
                     src="/img/index-intro-icon-01.svg"
@@ -561,7 +558,7 @@
                 <div class="dashed-text-container">
                   歡慶十週年，活動好禮拿不完！快來看看這次活動有哪些超亮點，把限量好禮通通帶回家！
                 </div>
-                <div class="absolute -bottom-10 start-10 hidden lg:block">
+                <div class="absolute -bottom-10 -start-3 hidden lg:block">
                   <img
                     class="w-[100px]"
                     src="/img/index-intro-icon-03.svg"
@@ -712,7 +709,7 @@
                 data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
-                @click="selectedModalItems = giftLuckyBag"
+                @click="((selectedModalItems = giftLuckyBag), (modalOrder = 1))"
               >
                 <div>
                   <span
@@ -737,7 +734,9 @@
                 data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
-                @click="selectedModalItems = giftEarlyBird"
+                @click="
+                  ((selectedModalItems = giftEarlyBird), (modalOrder = 2))
+                "
               >
                 <div>
                   <span
@@ -807,13 +806,13 @@
                   class="pointer-events-auto relative flex max-h-[100%] w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
                 >
                   <div
-                    class="flex flex-shrink-0 items-center justify-between rounded-t-md p-4"
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
                   >
                     <h5
                       class="text-xl font-bold"
                       id="exampleModalScrollableLabel"
                     >
-                      <!-- 福袋禮 早鳥禮 -->
+                      {{ modalOrder === 1 ? '福袋禮' : '早鳥禮' }}
                     </h5>
                     <button
                       type="button"
@@ -847,19 +846,22 @@
                       </div>
                     </div>
 
-                    <!-- <div
-                      class="mt-4 flex flex-col items-center font-bold text-primary-500"
+                    <div
+                      class="mt-4 rounded-lg bg-yellow-100 p-3 text-xs font-bold text-primary-500"
                     >
-                      <div>福袋禮：</div>
-                      <div>總價值超過1,800元</div>
-                      <div>產品圖片僅供示意，以現場實物為主</div>
-                      <div>現場不挑款式、花色，隨機出貨</div>
-
-                      <div>早鳥禮：</div>
-                      <div>總價值超過1,700元</div>
-                      <div>產品圖片僅供示意，以現場實物為主</div>
-                      <div>現場不挑款式、花色，隨機出貨</div>
-                    </div> -->
+                      <template v-if="modalOrder === 1">
+                        <div>福袋禮：</div>
+                        <div>總價值超過 1,800 元</div>
+                        <div>產品圖片僅供示意，以現場實物為主</div>
+                        <div>現場不挑款式、花色，隨機出貨</div>
+                      </template>
+                      <template v-esle>
+                        <div>早鳥禮：</div>
+                        <div>總價值超過 1,700 元</div>
+                        <div>產品圖片僅供示意，以現場實物為主</div>
+                        <div>現場不挑款式、花色，隨機出貨</div>
+                      </template>
+                    </div>
                   </div>
                 </div>
               </div>

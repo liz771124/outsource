@@ -449,19 +449,19 @@
         class="mx-5 flex max-w-[400px] divide-x divide-white rounded-bl-xl rounded-br-xl bg-primary-500 py-3 md:mx-auto"
       >
         <div
-          class="cursor-pointer px-5 py-1 md:px-8"
+          class="cursor-pointer px-2 py-1 md:px-3"
           @click="scrollToElement('game-01')"
         >
-          <img src="/img/game-tag-title-01.svg" alt="" />
+          <img class="mx-auto" src="/img/game-tag-title-01.svg" alt="" />
         </div>
         <div
-          class="cursor-pointer px-5 py-1 md:px-8"
+          class="cursor-pointer px-2 py-1 md:px-3"
           @click="scrollToElement('game-02')"
         >
-          <img src="/img/game-tag-title-02.svg" alt="" />
+          <img class="mx-auto" src="/img/game-tag-title-02.svg" alt="" />
         </div>
       </div>
-      <div class="container py-16">
+      <div class="container pb-16 pt-10">
         <div class="mb-20 text-center">
           <img
             class="mx-auto mb-5 block"
@@ -638,7 +638,7 @@
                   </h2>
                 </div>
                 <div
-                  class="h-full grow overflow-y-auto overflow-x-hidden py-3"
+                  class="h-full grow overflow-y-auto overflow-x-hidden py-3 text-justify"
                   v-html="item.description"
                 ></div>
               </div>

@@ -160,7 +160,7 @@
                         alt="1"
                       />
                     </div>
-                    <div>
+                    <div class="text-justify">
                       {{ item.description }}
                     </div>
                   </div>
