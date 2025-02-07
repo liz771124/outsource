@@ -211,7 +211,7 @@
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
             <div class="grow px-3 md:max-w-[200px] md:text-center">11:25</div>
-            <div class="grow px-3 font-black">Q萌來寶唱跳秀</div>
+            <div class="grow px-3 font-black">歡樂派對秀</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
