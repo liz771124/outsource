@@ -753,7 +753,7 @@
                 <div
                   class="mt-3 text-center text-2xl font-black text-primary-500"
                 >
-                  限量 600 組！
+                  數量有限，要搶要快！
                 </div>
               </div>
             </div>
