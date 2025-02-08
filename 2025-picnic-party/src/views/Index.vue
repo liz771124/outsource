@@ -18,7 +18,7 @@
 
   const giftEarlyBird = [
     {
-      id: '/gift-early-bird/01.png',
+      id: '/gift-early-bird/01.jpg',
       brand: '美琪',
       title: '抗菌洗手慕斯隨身瓶50ml',
       description: `
