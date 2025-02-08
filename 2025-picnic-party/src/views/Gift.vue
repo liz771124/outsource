@@ -135,7 +135,7 @@
                 class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
               >
                 <h5
-                  class="tmx-auto text-xl font-bold"
+                  class="mx-auto text-xl font-bold"
                   id="exampleModalScrollableLabel"
                 >
                   {{ modelContent[selectedIndex]?.title }}
