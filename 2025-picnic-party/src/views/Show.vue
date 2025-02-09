@@ -49,7 +49,7 @@
     {
       id: '/show/07.jpg',
       title: '波波星球',
-      subtitle: '波波星球',
+      subtitle: '泡泡哥哥｜波波星球',
       description:
         '舞台前卡位預備備～超人氣偶像泡泡哥哥來囉！要跟小朋友們一起開派對、唱唱跳跳high玩一整天！'
     },

@@ -15,7 +15,7 @@
       id: 'gift-model-img-1.jpg',
       title: '換書說明',
       description: `
-        <p class="text-xl font-bold">好書大風吹</p>
+        <p class="text-xl font-bold text-center mb-2">好書大風吹</p>
         <p>
           凡攜帶家中用不到且狀態良好的舊書至活動攤位，即可兌換一本小天下/未來出版書籍，原捐獻之舊書將整理後捐給______（捐贈單位待定），讓美好知識永續傳承。
         </p>
@@ -38,7 +38,7 @@
       id: 'gift-model-img-2.jpg',
       title: '貓下去爆米花',
       description: `
-        <p class="text-xl font-bold mb-2">限時歡樂送</p>
+        <p class="text-xl font-bold mb-2 text-center">限時歡樂送</p>
         <p>歡慶未來親子野餐日10週年，特邀台北超人氣餐酒館「貓下去敦北俱樂部」一起同樂！ </p>
         <p>凡自行攜帶容器，憑闖關卡即可免費兌換「#貓下去爆米花」一份，一組家庭限兌換一次，數量有限，贈完為止。 </p>
         <p>★期間限定★13:00-15:00</p>
@@ -135,7 +135,7 @@
                 class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
               >
                 <h5
-                  class="tmx-auto text-xl font-bold"
+                  class="mx-auto text-xl font-bold"
                   id="exampleModalScrollableLabel"
                 >
                   {{ modelContent[selectedIndex]?.title }}
