@@ -30,7 +30,7 @@
         `
     },
     {
-      id: '/gift-early-bird/02.png',
+      id: '/gift-early-bird/02.jpg',
       brand: '德恩奈​',
       title: '潔牙雙星組​',
       description: `
