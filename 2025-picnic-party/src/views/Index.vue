@@ -259,14 +259,6 @@
         <p>規格：60g x 1包</p>
         <p>銷售通路：便利超商、超市、量販店</p>
       `
-    },
-    {
-      id: '/gift-lucky-bag/13.jpg',
-      brand: '乖乖',
-      title: '乖乖桶',
-      description: `
-
-      `
     }
 
     // {
@@ -670,18 +662,26 @@
                   立即購票
                 </div>
               </a>
-              <a
-                class="animate-zoom-in group relative grow text-primary-500"
-                href="#"
-              >
-                <img class="w-full" src="/img/ticket-02.svg" alt="" />
-
-                <div
+              <div class="animate-zoom-in group relative grow text-primary-500">
+                <a href="#" target="_blank">
+                  <img class="w-full" src="/img/ticket-02.svg" alt="" />
+                </a>
+                <img
+                  class="absolute bottom-16 right-6 w-[120px] cursor-pointer md:w-[100px] lg:bottom-20 lg:w-[120px]"
+                  src="/img/ticket-02-img.png"
+                  data-twe-toggle="modal"
+                  data-twe-target="#modal02"
+                  data-twe-ripple-init
+                  data-twe-ripple-color="light"
+                />
+                <a
+                  href="#"
+                  target="_blank"
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-primary-500"
                 >
                   立即購票
-                </div>
-              </a>
+                </a>
+              </div>
               <a class="animate-zoom-in group relative grow" href="#">
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
 
@@ -697,7 +697,7 @@
               <div
                 class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
                 data-twe-toggle="modal"
-                data-twe-target="#exampleModalScrollable"
+                data-twe-target="#modal01"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
                 @click="((selectedModalItems = giftLuckyBag), (modalOrder = 1))"
@@ -709,12 +709,12 @@
                     <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
                   <img
-                    class="hidden h-full w-full md:block md:h-[350px]"
+                    class="hidden h-full w-full md:block"
                     src="/img/gift_01-p.jpg"
                     alt=""
                   />
                   <img
-                    class="block h-full w-full md:hidden md:h-[350px]"
+                    class="block h-full w-full md:hidden"
                     src="/img/gift_01-m.jpg"
                     alt=""
                   />
@@ -727,7 +727,7 @@
               <div
                 class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
                 data-twe-toggle="modal"
-                data-twe-target="#exampleModalScrollable"
+                data-twe-target="#modal01"
                 data-twe-ripple-init
                 data-twe-ripple-color="light"
                 @click="
@@ -740,11 +740,7 @@
                   >
                     <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
-                  <img
-                    class="h-full w-full md:h-[350px]"
-                    src="/img/gift_02-m.jpg"
-                    alt=""
-                  />
+                  <img class="h-full w-full" src="/img/gift_02-m.jpg" alt="" />
                 </div>
                 <div
                   class="mt-3 text-center text-xl font-black text-primary-500"
@@ -789,9 +785,9 @@
             <div
               data-twe-modal-init
               class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-6 outline-none"
-              id="exampleModalScrollable"
+              id="modal01"
               tabindex="-1"
-              aria-labelledby="exampleModalScrollableLabel"
+              aria-labelledby="modal01Label"
               aria-hidden="true"
             >
               <div
@@ -804,10 +800,7 @@
                   <div
                     class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
                   >
-                    <h5
-                      class="mx-auto text-xl font-bold"
-                      id="exampleModalScrollableLabel "
-                    >
+                    <h5 class="mx-auto text-xl font-bold" id="modal01Label ">
                       {{ modalOrder === 1 ? '福袋禮' : '早鳥禮' }}
                     </h5>
                     <button
@@ -855,6 +848,63 @@
                         <div>產品圖片僅供示意，以現場實物為主</div>
                         <div>現場不挑款式、花色，隨機出貨</div>
                       </template>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              data-twe-modal-init
+              class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-6 outline-none"
+              id="modal02"
+              tabindex="-1"
+              aria-labelledby="modal02Label"
+              aria-hidden="true"
+            >
+              <div
+                data-twe-modal-dialog-ref
+                class="pointer-events-none relative h-[calc(100%-1rem)] w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]"
+              >
+                <div
+                  class="pointer-events-auto relative flex max-h-[100%] w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-4 outline-none dark:bg-surface-dark"
+                >
+                  <div
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b p-4"
+                  >
+                    <h5 class="mx-auto text-xl font-bold" id="modal02Label ">
+                      乖乖桶-綜合水果軟糖
+                    </h5>
+                    <button
+                      type="button"
+                      class="absolute -right-2 -top-2 z-10 box-content rounded-full border-none bg-white text-neutral-500 hover:text-neutral-800 hover:no-underline focus:text-neutral-800 focus:opacity-100 focus:shadow-none focus:outline-none"
+                      data-twe-modal-dismiss
+                      aria-label="Close"
+                    >
+                      <img width="40" src="/img/modal-close.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="relative overflow-y-auto p-6">
+                    <div class="flex flex-col gap-5 divide-y text-justify">
+                      <ul>
+                        <li>
+                          <img
+                            class="h-[300px] w-full bg-white object-contain text-center"
+                            src="/img/gift-lucky-bag/13.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li>★童年的回憶，經典軟糖</li>
+                        <li>★口味繽紛，專屬你的甜蜜滋味。</li>
+                        <li>
+                          ★最經典的乖乖桶，陪每個世代長大的乖乖軟糖 規格：720g x
+                          1桶
+                        </li>
+                        <li>
+                          銷售通路：超商、全聯、量販店、PChome24h購物、momo購物網、博客來
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
