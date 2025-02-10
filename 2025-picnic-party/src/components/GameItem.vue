@@ -27,11 +27,14 @@
   >
     <div class="overflow-hidden">
       <span
-        class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-hidden bg-white p-6 transition-opacity duration-300"
-        :class="isHovered === index ? 'opacity-100' : 'opacity-0'"
+        class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-hidden bg-white  transition-opacity duration-300"
+        :class="isHovered === index ? 'opacity-100' : 'opacity-0', item.name.indexOf('<br/>') > 0 ? 'pt-10 px-6 mb-6' : 'p-6'"
       >
         <div class="mb-2 text-xl font-bold">{{ item.brand }}</div>
-        <div v-html="item.description" class="h-full overflow-auto text-justify"></div>
+        <div
+          v-html="item.description"
+          class="h-full overflow-auto text-justify"
+        ></div>
       </span>
       <div
         class="aspect-h-3 aspect-w-3 overflow-hidden rounded-tl-2xl bg-gray-100 transition-opacity duration-300"
@@ -45,8 +48,8 @@
       </div>
       <span
         :class="`absolute -end-3 -top-[23px] z-10 inline-block w-full max-w-[300px] rounded-tr-xl px-4 py-1.5 font-bold tracking-wide text-white ${className}`"
+        v-html="item.name"
       >
-        {{ item.name }}
       </span>
     </div>
   </div>
