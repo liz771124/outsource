@@ -439,7 +439,7 @@
             to="/show"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap md:gap-5 lg:items-stretch"
             >
               <div class="lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-01.png" alt="" />
@@ -490,7 +490,7 @@
             to="/game#game-01"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap md:gap-5 lg:items-stretch"
             >
               <div class="order-2 lg:shrink-0">
                 <img class="w-full" src="/img/index-intro-02.png" alt="" />
@@ -540,7 +540,7 @@
             to="/gift"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap md:gap-5 lg:items-stretch"
             >
               <div class="lg:shrink-0">
                 <img class="500" src="/img/index-intro-03.png" alt="" />
@@ -590,9 +590,9 @@
             to="/game#game-02"
           >
             <div
-              class="flex flex-wrap items-center justify-between md:flex-nowrap lg:items-stretch xl:gap-5"
+              class="flex flex-wrap items-center justify-between md:flex-nowrap md:gap-5 lg:items-stretch"
             >
-              <div class="order-2 w-full md:max-w-[590px]">
+              <div class="order-2 w-full sm:max-w-[303px] lg:max-w-[590px]">
                 <swiper
                   class="w-full"
                   :slides-per-view="1"
@@ -712,9 +712,7 @@
               </a>
             </div>
 
-            <div
-              class="flex flex-wrap gap-14 pt-8 md:mt-10 md:flex-nowrap md:gap-8"
-            >
+            <div class="flex flex-wrap gap-14 pt-20 md:flex-nowrap md:gap-8">
               <div
                 class="animate-zoom-in relative w-full cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
                 data-twe-toggle="modal"
@@ -725,7 +723,7 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-top-[30px]"
+                    class="absolute -start-[4px] -top-[28px] w-[250px] md:-top-[30px]"
                   >
                     <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
@@ -752,7 +750,7 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[28px] w-[280px] md:-top-[30px] md:w-[300px]"
+                    class="absolute -start-[4px] -top-[28px] w-[250px] md:-top-[30px]"
                   >
                     <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
