@@ -547,26 +547,7 @@
               </div>
               <div class="relative grow pt-5">
                 <img width="250" src="/img/page-title-03.svg" alt="" />
-                <!-- <div
-                  class="relative z-10 flex text-[35px] font-black tracking-wide text-primary-500 md:text-[50px]"
-                >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >互</span
-                  >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >動</span
-                  >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >好</span
-                  >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >禮</span
-                  >
-                </div> -->
+
                 <div class="dashed-text-container">
                   歡慶十週年，活動好禮拿不完！快來看看這次活動有哪些超亮點，把限量好禮通通帶回家！
                 </div>
@@ -714,7 +695,7 @@
 
             <div class="flex flex-wrap gap-14 pt-20 md:flex-nowrap md:gap-8">
               <div
-                class="animate-zoom-in relative w-full cursor-pointer bg-white p-5 shadow-xl md:w-2/3"
+                class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
                 data-twe-toggle="modal"
                 data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
@@ -728,8 +709,13 @@
                     <img src="/img/index-gift-title-01.svg" alt="" />
                   </span>
                   <img
-                    class="w-full object-cover md:h-[350px]"
-                    src="/img/gift_01.png"
+                    class="hidden h-full w-full md:block md:h-[350px]"
+                    src="/img/gift_01-p.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="block h-full w-full md:hidden md:h-[350px]"
+                    src="/img/gift_01-m.jpg"
                     alt=""
                   />
                 </div>
@@ -739,7 +725,7 @@
               </div>
 
               <div
-                class="animate-zoom-in relative w-full cursor-pointer bg-white p-5 shadow-xl md:w-1/3"
+                class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
                 data-twe-toggle="modal"
                 data-twe-target="#exampleModalScrollable"
                 data-twe-ripple-init
@@ -755,8 +741,8 @@
                     <img src="/img/index-gift-title-02.svg" alt="" />
                   </span>
                   <img
-                    class="w-full object-cover md:h-[350px]"
-                    src="/img/gift_01.png"
+                    class="h-full w-full md:h-[350px]"
+                    src="/img/gift_02-m.jpg"
                     alt=""
                   />
                 </div>
