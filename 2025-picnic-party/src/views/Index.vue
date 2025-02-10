@@ -652,7 +652,7 @@
           <div>
             <div
               id="purchase"
-              class="mt-5 flex flex-wrap items-end justify-between gap-10 md:flex-nowrap md:gap-5"
+              class="flex flex-wrap items-end justify-between gap-10 md:mt-5 md:flex-nowrap md:gap-5"
             >
               <a class="animate-zoom-in group relative grow" href="#">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
@@ -662,7 +662,9 @@
                   立即購票
                 </div>
               </a>
-              <div class="animate-zoom-in group relative grow text-primary-500">
+              <div
+                class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
+              >
                 <a href="#" target="_blank">
                   <img class="w-full" src="/img/ticket-02.svg" alt="" />
                 </a>
@@ -704,9 +706,13 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[28px] w-[250px] md:-top-[30px]"
+                    class="absolute -start-[4px] -top-[24px] h-[80px] md:-top-[25px]"
                   >
-                    <img src="/img/index-gift-title-01.svg" alt="" />
+                    <img
+                      class="h-full"
+                      src="/img/index-gift-title-01.svg"
+                      alt=""
+                    />
                   </span>
                   <img
                     class="hidden h-full w-full md:block"
@@ -736,9 +742,13 @@
               >
                 <div>
                   <span
-                    class="absolute -start-[4px] -top-[28px] w-[250px] md:-top-[30px]"
+                    class="absolute -start-[4px] -top-[24px] h-[80px] md:-top-[25px]"
                   >
-                    <img src="/img/index-gift-title-02.svg" alt="" />
+                    <img
+                      class="h-full"
+                      src="/img/index-gift-title-02.svg"
+                      alt=""
+                    />
                   </span>
                   <img class="h-full w-full" src="/img/gift_02-m.jpg" alt="" />
                 </div>
