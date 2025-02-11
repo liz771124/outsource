@@ -94,7 +94,7 @@
     {
       id: '/gift-early-bird/06.jpg',
       brand: '果利生技',
-      title: 'SPD高濃度魚油EX(10入)',
+      title: 'SPD高濃度魚油EX (10粒/袋)',
       description: `
         <ul>
           <li>Omega-3高濃度魚油，SGS檢驗高達98.6%！促進新陳代謝的救星，讓健康全面升級。24項專利技術，榮獲世界品質評鑑金獎，品質值得信賴。國際GOED Omega-3會員認證與IFOS 五星最高評價，無腥味、新鮮度有保證，全球權威認可！獨特rTG型式，吸收率提升3倍，小顆易吞食，營養補充更有效！</li>
@@ -577,13 +577,46 @@
                   loop
                 >
                   <swiper-slide>
-                    <img class="w-full" src="/img/index-intro-04.png" alt="" />
+                    <img
+                      class="w-full"
+                      src="/img/index-intro-04-01.png"
+                      alt=""
+                    />
                   </swiper-slide>
                   <swiper-slide>
-                    <img class="w-full" src="/img/index-intro-03.png" alt="" />
+                    <img
+                      class="w-full"
+                      src="/img/index-intro-04-02.png"
+                      alt=""
+                    />
                   </swiper-slide>
                   <swiper-slide>
-                    <img class="w-full" src="/img/index-intro-01.png" alt="" />
+                    <img
+                      class="w-full"
+                      src="/img/index-intro-04-03.png"
+                      alt=""
+                    />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img
+                      class="w-full"
+                      src="/img/index-intro-04-04.png"
+                      alt=""
+                    />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img
+                      class="w-full"
+                      src="/img/index-intro-04-05.png"
+                      alt=""
+                    />
+                  </swiper-slide>
+                  <swiper-slide>
+                    <img
+                      class="w-full"
+                      src="/img/index-intro-04-06.png"
+                      alt=""
+                    />
                   </swiper-slide>
                 </swiper>
               </div>
@@ -848,16 +881,9 @@
                     <div
                       class="mt-4 rounded-lg bg-yellow-100 p-3 text-center text-xs font-bold text-primary-500"
                     >
-                      <template v-if="modalOrder === 1">
-                        <div>總價值超過 1,800 元</div>
-                        <div>產品圖片僅供示意，以現場實物為主</div>
-                        <div>現場不挑款式、花色，隨機出貨</div>
-                      </template>
-                      <template v-else>
-                        <div>總價值超過 1,700 元</div>
-                        <div>產品圖片僅供示意，以現場實物為主</div>
-                        <div>現場不挑款式、花色，隨機出貨</div>
-                      </template>
+                      <div>總價值超過 1,800 元</div>
+                      <div>產品圖片僅供示意，以現場實物為主</div>
+                      <div>現場不挑款式、花色，隨機出貨</div>
                     </div>
                   </div>
                 </div>
