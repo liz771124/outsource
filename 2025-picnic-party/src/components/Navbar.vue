@@ -69,7 +69,6 @@
           </g>
         </svg>
       </div>
-
       <div
         class="invisible fixed bottom-0 left-0 right-0 top-0 z-[1045] flex h-[195px] max-h-full max-w-full -translate-y-full flex-col border-none bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out data-[twe-offcanvas-show]:transform-none dark:bg-body-dark dark:text-white"
         tabindex="-1"

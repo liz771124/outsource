@@ -702,7 +702,7 @@
                   <img class="w-full" src="/img/ticket-02.svg" alt="" />
                 </a>
                 <img
-                  class="absolute bottom-16 right-6 w-[120px] cursor-pointer md:w-[100px] lg:bottom-20 lg:w-[120px]"
+                  class="absolute bottom-20 right-6 w-[120px] cursor-pointer md:w-[100px] lg:bottom-12 lg:w-[120px]"
                   src="/img/ticket-02-img.png"
                   data-twe-toggle="modal"
                   data-twe-target="#modal02"

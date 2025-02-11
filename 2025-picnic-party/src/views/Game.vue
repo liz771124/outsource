@@ -550,9 +550,6 @@
           </div>
           <div class="text-[1.1rem] font-black">
             未來親子推廣專區，跟著來寶一起聽故事、玩知識、塗塗鴉、看看書，
-            <!-- <br
-              class="hidden md:block"
-            /> -->
             感受知識與閱讀的無限樂趣！
           </div>
         </div>
