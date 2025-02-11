@@ -728,7 +728,9 @@
               </a>
             </div>
 
-            <div class="flex flex-wrap gap-14 pt-20 md:flex-nowrap md:gap-8">
+            <div
+              class="flex flex-wrap gap-14 pt-[110px] md:flex-nowrap md:gap-8"
+            >
               <div
                 class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
                 data-twe-toggle="modal"
@@ -738,9 +740,7 @@
                 @click="((selectedModalItems = giftLuckyBag), (modalOrder = 1))"
               >
                 <div>
-                  <span
-                    class="absolute -start-[4px] -top-[24px] h-[80px] md:-top-[25px]"
-                  >
+                  <span class="absolute -start-[4px] -top-[55px] h-[80px]">
                     <img
                       class="h-full"
                       src="/img/index-gift-title-01.svg"
@@ -774,9 +774,7 @@
                 "
               >
                 <div>
-                  <span
-                    class="absolute -start-[4px] -top-[24px] h-[80px] md:-top-[25px]"
-                  >
+                  <span class="absolute -start-[4px] -top-[55px] h-[80px]">
                     <img
                       class="h-full"
                       src="/img/index-gift-title-02.svg"
