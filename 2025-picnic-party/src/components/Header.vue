@@ -119,12 +119,12 @@
     </span>
     <span
       id="star-04"
-      class="absolute bottom-20 right-28 md:left-48 md:right-auto"
+      class="absolute bottom-20 right-28 md:bottom-48 md:right-20"
     >
       <img src="/img/star-04.svg" alt="" />
     </span>
 
-    <span id="star-02" class="absolute bottom-28 right-10 md:right-10">
+    <span id="star-02" class="absolute bottom-28 right-10">
       <img src="/img/star-02.svg" alt="" />
     </span>
     <span

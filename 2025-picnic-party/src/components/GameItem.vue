@@ -33,7 +33,7 @@
         <div class="mb-2 text-xl font-bold">{{ item.brand }}</div>
         <div
           v-html="item.description"
-          class="text-justify grow overflow-y-auto"
+          class="text-justify grow overflow-x-hidden overflow-y-auto"
         ></div>
       </span>
       <div
