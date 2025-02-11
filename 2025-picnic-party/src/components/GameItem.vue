@@ -27,13 +27,13 @@
   >
     <div class="overflow-hidden">
       <span
-        class="group:hover:translate-x-0 absolute inset-0 z-10 h-full overflow-x-hidden overflow-y-auto bg-white  transition-opacity duration-300"
+        class="group:hover:translate-x-0 absolute inset-0 z-10 h-full flex flex-col overflow-hidden bg-white  transition-opacity duration-300"
         :class="isHovered === index ? 'opacity-100' : 'opacity-0', item.name.indexOf('<br/>') > 0 ? 'pt-10 px-6 mb-6' : 'p-6'"
       >
         <div class="mb-2 text-xl font-bold">{{ item.brand }}</div>
         <div
           v-html="item.description"
-          class="text-justify h-full overflow-hidden"
+          class="text-justify grow overflow-y-auto"
         ></div>
       </span>
       <div
