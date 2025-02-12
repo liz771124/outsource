@@ -12,7 +12,7 @@
     {
       id: '15.jpg',
       brand: '福斯商旅',
-      name: 'T6.1California露營車三天(72小時)體驗券',
+      name: `T6.1California露營車<br />三天(72小時)體驗券`,
       description: '讓您與孩子可一起共享、發現樂趣的探索號體驗！',
       price: '＄獎項價值 18,000 元 / 1 名'
     },
@@ -612,9 +612,10 @@
               <div class="mb-1 font-semibold text-primary-500">
                 【{{ item.brand }}】
               </div>
-              <h2 class="font-semibold text-primary-500">
-                {{ item.name }}
-              </h2>
+              <h2
+                class="font-semibold text-primary-500"
+                v-html="item.name"
+              ></h2>
             </div>
             <div
               class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"
@@ -631,9 +632,10 @@
                   class="mb-1 shrink-0 border-b p-2 text-center text-xl font-semibold text-primary-500"
                 >
                   <span>【{{ item.brand }}】</span>
-                  <h2 class="font-semibold text-primary-500">
-                    {{ item.name }}
-                  </h2>
+                  <h2
+                    class="font-semibold text-primary-500"
+                    v-html="item.name"
+                  ></h2>
                 </div>
                 <div
                   class="h-full grow overflow-y-auto overflow-x-hidden py-3 text-justify"
