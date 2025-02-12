@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
+  import { ref, onMounted, onUnmounted, nextTick } from 'vue'
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import { Swiper, SwiperSlide } from 'swiper/vue'
   import { Autoplay, Pagination, Navigation } from 'swiper/modules'
@@ -333,6 +333,14 @@
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse })
     initializeAnimations()
+
+    nextTick(() => {
+      const myModalEl = document.getElementById('modal01')
+      myModalEl.addEventListener('hide.twe.modal', (e) => {
+        const myModalElContainer = document.getElementById('modal01-container')
+        myModalElContainer.scrollTop = 0
+      })
+    })
   })
 
   onUnmounted(() => {
@@ -854,7 +862,10 @@
                     </button>
                   </div>
 
-                  <div class="relative overflow-y-auto p-6">
+                  <div
+                    id="modal01-container"
+                    class="relative overflow-y-auto p-6"
+                  >
                     <div class="flex flex-col gap-5 divide-y text-justify">
                       <div
                         v-for="(item, index) in selectedModalItems"
