@@ -6,7 +6,10 @@ import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? './' : '/',
+  base:
+    process.env.NODE_ENV === 'production'
+      ? './'
+      : '/outsource/2025-picnic-party/dist/',
   plugins: [vue(), Pages(), Components({ dirs: ['src/components'] })],
   resolve: {
     alias: {
