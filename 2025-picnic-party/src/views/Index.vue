@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
+  import { ref, onMounted, onUnmounted, nextTick } from 'vue'
   import { Tooltip, Modal, Collapse, initTWE } from 'tw-elements'
   import { Swiper, SwiperSlide } from 'swiper/vue'
   import { Autoplay, Pagination, Navigation } from 'swiper/modules'
@@ -333,6 +333,14 @@
   onMounted(() => {
     initTWE({ Tooltip, Modal, Collapse })
     initializeAnimations()
+
+    nextTick(() => {
+      const myModalEl = document.getElementById('modal01')
+      myModalEl.addEventListener('hide.twe.modal', (e) => {
+        const myModalElContainer = document.getElementById('modal01-container')
+        myModalElContainer.scrollTop = 0
+      })
+    })
   })
 
   onUnmounted(() => {
@@ -702,7 +710,7 @@
                   <img class="w-full" src="/img/ticket-02.svg" alt="" />
                 </a>
                 <img
-                  class="absolute bottom-20 right-6 w-[120px] cursor-pointer md:w-[100px] lg:bottom-12 lg:w-[120px]"
+                  class="absolute bottom-20 right-6 w-[120px] cursor-pointer md:bottom-[40px] md:w-[90px] lg:bottom-12 lg:w-[120px]"
                   src="/img/ticket-02-img.png"
                   data-twe-toggle="modal"
                   data-twe-target="#modal02"
@@ -719,7 +727,10 @@
               </div>
               <a class="animate-zoom-in group relative grow" href="#">
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
-
+                <img
+                  class="absolute bottom-[85px] right-4 w-[100px] cursor-pointer md:bottom-[70px] md:w-[70px] lg:w-[100px] lg:bottom-[85px]"
+                  src="/img/ticket-03-img.png"
+                />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
                 >
@@ -854,7 +865,10 @@
                     </button>
                   </div>
 
-                  <div class="relative overflow-y-auto p-6">
+                  <div
+                    id="modal01-container"
+                    class="relative overflow-y-auto p-6"
+                  >
                     <div class="flex flex-col gap-5 divide-y text-justify">
                       <div
                         v-for="(item, index) in selectedModalItems"

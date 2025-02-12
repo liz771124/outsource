@@ -12,7 +12,7 @@
     {
       id: '15.jpg',
       brand: '福斯商旅',
-      name: 'T6.1California露營車完整三天(72小時)體驗券',
+      name: `T6.1California露營車<br />三天(72小時)體驗券`,
       description: '讓您與孩子可一起共享、發現樂趣的探索號體驗！',
       price: '＄獎項價值 18,000 元 / 1 名'
     },
@@ -354,15 +354,24 @@
   const game05List = [
     {
       id: '/game-05/01.jpg',
+      brand: '未來兒童•未來少年',
       name: '我是未來知識王',
       description:
         '浩瀚的知識宇宙，你掌握了多少奧秘呢？趕快加入這場知識宇宙大冒險，成為未來知識王，還可抽萬元大獎並獲得《未來兒童》《未來少年》雜誌及多項精美好禮。'
     },
     {
       id: '/game-05/03.jpg',
+      brand: '小天下',
       name: '未來親子故事屋',
       description:
         '大朋友、小朋友～一起來聽故事囉！生動有趣的未來姐姐說故事、加上趣味又好玩的遊戲，趕快加入這場故事派對，一起讓想像夢遊！'
+    },
+    {
+      id: '/game-05/04.jpg',
+      brand: '未來Family',
+      name: '我的家庭真可愛',
+      description:
+        '未來Family為野餐日設計的限定主題佈置，讓全家留下一期一會的美好的紀錄！只要分享全家在攤位上可愛又搞怪的紀念合影，即可兌換精美小禮。'
     }
   ]
   const setFaqListItem = () => {
@@ -606,9 +615,10 @@
               <div class="mb-1 font-semibold text-primary-500">
                 【{{ item.brand }}】
               </div>
-              <h2 class="font-semibold text-primary-500">
-                {{ item.name }}
-              </h2>
+              <h2
+                class="font-semibold text-primary-500"
+                v-html="item.name"
+              ></h2>
             </div>
             <div
               class="mt-auto border-t p-3 text-center text-sm font-bold text-gray2-500"
@@ -625,9 +635,10 @@
                   class="mb-1 shrink-0 border-b p-2 text-center text-xl font-semibold text-primary-500"
                 >
                   <span>【{{ item.brand }}】</span>
-                  <h2 class="font-semibold text-primary-500">
-                    {{ item.name }}
-                  </h2>
+                  <h2
+                    class="font-semibold text-primary-500"
+                    v-html="item.name"
+                  ></h2>
                 </div>
                 <div
                   class="h-full grow overflow-y-auto overflow-x-hidden py-3 text-justify"
