@@ -728,7 +728,7 @@
               <a class="animate-zoom-in group relative grow" href="#">
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
                 <img
-                  class="absolute bottom-[85px] right-4 w-[100px] cursor-pointer md:bottom-[70px] md:w-[70px] lg:bottom-[85px]"
+                  class="absolute bottom-[85px] right-4 w-[100px] cursor-pointer md:bottom-[70px] md:w-[70px] lg:w-[100px] lg:bottom-[85px]"
                   src="/img/ticket-03-img.png"
                 />
                 <div
