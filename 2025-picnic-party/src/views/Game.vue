@@ -12,7 +12,7 @@
     {
       id: '15.jpg',
       brand: '福斯商旅',
-      name: 'T6.1California露營車完整三天(72小時)體驗券',
+      name: 'T6.1California露營車三天(72小時)體驗券',
       description: '讓您與孩子可一起共享、發現樂趣的探索號體驗！',
       price: '＄獎項價值 18,000 元 / 1 名'
     },
