@@ -695,7 +695,11 @@
               id="purchase"
               class="flex flex-wrap items-end justify-between gap-10 md:mt-5 md:flex-nowrap md:gap-5"
             >
-              <a class="animate-zoom-in group relative grow" href="#">
+              <a
+                class="animate-zoom-in group relative grow"
+                href="https://futureparenting.cwgv.com.tw/future/show/PRO006409"
+                target="_blank"
+              >
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
                 <div
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
@@ -706,7 +710,10 @@
               <div
                 class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
               >
-                <a href="#" target="_blank">
+                <a
+                  href="https://futureparenting.cwgv.com.tw/future/show/PRO006410"
+                  target="_blank"
+                >
                   <img class="w-full" src="/img/ticket-02.svg" alt="" />
                 </a>
                 <img
@@ -718,17 +725,21 @@
                   data-twe-ripple-color="light"
                 />
                 <a
-                  href="#"
+                  href="https://futureparenting.cwgv.com.tw/future/show/PRO006410"
                   target="_blank"
                   class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-primary-500"
                 >
                   立即購票
                 </a>
               </div>
-              <a class="animate-zoom-in group relative grow" href="#">
+              <a
+                class="animate-zoom-in group relative grow"
+                href="https://futureparenting.cwgv.com.tw/future/show/PRO006411"
+                target="_blank"
+              >
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
                 <img
-                  class="absolute bottom-[85px] right-4 w-[100px] cursor-pointer md:bottom-[70px] md:w-[70px] lg:w-[100px] lg:bottom-[85px]"
+                  class="absolute bottom-[85px] right-4 w-[100px] cursor-pointer md:bottom-[70px] md:w-[70px] lg:bottom-[85px] lg:w-[100px]"
                   src="/img/ticket-03-img.png"
                 />
                 <div
