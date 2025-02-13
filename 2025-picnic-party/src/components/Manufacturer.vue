@@ -50,6 +50,11 @@
         link: 'https://www.igogosport.com/'
       },
       {
+        id: '/sponsor/14.jpg',
+        title: '福斯商旅',
+        link: 'https://www.volkswagen-commercial.com.tw/zh.html'
+      },
+      {
         id: '/sponsor/09.jpg',
         title: '小蚊清',
         link: 'https://shop.farcent.com.tw/collections/p0'
@@ -60,26 +65,21 @@
         link: 'https://www.facebook.com/calpis.tw/'
       },
       {
-        id: '/sponsor/11.jpg',
-        title: '兒福聯盟',
-        link: 'https://www.children.org.tw/'
-      },
-
-      {
         id: '/sponsor/12.jpg',
         title: '初鹿牧場',
         link: 'https://www.chuluranch.com.tw/'
+      },
+      {
+        id: '/sponsor/11.jpg',
+        title: '兒福聯盟',
+        link: 'https://www.children.org.tw/'
       },
       {
         id: '/sponsor/13.jpg',
         title: '義美',
         link: 'https://www.imeifoods.com.tw/'
       },
-      {
-        id: '/sponsor/14.jpg',
-        title: '福斯商旅',
-        link: 'https://www.volkswagen-commercial.com.tw/zh.html'
-      },
+
       {
         id: '/sponsor/15.jpg',
         title: '德恩奈',
@@ -99,8 +99,8 @@
       },
       {
         id: '/sponsor/18.jpg',
-        title: '正隆蒲公英',
-        link: 'https://aeshop.com.tw/'
+        title: '正隆',
+        link: 'https://www.clc.com.tw/csr'
       },
       {
         id: '/sponsor/19.jpg',
@@ -161,6 +161,11 @@
         id: '/sponsor/30.jpg',
         title: '麗寶樂園',
         link: 'https://www.lihpaoresort.com/LihpaolandApp'
+      },
+      {
+        id: '/sponsor/31.jpg',
+        title: '蒲公英',
+        link: 'https://www.facebook.com/dandelion.clc?locale=zh_TW'
       }
       // {
       //   id: '/sponsor/28.jpg',
@@ -174,7 +179,7 @@
 <template>
   <div class="py-16">
     <div class="container flex flex-col">
-      <div class="grid-col-1 grid border-b pb-8 md:grid-cols-2">
+      <div class="grid-col-1 grid border-b pb-8 md:grid-cols-2 md:gap-8">
         <div class="mb-5 md:mb-0">
           <div class="mb-5 font-bold">主辦單位</div>
           <div class="grid grid-cols-2 gap-8">
@@ -193,7 +198,7 @@
             </a>
           </div>
         </div>
-        <div>
+        <div class="ms-auto">
           <div class="mb-5 font-bold">協辦單位</div>
           <div class="grid grid-cols-2 gap-8">
             <a
