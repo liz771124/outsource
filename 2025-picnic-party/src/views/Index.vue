@@ -821,7 +821,7 @@
                 ※
                 產品圖片僅供示意，以現場實物為主，現場不挑款式、花色，隨機出貨。
               </div>
-              <div>※ 報名前，請務必詳閱報名注意事項。</div>
+              <div>※ 報名前，請務必詳閱報名<strong>注意事項</strong>及<strong>雨天備案</strong>。</div>
               <div>
                 <router-link
                   to="/notice#notice-02"
