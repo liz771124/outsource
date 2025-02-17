@@ -26,7 +26,7 @@
         link: 'https://www.ntpc.edu.tw/'
       },
       {
-        id: '/sponsor/05.png',
+        id: '/sponsor/05.jpg',
         title: '新北市家庭教育中心',
         link: 'https://ntpc.familyedu.moe.gov.tw/'
       }
@@ -94,7 +94,7 @@
       },
       {
         id: '/sponsor/17.jpg',
-        title: '利樂',
+        title: '利樂包裝',
         link: 'https://www.facebook.com/Tetra.Pak.TW/?locale=zh_TW'
       },
       {

@@ -106,7 +106,7 @@
       brand: '乖乖',
       title: '彎的脆果 煉乳-4入組合包',
       description: `
-        <p>★彎的玉米脆果，讓心情轉個彎</p>
+        <p>★乖乖玉米脆菓，讓心情轉個彎</p>
         <p>★可愛彎彎造型，療癒心情的秘密武器</p>
         <p>★香醇濃郁的煉乳，讓人深陷的厚奶風味</p>
         <p>規格：40g x 4包</p>
@@ -751,7 +751,7 @@
             </div>
 
             <div
-              class="flex flex-wrap gap-14 pt-[110px] md:flex-nowrap md:gap-8"
+              class="flex flex-wrap gap-16 pt-[110px] md:flex-nowrap md:gap-8"
             >
               <div
                 class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
@@ -821,10 +821,17 @@
                 ※
                 產品圖片僅供示意，以現場實物為主，現場不挑款式、花色，隨機出貨。
               </div>
-              <div>※ 報名前，請務必詳閱報名<strong>注意事項</strong>及<strong>雨天備案</strong>。</div>
+              <div>
+                ※
+                報名前，請務必詳閱報名<strong>注意事項</strong>及<strong>雨天備案</strong>。
+              </div>
+              <div>
+                ※
+                本活動如遇下雨天將於中山橋下進行，如期舉辦（請點選「詳細資訊」查看說明）
+              </div>
               <div>
                 <router-link
-                  to="/notice#notice-02"
+                  to="/notice#notice-03"
                   class="mt-5 inline-flex items-center gap-3 rounded-full bg-primary-500 px-8 py-2 text-2xl font-bold text-white transition md:hover:bg-kv-green"
                 >
                   <svg
