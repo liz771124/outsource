@@ -596,7 +596,7 @@
         </div>
         <div class="text-center text-[1.1rem] font-black">
           <div>集滿10個闖關印章，就能兌換抽獎券！</div>
-          <div>共計60個幸運獎項，超級豪禮等你來拿！</div>
+          <div>共60個幸運獎項，超級豪禮等你來拿！</div>
         </div>
         <div
           class="my-8 grid grid-cols-1 items-stretch gap-8 sm:grid-cols-2 md:grid-cols-3"
