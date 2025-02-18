@@ -644,11 +644,11 @@
             >
               <div class="flex h-full flex-col">
                 <div
-                  class="mb-1 shrink-0 border-b p-2 text-center text-xl font-semibold text-primary-500"
+                  class="mb-1 shrink-0 border-b p-2 text-center font-semibold text-primary-500"
                 >
-                  <span>【{{ item.brand }}】</span>
+                  <span class="text-xl">【{{ item.brand }}】</span>
                   <h2
-                    class="font-semibold text-primary-500"
+                    class="text-[15px] font-semibold text-primary-500"
                     v-html="item.name"
                   ></h2>
                 </div>
