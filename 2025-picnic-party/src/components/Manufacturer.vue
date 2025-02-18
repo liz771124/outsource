@@ -42,7 +42,7 @@
       {
         id: 'sponsor/07.jpg',
         title: '農業部',
-        link: 'https://www.igogosport.com/'
+        link: 'https://www.moa.gov.tw/'
       },
       {
         id: 'sponsor/08.jpg',
@@ -105,7 +105,7 @@
       {
         id: 'sponsor/19.jpg',
         title: '妙管家',
-        link: 'https://www.amah.com.tw/'
+        link: 'https://www.facebook.com/magicamahtw/'
       },
       {
         id: 'sponsor/20.jpg',
