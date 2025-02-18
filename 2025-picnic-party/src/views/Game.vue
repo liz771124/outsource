@@ -638,7 +638,7 @@
               {{ item.price }}
             </div>
             <div
-              :class="`absolute inset-0 z-10 bg-white p-3 px-3 transition-opacity duration-300 ${
+              :class="`absolute inset-0 z-10 bg-white px-3 py-2 transition-opacity duration-300 ${
                 isHovered === index ? 'opacity-100' : 'opacity-0'
               }`"
             >
