@@ -517,7 +517,7 @@
                     >關</span
                   >
                 </div> -->
-                <div class="dashed-text-container">
+                <div cl2ass="dashed-text-container">
                   十大主題，兼具知識與趣味的闖關挑戰，親子共同完成任務，還有小農市集，美好回憶獎不完！
                 </div>
                 <div class="end-15 absolute -bottom-10 hidden lg:block">

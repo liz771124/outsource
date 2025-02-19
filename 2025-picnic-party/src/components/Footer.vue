@@ -194,15 +194,20 @@
           </div>
         </div>
         <div
-          class="fixed bottom-3 end-3 z-30 flex flex-col items-center justify-center transition-opacity duration-300"
+          class="fixed bottom-20 end-3 z-30 flex flex-col items-center justify-center transition-opacity duration-300"
+        >
+          <router-link to="/#purchase" class="scroll-animate-rubberBand">
+            <img width="80" src="/img/fixed-buy-02.svg" alt="" />
+          </router-link>
+        </div>
+
+        <div
+          class="fixed bottom-0 end-3 z-30 flex flex-col items-center justify-center transition-opacity duration-300"
           :class="{
             'pointer-events-auto opacity-100': isVisible,
             'pointer-events-none opacity-0': !isVisible
           }"
         >
-          <router-link to="/#purchase" class="scale-bounce">
-            <img width="60" src="/img/fixed-buy-02.svg" alt="" />
-          </router-link>
           <div @click="goTop" class="mt-5 h-[65px] w-[65px] cursor-pointer">
             <img src="/img/gotop.svg" alt="" />
           </div>

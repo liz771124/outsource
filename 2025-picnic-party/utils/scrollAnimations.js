@@ -257,10 +257,10 @@ const animations = {
     animation: {
       keyframes: [
         { scale: 1, duration: 0 },
-        { scaleX: 1.25, scaleY: 0.75, duration: 0.3 },
-        { scaleX: 0.75, scaleY: 1.25, duration: 0.3 },
-        { scaleX: 1.15, scaleY: 0.85, duration: 0.3 },
-        { scale: 1, duration: 0.3 }
+        { scaleX: 1.25, scaleY: 0.5, duration: 0.2 },
+        { scaleX: 0.75, scaleY: 1.1, duration: 0.2 },
+        { scaleX: 1.15, scaleY: 0.8, duration: 0.2 },
+        { scale: 1, duration: 0.2 }
       ],
       repeat: -1,
       repeatDelay: 1
