@@ -170,7 +170,7 @@
       {
         id: 'sponsor/32.jpg',
         title: '花宅',
-        link: '#'
+        link: 'https://www.lifewithflower.com.tw/'
       }
       // {
       //   id: 'sponsor/28.jpg',
