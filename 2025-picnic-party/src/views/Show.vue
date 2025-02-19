@@ -218,7 +218,7 @@
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
             <div class="grow px-3 md:max-w-[200px] md:text-center">11:30</div>
-            <div class="grow px-3 font-black">貴賓致詞暨開幕儀式</div>
+            <div class="grow px-3 font-black">Party Start！開幕式</div>
           </div>
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
@@ -249,7 +249,7 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[200px] md:text-center">12:50</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">12:45</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
