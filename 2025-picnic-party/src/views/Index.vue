@@ -651,7 +651,7 @@
                   >
                 </div> -->
                 <div class="dashed-text-container">
-                  完成闖關集章，即可兌換一張抽獎券，獎項超豐富，好禮總價值超過50萬！
+                  完成闖關集章，即可兌換一張抽獎券，獎品超豐富，眾多好禮獎項等你抽！
                 </div>
                 <div class="absolute -bottom-10 -start-20 hidden lg:block">
                   <img
