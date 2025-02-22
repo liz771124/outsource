@@ -820,7 +820,13 @@
                       alt=""
                     />
                   </span>
-                  <img class="h-full w-full" src="/img/gift_02-m.jpg" alt="" />
+                  <div class="bg-gray2-300">
+                    <img
+                      class="h-full w-full opacity-50"
+                      src="/img/gift_02-m.jpg"
+                      alt=""
+                    />
+                  </div>
                   <span
                     class="absolute -top-[28px] end-0 w-[80px] md:-top-[30px] md:w-[100px]"
                   >
@@ -833,7 +839,7 @@
                   售完
                 </div> -->
                 <span class="absolute bottom-4 start-[40%] md:start-[43%]">
-                  <img width="70" src="/img/sold-out-seal.svg" alt="" />
+                  <img width="80" src="/img/sold-out-seal.svg" alt="" />
                 </span>
               </div>
             </div>
