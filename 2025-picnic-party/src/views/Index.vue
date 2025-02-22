@@ -497,26 +497,6 @@
               </div>
               <div class="relative order-2 grow pt-5 md:order-1">
                 <img width="250" src="/img/page-title-02.svg" alt="" />
-                <!-- <div
-                  class="relative z-10 flex text-[35px] font-black tracking-wide text-kv-green md:text-[50px]"
-                >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >趣</span
-                  >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >味</span
-                  >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >闖</span
-                  >
-                  <span
-                    class="flex h-12 w-12 items-center justify-center rounded-full bg-white md:h-16 md:w-16"
-                    >關</span
-                  >
-                </div> -->
                 <div class="dashed-text-container">
                   十大主題，兼具知識與趣味的闖關挑戰，親子共同完成任務，還有小農市集，美好回憶獎不完！
                 </div>
@@ -707,7 +687,7 @@
                   立即購票
                 </div>
               </a>
-              <div
+              <!-- <div
                 class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
               >
                 <a
@@ -747,7 +727,44 @@
                 >
                   立即購票
                 </div>
-              </a>
+              </a> -->
+              <div
+                class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
+              >
+                <a
+                  href="https://futureparenting.cwgv.com.tw/future/show/PRO006411"
+                  target="_blank"
+                >
+                  <img class="w-full" src="/img/ticket-04.svg" alt="" />
+                </a>
+                <img
+                  class="absolute bottom-[22%] right-[6%] w-[7.3rem] cursor-pointer md:w-[4.6rem] lg:w-[6rem]"
+                  src="/img/ticket-04-img.png"
+                />
+                <a
+                  href="https://futureparenting.cwgv.com.tw/future/show/PRO006411"
+                  target="_blank"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-primary-500"
+                >
+                  立即購票
+                </a>
+              </div>
+              <div class="animate-zoom-in group relative grow">
+                <img class="w-full" src="/img/ticket-05.svg" alt="" />
+                <img
+                  src="/img/ticket-05-img.png"
+                  class="absolute bottom-[13%] right-[6%] w-[7.8rem] cursor-pointer md:w-[6rem] lg:w-[7rem]"
+                  data-twe-toggle="modal"
+                  data-twe-target="#modal02"
+                  data-twe-ripple-init
+                  data-twe-ripple-color="light"
+                />
+                <div
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-gray2-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5"
+                >
+                  已售完
+                </div>
+              </div>
             </div>
 
             <div
@@ -804,12 +821,20 @@
                     />
                   </span>
                   <img class="h-full w-full" src="/img/gift_02-m.jpg" alt="" />
+                  <span
+                    class="absolute -top-[28px] end-0 w-[80px] md:-top-[30px] md:w-[100px]"
+                  >
+                    <img src="/img/sold-out-title.svg" alt="" />
+                  </span>
                 </div>
-                <div
+                <!-- <div
                   class="mt-3 text-center text-xl font-black text-primary-500"
                 >
-                  數量有限，要搶要快！
-                </div>
+                  售完
+                </div> -->
+                <span class="absolute bottom-4 start-[40%] md:start-[43%]">
+                  <img width="70" src="/img/sold-out-seal.svg" alt="" />
+                </span>
               </div>
             </div>
 
