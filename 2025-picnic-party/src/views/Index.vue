@@ -803,7 +803,7 @@
               </div>
 
               <div
-                class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
+                class="animate-zoom-in relative grow cursor-pointer bg-gray-200 p-5 shadow-xl"
                 data-twe-toggle="modal"
                 data-twe-target="#modal01"
                 data-twe-ripple-init
@@ -822,7 +822,7 @@
                   </span>
                   <div class="bg-gray2-300">
                     <img
-                      class="h-full w-full opacity-50"
+                      class="h-full w-full"
                       src="/img/gift_02-m.jpg"
                       alt=""
                     />
