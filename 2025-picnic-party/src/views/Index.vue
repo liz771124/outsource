@@ -687,7 +687,7 @@
                   立即購票
                 </div>
               </a>
-              <!-- <div
+              <div
                 class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
               >
                 <a
@@ -727,8 +727,8 @@
                 >
                   立即購票
                 </div>
-              </a> -->
-              <div
+              </a>
+              <!-- <div
                 class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
               >
                 <a
@@ -764,7 +764,7 @@
                 >
                   已售完
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div
@@ -803,7 +803,7 @@
               </div>
 
               <div
-                class="animate-zoom-in relative grow cursor-pointer bg-gray-200 p-5 shadow-xl"
+                class="animate-zoom-in relative grow cursor-pointer bg-white p-5 shadow-xl"
                 data-twe-toggle="modal"
                 data-twe-target="#modal01"
                 data-twe-ripple-init
@@ -820,7 +820,7 @@
                       alt=""
                     />
                   </span>
-                  <div class="bg-gray2-300">
+                  <div>
                     <img
                       class="h-full w-full"
                       src="/img/gift_02-m.jpg"
@@ -833,14 +833,13 @@
                     <img src="/img/sold-out-title.svg" alt="" />
                   </span>
                 </div>
-                <!-- <div
-                  class="mt-3 text-center text-xl font-black text-primary-500"
-                >
-                  售完
-                </div> -->
-                <span class="absolute bottom-4 start-[40%] md:start-[43%]">
+                <div class="text-center font-black text-kv-green">
+                  <p>感謝熱烈支持，早鳥名額完售！</p>
+                  <p>待系統清票完成，預計3/7(五)公告早鳥名單</p>
+                </div>
+                <!-- <span class="absolute bottom-4 start-[40%] md:start-[43%]">
                   <img width="80" src="/img/sold-out-seal.svg" alt="" />
-                </span>
+                </span> -->
               </div>
             </div>
 
