@@ -833,10 +833,12 @@
                     <img src="/img/sold-out-title.svg" alt="" />
                   </span>
                 </div>
-                <div class="text-center font-black text-kv-green">
-                  <p>感謝熱烈支持，早鳥名額完售！</p>
-                  <p>待系統清票完成，預計3/7(五)公告早鳥名單</p>
-                </div>
+                <a
+                  class="mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
+                  href="#"
+                >
+                  早鳥名單公布
+                </a>
                 <!-- <span class="absolute bottom-4 start-[40%] md:start-[43%]">
                   <img width="80" src="/img/sold-out-seal.svg" alt="" />
                 </span> -->
