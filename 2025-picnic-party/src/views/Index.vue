@@ -837,7 +837,7 @@
                 <div class="text-center">
                   <a
                     class="mx-auto inline-block w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
-                    href="/img/bird.pdf"
+                    href="https://parenting.cwgv.com.tw/event/picnic/2025/bird.pdf"
                     target="_blank"
                   >
                     早鳥名單公布
