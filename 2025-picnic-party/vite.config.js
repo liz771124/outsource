@@ -24,7 +24,7 @@ export default defineConfig({
       output: {
         assetFileNames: (assetInfo) => {
           const type = assetInfo.name.split('.').pop()
-          const folder = /\.(png|jpe?g|gif|svg|webp|ico)$/i.test(type)
+          const folder = /\.(png|jpe?g|gif|svg|webp|ico|pdf)$/i.test(type)
             ? 'img'
             : type
           return `assets/${folder}/[name][extname]`
