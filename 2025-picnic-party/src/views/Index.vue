@@ -843,7 +843,6 @@
                     早鳥名單公布
                   </a>
                 </div>
-
                 <!-- <span class="absolute bottom-4 start-[40%] md:start-[43%]">
                   <img width="80" src="/img/sold-out-seal.svg" alt="" />
                 </span> -->
