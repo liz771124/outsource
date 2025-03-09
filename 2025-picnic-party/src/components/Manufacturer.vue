@@ -45,6 +45,16 @@
         link: 'https://www.moa.gov.tw/'
       },
       {
+        id: 'sponsor/33.jpg',
+        title: '司法部',
+        link: 'https://www.judicial.gov.tw/kids/mp-3.html'
+      },
+      {
+        id: 'sponsor/34.jpg',
+        title: '衛福部食藥署',
+        link: 'https://www.fda.gov.tw/TC/index.aspx'
+      },
+      {
         id: 'sponsor/08.jpg',
         title: 'igogosport思博特',
         link: 'https://www.igogosport.com/'
@@ -84,6 +94,11 @@
         id: 'sponsor/15.jpg',
         title: '德恩奈',
         link: 'https://www.day-night.com.tw/'
+      },
+      {
+        id: 'sponsor/35.jpg',
+        title: '昇恆昌',
+        link: 'https://everrich.group/VmX5o'
       }
     ],
     partners: [

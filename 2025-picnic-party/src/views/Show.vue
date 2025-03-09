@@ -254,9 +254,9 @@
               <div
                 class="flex items-center justify-center rounded-full bg-kv-green px-4 text-xl font-bold text-white transition"
               >
-                歡樂互動
+                故事時間
               </div>
-              <div class="text-kv-green">來寶唱跳秀</div>
+              <div class="text-kv-green">醫材探險隊</div>
             </div>
           </div>
           <div
@@ -267,7 +267,7 @@
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
               >
-                魔幻Party
+                酷玩Party
               </div>
               <div class="text-primary-500">楊元慶—花式溜溜球</div>
             </div>
