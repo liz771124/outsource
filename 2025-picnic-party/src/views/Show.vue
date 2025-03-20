@@ -54,6 +54,15 @@
         '舞台前卡位預備備～超人氣偶像泡泡哥哥來囉！要跟小朋友們一起開派對、唱唱跳跳high玩一整天！'
     },
     {
+      id: '/show/10.jpg',
+      title: null,
+      subtitle: '醫材探險隊，出動！',
+      description: `
+        <p>由食藥署帶來的精采劇目表演！</p>
+        <p>阿強因為生病買了耳溫槍，測出的體溫卻亂跳！壯壯帶他找小心醫生，學習如何辨別合格醫材。透過輕鬆短劇、吉祥物「伊耳」助陣，搭配現場互動，小朋友將學會「網購醫材聰明選，看清查證安心用」的重要性！</p>
+      `
+    },
+    {
       id: '/show/08.jpg',
       title: 'F.S.D 藝術滑輪行動慶生舞',
       subtitle: 'F.S.D 兒童輪舞團｜行動慶生輪舞',
@@ -256,7 +265,7 @@
               >
                 故事時間
               </div>
-              <div class="text-kv-green">醫材探險隊</div>
+              <div class="text-kv-green">醫材探險隊，出動！</div>
             </div>
           </div>
           <div
@@ -288,7 +297,7 @@
           <div
             class="grid border-b border-primary-500 bg-[#FFECE6] py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[200px] md:text-center">13:40</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">13:45</div>
             <div class="flex grow flex-wrap gap-2 px-3 font-black">
               <div
                 class="flex items-center justify-center rounded-full bg-primary-500 px-4 text-xl font-bold text-white transition"
@@ -301,7 +310,7 @@
           <div
             class="grid border-b border-primary-500 bg-white py-3 md:flex md:flex-nowrap"
           >
-            <div class="grow px-3 md:max-w-[200px] md:text-center">14:15</div>
+            <div class="grow px-3 md:max-w-[200px] md:text-center">14:20</div>
             <div class="grow px-3 font-black">
               2025 未來親子野餐日 歡樂抽獎​
             </div>
