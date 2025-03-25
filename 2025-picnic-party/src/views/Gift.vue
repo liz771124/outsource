@@ -104,7 +104,7 @@
                   ? 'scroll-animate-slideInLeft'
                   : 'scroll-animate-slideInRight'
               ]"
-              :src="`${imagePath}/gift-item-${index + 1 < 10 ? '0' + (index + 1) : index + 1}.svg`"
+              :src="`${imagePath}gift-item-${index + 1 < 10 ? '0' + (index + 1) : index + 1}.svg`"
               alt=""
             />
           </div>
