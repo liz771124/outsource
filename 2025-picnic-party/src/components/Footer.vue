@@ -193,13 +193,13 @@
             </ul>
           </div>
         </div>
-        <div
+        <!-- <div
           class="fixed bottom-20 end-3 z-30 flex flex-col items-center justify-center transition-opacity duration-300"
         >
           <router-link to="/#purchase" class="scroll-animate-rubberBand">
             <img width="80" src="/img/fixed-buy-02.svg" alt="" />
           </router-link>
-        </div>
+        </div> -->
 
         <div
           class="fixed bottom-0 end-3 z-30 flex flex-col items-center justify-center transition-opacity duration-300"

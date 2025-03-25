@@ -110,9 +110,9 @@
           </div>
         </div>
 
-        <div class="mb-5 flex items-center justify-center pt-5 md:pt-8">
+        <!-- <div class="mb-5 flex items-center justify-center pt-5 md:pt-8">
           <ButtonJoin />
-        </div>
+        </div> -->
         <div
           data-twe-modal-init
           class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden p-6 outline-none"

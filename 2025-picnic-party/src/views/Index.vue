@@ -675,27 +675,18 @@
               id="purchase"
               class="flex flex-wrap items-end justify-between gap-10 md:mt-5 md:flex-nowrap md:gap-5"
             >
-              <a
-                class="animate-zoom-in group relative grow"
-                href="https://futureparenting.cwgv.com.tw/future/show/PRO006409"
-                target="_blank"
-              >
+              <div class="animate-zoom-in group relative grow">
                 <img class="w-full" src="/img/ticket-01.svg" alt="" />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-gray2-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5"
                 >
-                  立即購票
+                  全數完售
                 </div>
-              </a>
+              </div>
               <div
                 class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
               >
-                <a
-                  href="https://futureparenting.cwgv.com.tw/future/show/PRO006410"
-                  target="_blank"
-                >
-                  <img class="w-full" src="/img/ticket-02.svg" alt="" />
-                </a>
+                <img class="w-full" src="/img/ticket-02.svg" alt="" />
                 <img
                   class="absolute bottom-[13%] right-[6%] w-[7.8rem] cursor-pointer md:w-[6rem] lg:w-[7rem]"
                   src="/img/ticket-02-img.png"
@@ -704,30 +695,24 @@
                   data-twe-ripple-init
                   data-twe-ripple-color="light"
                 />
-                <a
-                  href="https://futureparenting.cwgv.com.tw/future/show/PRO006410"
-                  target="_blank"
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-primary-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-primary-500"
+                <div
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-primary-500 bg-gray2-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5"
                 >
-                  立即購票
-                </a>
+                  全數完售
+                </div>
               </div>
-              <a
-                class="animate-zoom-in group relative grow"
-                href="https://futureparenting.cwgv.com.tw/future/show/PRO006411"
-                target="_blank"
-              >
+              <div class="animate-zoom-in group relative grow">
                 <img class="w-full" src="/img/ticket-03.svg" alt="" />
                 <img
                   class="absolute bottom-[25%] right-[6%] w-[7.3rem] cursor-pointer md:w-[4.6rem] lg:w-[6rem]"
                   src="/img/ticket-03-img.png"
                 />
                 <div
-                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-kv-green px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5 md:group-hover:bg-white md:group-hover:text-kv-green"
+                  class="absolute inset-x-0 -bottom-6 mx-auto inline-block max-w-[250px] rounded-xl border-4 border-kv-green bg-gray2-500 px-5 py-2 text-center text-[22px] font-bold tracking-wide text-white transition md:py-1.5"
                 >
-                  立即購票
+                  全數完售
                 </div>
-              </a>
+              </div>
               <!-- <div
                 class="animate-zoom-in group relative mt-6 grow text-primary-500 md:mt-0"
               >

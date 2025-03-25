@@ -672,9 +672,9 @@
             </div>
           </div>
         </div>
-        <div class="mt-5 flex items-center justify-center">
+        <!-- <div class="mt-5 flex items-center justify-center">
           <ButtonJoin />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

@@ -316,9 +316,9 @@
             </div>
           </div>
         </div>
-        <div class="my-5 flex items-center justify-center">
+        <!-- <div class="my-5 flex items-center justify-center">
           <ButtonJoin />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

@@ -405,11 +405,11 @@
           </swiper> -->
         </div>
 
-        <div
+        <!-- <div
           class="mb-8 mt-3 flex w-full flex-wrap items-center justify-center gap-16"
         >
           <ButtonJoin />
-        </div>
+        </div> -->
         <div
           class="mb-10 mt-5 flex w-full flex-wrap items-center justify-center gap-16"
         >
